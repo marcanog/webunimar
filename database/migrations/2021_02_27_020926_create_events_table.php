@@ -14,7 +14,7 @@ class CreateEventsTable extends Migration
     public function up()
     {
         Schema::create('events', function (Blueprint $table) {
-            $table->tinyInteger("events_id");
+            $table->tinyInteger("events_id")->unique();
             $table->timestamps();
             $table->char('title', 255);
             $table->char('content', 255);
@@ -25,6 +25,7 @@ class CreateEventsTable extends Migration
             $table->char('status', 15);
             $table->date('date_add');
             $table->date('date_end');
+            $table->tinyInteger('fk_user_id');
         });
     }
 
