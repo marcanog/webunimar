@@ -3,7 +3,7 @@
 <!-- <link rel="stylesheet" href="{{ URL::asset("./css/app.css") }}">
 <script src="{{ URL::asset("./js/script.js") }}"></script> -->
 <style>
- .img-rrss{
+ /* .img-rrss{
      width: 25px;
  }
  .flex-row {
@@ -36,8 +36,6 @@ nav.navbar.navbar-light {
     align-items: center;
 }
 input.search {
-    /* height: 30%; */
-    /* vertical-align: middle; */
     padding: 0.45em;
     border: 1px solid #c1c1c1;
     border-radius: 1em;
@@ -47,28 +45,27 @@ input.search {
 img.search-img {
     padding: 3px;
     width: 30px;
-    /* align-items: center; */
     vertical-align: inherit;
-    /* top: 10px; */
-    /* position: relative; */
 }
 form.form-inline {
     display: inline;
     position: relative;
     top: 2px;
-}
+} */
 </style>
     <body>
         <div class="flex-row">
             <div class="flex nav-bar">
                     <div class="rss-bar">
                         <ul>
+                            <a href="#"><img class="img-rrss" src="./image/rrss/email.png"></a>
                             <a href="#"><img class="img-rrss" src="./image/rrss/instagram.png"></a>
                             <a href="#"><img class="img-rrss" src="./image/rrss/facebook.png"></a>
                             <a href="#"><img class="img-rrss" src="./image/rrss/gorjeo.png"></a>
                             <a href="#"><img class="img-rrss" src="./image/rrss/linkedin.png"></a>
                         </ul>
                     </div>
+                    <div class="fa fa-language"></div>
                     <nav class="navbar navbar-light bg-light search-bar">
                          <form class="form-inline">
                             <input class="search" type="text" placeholder="Search" arial-label="search"><img class="search-img btn" src="{{ URL::asset('./image/lupa_b.png')}}" href="#">

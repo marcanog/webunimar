@@ -6,37 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{ URL::asset("./css/app.css") }}">
         <script src="{{ URL::asset("./js/script.js") }}"></script> 
-
-        <title>Portalwerbunimar</title>
+        
+        <title><img src="{{URL::asset('./image/logounimar.jpg')}}">Portalwerbunimar</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Arial:wght@200;600&display=swap" rel="stylesheet">
 
         <!-- Styles -->
         <style>
-            /* html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Arial', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }*/
-
             .top-right {
                 display: flex;
                 flex-wrap: nowrap;
@@ -46,27 +23,16 @@
                 top: 18px;
                 width: 10%;
             }
-            /* .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            } */
-
+           
            .links > a {
                 color: #212121;
                 padding: 0 25px;
                 font-size: 12px;
                 font-weight: 500;
-                /* letter-spacing: .1rem; */
                 text-decoration: none;
                 text-transform: uppercase;
             }
 
-            /* .m-b-md {
-                margin-bottom: 30px;
-            }*/
             .top-left {
                 display: flex;
                 flex-wrap: nowrap;
@@ -79,6 +45,7 @@
 
     </head>
     <body>         
+        
        <!-- <div class="flex-center position-ref full-height">-->
         <div class="flex-content position-ref full-height">
             <div class="top-left links">
@@ -124,27 +91,23 @@
                     </div>
                 </div>
                 @include('components.academicsareas')
-                
-                
-                <!--<div class="title m-b-md">
-                    Laravel
-                </div>-->
-               
+                @yield('academicsareas')
+                <div class="section-content">
+                    <div class="container-sm">
+                        <img id="img-section" src="{{URL::asset('./image/conection.png')}}"><span>Enlaces de interés</span>
+                    </div>
+                </div>
+                @include('components.linkinterest')
+                @yield('linkinterest')
+                <div class="section-content">
+                    <div class="container-sm">
+                        <img id="img-section" src="{{URL::asset('./image/map.png')}}"><span>Ubicación</span>
+                    </div>
+                </div>
+                @include('components.location')
+                @include('components.footer')
 
-               <!-- <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>-->
             </div>
         </div>
-<!--<div class="modal fade" id="modal-register" role="dialog">
-            
-        </div>-->
     </body>
 </html>

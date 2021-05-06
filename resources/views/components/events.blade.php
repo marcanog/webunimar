@@ -3,7 +3,7 @@
 <!-- <link rel="stylesheet" href="{{ URL::asset("./css/app.css") }}">
 <script src="{{ URL::asset("./js/script.js") }}"></script> -->
 <style>
-.date-news {
+/* .date-news {
     background: #336699;
     border-radius: 20px;
     text-align: center;
@@ -34,11 +34,10 @@
 .title-news {
     text-align: justify;
     flex: 0 0 75%;
-    /* margin: 1em; */
 }
 .title-news > span {
     font-size: 1.15em;
-}
+} */
 </style>
 <body>
 <div class="content-event">

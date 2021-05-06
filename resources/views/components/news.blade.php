@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <style>
-
+/* 
 html, body {
   position: relative;
   width: 100%;
   height: 100%;
 }
 body {
-    /*background: #000;*/
-    
     margin: 0;
     padding: 0;
   }
@@ -21,7 +19,6 @@ body {
   text-align: center;
   font-size: 18px;
   background: #fff;
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -83,7 +80,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     left: 45% !important;
     width: 100%;
     margin-bottom: 1em;
-}
+} */
 </style>
 <body>
     

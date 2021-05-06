@@ -3,7 +3,7 @@
 <!-- <link rel="stylesheet" href="{{ URL::asset("./css/app.css") }}">
 <script src="{{ URL::asset("./js/script.js") }}"></script> -->
 <style>
-.container-sm {
+/* .container-sm {
     background: #6699CC;
     color: #FFFFFF;
     width: 20%;
@@ -25,9 +25,10 @@ span .container-sm {
 }
 .section-content {
     margin: 30px 0;
-}
+} */
 </style>
 <body>
+@extends('layouts.welcome')
 @section('news')
 <div  class="section-content">
     <div class="container-sm">

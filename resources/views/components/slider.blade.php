@@ -8,6 +8,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Compiled and minified Bootstrap JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
 <style>
 #carousel-home{
     width: 100%;
@@ -39,7 +40,13 @@
     left: 15%;
 }
 </style>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
+  // import Swiper bundle with all modules installed
+  import Swiper from 'swiper/bundle';
+
+  // init Swiper:
+  const swiper = new Swiper(...);
+
 $('.carousel').carousel({
      interval: 3000,
      pause:true,
@@ -58,41 +65,15 @@ $("#prevBtn").click(function(){
 $("#nextBtn").click(function(){
     $("#myCarouselCustom").carousel("next");
 });
-</script>
+</script> -->
 <body>
-<!--<div id="carousel-home" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-home" data-slide-to="1"></li>
-    <li data-target="#carousel-home" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./image/unimar1.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./image/unimar2.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./image/unimar3.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>-->
-<div id="Carousel-home" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#Carousel-home" data-slide-to="0" class="active"></li>
-        <li data-target="#Carousel-home" data-slide-to="1"></li>
-        <li data-target="#Carousel-home" data-slide-to="2"></li>
-    </ol>
+    <div id="Carousel-home" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#Carousel-home" data-slide-to="0" class="active"></li>
+            <li data-target="#Carousel-home" data-slide-to="1"></li>
+            <li data-target="#Carousel-home" data-slide-to="2"></li>
+        </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -116,6 +97,6 @@ $("#nextBtn").click(function(){
         <span class="glyphicon glyphicon-chevron-right"></span>
         <span class="sr-only">Next</span>
     </a>
-</div>
+    </div>
 </body>
 </html>
