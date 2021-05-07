@@ -10879,15 +10879,14 @@ a.text-dark:focus {
        padding: 0 25px;
        font-size: 12px;
        font-weight: 500;
-       /* letter-spacing: .1rem; */
        text-decoration: none;
        text-transform: uppercase;
    }
    #header-menu.navbar-brand:focus, #header-menu.navbar-brand:hover {
-    text-decoration: underline !important;
-    font-weight: 600;
-    color: #004a98;
-}
+      text-decoration: underline !important;
+      font-weight: 600;
+      color: #004A98;
+  }
    .m-b-md {
                 margin-bottom: 30px;
             }
@@ -10947,6 +10946,36 @@ a.text-dark:focus {
       text-decoration: underline !important;
       font-weight: 600;
   }
+  /*-----------------------------------slider ------------------------------------------*/
+  #carousel-home{
+    width: 100%;
+}
+#carousel-home .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+    right: 15%;
+}
+#carousel-home .carousel-indicators .active {
+    background: #336699;
+}
+#carousel-home .carousel-indicators li {
+    background: #c1c1c1;
+}
+#carousel-home .carousel-indicators {
+    position: absolute;
+    bottom: -45px;
+    left: 90%;
+    z-index: 15;
+    width: 10%;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+    list-style: none;
+}
+#carousel-home .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    margin-left: -15px;
+}
+#carousel-home .carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 15%;
+}
   /*-------------------------------titlesections----------------------------------------*/
   .container-sm {
       background: #6699CC;

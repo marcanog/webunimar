@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{{ asset('./css/app.css') }}">
-        <script src="{{ URL::asset('./js/app.js') }}"></script> 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="stylesheet" href="{{ asset('./css/app.css') }}">
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    
+    <title><img src="{{URL::asset('./image/logounimar.jpg')}}">Portalwerbunimar</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Arial:wght@200;600&display=swap" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <!-- Styles -->
+    <style>
+        .top-right {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            position: absolute;
+            right: 10px;
+            top: 18px;
+            width: 10%;
+        }
         
-        <title><img src="{{URL::asset('./image/logounimar.jpg')}}">Portalwerbunimar</title>
+        .links > a {
+            color: #212121;
+            padding: 0 25px;
+            font-size: 12px;
+            font-weight: 500;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Arial:wght@200;600&display=swap" rel="stylesheet">
+        .top-left {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            height: 50px;
+            margin: 0 auto;
+            box-shadow: 0px 1px 3px #c1c1c1;
+        } 
+</style>
 
-        <!-- Styles -->
-        <style>
-            .top-right {
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: flex-start;
-                position: absolute;
-                right: 10px;
-                top: 18px;
-                width: 10%;
-            }
-           
-           .links > a {
-                color: #212121;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 500;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .top-left {
-                display: flex;
-                flex-wrap: nowrap;
-                justify-content: flex-start;
-                height: 50px;
-                margin: 0 auto;
-                box-shadow: 0px 1px 3px #c1c1c1;
-            } 
-    </style>
-
-    </head>
+</head>
     <body>         
         
        <!-- <div class="flex-center position-ref full-height">-->
