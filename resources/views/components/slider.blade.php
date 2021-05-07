@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<!-- <link rel="stylesheet" href="{{ URL::asset("./css/app.css") }}">
-<script src="{{ URL::asset("./js/script.js") }}"></script> -->
 <!-- Compiled and minified Bootstrap CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
 <!-- Minified JS library -->
@@ -11,7 +9,7 @@
 
 
 <body>
-@section('content')
+
     <div id="carousel-home" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -43,6 +41,6 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-@endsection
+
 </body>
 </html>

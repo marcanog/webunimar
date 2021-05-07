@@ -9,8 +9,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" href="{{ asset('./css/app.css') }}">
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <link rel="shortcut icon" href="{{{ asset('image/logounimar.jpg') }}}">
     
-    <title><img src="{{URL::asset('./image/logounimar.jpg')}}">Portalwerbunimar</title>
+    <title>Portalwerbunimar</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Arial:wght@200;600&display=swap" rel="stylesheet">

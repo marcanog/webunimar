@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <body>
-@section('content')
+<!-- @section('content') -->
     <div class="content-links">
          <div class="links-interest" style="background-color: #336699">
             <a href="#"><img src="{{URL::asset('./image/studying.png')}}">
@@ -38,6 +38,6 @@
             <span>Evaluación y Apoyo Psicológico</span></a>
         </div>
     </div>
-@endsection
+<!-- @endsection -->
 </body>
 </html>

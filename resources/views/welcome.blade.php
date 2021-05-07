@@ -4,10 +4,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="{{ URL::asset("./css/app.css") }}">
-        <script src="{{ URL::asset("./js/script.js") }}"></script> 
+        <link rel="stylesheet" href="{{ URL::asset('./css/app.css') }}">
+        <script src="{{ URL::asset('./js/script.js') }}"></script> 
+        <link rel="shortcut icon" href="{{{ asset('image/logounimar.jpg') }}}">
         
-        <title><img src="{{URL::asset('./image/logounimar.jpg')}}">Portalwerbunimar</title>
+        <title>Portalwerbunimar</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Arial:wght@200;600&display=swap" rel="stylesheet">
@@ -76,14 +77,14 @@
                         <img id="img-section" src="{{URL::asset('./image/megafono.png')}}"><span>Novedades/Noticias</span>
                     </div>
                 </div>
-                @yield('news') <!-- esta opción debería mostrar la sección de noticias-->
+                <!-- @yield('content') esta opción debería mostrar la sección de noticias -->
                 @include('components.news')
                 <div class="section-content">
                     <div class="container-sm">
                         <img id="img-section" src="{{URL::asset('./image/calendar.png')}}"><span>Agenda/Eventos</span>
                     </div>
                 </div> 
-                @yield('events') <!-- esta opción debería mostrar la sección de noticias-->
+                <!-- @yield('content') esta opción debería mostrar la sección de noticias -->
                 @include('components.events')
                 <div class="section-content">
                     <div class="container-sm">
@@ -91,14 +92,14 @@
                     </div>
                 </div>
                 @include('components.academicsareas')
-                @yield('academicsareas')
+                <!-- @yield('content') -->
                 <div class="section-content">
                     <div class="container-sm">
                         <img id="img-section" src="{{URL::asset('./image/conection.png')}}"><span>Enlaces de interés</span>
                     </div>
                 </div>
                 @include('components.linkinterest')
-                @yield('linkinterest')
+                <!-- @yield('content') -->
                 <div class="section-content">
                     <div class="container-sm">
                         <img id="img-section" src="{{URL::asset('./image/map.png')}}"><span>Ubicación</span>
