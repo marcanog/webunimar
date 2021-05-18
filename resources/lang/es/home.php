@@ -3,6 +3,7 @@
 return [
 
     //body
+    'title' => 'Portalwebunimar',
      'news' => 'Novedades/Noticias',
      'events' => 'Agenda/Eventos',
      'academics_areas' => 'Áreas Académicas',
@@ -26,4 +27,26 @@ return [
      'uniradio' => 'Radio Unimar',
      'erepository' => 'Repositorio Virtual',
      'elibrary' => 'Biblioteca Virtual',
+     'sicologyc-healthy' => 'Evaluación y Apoyo Psicológico',
+     //direction-footer
+     'location-footer' => 'Av. Concepción Mariño, Sector El Toporo, El Valle del Espíritu Santo, Edo. Nueva Esparta, Venezuela.',
+     'our-intstitution' => 'Nuestra Institución',
+     'rectorship' => 'Rectorado',
+     'vice-academic' => 'Vicerrectorado Académico',
+     'deans' => 'Decanatos',
+     'students-healthy' => 'Bienestar Estudiantil',
+     'Study-offers' => 'Ofertas de Estudio',
+     'grade' => 'Pregrado',
+     'postgrade' => 'Postgrado',
+     'diplomates' => 'Diplomados',
+     'courses' => 'Cursos y Talleres',
+     'Web-service' => 'Servicios Web',
+     'epayments' => 'Pagos Online',
+     'payreceipts'=> 'Recibos de Pago',
+     'elearning' => 'Educación Virtual' ,
+     'acalendar' => 'Horarios Académicos',
+     'quicklinks' => 'Accesos Rápidos',
+     'aschedule' => 'Calendario Académico',
+     'phonedirectory' => 'Directorio Telefónico',
+     'contactus' => 'Contáctanos a través de',
 ];

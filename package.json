@@ -27,6 +27,6 @@
     "dependencies": {
         "jscs": "^3.0.7",
         "material-dashboard": "^2.1.0",
-        "swiper": "^6.5.9"
+        "swiper": "^6.6.1"
     }
 }

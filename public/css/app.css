@@ -72,7 +72,7 @@ body {
   line-height: 1.6;
   color: #212529;
   text-align: left;
-  background-color: #f8fafc;
+  background-color: #ffffff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10899,12 +10899,12 @@ a.text-dark:focus {
       box-shadow: 0px 1px 3px #c1c1c1;
   }
   /*---------------------------------menu navbar----------------------------------------*/
-  .logo {
-      display: flex;
-      justify-content: flex-start;
-      margin: 0em 3em;
-      width: 35%;
-  }
+ .logo {
+     display: flex;
+     justify-content: flex-start;
+     margin: 0 auto;
+     width: 25%;
+ }
 
   .flex.logo>a {
       margin: auto;
@@ -10918,7 +10918,7 @@ a.text-dark:focus {
   .flex-bar {
       display: flex;
       flex-direction: column;
-      width: 70%;
+      width: 65%;
       align-items: center;
       position: relative;
       margin: auto !important;
@@ -10937,7 +10937,7 @@ a.text-dark:focus {
   .navbar-brand {
       float: left;
       height: 50px;
-      font-size: 1.35em !important;
+      font-size: 1.25em !important;
       line-height: 20px;
   }
 
@@ -10946,6 +10946,11 @@ a.text-dark:focus {
       text-decoration: underline !important;
       font-weight: 600;
   }
+
+  #languages {
+    position: fixed;
+    object-fit: contain;
+}
   /*-----------------------------------slider ------------------------------------------*/
   #carousel-home{
     width: 100%;
@@ -11117,14 +11122,15 @@ a.text-dark:focus {
  }
 
  .swiper-pagination-bullet {
-     height: 10px !important;
-     width: 10px !important;
+     height: 11px !important;
+     width: 11px !important;
+     background-color: #c1c1c1;
  }
 
  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
      background: #336699;
-     width: 11px !important;
-     height: 11px !important;
+     width: 13px !important;
+     height: 13px !important;
  }
 
  .swiper-container-horizontal>.swiper-pagination-bullets,
@@ -11136,19 +11142,22 @@ a.text-dark:focus {
      margin-bottom: 1em;
  }
   /*-----------------------------------menu_rrss---------------------------------------*/
-   .img-rrss {
-       width: 25px;
-   }
+   .nav-rrss {
+      margin: 0.5em auto;
+  }
+  .img-rrss {
+      width: 25px;
+  }
 
-   .flex-row {
-       display: flex;
-       flex: 0 0 85%;
-   }
+  .flex-row {
+      display: flex;
+      flex: 0 0 85%;
+  }
 
-   .flex.nav-bar {
-       display: flex;
-       flex: 0 0 100%;
-   }
+  .flex.nav-bar {
+      display: flex;
+      flex: 0 0 100%;
+  }
 
    nav.navbar.navbar-light {
        margin: 5px;
@@ -11397,12 +11406,13 @@ span .container-sm {
     background-color: #336699;
     width: 100%;
     display: flex;
-    height: 50%;
+    /* height: 50%; */
 }
 
 .copyright-content {
     background-color: #336699;
     color: #ffffff;
+    text-align: center;
 }
 
 .info-university,

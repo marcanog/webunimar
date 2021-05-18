@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="{{ URL::asset('./css/app.css') }}">
         <script src="{{ URL::asset('./js/script.js') }}"></script> 
-        <link rel="shortcut icon" href="{{{ asset('image/logounimar.jpg') }}}">
+        <link rel="shortcut icon" href="{{{ asset('image/unimar.ico') }}}">
         
-        <title>Portalwerbunimar</title>
+        <title>{{trans('home.title')}}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Arial:wght@200;600&display=swap" rel="stylesheet">

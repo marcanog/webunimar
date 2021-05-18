@@ -19,11 +19,14 @@ Route::get('index', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('home', function () {
+    return view('home');
+});
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
