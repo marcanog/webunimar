@@ -66023,28 +66023,12 @@ module.exports = __webpack_require__(/*! C:\laragon\www\portalwebunimar\resource
 /***/ })
 
 /******/ });
-/***************************Swiper carousel************************** */
-  // import Swiper bundle with all modules installed
-  import Swiper from 'swiper/bundle';
+/* function hrefmailto */
 
-  // init Swiper:
-  const swiper = new Swiper(...);
+    function sendmail(){
+      location.href='mailto:info@unimar.edu.ve';
+    }
 
-$('.carousel').carousel({
-     interval: 3000,
-     pause:true,
-     wrap:false
-});
-
-// Call carousel manually
-$('#myCarouselCustom').carousel();
-
-// Go to the previous item
-$("#prevBtn").click(function(){
-    $("#myCarouselCustom").carousel("prev");
-});
-// Go to the previous item
-$("#nextBtn").click(function(){
-    $("#myCarouselCustom").carousel("next");
-});
-/********************************************************************** */
+    // function rrss(){
+    //   if ()
+    // }

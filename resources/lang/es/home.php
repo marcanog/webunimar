@@ -3,6 +3,8 @@
 return [
 
     //body
+    'login' => 'Login',
+    'start' => 'Inicio',
     'title' => 'Portalwebunimar',
      'news' => 'Novedades/Noticias',
      'events' => 'Agenda/Eventos',
@@ -30,6 +32,10 @@ return [
      'sicologyc-healthy' => 'Evaluación y Apoyo Psicológico',
      //direction-footer
      'location-footer' => 'Av. Concepción Mariño, Sector El Toporo, El Valle del Espíritu Santo, Edo. Nueva Esparta, Venezuela.',
+     'location-code' => 'Código Postal:  6308',
+     'location-code-plus' => 'Código Plus: X4HC+F2 El Valle del Espíritu Santo, Nueva Esparta
+                Teléfonos: 800-UNIMAR (800-86462) / +58 295-2871722 / 0466 / 0866 ',
+     'location-mail' => 'Correo: info@unimar.edu.ve',
      'our-intstitution' => 'Nuestra Institución',
      'rectorship' => 'Rectorado',
      'vice-academic' => 'Vicerrectorado Académico',
@@ -49,4 +55,12 @@ return [
      'aschedule' => 'Calendario Académico',
      'phonedirectory' => 'Directorio Telefónico',
      'contactus' => 'Contáctanos a través de',
+     //language
+     'lang-en' => 'En',
+     'lang-es' => 'Es',
+     'lang-it' => 'It',
+     //urls
+    //  'es-flags' => 'URL::asset('./image/flags/flag-spain.png')',
+    //  'en-flags' => 'URL::asset('./image/flags/flag-usa.png')',
+    //  'it-flags' => 'URL::asset('./image/flags/flag-italy.png')',
 ];

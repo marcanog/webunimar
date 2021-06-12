@@ -4,7 +4,7 @@ return [
     //firt column
     'f_location' => 'Av. Concepción Mariño, Sector El Toporo, El Valle del Espíritu Santo, Edo. Nueva Esparta, Venezuela.',
     //second column
-    'f_organization' => 'Nuestra Institution',
+    'f_organization' => 'Nuestra Institución',
     'f_rectors_office' => 'Rectorado',
     'f_vice_chancellor' => 'Vicerrectorados',
     'f_deanchip' => 'Decanatos',
@@ -17,13 +17,15 @@ return [
     'f_courses' => 'Cursos y Talleres',
     //fourt column
     'f_web_services' => 'Servicios Web',
+    'f_online_payments' => 'Pagos Online',
     'f_payment_bills' => 'Recibos de Pago',
     'f_elearning' => 'Educación Virtual',
     'f_ecampus' => 'Campus Virtual',
+    'f_academic_schec' => 'Horarios Académicos',
     'f_repository' => 'Repositorio Institucional',
+    //five column
     'f_quick_links' => 'Accesos Rápidos',
     'f_calendar' => 'Calendario Académico',
     'f_dir_telf' => 'Directorio Telefónico',
     'f_contact_us' => 'Contáctanos a través de',
-
 ];

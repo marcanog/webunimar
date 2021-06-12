@@ -1,31 +1,5 @@
-<!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<style>
-    /* .location-content {
-        display: flex;
-        justify-content: space-around;
-        padding: 1.5em 1em 3em;
-    }
-    .map-direction {
-        display: flex;
-        width: 50%;
-        flex-direction: column;
-        text-align: left;
-        padding: 1em;
-        margin: 0 auto;
-    }
-    .map-direction > span {
-        font-size: 1.35em;
-        padding: 0.5em;
-        text-align: justify;
-        letter-spacing: 0.05em;
-    }
-    .map-location {
-        display: flex;
-        margin: 0 auto;
-        padding: 1em;
-    } */
-</style>
+@section('content')
+
 <body>
     <div class="location-content">
         <div class= "map-location">
@@ -39,5 +13,4 @@
             <span>Correo: info@unimar.edu.ve </span>
         </div>
     </div>
-</body>
-</html>
+@endsection

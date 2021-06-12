@@ -13,4 +13,5 @@ return [
      'teachers' => 'Teachers',
      'international' => 'International',
      'services' => 'Services',
+     'input_search' => 'Search',
 ];

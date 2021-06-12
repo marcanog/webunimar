@@ -11,11 +11,12 @@
     },
     "devDependencies": {
         "@babel/preset-react": "^7.0.0",
+        "@popperjs/core": "^2.9.2",
         "axios": "^0.21.1",
-        "bootstrap": "^4.0.0",
+        "bootstrap": "^5.0.0-beta3",
         "cross-env": "^7.0",
         "jquery": "^3.2",
-        "laravel-mix": "^5.0.1",
+        "laravel-mix": "^5.0.9",
         "lodash": "^4.17.19",
         "popper.js": "^1.12",
         "react": "^16.2.0",
@@ -25,8 +26,11 @@
         "sass-loader": "^8.0.0"
     },
     "dependencies": {
+        "animate.css": "^4.1.1",
+        "jquery-touchswipe": "^1.6.19",
         "jscs": "^3.0.7",
         "material-dashboard": "^2.1.0",
-        "swiper": "^6.6.1"
+        "mdb-ui-kit": "^3.6.0",
+        "swiper": "^6.7.0"
     }
 }

@@ -11,7 +11,7 @@
         <title>{{trans('home.title')}}</title>
 
         <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Arial:wght@200;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         <style>
@@ -58,17 +58,11 @@
                         <a href="{{ url('/home') }}">Inicio</a>
                     @else
                         <a href="{{ route('login') }}"><img src="{{URL::asset('./image/login.png')}}" style="width: 25px;">Login</a>
-
-                        <!-- @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Registro</a>
-                           <span class="openmodal btn" href="{{ route('register') }}" data-toggle="modal" data-target="#modal-register" style="font-size: 12px; text-transform: uppercase;"> Registro </span>
-                          
-                        @endif-->
                     @endauth
                 </div>
             @endif
             @include('components.menu')
-       <!-- @show -->
+       
             <div class="content">
             
                 @include('components.slider')
@@ -77,34 +71,35 @@
                         <img id="img-section" src="{{URL::asset('./image/megafono.png')}}"><span>Novedades/Noticias</span>
                     </div>
                 </div>
-                <!-- @yield('content') esta opción debería mostrar la sección de noticias -->
+                
                 @include('components.news')
                 <div class="section-content">
                     <div class="container-sm">
                         <img id="img-section" src="{{URL::asset('./image/calendar.png')}}"><span>Agenda/Eventos</span>
                     </div>
                 </div> 
-                <!-- @yield('content') esta opción debería mostrar la sección de noticias -->
+                
                 @include('components.events')
                 <div class="section-content">
                     <div class="container-sm">
                         <img id="img-section" src="{{URL::asset('./image/graduate.png')}}"><span>Áreas acádemicas</span>
                     </div>
                 </div>
-                @include('components.academicsareas')
-                <!-- @yield('content') -->
+
+                @include('components.academicsareas')            
                 <div class="section-content">
                     <div class="container-sm">
                         <img id="img-section" src="{{URL::asset('./image/conection.png')}}"><span>Enlaces de interés</span>
                     </div>
                 </div>
+
                 @include('components.linkinterest')
-                <!-- @yield('content') -->
                 <div class="section-content">
                     <div class="container-sm">
                         <img id="img-section" src="{{URL::asset('./image/map.png')}}"><span>Ubicación</span>
                     </div>
                 </div>
+
                 @include('components.location')
                 @include('components.footer')
 
