@@ -36,21 +36,21 @@ document.addEventListener("keyup", e => {
 <div class="modal" id="modal1" data-animation="slideInOutLeft">
   <div class="modal-dialog" id="modaldialog">
     <header class="modal-header">
-      <span>{{trans('commons.our-modal-header')}}</span>
+      <span>{{trans('ourconcept.our-modal-header')}}</span>
       <button class="close-modal" aria-label="close modal font-weight-bold" data-close>
         ✕  
       </button>
     </header>
     <section>
       <div class="sectionbody">
-        <span class="text-modal">{{trans('commons.our-content-1')}}</span><br/>
-        <span>{{trans('commons.our-content-2')}}</span><br/>
-        <span>{{trans('commons.our-content-3')}}</span><br/>
-        <span>{{trans('commons.our-content-4')}}</span>
+        <p>{{trans('ourconcept.our-content-1')}}</p>
+        <p>{{trans('ourconcept.our-content-2')}}</p>
+        <p>{{trans('ourconcept.our-content-3')}}</p>
+        <p>{{trans('ourconcept.our-content-4')}}</p>
       </div>
     </section>
     <footer class="modal-footer">
-     <span class= "footermodal">"{{trans('commons.our-modal-footer')}}"<span>
+     <span class= "footermodal">"{{trans('ourconcept.our-modal-footer')}}"<span>
     </footer>
   </div>
 </div>

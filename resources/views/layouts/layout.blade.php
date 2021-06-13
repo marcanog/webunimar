@@ -29,7 +29,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
     rel="stylesheet"
     />
- 
+       
     <script src="{{ asset('js/app.js') }}" defer></script>
 
     <!-- Optional JavaScript -->
@@ -87,8 +87,7 @@
 </style>
 
 </head>
-    <body>         
-        
+    <body>
         <div class="flex-content position-ref full-height">
             <div class="nav-rrss">
                 <div class="top-left links">
@@ -145,7 +144,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="navbar-brand" id="header-menu" href="#">
+                                <a class="navbar-brand" id="header-menu" href="/organization">
                                     {{trans('header.organization')}}
                                 </a>
                             </li>

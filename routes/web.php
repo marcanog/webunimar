@@ -13,15 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('ourinstitution', function () {
-    return view('ourinstitution');
-});
 Route::get('/', function () {
     return view('welcome');
 });
 Route::get('home', function () {
     return view('home');
 });
+Route::get('ourinstitution', function () {
+    return view('ourinstitution');
+});
+Route::get('organization', function () {
+    return view('organization');
+});
+Route::get('lang/{lang}', 'LanguageController@swap')->name('lang.swap');
+
 Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');

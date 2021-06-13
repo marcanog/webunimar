@@ -11302,6 +11302,10 @@ p.card-text {
     float: right;
     left: 3.5rem;
 }
+
+.container.my-4 {
+    max-width: 83vw;
+}
 /*-----------------------------------menu_rrss---------------------------------------*/
    .nav-rrss {
       margin: 0 auto 0.5em;
@@ -11393,7 +11397,7 @@ p.card-text {
 
 .d-flex.justify-content-start > span {
     position: relative;
-    top: 1.35em;
+    top: 1.25rem;
     left: 0.7rem;
     color: #FFFFFF;
     font-weight: 700;
@@ -11804,6 +11808,11 @@ a:not([href]):not([tabindex]){
 	text-align: justify;
 	padding: 1rem;
 	color: #212121;
+}
+
+.sectionbody p {
+	text-indent: 1.5em;
+	margin-top: 0;
 }
 
 .footermodal {

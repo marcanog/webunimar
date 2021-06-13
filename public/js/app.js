@@ -66025,10 +66025,8 @@ module.exports = __webpack_require__(/*! C:\laragon\www\portalwebunimar\resource
 /******/ });
 /* function hrefmailto */
 
-    function sendmail(){
+    function sendmail() {
       location.href='mailto:info@unimar.edu.ve';
     }
 
-    // function rrss(){
-    //   if ()
-    // }
+ 
