@@ -36,8 +36,19 @@ return [
     'cs-rector-info' => 'Es licenciada en Administración Comercial, egresada de la Universidad Católica Andrés Bello(1976).Tiene una especialización en Finanzas, de la Universidad de Margarita (2004), Actualmente realiza un doctorado en Ciencias de la Educación en la Universidad Latinoamericana y del Caribe.',
     'cs-rector-info-2' => 'En el año 2000 ingresó en Unimar como docente y como Coordinadora de Control de Estudios, desde entonces fue invitada permanente al Consejo Universitario, hasta el año 2009, cuando pasó a ocupar el cargo de Secretaria General de la Universidad. Desde el 2005 ha sido la Coordinadora de los Actos de Grado de nuestra Alma Mater.Es Secretaria Principal de la Directiva del Núcleo de Secretarios de la Universidades Nacionales desde 2010',
     //
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
+    'cs-vice-chancellor' => 'Antonio Martínez Camacho',
+    'cs-vice-chancellor-title' => 'Vicerrector Académico',
+    'cs-vice-chancellor-info' => 'Es Ingeniero Electricista, Mención: Potencia, de la Universidad de Carabobo (27-07-1973), con una especialización en Gerencia, Mención: Finanzas, de la Universidad Bicentenaria de Aragua.',
+    'cs-vice-chancellor-info-2' => 'CURSOS Y PASANTÍAS REALIZADAS: Organización de Empresa y Administración de proyectos, Abengoa, Sevilla- España (Julio 1976). Seguridad Básica para Supervisores, Sidor, Puerto Ordaz (Noviembre 1986). Análisis de Problemas y Toma de Decisiones, Genco, Puerto Ordaz (Noviembre 1986). Licitación Contratación y Control de Proyectos de Ingeniería, Universidad Simón Bolívar, Puerto Ordaz (Junio 1987).',
+    //
+    'cs-vicerector-ext' => 'Thamara Echegaray Navas',
+    'cs-vicerector-ext-title' => 'Vicerrectora de Extensión',
+    'cs-vicerector-ext-info' => 'Es TSU en Educación (Instituto Nacional de Psiquiatría Infantil) y licenciada en Educación egresada de la Universidad Nacional Abierta (Caracas. 1992; con una especialización y una Maestría en Gerencia Educativa, de la Universidad Gran Mariscal de Ayacucho. Cursó un Doctorado en Ciencias Gerenciales, Universidad Experimental Politécnica de la Fuerza Armada (Sin Culminar).',
+    'cs-vicerector-ext-info-2' => 'Fue Maestra especialista, Coordinadora, y Subdirectora, de la Unidad Psicoeducativa Nueva Esparta. Luego se desempeñó como Directora del Núcleo Escolar Rural Nº 63 y de la Escuela Básica Bolivariana "Juan Bautista Arismendi"; Coordinadora de la Comisión Estadal de Lectura, FUNDAALECTURA. En 2002 se incorpora a la plantilla de profesores de la Universidad de Margarita como Jefa, del recién creado para esa fecha, Departamento de Bienestar Estudiantil.',
+    //
+    'cs-general-secretary' => 'Fanny Marcano Sanabria',
+    'cs-general-secretary-title' => 'Secretaria General', 
+    'cs-general-secretary-info' => 'Es egresada de la UPEL-IMPM, como Profesor en Ciencias Sociales, con Maestría en Planificación y Evaluación, además de contar con diversos Diplomados en el área educativa. Actualmente realiza un Doctorado en Ciencias de la Educación en la ULAC.',
+    'cs-general-secretary-info-2' => 'Cuenta con una larga trayectoria profesional en el campo docente que le ha merecido numerosos reconocimientos. En el año 2005 ingresó como docente en Unimar. Desde el 2009 hasta el 2017 fue Coordinadora de Becas y Ayudas Económicas Estudiantiles de Unimar; Decana(E) de Humanidades (2017)',
+    
 ];

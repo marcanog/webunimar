@@ -217,41 +217,41 @@ p.titlefound{
         <div class="card-columns">
             <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false" aria-controls="multiCollapse1">
                 <div class="card mb-3" id="cardauthor">
-                    <img id="imgcrd" src="{{URL::asset('./image/founders/pedrocabello.jpg')}}" alt="Ing. Pedro Cabello">
+                    <img id="imgcrd" src="{{URL::asset('./image/csuperior/antonietarosales.jpg')}}" alt="Dra. Antonieta Rosales de Oxford">
                     <div class="card-title">
-                        <p>{{trans('org.a-peterc')}}</p>
-                        <p>{{trans('org.a-peter-title')}}</p>
+                        <p>{{trans('org.cs-rector')}}</p>
+                        <p>{{trans('org.cs-rector-title')}}</p>
                     </div>
                 </div>
             </a>
             <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse2" role="button" aria-expanded="false" aria-controls="multiCollapse2">
                 <div class="card mb-3" id="cardauthor">
-                    <img id="imgcrd" src="{{URL::asset('./image/founders/pedrobeauperthuy.jpg')}}" alt="Ing. Pedro Beauperthuy">
+                    <img id="imgcrd" src="{{URL::asset('./image/csuperior/antoniomartinez.jpg')}}" alt="Ing. Antonio Martínez">
                     <div class="card-title">
-                        <p>{{trans('org.a-peterb')}}</p>
-                        <p>{{trans('org.a-peterb-title')}}</p>
+                        <p>{{trans('org.cs-vice-chancellor')}}</p>
+                        <p>{{trans('org.cs-vice-chancellor-title')}}</p>
                     </div>
                 </div>
             </a>
             <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse3" role="button" aria-expanded="false" aria-controls="multiCollapse3">
                 <div class="card mb-3" id="cardauthor">
-                    <img id="imgcrd" src="{{URL::asset('./image/founders/maeugeniamorales.jpg')}}" alt="Esp. Ma Eugenia Morales">
+                    <img id="imgcrd" src="{{URL::asset('./image/csuperior/thamaraechegaray.jpg')}}" alt="Dra. Thamara Echegaray">
                     <div class="card-title">
-                        <p>{{trans('org.a-mamorales')}}</p>
-                        <p>{{trans('org.a-mamorales-title')}}</p>
+                        <p>{{trans('org.cs-vicerector-ext')}}</p>
+                        <p>{{trans('org.cs-vicerector-ext-title')}}</p>
                     </div>
                 </div>
             </a>
             <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse4" role="button" aria-expanded="false" aria-controls="multiCollapse4">
                 <div class="card mb-3" id="cardauthor">
-                    <img id="imgcrd" src="{{URL::asset('./image/founders/raquelperez.jpg')}}" alt="Dra. Raquel Pérez">
+                    <img id="imgcrd" src="{{URL::asset('./image/csuperior/fannymarcano.jpg')}}" alt="Msc. Fanny Marcano">
                     <div class="card-title">
-                        <p>{{trans('org.a-raquelp')}}</p>
-                        <p>{{trans('org.a-raquelp-title')}}</p>
+                        <p>{{trans('org.cs-general-secretary')}}</p>
+                        <p>{{trans('org.cs-general-secretary-title')}}</p>
                     </div>
                 </div>
             </a>
-            <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse5" role="button" aria-expanded="false" aria-controls="multiCollapse5">
+            <!-- <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse5" role="button" aria-expanded="false" aria-controls="multiCollapse5">
                 <div class="card mb-3" id="cardauthor">
                     <img id="imgcrd" src="{{URL::asset('./image/founders/anibalgomez.jpg')}}" alt="Ing. Anibal Gómez">
                     <div class="card-title">
@@ -259,14 +259,14 @@ p.titlefound{
                         <p>{{trans('org.a-anibalg-title')}}</p>
                     </div>
                 </div>
-            </a>
+            </a> -->
         </div>    
         <div class="row">
             <div class="col-md-12">
                 <div class="collapse multi-collapse" id="multiCollapse1">
                     <div class="card card-body" id="card-b-author">
-                        <p>{{trans('org.a-peter-info')}}</p>
-                        <p>{{trans('org.a-peter-info-2')}}</p>
+                        <p>{{trans('org.cs-rector-info')}}</p>
+                        <p>{{trans('org.cs-rector-info-2')}}</p>
                     </div>
                 </div>
             </div>
@@ -274,16 +274,16 @@ p.titlefound{
             <div class="col-md-12">
                 <div class="collapse multi-collapse" id="multiCollapse2">
                     <div class="card card-body" id="card-b-author">
-                        <p>{{trans('org.a-peterb-info')}}</p>
-                        <p>{{trans('org.a-peterb-info-2')}}</p>
+                        <p>{{trans('org.cs-vice-chancellor-info')}}</p>
+                        <p>{{trans('org.cs-vice-chancellor-info-2')}}</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-12">
                 <div class="collapse multi-collapse" id="multiCollapse3">
                     <div class="card card-body" id="card-b-author">
-                        <p>{{trans('org.a-mamorales-info')}}</p>
-                        <p>{{trans('org.a-mamorales-info-2')}}</p>
+                        <p>{{trans('org.cs-vicerector-ext-info')}}</p>
+                        <p>{{trans('org.cs-vicerector-ext-info-2')}}</p>
                     </div>
                 </div>
             </div>
@@ -291,20 +291,20 @@ p.titlefound{
             <div class="col-md-12">
                 <div class="collapse multi-collapse" id="multiCollapse4">
                     <div class="card card-body" id="card-b-author">
-                        <p>{{trans('org.a-raquelp-info')}}</p>
-                        <p>{{trans('org.a-raquelp-info-2')}}</p>
+                        <p>{{trans('org.cs-general-secretary-info')}}</p>
+                        <p>{{trans('org.cs-general-secretary-info-2')}}</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-12">
+            <!-- <div class="col-md-12">
                 <div class="collapse multi-collapse" id="multiCollapse5">
                     <div class="card card-body" id="card-b-author">
                         <p>{{trans('org.a-anibalg-info')}}</p>
                         <p>{{trans('org.a-anibalg-info-2')}}</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
