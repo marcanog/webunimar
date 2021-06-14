@@ -13,7 +13,7 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="10000">
-                    <img class="d-block w-100" src="image/Slider1.png" alt="">
+                    <img class="d-block w-100" src="image/ourinstitution.png" alt="">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="image/Slider1.png" alt="">

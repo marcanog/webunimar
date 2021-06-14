@@ -3,7 +3,7 @@
 @section ('content')
 <div class=".xl-container">
     <div class="banner-main">
-        <img src="{{asset('./image/Slider1.png')}}">
+        <img src="{{asset('./image/ourinstitution.png')}}">
     </div>
     <div  class="section-content">
         <div class="d-flex justify-content-start">
@@ -35,7 +35,7 @@
             <span>{{trans('ourinstitute.our-identity')}}</span></a>
         </div>
         <div class="links-interest" id="contentimg" style="background-color: #336699">
-            <a href="#"><img src="{{URL::asset('./image/jigsaw.svg')}}">
+            <a href="/organization"><img src="{{URL::asset('./image/jigsaw.svg')}}">
             <span>{{trans('ourinstitute.our-organization')}}</span></a>
         </div>
     </div>
