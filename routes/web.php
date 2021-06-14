@@ -25,6 +25,12 @@ Route::get('ourinstitution', function () {
 Route::get('organization', function () {
     return view('organization');
 });
+Route::get('deans', function () {
+    return view('deans');
+});
+Route::get('vextension', function () {
+    return view('vextension');
+});
 Route::get('lang/{lang}', 'LanguageController@swap')->name('lang.swap');
 
 Auth::routes();

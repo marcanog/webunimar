@@ -87,7 +87,7 @@ p.titlefound{
 </style>
 <div class=".xl-container">
     <div class="banner-main">
-        <img src="{{asset('./image/ourauthorities.png')}}">
+        <img src="{{asset('./image/nuestrosfundadores.png')}}">
     </div>
     <div  class="section-content">
         <div class="d-flex justify-content-start">
@@ -97,7 +97,7 @@ p.titlefound{
     <div class="content-links">
         <div class="links-interest" id="contentimg headingOne" style="background-color: #336699" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
             <a id="foundbtn">
-            <img src="{{URL::asset('./image/innovation.png')}}">
+            <img src="{{URL::asset('./image/student.svg')}}">
             <span>{{trans('org.authorities')}}</span></a>
         </div>
         <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
@@ -110,7 +110,7 @@ p.titlefound{
             <span>{{trans('org.campus')}}</span></a>
         </div>
         <div class="links-interest" id="contentimg headingFour" style="background-color: #336699">
-            <a id="orgbtn" href="#"><img src="{{URL::asset('./image/education.png')}}">
+            <a id="orgbtn" href="#"><img src="{{URL::asset('./image/eye.svg')}}">
             <span>{{trans('org.struct-org')}}</span></a>
         </div>
     </div>

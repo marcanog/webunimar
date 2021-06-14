@@ -25,6 +25,7 @@ return [
      'ecampus' => 'Campus Virtual',
      'elearning' => 'Educación Virtual',
      'cientific_unimar' => 'Unimar Científica',
+     'h-agreements' => 'Convenios',
      'innovar' => 'Innovar',
      'uniradio' => 'Radio Unimar',
      'erepository' => 'Repositorio Virtual',

@@ -149,12 +149,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="navbar-brand" id="header-menu" href="#">
+                                <a class="navbar-brand" id="header-menu" href="/deans">
                                     {{trans('header.deanchip')}}
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="navbar-brand" id="header-menu" href="#">
+                                <a class="navbar-brand" id="header-menu" href="/vextension">
                                     {{trans('header.extent')}}
                                 </a>
                             </li>
@@ -212,7 +212,7 @@
                 <div>
                     <ul>
                         <li class="footer-item">
-                            <a class="footer-title font-weight-bold" href="#">
+                            <a class="footer-title font-weight-bold" href="/ourinstitution">
                                 {{trans('footer.f_organization')}}
                             </a>
                         </li>
@@ -223,7 +223,7 @@
                             <a class="footer-title" href="#">{{trans('footer.f_vice_chancellor')}}</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-title" href="#">{{trans('footer.f_deanchip')}}</a>
+                            <a class="footer-title" href="/deans">{{trans('footer.f_deanchip')}}</a>
                         </li>
                         <li class="footer-item">
                             <a class="footer-title" href="#">{{trans('footer.f_student_welfare')}}</a>

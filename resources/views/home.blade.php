@@ -16,7 +16,7 @@
                     <img class="d-block w-100" src="image/ourinstitution.png" alt="">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="image/Slider1.png" alt="">
+                    <img class="d-block w-100" src="image/ourauthorities.png" alt="">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="image/Slider1.png" alt="">
@@ -238,20 +238,20 @@
         <div class="content-areas">
             <div class="content-deanship" style="background-color: #BFBABB">
                 <a href="#">
-                    <img src="{{URL::asset('./image/unimar1.jpg')}}">
+                    <img src="{{URL::asset('./image/deans/humanidades.png')}}">
                     <span>{{trans('home.humarte')}}</span>
                 </a>
             </div>
             <div class="content-deanship" style="background-color: #E4032C">
-                <a href="#"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+                <a href="#"><img src="{{URL::asset('./image/deans/csjuridicas-politicas.png')}}">
                 <span>{{trans('home.cjyp')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #B22029">
-                <a href="#"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+                <a href="#"><img src="{{URL::asset('./image/deans/cseconomicas-sociales.png')}}">
                 <span>{{trans('home.ceys')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #003B71">
-                <a href="#"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+                <a href="#"><img src="{{URL::asset('./image/deans/ingenieria.png')}}">
                 <span>{{trans('home.ingsyst')}}</span></a>
             </div>
         </div>
@@ -261,7 +261,7 @@
                 <span>{{trans('home.estgen')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #EC7700">
-                <a href="#"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+                <a href="/vextension"><img src="{{URL::asset('./image/unimar1.jpg')}}">
                 <span>{{trans('home.extent')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #00953E">
@@ -298,8 +298,8 @@
         </div>
         <div class="content-links">
             <div class="links-interest" style="background-color: #336699">
-                <a href="#"><img src="{{URL::asset('./image/idea.png')}}">
-                <span>{{trans('home.innovar')}}</span></a>
+                <a href="#"><img src="{{URL::asset('./image/agreement.svg')}}">
+                <span>{{trans('home.h-agreements')}}</span></a>
             </div>
             <div class="links-interest" style="background-color: #336699">
                 <a href="#"><img src="{{URL::asset('./image/listening.png')}}">
