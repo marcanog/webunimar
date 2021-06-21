@@ -11280,7 +11280,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .card-img-top {
 	/* width: 100%; */
-	width: 26.05vw !important;
+	/* width: 26.05vw !important; */
 	height: 40vh !important;
 }
 
@@ -11552,7 +11552,8 @@ p.card-text {
     flex-direction: column;
     text-align: left;
     padding: 1em;
-    margin: 0 auto;
+    margin: 1rem;
+    color: #212121;
 }
 
 .map-direction > span {

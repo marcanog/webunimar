@@ -3,6 +3,7 @@ return [
     'organizat' => 'Nuestra Organización',
     'authorities' => 'Nuestras Autoridades',
     'superior-council' => 'Nuestro Consejo Superior',
+    'university-council' => 'Nuestro Consejo Universitario',
     'campus' => 'Campus Universitario',
     'struct-org' => 'Estructura Organizativa',
     //authorities

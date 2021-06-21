@@ -13,13 +13,13 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="carousel-item active" data-interval="10000">
+                    <img class="d-block w-100" src="image/banners-medallas.png" alt="">
+                </div>
+                <div class="carousel-item">
                     <img class="d-block w-100" src="image/ourinstitution.png" alt="">
                 </div>
                 <div class="carousel-item">
                     <img class="d-block w-100" src="image/ourauthorities.png" alt="">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="image/Slider1.png" alt="">
                 </div>
             </div>
             <!-- Controls -->
@@ -238,38 +238,38 @@
         <div class="content-areas">
             <div class="content-deanship" style="background-color: #BFBABB">
                 <a href="#">
-                    <img src="{{URL::asset('./image/deans/humanidades.png')}}">
+                    <img src="{{URL::asset('./image/deans/humanity.png')}}">
                     <span>{{trans('home.humarte')}}</span>
                 </a>
             </div>
             <div class="content-deanship" style="background-color: #E4032C">
-                <a href="#"><img src="{{URL::asset('./image/deans/csjuridicas-politicas.png')}}">
+                <a href="#"><img src="{{URL::asset('./image/deans/csjuridics.png')}}">
                 <span>{{trans('home.cjyp')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #B22029">
-                <a href="#"><img src="{{URL::asset('./image/deans/cseconomicas-sociales.png')}}">
+                <a href="#"><img src="{{URL::asset('./image/deans/cseconomicsocials.png')}}">
                 <span>{{trans('home.ceys')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #003B71">
-                <a href="#"><img src="{{URL::asset('./image/deans/ingenieria.png')}}">
+                <a href="#"><img src="{{URL::asset('./image/deans/ingenery.png')}}">
                 <span>{{trans('home.ingsyst')}}</span></a>
             </div>
         </div>
         <div class="content-areas">
             <div class="content-deanship" style="background-color: #00A8E2">
-                <a href="#"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+                <a href="#"><img src="{{URL::asset('./image/deans/estgenerals.png')}}">
                 <span>{{trans('home.estgen')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #EC7700">
-                <a href="/vextension"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+                <a href="/vextension"><img src="{{URL::asset('./image/deans/extension.png')}}">
                 <span>{{trans('home.extent')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #00953E">
-                <a href="#"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+                <a href="#"><img src="{{URL::asset('./image/deans/postgrade.png')}}">
                 <span>{{trans('home.posteinvg')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #f6A016">
-                <a href="#"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+                <a href="#"><img src="{{URL::asset('./image/deans/agreements.png')}}">
                 <span>{{trans('home.acadconvens')}}</span></a>
             </div>
         </div>
@@ -298,8 +298,8 @@
         </div>
         <div class="content-links">
             <div class="links-interest" style="background-color: #336699">
-                <a href="#"><img src="{{URL::asset('./image/agreement.svg')}}">
-                <span>{{trans('home.h-agreements')}}</span></a>
+                <a href="#"><img src="{{URL::asset('./image/procedure.svg')}}">
+                <span>{{trans('home.h-regulations')}}</span></a>
             </div>
             <div class="links-interest" style="background-color: #336699">
                 <a href="#"><img src="{{URL::asset('./image/listening.png')}}">
@@ -324,10 +324,11 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.7972847852143!2d-63.88208018566738!3d10.978668292184503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c318c3b89e345cd%3A0xbaf23c34b11f9d7!2sUniversidad%20De%20Margarita!5e0!3m2!1ses-419!2sve!4v1620079489335!5m2!1ses-419!2sve" width="600" height=350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
             <div class="map-direction">
-                <span>{{trans('home.location-footer')}}</span>
-                <span>{{trans('home.location-code')}}</span>
-                <span>{{trans('home.location-code-plus')}}</span>
-                <span>{{trans('home.location-mail')}}</span>
+                <p>{{trans('home.location-footer')}}</p>
+                <p>{{trans('home.location-code')}}</p>
+                <p>{{trans('home.location-telf')}}</p>
+                <p>{{trans('home.location-code-plus')}}</p>
+                <p>{{trans('home.location-mail')}}</p>
             </div>
         </div>
     </div>

@@ -1,7 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,26 +12,40 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//App::setLocale("en");
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->middleware('translate');
+
 Route::get('home', function () {
     return view('home');
-});
+}); //->middleware('translate');
+
 Route::get('ourinstitution', function () {
     return view('ourinstitution');
 });
+
 Route::get('organization', function () {
     return view('organization');
 });
+
 Route::get('deans', function () {
     return view('deans');
 });
+
 Route::get('vextension', function () {
     return view('vextension');
 });
-Route::get('lang/{lang}', 'LanguageController@swap')->name('lang.swap');
+
+Route::get('vacademic', function () {
+    return view('vacademic');
+});
+// 
+Route::get('/lang/{language}', function ($language) {
+    Session::put('language',$language);
+    return redirect()->back();
+})->name('language');
 
 Auth::routes();
 

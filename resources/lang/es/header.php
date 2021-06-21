@@ -5,6 +5,7 @@ return [
      'unimar' => 'Nuestra Institución',
      'organization' => 'Organización',
      'deanchip' => 'Decanatos',
+     'academics' => 'Académico',
      'extent' => 'Extensión',
      'investigation' => 'Investigación',
      'new_additions' => 'Nuevos Ingresos',

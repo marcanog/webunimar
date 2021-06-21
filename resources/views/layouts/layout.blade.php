@@ -107,15 +107,24 @@
                                         <input class="search" type="text" placeholder="{{trans('header.input_search')}}" arial-label="search"><img class="search-img btn" src="{{ URL::asset('./image/lupa_b.png')}}" href="#">
                                     </form>
                                 </nav>
+                                <!-- @if (config('locale.status') && count(config('locale.languages')) > 1)
+                                    @foreach (array_keys(config('locale.languages')) as $lang)
+                                        @if ($lang != App::getLocale())
+
+                                        @endif
+
+                                    @endforeach
+                                    
+                                @endif -->
                                 <div class="navbar language-icon">
                                     <div class="nav-item dropdown show" id="languages">
                                         <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <img src="./image/idioma.png" style="width:30px;">
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-spain.png')}}" style="width:25px;">{{trans('home.lang-es')}}</a>
-                                            <a class="dropdown-item" href="#"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-usa.png')}}" style="width:25px;">{{trans('home.lang-en')}}</a>
-                                            <a class="dropdown-item" href="#"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-italy.png')}}" style="width:25px;">{{trans('home.lang-it')}}</a>
+                                            <a class="dropdown-item" href={{route('language','es')}}"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-spain.png')}}" style="width:25px;">{{trans('home.lang-es')}}</a>
+                                            <a class="dropdown-item" href="{{route('language','en')}}"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-usa.png')}}" style="width:25px;">{{trans('home.lang-en')}}</a>
+                                            <a class="dropdown-item" href="{{route('language','ita')}}"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-italy.png')}}" style="width:25px;">{{trans('home.lang-it')}}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -149,13 +158,18 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="navbar-brand" id="header-menu" href="/deans">
-                                    {{trans('header.deanchip')}}
+                                <a class="navbar-brand" id="header-menu" href="/vacademic">
+                                    {{trans('header.academics')}}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="navbar-brand" id="header-menu" href="/vextension">
                                     {{trans('header.extent')}}
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand" id="header-menu" href="/deans">
+                                    {{trans('header.deanchip')}}
                                 </a>
                             </li>
                             <li class="nav-item">

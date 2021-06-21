@@ -4,7 +4,7 @@
 <div class=".xl-container">
 
     <div class="banner-main">
-        <img src="{{asset('./image/Slider1.png')}}">
+        <img src="{{asset('./image/nuestrosdecanatos.png')}}">
     </div>
 
     <div class="section-content">
@@ -15,39 +15,39 @@
     <div class="content-areas">
         <div class="content-deanship" style="background-color: #BFBABB">
             <a href="#">
-                <img src="{{URL::asset('./image/deans/humanidades.png')}}">
+                <img src="{{URL::asset('./image/deans/humanity.png')}}">
                 <span>{{trans('home.humarte')}}</span>
             </a>
         </div>
         <div class="content-deanship" style="background-color: #E4032C">
-            <a href="#"><img src="{{URL::asset('./image/deans/csjuridicas-politicas.png')}}">
+            <a href="#"><img src="{{URL::asset('./image/deans/csjuridics.png')}}">
             <span>{{trans('home.cjyp')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #B22029">
-            <a href="#"><img src="{{URL::asset('./image/deans/cseconomicas-sociales.png')}}">
+            <a href="#"><img src="{{URL::asset('./image/deans/cseconomicsocials.png')}}">
             <span>{{trans('home.ceys')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #003B71">
-            <a href="#"><img src="{{URL::asset('./image/deans/ingenieria.png')}}">
+            <a href="#"><img src="{{URL::asset('./image/deans/ingenery.png')}}">
             <span>{{trans('home.ingsyst')}}</span></a>
         </div>
     </div>
 
     <div class="content-areas">
         <div class="content-deanship" style="background-color: #00A8E2">
-            <a href="#"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+            <a href="#"><img src="{{URL::asset('./image/deans/estgenerals.png')}}">
             <span>{{trans('home.estgen')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #EC7700">
-            <a href="/vextension"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+            <a href="/vextension"><img src="{{URL::asset('./image/deans/extension.png')}}">
             <span>{{trans('home.extent')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #00953E">
-            <a href="#"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+            <a href="#"><img src="{{URL::asset('./image/deans/postgrade.png')}}">
             <span>{{trans('home.posteinvg')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #f6A016">
-            <a href="#"><img src="{{URL::asset('./image/unimar1.jpg')}}">
+            <a href="#"><img src="{{URL::asset('./image/deans/agreements.png')}}">
             <span>{{trans('home.acadconvens')}}</span></a>
         </div>
     </div>

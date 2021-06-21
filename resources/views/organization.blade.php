@@ -103,7 +103,7 @@ p.titlefound{
         <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
             <a id="campusbtn">
             <img src="{{URL::asset('./image/round-table.svg')}}">
-            <span>{{trans('org.superior-council')}}</span></a>
+            <span>{{trans('org.university-council')}}</span></a>
         </div>
         <div class="links-interest" id="contentimg headingThree" style="background-color: #336699">
             <a id="campusbtn" href="#"><img src="{{URL::asset('./image/target.svg')}}">
@@ -116,7 +116,7 @@ p.titlefound{
     </div>
 
     <div class="container collapse" id="collapse" aria-labelledby="headingOne">
-        <p class="titlefound">{{trans('org.authorities')}}</p>
+        <p class="titlefound">{{trans('org.superior-council')}}</p>
         <div class="card-columns">
             <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false" aria-controls="multiCollapse1">
                 <div class="card mb-3" id="cardauthor">
@@ -213,7 +213,7 @@ p.titlefound{
     </div>
 
     <div class="container collapse" id="collapse2" aria-labelledby="headingTwo">
-        <p class="titlefound">{{trans('org.superior-council')}}</p>
+        <p class="titlefound">{{trans('org.university-council')}}</p>
         <div class="card-columns">
             <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse1" role="button" aria-expanded="false" aria-controls="multiCollapse1">
                 <div class="card mb-3" id="cardauthor">

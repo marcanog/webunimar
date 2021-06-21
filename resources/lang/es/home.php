@@ -26,6 +26,7 @@ return [
      'elearning' => 'Educación Virtual',
      'cientific_unimar' => 'Unimar Científica',
      'h-agreements' => 'Convenios',
+     'h-regulations' => 'Normativas',
      'innovar' => 'Innovar',
      'uniradio' => 'Radio Unimar',
      'erepository' => 'Repositorio Virtual',
@@ -34,8 +35,8 @@ return [
      //direction-footer
      'location-footer' => 'Av. Concepción Mariño, Sector El Toporo, El Valle del Espíritu Santo, Edo. Nueva Esparta, Venezuela.',
      'location-code' => 'Código Postal:  6308',
-     'location-code-plus' => 'Código Plus: X4HC+F2 El Valle del Espíritu Santo, Nueva Esparta
-                Teléfonos: 800-UNIMAR (800-86462) / +58 295-2871722 / 0466 / 0866 ',
+     'location-code-plus' => 'Código Plus: X4HC+F2 El Valle del Espíritu Santo, Nueva Esparta.',
+     'location-telf' => 'Teléfonos: 800-UNIMAR (800-86462) / +58 295-2871722 / 0466 / 0866 ',
      'location-mail' => 'Correo: info@unimar.edu.ve',
      'our-intstitution' => 'Nuestra Institución',
      'rectorship' => 'Rectorado',
