@@ -11329,7 +11329,7 @@ p.card-text {
       margin: 5px;
       background-color: transparent !important;
       box-shadow: none;
-      flex: 0 0 23%;
+      /* flex: 0 0 23%; */
   }
 
   .rss-bar {

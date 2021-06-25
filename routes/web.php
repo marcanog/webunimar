@@ -16,11 +16,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-})->middleware('translate');
+});
 
 Route::get('home', function () {
     return view('home');
-}); //->middleware('translate');
+});
 
 Route::get('ourinstitution', function () {
     return view('ourinstitution');
@@ -40,6 +40,38 @@ Route::get('vextension', function () {
 
 Route::get('vacademic', function () {
     return view('vacademic');
+});
+
+Route::get('cssocecon', function () {
+    return view('deancssoc');
+});
+
+Route::get('csjurpol', function () {
+    return view('deancsjurpol');
+});
+
+Route::get('genestud', function () {
+    return view('deangenestudies');
+});
+
+Route::get('dptoinvest', function () {
+    return view('dptoinvestigation');
+});
+
+Route::get('postgrade', function () {
+    return view('dptopostgrade');
+});
+
+Route::get('engineerie', function () {
+    return view('deaneng');
+});
+
+Route::get('humarte', function () {
+    return view('deanhumarte');
+});
+
+Route::get('regulations', function () {
+    return view('regulations');
 });
 // 
 Route::get('lang/{locale}', function ($locale){

@@ -237,27 +237,27 @@
         </div>
         <div class="content-areas">
             <div class="content-deanship" style="background-color: #BFBABB">
-                <a href="#">
+                <a href="/humarte">
                     <img src="{{URL::asset('./image/deans/humanity.png')}}">
                     <span>{{trans('home.humarte')}}</span>
                 </a>
             </div>
             <div class="content-deanship" style="background-color: #E4032C">
-                <a href="#"><img src="{{URL::asset('./image/deans/csjuridics.png')}}">
+                <a href="/csjurpol"><img src="{{URL::asset('./image/deans/csjuridics.png')}}">
                 <span>{{trans('home.cjyp')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #B22029">
-                <a href="#"><img src="{{URL::asset('./image/deans/cseconomicsocials.png')}}">
+                <a href="/cssocecon"><img src="{{URL::asset('./image/deans/cseconomicsocials.png')}}">
                 <span>{{trans('home.ceys')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #003B71">
-                <a href="#"><img src="{{URL::asset('./image/deans/ingenery.png')}}">
+                <a href="/engineerie"><img src="{{URL::asset('./image/deans/ingenery.png')}}">
                 <span>{{trans('home.ingsyst')}}</span></a>
             </div>
         </div>
         <div class="content-areas">
             <div class="content-deanship" style="background-color: #00A8E2">
-                <a href="#"><img src="{{URL::asset('./image/deans/estgenerals.png')}}">
+                <a href="/genestud"><img src="{{URL::asset('./image/deans/estgenerals.png')}}">
                 <span>{{trans('home.estgen')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #EC7700">
@@ -265,7 +265,7 @@
                 <span>{{trans('home.extent')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #00953E">
-                <a href="#"><img src="{{URL::asset('./image/deans/postgrade.png')}}">
+                <a href="/postgrade"><img src="{{URL::asset('./image/deans/postgrade.png')}}">
                 <span>{{trans('home.posteinvg')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #f6A016">
@@ -298,7 +298,7 @@
         </div>
         <div class="content-links">
             <div class="links-interest" style="background-color: #336699">
-                <a href="#"><img src="{{URL::asset('./image/procedure.svg')}}">
+                <a href="/regulations"><img src="{{URL::asset('./image/procedure.svg')}}">
                 <span>{{trans('home.h-regulations')}}</span></a>
             </div>
             <div class="links-interest" style="background-color: #336699">
