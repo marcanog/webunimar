@@ -1,10 +1,11 @@
 <?php
 
-// namespace App\Http\Middleware;
+ namespace App\Http\Middleware;
 
-// Use Closure;
+Use Closure;
+use App;
 
-// Class Localization{
+Class Localization{
     /**
      * Handle an incoming request.
      * 
@@ -12,10 +13,10 @@
      * @param  \Closure $next
      * @return mixed
      */
-//     public function handle($request, Closure $next){
-//         if(session()->has('locale')){
-//             \App::setlocale(session()->get('locale'));
-//         }
-//         return $next($request);
-//     }
-// }
+    public function handle($request, Closure $next){
+        if(session()->has('locale')){
+            App::setlocale(session()->get('locale'));
+        }
+        return $next($request);
+    }
+}

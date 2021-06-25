@@ -122,9 +122,9 @@
                                             <img src="./image/idioma.png" style="width:30px;">
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href={{route('language','es')}}"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-spain.png')}}" style="width:25px;">{{trans('home.lang-es')}}</a>
-                                            <a class="dropdown-item" href="{{route('language','en')}}"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-usa.png')}}" style="width:25px;">{{trans('home.lang-en')}}</a>
-                                            <a class="dropdown-item" href="{{route('language','ita')}}"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-italy.png')}}" style="width:25px;">{{trans('home.lang-it')}}</a>
+                                            <a class="dropdown-item" href="lang/es"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-spain.png')}}" style="width:25px;">{{trans('home.lang-es')}}</a>
+                                            <a class="dropdown-item" href="lang/en"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-usa.png')}}" style="width:25px;">{{trans('home.lang-en')}}</a>
+                                            <a class="dropdown-item" href="lang/ita"><img class="rounded-circle" src="{{URL::asset('./image/flags/flag-italy.png')}}" style="width:25px;">{{trans('home.lang-it')}}</a>
                                         </div>
                                     </div>
                                 </div>
@@ -133,9 +133,9 @@
                         @if (Route::has('login'))
                             <div class="top-right links">
                                 @auth
-                                    <a href="{{ url('/home') }}">{{trans('home.start')}}</a>
+                                    <a href="{{ url('/home') }}">{{trans('header.start')}}</a>
                                 @else
-                                    <a href="{{ route('login') }}"><img src="{{URL::asset('./image/login.png')}}" style="width: 25px;">{{trans('home.login')}}</a>
+                                    <a href="{{ route('login') }}"><img src="{{URL::asset('./image/login.png')}}" style="width: 25px;">{{trans('header.login')}}</a>
                                 @endauth
                             </div>
                         @endif

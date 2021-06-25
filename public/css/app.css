@@ -11483,9 +11483,10 @@ p.card-text {
     display: flex;
     flex: 0 0 25%;
     margin: 1em;
-    font-size: 0.95em;
+    font-size: 0.85em;
     justify-content: center;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .content-deanship > a:hover,

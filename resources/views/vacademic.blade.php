@@ -199,7 +199,7 @@ p {
             <div class="links-interest" id="contentimg headingThree" style="background-color: #336699" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
                 <a id="foundbtn">
                 <img src="{{URL::asset('./image/settings.svg')}}">
-                <span>{{trans('vacademy.vacad-funtions')}}</span></a>
+                <span>{{trans('vacademy.vacad-functions')}}</span></a>
             </div>
             <div class="links-interest" id="contentimg headingOne" style="background-color: #336699" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
                 <a id="campusbtn">
@@ -219,21 +219,21 @@ p {
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('vextension.vext-mision-title')}}
                     </p>
-                    <p> {{trans('vextension.vext-mision')}}</p>
+                    <p> {{trans('vextension.vext-mission')}}</p>
                 </div>
             </div>
             <div class="collapse col-sm-11" id="collapse2">
                 <div class="card card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                    {{trans('vextension.vext-funtions')}}
+                    {{trans('vextension.vext-functions')}}
                     </p>
                     <ul>
-                        <li><p> {{trans('vacademy.vacad-funtions-1')}}</p></li>
-                        <li><p> {{trans('vacademy.vacad-funtions-2')}}</p></li>
-                        <li><p> {{trans('vacademy.vacad-funtions-3')}}</p></li>
-                        <li><p> {{trans('vacademy.vacad-funtions-4')}}</p></li>
-                        <li><p> {{trans('vacademy.vacad-funtions-5')}}</p></li>
-                        <li><p> {{trans('vacademy.vacad-funtions-6')}}</p></li>
+                        <li><p> {{trans('vacademy.vacad-functions-1')}}</p></li>
+                        <li><p> {{trans('vacademy.vacad-functions-2')}}</p></li>
+                        <li><p> {{trans('vacademy.vacad-functions-3')}}</p></li>
+                        <li><p> {{trans('vacademy.vacad-functions-4')}}</p></li>
+                        <li><p> {{trans('vacademy.vacad-functions-5')}}</p></li>
+                        <li><p> {{trans('vacademy.vacad-functions-6')}}</p></li>
                     </ul>
                 </div>
             </div>
@@ -299,7 +299,7 @@ p {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                    </div>
                 </div>
             </div>
             <div class="info-dept col-md-10 card card-body">
@@ -311,8 +311,5 @@ p {
         </div>
         </p>
     </div>
-        <!-- </p> -->
-        <!-- </div> -->
-    <!-- </div> -->
 </div>
-@endsection<div class="container"></div>
+@endsection

@@ -97,13 +97,19 @@ p.titlefound{
     <div class="content-links">
         <div class="links-interest" id="contentimg headingOne" style="background-color: #336699" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
             <a id="foundbtn">
-            <img src="{{URL::asset('./image/student.svg')}}">
-            <span>{{trans('org.authorities')}}</span></a>
+                <img src="{{URL::asset('./image/student.svg')}}">
+                <span>
+                    {{trans('org.authorities')}}
+                </span>
+            </a>
         </div>
         <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
             <a id="campusbtn">
-            <img src="{{URL::asset('./image/round-table.svg')}}">
-            <span>{{trans('org.university-council')}}</span></a>
+                <img src="{{URL::asset('./image/round-table.svg')}}">
+                <span>
+                    {{trans('org.university-council')}}
+                </span>
+            </a>
         </div>
         <div class="links-interest" id="contentimg headingThree" style="background-color: #336699">
             <a id="campusbtn" href="#"><img src="{{URL::asset('./image/target.svg')}}">
@@ -251,15 +257,6 @@ p.titlefound{
                     </div>
                 </div>
             </a>
-            <!-- <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse5" role="button" aria-expanded="false" aria-controls="multiCollapse5">
-                <div class="card mb-3" id="cardauthor">
-                    <img id="imgcrd" src="{{URL::asset('./image/founders/anibalgomez.jpg')}}" alt="Ing. Anibal Gómez">
-                    <div class="card-title">
-                        <p>{{trans('org.a-anibalg')}}</p>
-                        <p>{{trans('org.a-anibalg-title')}}</p>
-                    </div>
-                </div>
-            </a> -->
         </div>    
         <div class="row">
             <div class="col-md-12">
@@ -296,15 +293,6 @@ p.titlefound{
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="col-md-12">
-                <div class="collapse multi-collapse" id="multiCollapse5">
-                    <div class="card card-body" id="card-b-author">
-                        <p>{{trans('org.a-anibalg-info')}}</p>
-                        <p>{{trans('org.a-anibalg-info-2')}}</p>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 

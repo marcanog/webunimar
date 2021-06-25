@@ -188,12 +188,12 @@ p {
             <div class="links-interest" id="contentimg headingOne" style="background-color: #336699" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
                 <a id="foundbtn">
                 <img src="{{URL::asset('./image/target.svg')}}">
-                <span>{{trans('vextension.vext-mision-title')}}</span></a>
+                <span>{{trans('vextension.vext-mission-title')}}</span></a>
             </div>
             <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
                 <a id="campusbtn">
                 <img src="{{URL::asset('./image/settings.svg')}}">
-                <span>{{trans('vextension.vext-funtions')}}</span></a>
+                <span>{{trans('vextension.vext-functions')}}</span></a>
             </div>
             <div class="links-interest" id="contentimg headingThree" style="background-color: #336699" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
                 <a id="campusbtn">
@@ -204,24 +204,24 @@ p {
         <div class="col-md-12" id="contevext">
             <div class="collapse col-sm-11" id="collapse">
                 <div class="card card-body">
-                    <p style="font-size: 1.25rem; font-weight: 600;">{{trans('vextension.vext-mision-title')}}</p>
-                    <p> {{trans('vextension.vext-mision')}}</p>
+                    <p style="font-size: 1.25rem; font-weight: 600;">{{trans('vextension.vext-mission-title')}}</p>
+                    <p> {{trans('vextension.vext-mission')}}</p>
                 </div>
             </div>
             <div class="collapse col-sm-11" id="collapse2">
                 <div class="card card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                    {{trans('vextension.vext-funtions')}}
+                    {{trans('vextension.vext-functions')}}
                     </p>
                     <ul>
-                        <li><p> {{trans('vextension.vext-funtions-1')}}</p></li>
-                        <li><p> {{trans('vextension.vext-funtions-2')}}</p></li>
-                        <li><p> {{trans('vextension.vext-funtions-3')}}</p></li>
-                        <li><p> {{trans('vextension.vext-funtions-4')}}</p></li>
-                        <li><p> {{trans('vextension.vext-funtions-5')}}</p></li>
-                        <li><p> {{trans('vextension.vext-funtions-6')}}</p></li>
-                        <li><p> {{trans('vextension.vext-funtions-7')}}</p></li>
-                        <li><p> {{trans('vextension.vext-funtions-8')}}</p></li>
+                        <li><p> {{trans('vextension.vext-functions-1')}}</p></li>
+                        <li><p> {{trans('vextension.vext-functions-2')}}</p></li>
+                        <li><p> {{trans('vextension.vext-functions-3')}}</p></li>
+                        <li><p> {{trans('vextension.vext-functions-4')}}</p></li>
+                        <li><p> {{trans('vextension.vext-functions-5')}}</p></li>
+                        <li><p> {{trans('vextension.vext-functions-6')}}</p></li>
+                        <li><p> {{trans('vextension.vext-functions-7')}}</p></li>
+                        <li><p> {{trans('vextension.vext-functions-8')}}</p></li>
                     </ul>
                 </div>
             </div>

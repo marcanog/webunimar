@@ -1,0 +1,11 @@
+<?php
+return [
+        //header and footer modals
+    'our-modal-header' => 'Our Concept',
+    'our-modal-footer' => 'More than 20 years forming good men',
+    //information contents body modals
+    'our-content-1' => 'Society in general, as the environment of the university, and the university itself, have been subjected during the last three decades, to changes of great significance: demographic, economic, social, political and technological, changes that have undoubtedly had an impact on the forms of leadership, organization and management of these institutions. Traditional models of organization and management were conceived to respond to much simpler and more stable environments, and today they are not very efficient and operational.',
+    'our-content-2' => ' It became necessary, then, for universities to embrace organizational models that would allow them to be a functional and participative part of their environment, thus responding to a dynamic and changing reality and therefore with a high degree of uncertainty. ',
+    'our-content-3' => 'Margarita University is a young institution, created at the end of 1999, and is born under an organizational conception that characterizes it as an open, dynamic and flexible social system, functionally linked to a broader system (society), which constitutes its environment, willing to change, and internally articulated through functionally integrated subsystems, with specific interactions among its participants. ',
+    'our-content-4' => 'Margarita University has adopted as its basic management scheme, the systemic model. The fundamental notion of a system is simply that it is a series of interrelated parts working synergistically. Implicit in this concept is a degree of wholeness that makes the whole something other than the individual parts considered separately and something more than them. The system concept is primarily a way of thinking about management work. It provides a framework for viewing the internal and external factors of the institution in the form of an integrated whole. The main purpose of adopting this systemic model and a strategic direction of the institution is to achieve an increase in its capacity to respond to social demand, with characteristics of quality, relevance, effectiveness and efficiency',
+];

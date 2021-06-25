@@ -42,10 +42,10 @@ Route::get('vacademic', function () {
     return view('vacademic');
 });
 // 
-Route::get('/lang/{language}', function ($language) {
-    Session::put('language',$language);
+Route::get('lang/{locale}', function ($locale){
+    session()->put('locale', $locale);
     return redirect()->back();
-})->name('language');
+});
 
 Auth::routes();
 

@@ -3,20 +3,20 @@
 return [
 
     //body
-    'title' => 'Portalwebunimar',
+     'title' => 'Portalwebunimar',
      'news' => 'Novedades/News',
      'events' => 'Calendar/Events',
      'academics_areas' => 'Academics Areas',
      'links_interest' => 'Links of interest',
      'location' => 'Location',
     //academics areas
-     'humarte' => 'Humanidades, Artes y Educación',
-     'cjyp' => 'Ciencias Jurídicas y Políticas',
-     'ceys' => 'Ciencias Económicas y Sociales',
-     'ingsyst' => 'Ingeniería de Sistemas y Afines',
-     'estgen' => 'Estudios Generales',
-     'extent' => 'Extensión',
-     'posteinvg' => 'Postgrado e Investigación',
+     'humarte' => 'Humanities, Arts and Education',
+     'cjyp' => 'Legal and Political Science',
+     'ceys' => 'Economic and Social Sciences',
+     'ingsyst' => ' Systems Engineering and related fields',
+     'estgen' => 'General Studies',
+     'extent' => 'Extension',
+     'posteinvg' => 'Postgraduate and Research',
      'acadconvens' => 'Academics Convens',
     //links of interest
      'study_offers' => 'Study Offers',
@@ -30,6 +30,10 @@ return [
      'sicologyc-healthy' => 'Evaluation and Psychological Support',
      //direction-footer
      'location-footer' => 'Av. Concepción Mariño, Sector El Toporo, El Valle del Espíritu Santo, Edo. Nueva Esparta, Venezuela.',
+     'location-code' => 'Postal Code: 6308',
+     'location-code-plus' => 'Plus Code: X4HC+F2 El Valle del Espíritu Santo, Nueva Esparta, Venezuela', 'location-code-plus' => 'Plus Code: X4HC+F2 El Valle del Espíritu Santo, Nueva Esparta, Venezuela',
+     'location-telf' => 'Phone numbers: 800-UNIMAR (800-86462) / +58 295-2871722 / 0466 / 0866 ',
+     'location-mail' => 'Mail: info@unimar.edu.ve',
      'our-intstitution' => 'Our Institution',
      'rectorship' => 'Rectorate',
      'vice-academic' => 'Academic Vice Rectorate',
@@ -48,5 +52,9 @@ return [
      'quicklinks' => 'Quick Access',
      'acalendat' => 'Academic Calendar',
      'phonedirectory' => 'Telephone Directory',
-     'contactus' => 'Contact us through',
+     'contactus' => 'Contact us through',    
+    //language
+     'lang-en' => 'En',
+     'lang-es' => 'Es',
+     'lang-it' => 'It',
 ];

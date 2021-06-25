@@ -18,7 +18,7 @@
             @include('institution-modal')
         <div class="links-interest" id="contentimg" style="background-color: #336699">
             <a href="#"><img src="{{URL::asset('./image/target.svg')}}">
-            <span>{{trans('ourinstitute.our-mision')}}</span></a>
+            <span>{{trans('ourinstitute.our-mission')}}</span></a>
         </div>
         <div class="links-interest" id="contentimg" style="background-color: #336699">
             <a href="#"><img src="{{URL::asset('./image/education.png')}}">

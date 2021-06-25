@@ -1,17 +1,22 @@
 <?php
 
 return [
+    //login
+     'start' => 'Inicio',
+     'login' => 'Login',
     //Header Menu Nav Bar
      'unimar' => 'Our Institution',
      'organization' => 'Organization',
-     'deanchip' => 'Deanship',
-     'extent' => 'Extent',
+     'deanchip' => 'Deaneries',
+     'academics' => 'Academic',
+     'extent' => 'Extension',
      'investigation' => 'Investigation',
      'new_additions' => 'New Additions',
      'students' => 'Regular Students',
-     'graduates' => 'Graduates',
-     'teachers' => 'Teachers',
+     'graduates' => 'Egresados',
+     'teachers' => 'Professors',
      'international' => 'International',
      'services' => 'Services',
      'input_search' => 'Search',
+     
 ];
