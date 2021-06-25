@@ -160,7 +160,7 @@ p {
             <a class="btn-link card-img" id="imgcard">
                 <div class="card row" id="cardauthor">
                     <div class="col-md-4">
-                        <img id="imgcrd" src="{{URL::asset('./image/csuperior/thamaraechegaray.jpg')}}" alt="Dra. Thamara Echegaray">
+                        <img id="imgcrd" src="{{URL::asset('./image/ingeeniering/decaingenieria.jpg')}}" alt="Ing. Andrés Pedroza" style="width: 145px;">
                     </div>
                     <div class="card-title col-md-8">
                         <p id="vext-author">{{trans('vextension.vext-author')}}</p>
@@ -173,7 +173,7 @@ p {
                 <div class="card row" id="cardauthor">
                     <div class="col-md-4">
                         <div style="width:95%; height:180px; background-color: #6699cc; margin: .5rem;">
-                            <img id="imgcrd" src="{{URL::asset('./image/avatar.svg')}}" alt="Isabel Luna" style="width:100%; height: 70%; position: relative; top: 1rem;"></div>
+                            <img id="imgcrd" src="{{URL::asset('./image/ingeeniering/asistingenieria.jpg')}}" alt="Zootec. Nelly Cumaraima" style="width:100%; height: 100%; position: relative;"></div>
                     </div>
                     <div class="card-title col-md-8">
                         <p id="vext-author">{{trans('vextension.vext-asist')}}</p>
