@@ -23,6 +23,8 @@ return [
      'ecampus' => 'Virtual Campus',
      'elearning' => 'Virtual Education',
      'cientific_unimar' => 'Unimar Cientific',
+     'h-agreements' => 'Academics Agreements',
+     'h-regulations' => 'Regulations',
      'innovar' => 'Innovar',
      'uniradio' => 'Unimar Radio',
      'erepository' => 'Virtual Repository',

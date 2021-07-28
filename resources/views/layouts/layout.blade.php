@@ -234,7 +234,8 @@
                             <a class="footer-title" href="#">{{trans('footer.f_rectors_office')}}</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-title" href="#">{{trans('footer.f_vice_chancellor')}}</a>
+                                <!-- <a class="footer-title" type="nav-link" style="cursor: pointer" data-toggle="modal" data-target="#modalvice" class="open-modal" data-open="modalvice"><span>{{trans('footer.f_vice_chancellor')}}</span></a> -->
+                                <a class="footer-title" href="/vicerectorades">{{trans('footer.f_vice_chancellor')}}</a>
                         </li>
                         <li class="footer-item">
                             <a class="footer-title" href="/deans">{{trans('footer.f_deanchip')}}</a>
@@ -340,13 +341,14 @@
                             </li>
                             <li class="nav-item">
                                 <!-- <a onclick="rrss()"> -->
-                                <a href="https://www.instagram.com/universidademargarita">
+                                <a href="https://www.twitter.com/somosunimar">
+                                
                                     <img class="w-6 h-6" src={{('./image/rrss/gorjeo.png')}}>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <!-- <a onclick="rrss()"> -->
-                                <a href="https://www.twitter.com/somosunimar">
+                                <a href="https://www.instagram.com/universidademargarita">
                                     <img class="w-6 h-6" src={{('./image/rrss/instagram.png')}}>
                                 </a>
                             </li>

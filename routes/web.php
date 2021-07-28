@@ -14,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 //App::setLocale("en");
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('home', function () {
@@ -64,6 +68,10 @@ Route::get('postgrade', function () {
 
 Route::get('engineerie', function () {
     return view('deaneng');
+});
+
+Route::get('vicerectorades', function () {
+    return view('vicerectorades');
 });
 
 Route::get('humarte', function () {

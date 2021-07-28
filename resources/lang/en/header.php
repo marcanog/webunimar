@@ -13,7 +13,7 @@ return [
      'investigation' => 'Investigation',
      'new_additions' => 'New Additions',
      'students' => 'Regular Students',
-     'graduates' => 'Egresados',
+     'graduates' => 'Graduates',
      'teachers' => 'Professors',
      'international' => 'International',
      'services' => 'Services',

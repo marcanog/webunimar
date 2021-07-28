@@ -21,7 +21,7 @@
             <span>{{trans('ourinstitute.our-mission')}}</span></a>
         </div>
         <div class="links-interest" id="contentimg" style="background-color: #336699">
-            <a href="#"><img src="{{URL::asset('./image/education.png')}}">
+            <a href="#"><img src="{{URL::asset('./image/eye.svg')}}">
             <span>{{trans('ourinstitute.our-vision')}}</span></a>
         </div>
     </div>
@@ -35,7 +35,7 @@
             <span>{{trans('ourinstitute.our-identity')}}</span></a>
         </div>
         <div class="links-interest" id="contentimg" style="background-color: #336699">
-            <a href="/organization"><img src="{{URL::asset('./image/jigsaw.svg')}}">
+            <a href="/organization"><img src="{{URL::asset('./image/flow-chart.svg')}}">
             <span>{{trans('ourinstitute.our-organization')}}</span></a>
         </div>
     </div>

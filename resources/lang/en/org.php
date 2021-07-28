@@ -1,5 +1,6 @@
 <?php
 return [
+    'organizat' => 'Our Organization',
     'authorities' => 'Our Authorities',
     'superior-council' => 'Our Superior Council',
     'university-council' => 'Our University Council',

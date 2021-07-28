@@ -20,7 +20,7 @@ return [
     'vext-sproj' => 'Special Projects ',
     'vext-spacteach' => 'Teaching Component',
     'vext-choir' => 'Orfeón',
-    'vext-ceu' => 'University Emergency Center (BRIGADA)',
+    'vext-ceu' => 'University Emergency Center (CEU)',
     'vext-uniradio' => 'Media Unit (UNIRADIO) ',
     'vext-servcomuny' => 'Community Service',
     'vext-author' => 'Thamara Echegaray',

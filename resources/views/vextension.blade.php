@@ -34,13 +34,13 @@ p {
   }
 }
 
+.card-img {
+    flex: 0 0 50%;
+}
+
 #cardauthor {
 	padding: .5rem;
 	height: 215px !important;
-}
-
-#imgcrd {
-	padding: .5rem;
 }
 
 .card-title {
@@ -58,11 +58,17 @@ p {
 	-moz-column-gap: 1.25rem;
 	column-gap: 1.25rem;
     margin: 0 auto;
+    display: flex;
+}
+
+.card-img {
+	flex: 0 0 50%;
 }
 
 #imgcard {
 	color: #4f4f4f !important;
 	font-weight: 600;
+    padding: .5rem;
 }
 
 #vext-author{
@@ -80,7 +86,7 @@ p {
 .flex.content-vext {
 	justify-content: space-around;
 	margin: 1rem 1.3rem;
-	padding: 0 1.5rem 1rem 0;
+	padding: 0 1.5rem 1rem;
 }
 
 .col-md-12 #collapse {

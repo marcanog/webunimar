@@ -50,7 +50,7 @@ document.addEventListener("keyup", e => {
       </div>
     </section>
     <footer class="modal-footer">
-     <span class= "footermodal">"{{trans('ourconcept.our-modal-footer')}}"<span>
+     <span class= "footermodal">"{{trans('ourconcept.our-modal-footer')}}"</span>
     </footer>
   </div>
 </div>
