@@ -302,7 +302,7 @@ p {
                     </div>
                 </div>
             </div>
-            <div class="info-dept col-md-10 card card-body">
+            <div class="info-dept col-sm-11 card card-body">
                 <h5>{{trans('vacademy.vacad-info-title')}}</h5>
                 <p><b>{{trans('vacademy.vacad-info-etitle')}}</b>&nbsp {{trans('vacademy.vacad-info-email')}}</p>
                 <p><b>{{trans('vacademy.vacad-info-teltit')}}</b>&nbsp{{trans('vacademy.vacad-info-telf')}}</p>

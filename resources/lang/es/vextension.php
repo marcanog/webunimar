@@ -32,8 +32,8 @@ return [
     'vext-info-title' => 'Información de contacto',
     'vext-info-etitle' => 'Correo electrónico:',
     'vext-info-teltit' => 'Teléfono:',
-    'vext-info-schedtit' => 'Horario laboral:',
+    'vext-info-schedtit' => 'Horario de atención:',
     'vext-info-email' => 'vicerrectorado.extension@unimar.edu.ve',
     'vext-info-telf' => '+58 0295 2871111',
-    'vext-info-sched' => 'Horarios de Atención: Lunes - Viernes 8am - 12pm y 1pm a 5pm',
+    'vext-info-sched' => 'Lunes - Viernes 8am - 12pm y 1pm a 5pm',
 ];

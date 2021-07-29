@@ -278,7 +278,7 @@ p {
                 </div>
             </div>
             
-            <div class="info-dept col-md-10 card card-body">
+            <div class="info-dept col-sm-11 card card-body">
                 <h5>{{trans('vextension.vext-info-title')}}</h5>
                 <p><b>{{trans('vextension.vext-info-etitle')}}</b>&nbsp {{trans('vextension.vext-info-email')}}</p>
                 <p><b>{{trans('vextension.vext-info-teltit')}}</b>&nbsp{{trans('vextension.vext-info-telf')}}</p>

@@ -13,7 +13,7 @@ return [
     'vacad-info-title' => 'Información de contacto',
     'vacad-info-etitle' => 'Correo electrónico:',
     'vacad-info-teltit' => 'Teléfono:',
-    'vacad-info-schedtit' => 'Horario laboral:',
+    'vacad-info-schedtit' => 'Horario de atención:',
     'vacad-info-email' => 'vicerrectorado.academico@unimar.edu.ve',
     'vacad-info-telf' => '+58  0295 2870466 ext. 115 - 117 (Fax)',
     'vacad-info-sched' => 'Lunes - Viernes 8am - 12pm y 1pm a 5pm',

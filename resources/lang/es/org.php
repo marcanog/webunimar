@@ -51,5 +51,4 @@ return [
     'cs-general-secretary-title' => 'Secretaria General', 
     'cs-general-secretary-info' => 'Es egresada de la UPEL-IMPM, como Profesor en Ciencias Sociales, con Maestría en Planificación y Evaluación, además de contar con diversos Diplomados en el área educativa. Actualmente realiza un Doctorado en Ciencias de la Educación en la ULAC.',
     'cs-general-secretary-info-2' => 'Cuenta con una larga trayectoria profesional en el campo docente que le ha merecido numerosos reconocimientos. En el año 2005 ingresó como docente en Unimar. Desde el 2009 hasta el 2017 fue Coordinadora de Becas y Ayudas Económicas Estudiantiles de Unimar; Decana(E) de Humanidades (2017)',
-    
 ];

@@ -11717,6 +11717,13 @@ a:not([href]):not([tabindex]){
   border-radius: 5px;
 }
 
+/*  deaneng view */
+.info-dept.col-sm-11.card.card-body {
+	text-align: justify;
+	margin: 1rem auto;
+	padding: 2.5rem;
+	width: 89.3%;
+}
 
 /* MODAL
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

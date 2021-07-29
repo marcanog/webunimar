@@ -14,7 +14,7 @@
 	font-weight: 700;
 	font-size: 0.95em;
 	letter-spacing: 0.025em;
-	width: 40%;
+	width: 60%;
 }
 
 p {
@@ -163,9 +163,9 @@ p {
                         <img id="imgcrd" src="{{URL::asset('./image/ingeeniering/decaingenieria.jpg')}}" alt="Ing. Andrés Pedroza" style="width: 145px;">
                     </div>
                     <div class="card-title col-md-8">
-                        <p id="vext-author">{{trans('vextension.vext-author')}}</p>
-                        <p id="vext-authort">{{trans('vextension.vext-author-title')}}</p>
-                        <p id="vext-email">{{trans('vextension.vext-mail')}}</p>
+                        <p id="vext-author">{{trans('engineering.deaneng-author')}}</p>
+                        <p id="vext-authort">{{trans('engineering.deaneng-author-title')}}</p>
+                        <p id="vext-email">{{trans('engineering.deaneng-author-mail')}}</p>
                     </div>
                 </div>
             </a>
@@ -176,9 +176,9 @@ p {
                             <img id="imgcrd" src="{{URL::asset('./image/ingeeniering/asistingenieria.jpg')}}" alt="Zootec. Nelly Cumaraima" style="width:100%; height: 100%; position: relative;"></div>
                     </div>
                     <div class="card-title col-md-8">
-                        <p id="vext-author">{{trans('vextension.vext-asist')}}</p>
-                        <p id="vext-authort">{{trans('vextension.vext-atitle')}}</p>
-                        <p id="vext-email">{{trans('vextension.vext-asitmail')}}</p>
+                        <p id="vext-author">{{trans('engineering.deaneng-asist')}}</p>
+                        <p id="vext-authort">{{trans('engineering.deaneng-asist-title')}}</p>
+                        <p id="vext-email">{{trans('engineering.deaneng-asist-mail')}}</p>
                     </div>
                 </div>
             </a>
@@ -187,44 +187,49 @@ p {
             <div class="links-interest" id="contentimg headingOne" style="background-color: #336699" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
                 <a id="foundbtn">
                 <img src="{{URL::asset('./image/target.svg')}}">
-                <span>{{trans('vextension.vext-mission-title')}}</span></a>
+                <span>{{trans('engineering.deaneng-mission-title')}}</span></a>
             </div>
             <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
                 <a id="campusbtn">
                 <img src="{{URL::asset('./image/settings.svg')}}">
-                <span>{{trans('vextension.vext-functions')}}</span></a>
+                <span>{{trans('engineering.deaneng-functions')}}</span></a>
             </div>
             <div class="links-interest" id="contentimg headingThree" style="background-color: #336699" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
                 <a id="campusbtn">
                 <img src="{{URL::asset('./image/flow-chart.svg')}}">
-                <span>{{trans('vextension.vext-subsystems')}}</span></a>
+                <span>{{trans('engineering.deaneng-subsystems')}}</span></a>
             </div>
         </div>
         <div class="col-md-12" id="contevext">
             <div class="collapse col-sm-11" id="collapse">
                 <div class="card card-body">
-                    <p style="font-size: 1.25rem; font-weight: 600;">{{trans('vextension.vext-mission-title')}}</p>
-                    <p> {{trans('vextension.vext-mission')}}</p>
+                    <p style="font-size: 1.25rem; font-weight: 600;">{{trans('engineering.deaneng-mission-title')}}</p>
+                    <p> {{trans('engineering.daeneng-mission-1')}}</p>
+                    <p> {{trans('engineering.daeneng-mission-2')}}</p>
+                    <p> {{trans('engineering.daeneng-mission-3')}}</p>
                 </div>
             </div>
             <div class="collapse col-sm-11" id="collapse2">
                 <div class="card card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                    {{trans('vextension.vext-functions')}}
+                    {{trans('engineering.deaneng-functions')}}
                     </p>
                     <ul>
-                        <li><p> {{trans('vextension.vext-functions-1')}}</p></li>
-                        <li><p> {{trans('vextension.vext-functions-2')}}</p></li>
-                        <li><p> {{trans('vextension.vext-functions-3')}}</p></li>
-                        <li><p> {{trans('vextension.vext-functions-4')}}</p></li>
-                        <li><p> {{trans('vextension.vext-functions-5')}}</p></li>
-                        <li><p> {{trans('vextension.vext-functions-6')}}</p></li>
-                        <li><p> {{trans('vextension.vext-functions-7')}}</p></li>
-                        <li><p> {{trans('vextension.vext-functions-8')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-1')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-3')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-4')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-2')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-5')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-6')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-7')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-8')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-9')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-10')}}</p></li>
+                        <li><p> {{trans('engineering.deaneng-functions-11')}}</p></li>
                     </ul>
                 </div>
             </div>
-            <div class="collapse col-sm-11" id="collapse3">
+            <!-- <div class="collapse col-sm-11" id="collapse3">
                 <div class="container col-md-12">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('vextension.vext-subsystems')}}</p>
@@ -269,13 +274,13 @@ p {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
             
-            <div class="info-dept col-md-10 card card-body">
-                <h5>{{trans('vextension.vext-info-title')}}</h5>
-                <p><b>{{trans('vextension.vext-info-etitle')}}</b>&nbsp {{trans('vextension.vext-info-email')}}</p>
-                <p><b>{{trans('vextension.vext-info-teltit')}}</b>&nbsp{{trans('vextension.vext-info-telf')}}</p>
-                <p><b>{{trans('vextension.vext-info-schedtit')}}</b>&nbsp{{trans('vextension.vext-info-sched')}}</p>
+            <div class="info-dept col-sm-11 card card-body">
+                <h5>{{trans('engineering.deaneng-info-title')}}</h5>
+                <p><b>{{trans('engineering.deaneng-info-etitle')}}</b>&nbsp {{trans('engineering.deaneng-info-email')}}</p>
+                <p><b>{{trans('engineering.deaneng-info-teltit')}}</b>&nbsp{{trans('engineering.deaneng-info-telf')}}</p>
+                <p><b>{{trans('engineering.deaneng-info-schedtit')}}</b>&nbsp{{trans('engineering.deaneng-info-sched')}}</p>
             </div>
         </div>
     </div>
