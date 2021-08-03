@@ -1,6 +1,5 @@
- /*@import url(https://fonts.googleapis.com/css?family=Arial);@charset "UTF-8";*/
 
- /*!
+/*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
@@ -36,7 +35,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: 'Roboto', 'Raleway', sans-serif;
+  --font-family-sans-serif: 'Montserrat', 'Roboto', 'Raleway', sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -68,7 +67,7 @@ section {
 
 body {
   margin: 0;
-  font-family: 'Roboto', 'Raleway', sans-serif;
+  font-family: 'Montserrat', 'Roboto', 'Raleway', sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.6;

@@ -169,7 +169,7 @@ p {
         </div>
     </div>
     <div class=".xl-container">
-        <div class="card-columns col-md-10">
+        <div class="card-columns col-sm-11">
             <a class="btn-link card-img" id="imgcard">
                 <div class="card row" id="cardauthor">
                     <div class="col-md-4">
@@ -219,13 +219,13 @@ p {
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('vextension.vext-mision-title')}}
                     </p>
-                    <p> {{trans('vextension.vext-mission')}}</p>
+                    <p> {{trans('vacademy.vacad-mission')}}</p>
                 </div>
             </div>
             <div class="collapse col-sm-11" id="collapse2">
                 <div class="card card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                    {{trans('vextension.vext-functions')}}
+                    {{trans('vacademy.vacad-functions')}}
                     </p>
                     <ul>
                         <li><p> {{trans('vacademy.vacad-functions-1')}}</p></li>

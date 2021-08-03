@@ -163,7 +163,7 @@ p {
     <p>
     <div class=".xl-container">
         <!-- <p class="titlefound">{{trans('org.authorities')}}</p> -->
-        <div class="card-columns col-md-10">
+        <div class="card-columns col-sm-11">
             <a class="btn-link card-img" id="imgcard">
                 <div class="card row" id="cardauthor">
                     <div class="col-md-4">
