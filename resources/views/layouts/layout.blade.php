@@ -54,25 +54,7 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
 
     <!-- Styles -->
-    <style>
-    
-        /* .top-right {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-            position: absolute;
-            right: 10px;
-            top: 18px;
-            width: 10%;
-        } */
-         
-       
-        /* .flex-container {
-            display: flex;
-            margin: 1em auto;
-            position: sticky;
-            background-color: #ffffff;
-        } */
+<style>
         .flex-content.position-ref.full-height {
             display: flex;
             justify-content: space-around;
@@ -107,15 +89,6 @@
                                         <input class="search" type="text" placeholder="{{trans('header.input_search')}}" arial-label="search"><img class="search-img btn" src="{{ URL::asset('./image/lupa_b.png')}}" href="#">
                                     </form>
                                 </nav>
-                                <!-- @if (config('locale.status') && count(config('locale.languages')) > 1)
-                                    @foreach (array_keys(config('locale.languages')) as $lang)
-                                        @if ($lang != App::getLocale())
-
-                                        @endif
-
-                                    @endforeach
-                                    
-                                @endif -->
                                 <div class="navbar language-icon">
                                     <div class="nav-item dropdown show" id="languages">
                                         <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -234,7 +207,6 @@
                             <a class="footer-title" href="#">{{trans('footer.f_rectors_office')}}</a>
                         </li>
                         <li class="footer-item">
-                                <!-- <a class="footer-title" type="nav-link" style="cursor: pointer" data-toggle="modal" data-target="#modalvice" class="open-modal" data-open="modalvice"><span>{{trans('footer.f_vice_chancellor')}}</span></a> -->
                                 <a class="footer-title" href="/vicerectorades">{{trans('footer.f_vice_chancellor')}}</a>
                         </li>
                         <li class="footer-item">
@@ -342,7 +314,6 @@
                             <li class="nav-item">
                                 <!-- <a onclick="rrss()"> -->
                                 <a href="https://www.twitter.com/somosunimar">
-                                
                                     <img class="w-6 h-6" src={{('./image/rrss/gorjeo.png')}}>
                                 </a>
                             </li>
@@ -364,7 +335,7 @@
             </div>
         </div>
          <div class="copyright-content">
-            <span>© Copyright 2001-2021 Universidad de Margarita, Rif: J-30660040-0. Teléfono: 800-UNIMAR (800-864627). Isla de Margarita - Venezuela.</span>
+            <span>{{trans('footer.f-copyrigth')}}</span>
         </div>
     </div>
    

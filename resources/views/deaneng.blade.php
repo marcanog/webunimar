@@ -2,10 +2,6 @@
 
 @section ('content')
 <style>
-
-/* .d-flex.justify-content-start > span{
-    top: .5rem;
-} */
 .d-flex.justify-content-start > span {
 	position: relative;
 	top: .6rem;
@@ -102,10 +98,6 @@ p {
 	margin-top: 0;
 }
 
-/* .collapse.show {
-	display: block;
-	margin: 0 auto;
-} */
 #collapse , #collapse2 , #collapse3 {
 	margin: 0 auto;
 }
@@ -155,7 +147,6 @@ p {
     <!-- Information depto -->
  <p> 
     <div class=".xl-container">
-        <!-- <p class="titlefound">{{trans('org.authorities')}}</p> -->
         <div class="card-columns col-sm-11">
             <a class="btn-link card-img" id="imgcard">
                 <div class="card row" id="cardauthor">
