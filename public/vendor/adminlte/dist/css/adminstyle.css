@@ -1,0 +1,21 @@
+.sidebar-blue-color{
+    background-color: #004b9a;
+}
+.brand-link .brand-image {
+    float: left;
+    line-height: .8;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: -3px;
+    max-height: 60px !important;
+    width: auto;
+    position: absolute;
+}
+.brand-link {
+    height: 75px;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007bff;
+}

@@ -1,7 +1,7 @@
 <?php
 
 return [
-
+    'title_home'                  => 'Administrador',
     'full_name'                   => 'Nombre completo',
     'email'                       => 'Email',
     'password'                    => 'Contraseña',

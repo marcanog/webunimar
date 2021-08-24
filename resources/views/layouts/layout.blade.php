@@ -106,7 +106,7 @@
                         @if (Route::has('login'))
                             <div class="top-right links">
                                 @auth
-                                    <a href="{{ url('/home') }}">{{trans('header.start')}}</a>
+                                    <a href="{{ url('/admin') }}">{{ auth()->user()->name }}</a>
                                 @else
                                     <a href="{{ route('login') }}"><img src="{{URL::asset('./image/login.png')}}" style="width: 25px;">{{trans('header.login')}}</a>
                                 @endauth

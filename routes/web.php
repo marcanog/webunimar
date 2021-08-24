@@ -26,6 +26,10 @@ Route::get('home', function () {
     return view('home');
 });
 
+Route::get('admin', function(){
+    return view('admin/home');
+});
+
 Route::get('ourinstitution', function () {
     return view('ourinstitution');
 });

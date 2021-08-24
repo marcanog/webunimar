@@ -10941,7 +10941,7 @@ a.text-dark:focus {
   position: absolute;
   right: 10px;
   top: 18px;
-  width: 10%;
+  /* width: 10%; */
 }
 .content {
   text-align: center;
@@ -10954,7 +10954,7 @@ a.text-dark:focus {
 .links > a {
   color: #212121;
   padding: 0 25px;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
   font-weight: 400;
   text-decoration: none;
   text-transform: uppercase;
