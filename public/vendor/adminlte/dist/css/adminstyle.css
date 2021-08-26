@@ -19,3 +19,13 @@
     color: #fff;
     background-color: #007bff;
 }
+
+#btn-nav {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+#btn-nav:hover:focus {
+    background-color: #004b9a;
+    color: #ffffff;
+}
