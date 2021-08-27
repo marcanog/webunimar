@@ -226,17 +226,19 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <!-- link news -->
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="#" class="nav-link active" id="btn-nav">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Active Page</p>
+                  <p>Noticias</p>
                 </a>
               </li>
+              <!-- links events -->
               <li class="nav-item">
                 <a href="#" class="nav-link" id="btn-nav">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Inactive Page</p>
+                  <p>Eventos</p>
                 </a>
               </li>
             </ul>

@@ -70,10 +70,13 @@
 
 </head>
     <body>
+        <!-- Header -->
         @include('layouts.header')
+        <!-- content page -->
             <main class="py-main">
                 @yield ('content')
             </main>
+        <!-- Footer -->
         @include('layouts.footer')
 
    
