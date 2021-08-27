@@ -8,6 +8,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <title>Administrador</title> 
 
@@ -42,13 +43,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
+      <!-- <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="#" class="nav-link">Contact</a>
-      </li>
-    </ul>
+      </li> -->
+    </ul> 
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
@@ -170,7 +171,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         </a>
       </li>
     </ul>
-  </nav>
+  </nav> -->
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
@@ -193,7 +194,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           @auth
               <a href="#" class="d-block">{{ auth()->user()->name }}</a>
            @else
-              <a href="{{ route('login') }}"><img src="{{URL::asset('./image/login.png')}}" style="width: 25px;">{{trans('header.login')}}</a>
+              <a href="{{ route('login') }}">{{trans('header.login')}}</a>
               <!--Crear redirección-->
           @endauth
         </div>
@@ -221,7 +222,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <a href="#" class="nav-link active" id="btn-nav">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
-                Starter Pages
+               {{trans('pub_btn')}}
                 <i class="right fas fa-angle-left"></i>
               </p>
             </a>
@@ -259,25 +260,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-    <div class="content-header">
-      <div class="container-fluid">
+    <!-- <div class="content-header">
+       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0">Starter Page</h1>
           </div><!-- /.col -->
-          <div class="col-sm-6">
+          <!-- <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active">Starter Page</li>
-            </ol>
-          </div><!-- /.col -->
-        </div><!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
+            </ol> -->
+          <!-- </div><!-- /.col -->
+        <!-- </div>/.row -->
+      <!-- </div>/.container-fluid -->
+    <!-- </div> -->
     <!-- /.content-header -->
 
     <!-- Main content -->
-    <div class="content">
+    <!-- <div class="content">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6">
@@ -307,9 +308,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <a href="#" class="card-link">Another link</a>
               </div>
             </div><!-- /.card -->
-          </div>
+          <!-- </div> -->
           <!-- /.col-md-6 -->
-          <div class="col-lg-6">
+          <!-- <div class="col-lg-6">
             <div class="card">
               <div class="card-header">
                 <h5 class="m-0">Featured</h5>
@@ -333,16 +334,21 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- /.col-md-6 -->
-        </div>
+        <!-- </div> -->
         <!-- /.row -->
-      </div><!-- /.container-fluid -->
-    </div>
+      <!-- </div>/.container-fluid -->
+    <!-- </div> -->
     <!-- /.content -->
+     <div class="p-4">
+      @yield('admincontent')
+      <h3>Admin content</h3>
+    </div>
   </div>
   <!-- /.content-wrapper -->
 
+ 
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">
     <!-- Control sidebar content goes here -->
@@ -356,11 +362,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
+    <!-- <div class="float-right d-none d-sm-inline">
       Anything you want
+    </div> -->
+    <div class="text-center">
+      <span>© Copyright 2001-2021 Universidad de Margarita, Rif: J-30660040-0. Teléfono: 800-UNIMAR (800-864627). Isla de Margarita - Venezuela.</span>
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <!-- <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved. -->
   </footer>
 </div>
 <!-- ./wrapper -->

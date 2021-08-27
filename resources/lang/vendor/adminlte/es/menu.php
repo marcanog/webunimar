@@ -16,4 +16,5 @@ return [
     'important'                     => 'Importante',
     'warning'                       => 'Advertencia',
     'information'                   => 'Información',
+    'pub_btn'                       => 'Publicaciones',
 ];

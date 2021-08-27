@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'pub_btn'                     => 'Publicaciones',
     'title_home'                  => 'Administrador',
     'full_name'                   => 'Nombre completo',
     'email'                       => 'Email',
