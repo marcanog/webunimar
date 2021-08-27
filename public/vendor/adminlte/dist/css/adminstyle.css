@@ -29,3 +29,6 @@
     background-color: #004b9a;
     color: #ffffff;
 }
+body:not(.layout-fixed) .main-sidebar {
+    left: 0;
+}
