@@ -25,7 +25,7 @@
 	box-shadow: none;
 }
 
-#btn-nav:hover:focus {
+#btn-nav:hover, #btn-nav:hover:focus {
     background-color: #004b9a;
     color: #ffffff;
 }
