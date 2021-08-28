@@ -81,7 +81,8 @@ Route::get('humarte', function () {
 Route::get('regulations', function () {
     return view('regulations');
 });
-// 
+
+// languaje
 Route::get('lang/{locale}', function ($locale){
     session()->put('locale', $locale);
     return redirect()->back();
