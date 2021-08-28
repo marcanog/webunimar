@@ -16,19 +16,25 @@
 }
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
-    color: #fff;
+    color: #ffffff;
     background-color: #007bff;
 }
 
 #btn-nav {
 	background-color: transparent;
 	box-shadow: none;
+    color: #000000;
 }
 
 #btn-nav:hover, #btn-nav:hover:focus {
     background-color: #004b9a;
     color: #ffffff;
 }
+
 body:not(.layout-fixed) .main-sidebar {
     left: 0;
+}
+
+#pubtitle{ 
+   color: #000000;
 }
