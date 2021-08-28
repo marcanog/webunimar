@@ -41,7 +41,6 @@
       @if (Route::has('login'))
           <div class="top-right links">
               @auth
-                  <h3>Admin content</h3>
                   @yield('admincontent')
               @else
                   <a href="{{ route('login') }}">{{trans('header.login')}}</a>  

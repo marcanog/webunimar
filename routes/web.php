@@ -18,17 +18,13 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('home');
+
+Route::group(['prefix' => 'home', 'as' => 'home'], function(){
+    Route::get('/', function () {return view('home');});
+    Route::get('home', function () {return view('home');});
 });
 
-Route::get('home', function () {
-    return view('home');
-});
-
-Route::get('admin', function(){
-    return view('admin/home');
-});
+Route::get('/admin', 'AdminController@index');
 
 Route::get('ourinstitution', function () {
     return view('ourinstitution');
