@@ -24,7 +24,12 @@ Route::group(['prefix' => 'home', 'as' => 'home'], function(){
     Route::get('home', function () {return view('home');});
 });
 
-Route::get('/admin', 'AdminController@index');
+Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
+    Route::get('/admin', 'AdminController@index');
+    Route::get('/admin/news', 'NewsController@index');
+    Route::get('/admin/events', 'EventsController@index');
+});
+
 
 Route::get('ourinstitution', function () {
     return view('ourinstitution');

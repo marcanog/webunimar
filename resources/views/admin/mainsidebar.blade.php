@@ -40,14 +40,14 @@
                 </span>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link active" id="btn-nav">
+                <a href="/admin/news" class="nav-link active" id="btn-nav">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Noticias</p>
                 </a>
               </li>
               <!-- links events -->
               <li class="nav-item">
-                <a href="#" class="nav-link" id="btn-nav">
+                <a href="/admin/events" class="nav-link" id="btn-nav">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Eventos</p>
                 </a>
