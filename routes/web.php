@@ -21,13 +21,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::group(['prefix' => 'home', 'as' => 'home'], function(){
     Route::get('/', function () {return view('home');});
-    Route::get('home', function () {return view('home');});
+    // Route::get('home', function () {return view('home');});
 });
 
 Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
-    Route::get('/admin', 'AdminController@index');
-    Route::get('/admin/news', 'NewsController@index');
-    Route::get('/admin/events', 'EventsController@index');
+    Route::get('/', 'AdminController@index');
+    Route::get('/news', 'NewsController@index');
+    Route::get('/events', 'EventsController@index');
 });
 
 
