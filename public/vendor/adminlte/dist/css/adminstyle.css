@@ -46,3 +46,12 @@ body:not(.layout-fixed) .main-sidebar {
     background-color: #004b9a;
     color: #ffffff;
 }
+
+.modal-header,
+.modal-footer {
+    background: #0f4d98 !important;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: .2rem;
+}
