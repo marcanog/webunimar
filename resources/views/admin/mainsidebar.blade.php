@@ -34,8 +34,15 @@
             <!-- link news -->
             <ul class="nav">
               <li class="nav-item">
+                <a href="/admin/users" class="nav-link" id="btn-nav">
+                  <i class="fas fa-users nav-icon grape"></i>
+                  <p> Usuarios </p>
+                </a>
+                <!-- agregar condicion en js para cambiar de color el icono cuando se haga hover en el item -->
+              </li>
+              <li class="nav-item">
                 <span class="nav-link" id="pubtitle">
-                  <i class="fas fa-book-open nav-icon"></i>
+                  <i class="fas fa-book-open nav-icon grape"></i>
                   <p> Publicaciones </p>
                 </span>
               </li>

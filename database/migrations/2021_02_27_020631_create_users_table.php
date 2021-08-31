@@ -21,7 +21,6 @@ class CreateUsersTable extends Migration
             $table->char('password', 255);
             $table->char('role', 15);
             $table->char('status', 15);
-            $table->biginteger('users_id')->unsigned();
         });
     }
 

@@ -28,6 +28,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
     Route::get('/', 'AdminController@index');
     Route::get('/news', 'NewsController@index');
     Route::get('/events', 'EventsController@index');
+    Route::get('/users', 'UsersController@index');
 });
 
 

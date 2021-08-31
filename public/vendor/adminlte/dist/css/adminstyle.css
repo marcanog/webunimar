@@ -4,7 +4,7 @@
 .brand-link .brand-image {
     float: left;
     line-height: .8;
-    margin-left: .5rem;
+    margin-left: .35rem;
     margin-right: .5rem;
     margin-top: -3px;
     max-height: 60px !important;
@@ -37,4 +37,12 @@ body:not(.layout-fixed) .main-sidebar {
 
 #pubtitle{ 
    color: #000000;
+}
+
+.grape {
+  color:#004b9a;  
+}
+.navbar-blue-u{
+    background-color: #004b9a;
+    color: #ffffff;
 }
