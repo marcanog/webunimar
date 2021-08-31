@@ -19,8 +19,10 @@ class CreateNewsTable extends Migration
             $table->char('title', 255);
             $table->char('content', 255);
             $table->char('resume', 255);
+            $table->char('image', 255);
             $table->enum('tags', ['Prensa Unimar', 'Rectorado', 'Vicerrectorado Académico', 'Vicerrectorado de Extensión']);
             $table->char('status', 15);
+            $table->bigInteger('news_id');
         });
     }
 

@@ -23,6 +23,7 @@ class CreateEventsTable extends Migration
             $table->char('source', 255);
             $table->enum('tags', ['Vicerrectorado Académico', 'Vicerrectorado de Extensión', 'Decanato de Ingeniería y Afines', 'Decanato de Ciencias Económicas y Sociales', 'Decanato de Ciencias Jurídicas y Políticas','Decanato de Humanidades, Artes y Educación', 'Decanato de Postgrado', 'Coordinación de Investigación', 'Rectorado']);
             $table->char('status', 15);
+            $table->bigInteger('events_id');
         });
     }
 
