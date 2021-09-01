@@ -26,7 +26,9 @@
     color: #000000;
 }
 
-#btn-nav:hover, #btn-nav:hover:focus {
+#btn-nav:hover,
+#btn-nav:hover:focus,
+#btn-nav i:hover:focus {
     background-color: #004b9a;
     color: #ffffff;
 }
@@ -36,12 +38,17 @@ body:not(.layout-fixed) .main-sidebar {
 }
 
 #pubtitle{ 
-   color: #000000;
+    color: #000000;
 }
 
 .grape {
-  color:#004b9a;  
+    color:#004b9a;
 }
+
+.grape:hover{
+    color:#ffffff;
+}
+
 .navbar-blue-u{
     background-color: #004b9a;
     color: #ffffff;

@@ -35,7 +35,7 @@
             <ul class="nav">
               <li class="nav-item">
                 <a href="/admin/users" class="nav-link" id="btn-nav">
-                  <i class="fas fa-users nav-icon grape"></i>
+                  <i class="fas fa-users nav-icon grape" id="navicon"></i>
                   <p> Usuarios </p>
                 </a>
                 <!-- agregar condicion en js para cambiar de color el icono cuando se haga hover en el item -->

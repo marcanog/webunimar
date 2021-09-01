@@ -19,6 +19,8 @@
                 <th scope="col">Nombre</th>
                 <th scope="col">Email</th>
                 <th scope="col">Role</th>
+                <th scope="col">Status</th>
+                <th scope="col">Fecha</th>
                 <th scope="col">Operaciones</th>
                 </tr>
             </thead>
@@ -28,6 +30,8 @@
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
+                <th></th>
+                <th></th>
                 <td>
                    @include('admin.operationuser')
                 </td>
@@ -37,6 +41,8 @@
                 <td>Jacob</td>
                 <td>Thornton</td>
                 <td>@fat</td>
+                <th></th>
+                <th></th>
                 <td> @include('admin.operationuser')</td>
                 </tr>
                 <tr>
@@ -44,6 +50,8 @@
                 <td>Larry</td>
                 <td>the Bird</td>
                 <td>@twitter</td>
+                <th></th>
+                <th></th>
                 <td> @include('admin.operationuser')</td>
                 </tr>
             </tbody>

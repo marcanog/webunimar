@@ -12,6 +12,7 @@
  
   <!-- REQUIRED SCRIPTS -->
   @include('admin.scripts')
+ 
 
 </head>
 <body class="hold-transition sidebar-mini">

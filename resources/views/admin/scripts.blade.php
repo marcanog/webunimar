@@ -4,3 +4,5 @@
   <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}" defer></script>
   <!-- AdminLTE App -->
   <script src="{{ asset('vendor/adminlte/dist/js/adminlte.min.js') }}" defer></script>
+  <!-- Admiltejs -->
+  <script src="{{ asset('vendor/adminlte/dist/js/adminltejs.js') }}" defer></script>
