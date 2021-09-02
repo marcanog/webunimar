@@ -11,6 +11,16 @@
        <form method="POST" action="/admin/usuarios">
         @csrf
         <div class="modal-body">
+          @if($message = Session::get('ErrorInsert'))
+            <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
+                <h5>Errores: </h5>
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+          @endif
           @include('admin.bodymodal')
         </div>
         <div class="modal-footer">
