@@ -8,7 +8,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-       <form method="POST" action="/admin/usuarios">
+       <form method="POST" action="/admin/users">
         @csrf
         <div class="modal-body">
           @if($message = Session::get('ErrorInsert'))

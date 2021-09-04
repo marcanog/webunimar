@@ -8,6 +8,13 @@
             <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Usuario</a>
             @include('admin.addusermodal')
     </div>
+    <div class="row">
+        @if($message = Session::get('Listo'))
+            <div class="col-12 alert alert-success alert-dismissible fade show" role="alert">
+                <span>{{message}}</span>
+            </div>
+        @endif
+    </div>
     <div>
         <div class="table-responsive-sm m-auto">
         <table class="table m-auto">
