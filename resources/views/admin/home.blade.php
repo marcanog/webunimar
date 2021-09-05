@@ -13,8 +13,8 @@
   <!-- REQUIRED SCRIPTS -->
   @include('admin.scripts')
 
-  @section('plugins.Sweetalert2', true)
-  
+ 
+
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
