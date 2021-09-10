@@ -58,7 +58,7 @@
               <label for="role" class="col-md-4 col-form-label text-md-right">Role: </label>
               
               <div class="col-md-6">
-                  <input id="role" type="text" class="form-control" name="role" value="Administrador " required autocomplete="role" autofocus>
+                  <input id="role" type="text" class="form-control" name="role" value="{{('role')}}" required autocomplete="role" autofocus>
               </div>
           </div>
 
@@ -66,7 +66,7 @@
               <label for="satus" class="col-md-4 col-form-label text-md-right">Status: </label>
               
               <div class="col-md-6">
-                  <input id="status" type="text" class="form-control" name="status" value="Active" required autocomplete="status" autofocus>
+                  <input id="status" type="text" class="form-control" name="status" value="{{('status')}}" required autocomplete="status" autofocus>
               </div>
           </div>
         </div>

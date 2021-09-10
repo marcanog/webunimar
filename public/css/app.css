@@ -11479,7 +11479,7 @@ p.card-text {
 }
 
 .content-deanship > a > span {
-    display: flex;
+    display: inline-flex;
     flex: 0 0 25%;
     margin: 1em;
     font-size: 0.85em;
@@ -11496,6 +11496,7 @@ p.card-text {
 .content-deanship > a {
     text-transform: none;
     text-decoration: none;
+    text-align: center;
 }
 /*---------------------------------------- linksinterest------------------------------------*/
 .links-interest > span {

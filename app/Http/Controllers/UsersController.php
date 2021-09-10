@@ -38,4 +38,9 @@ class UsersController extends Controller
            return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
        }
    }
+
+   public function show (Request $request){
+       
+
+   }
 }
