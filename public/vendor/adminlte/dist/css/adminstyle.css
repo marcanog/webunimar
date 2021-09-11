@@ -62,3 +62,11 @@ body:not(.layout-fixed) .main-sidebar {
     font-size: 1rem;
     letter-spacing: .2rem;
 }
+.d-block {
+    display: block !important;
+    position: absolute;
+}
+
+.navbar-expand .navbar-nav .dropdown-menu {
+    position: relative;
+}

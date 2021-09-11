@@ -10,17 +10,17 @@
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-        <div class="image">
+        <!-- <div class="image">
           <img src="{{asset('image/user.png')}}" class="img-circle elevation-2" alt="Usuario">
-        </div>
+        </div> -->
         @if (Route::has('login'))
         <div class="info">
-          @auth
-              <a href="#" class="d-block">{{ auth()->user()->name }}</a>
+          @if (auth()->user()->role === "Administrador")
+              <a href="/admin/profile" class="d-block">{{ auth()->user()->name }}</a> 
            @else
               <a href="{{ route('login') }}">{{trans('header.login')}}</a>
               <!--Crear redirección-->
-          @endauth
+          @endif
         </div>
         @endif
       </div>
