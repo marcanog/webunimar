@@ -9,22 +9,22 @@
     <!-- Sidebar -->
     <div class="sidebar">
       <!-- Sidebar user panel (optional) -->
-      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="mt-3 mb-3 d-flex">
         <!-- <div class="image">
           <img src="{{asset('image/user.png')}}" class="img-circle elevation-2" alt="Usuario">
         </div> -->
-        @if (Route::has('login'))
-        <div class="info">
-          @if (auth()->user()->role === "Administrador")
-              <a href="/admin/profile" class="d-block">{{ auth()->user()->name }}</a> 
-           @else
+        <!-- @if (Route::has('login')) -->
+          <div class="info pb-3">
+            @if (Auth::guest())
               <a href="{{ route('login') }}">{{trans('header.login')}}</a>
-              <!--Crear redirección-->
-          @endif
-        </div>
-        @endif
+            @else
+                <a href="/admin/profile" class="d-block">Bienvenid@, {{ auth()->user()->name }}</a> 
+            @endif
+          </div>
+        <!-- @endif -->
       </div>
-      
+      <!-- Sidebar user panel (optional) -->
+
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">

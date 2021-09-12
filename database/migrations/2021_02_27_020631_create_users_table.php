@@ -19,8 +19,8 @@ class CreateUsersTable extends Migration
             $table->char('name', 255);
             $table->char('email', 50)->unique();
             $table->char('password', 255);
-            $table->char('role', 15);
-            $table->char('status', 15);
+            $table->char('role', 20);
+            $table->char('status', 20);
         });
     }
 
