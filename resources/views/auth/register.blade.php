@@ -11,6 +11,19 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
+                        <!-- <div class="form-group row">
+                            <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Image') }}</label>
+                            
+                            <div class="col-md-6">
+                                <input id="image" type="file" class="form-control @error('image') is-invalid @enderror" name="image" required autofocus multiple>
+                                @error('image')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div> -->
+
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
@@ -62,10 +75,10 @@
                         </div>
 
                          <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Role') }}</label>
+                            <label for="role" class="col-md-4 col-form-label text-md-right">{{ __('Role') }}</label>
                             
                             <div class="col-md-6">
-                                <input id="role" type="text" class="form-control @error('role') is-invalid @enderror" name="role" value="Administrador " required autocomplete="role" autofocus>
+                                <input id="role" type="text" class="form-control @error('role') is-invalid @enderror" name="role" required autocomplete="role" autofocus>
                                 @error('role')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -75,10 +88,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Status') }}</label>
+                            <label for="status" class="col-md-4 col-form-label text-md-right">{{ __('Status') }}</label>
                             
                             <div class="col-md-6">
-                                <input id="status" type="text" class="form-control @error('status') is-invalid @enderror" name="status" value="Active" required autocomplete="status" autofocus>
+                                <input id="status" type="text" class="form-control @error('status') is-invalid @enderror" name="status" required autocomplete="status" autofocus>
                                 @error('status')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>

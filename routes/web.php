@@ -29,12 +29,17 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
     Route::get('/news', 'NewsController@index');
     Route::get('/events', 'EventsController@index');
     Route::get('/users', 'UsersController@index');
+    Route::post('/users', 'UsersController@store');
+
+    Route::resource('users', 'UsersController');
 });
-Route::resource('admin/users', 'UsersController');
+
 
 Route::group( ['middleware' => 'auth' ], function(){
     Route::get('admin/home', 'AdminController@index');
-    Route::get('admin/profile', 'UsersController@index');
+    Route::get('admin/profile', function(){
+        return view ('admin/profile');
+    });
     // Route::get('admin/ajuda', 'AdminController@ajuda');
 });
 

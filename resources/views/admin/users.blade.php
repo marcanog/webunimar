@@ -11,7 +11,7 @@
     <div class="row">
         @if($message = Session::get('Listo'))
             <div class="col-12 alert alert-success alert-dismissible fade show" role="alert">
-                <span>{{message}}</span>
+                <span>{{ $message }}</span>
             </div>
         @endif
     </div>
@@ -34,6 +34,7 @@
             <tbody>
                 <tr>
                 <!-- <th scope="row">1</th> -->
+                @foreach($usuarios as $usuario)
                 <td>Mark</td>
                 <td>Otto</td>
                 <td>@mdo</td>
@@ -42,27 +43,20 @@
                 <td>
                    @include('admin.operationuser')
                 </td>
-                </tr>
-                <tr>
-                <!-- <th scope="row">2</th> -->
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <th></th>
-                <th></th>
-                <td> @include('admin.operationuser')</td>
-                </tr>
-                <tr>
-                <!-- <th scope="row">3</th> -->
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <th></th>
-                <th></th>
-                <td> @include('admin.operationuser')</td>
+                @endforeach
                 </tr>
             </tbody>
         </table>
         </div>
     </div>
+@endsection
+
+@section('script')
+    <script>
+        $(document).ready(function(){
+             @if($message = Session::get('ErrorInsert'))
+                $('#UserAddModal').modal('show');
+             @endif
+        });
+    </script>
 @endsection

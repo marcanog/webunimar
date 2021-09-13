@@ -6,3 +6,4 @@
   <script src="{{ asset('vendor/adminlte/dist/js/adminlte.min.js') }}" defer></script>
   <!-- Admiltejs -->
   <script src="{{ asset('vendor/adminlte/dist/js/adminltejs.js') }}" defer></script>
+  @yield('admin.script')

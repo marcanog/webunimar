@@ -42,6 +42,7 @@
                   {{ auth()->user()->name }}
                 </a> 
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="/admin/profile">Perfil</a>
                   <a class="dropdown-item" href="#">Cerrar Sesión</a>
                 </div>
             </div>
@@ -64,17 +65,17 @@
 
     <!-- Main content -->
      <div class="p-4">
-      @if (Route::has('login'))
+      
           <div class="top-right links">
               @auth
                   @yield('admincontent')
               @else
-                  <a href="{{ route('login') }}">{{trans('header.login')}}</a>  
+                  <!-- <a href="{{ route('login') }}">{{trans('header.login')}}</a>   -->
                   <!-- Debe aparecer un mensaje -->
               @endauth
           </div>
-      @endif
-    </div>
+          
+       </div>
   </div>
   <!-- /.content-wrapper -->
 

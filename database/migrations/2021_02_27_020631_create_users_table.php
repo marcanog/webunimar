@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->char('name', 255);
             $table->char('email', 50)->unique();
             $table->char('password', 255);
+            $table->string('image', 255)->default('user.png');
             $table->char('role', 20);
             $table->char('status', 20);
         });

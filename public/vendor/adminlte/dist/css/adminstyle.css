@@ -14,6 +14,10 @@
 .brand-link {
     height: 75px;
 }
+.user-panel,
+.user-panel .info{
+    overflow: visible;
+}
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
     color: #ffffff;
