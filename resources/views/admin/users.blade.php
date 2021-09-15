@@ -15,40 +15,39 @@
             </div>
         @endif
     </div>
-    <div>
-        <div class="table-responsive-sm m-auto">
-        <table class="table m-auto">
-            <!-- <caption>List of users</caption> -->
-            <thead>
-                <tr>
-                <!-- <th scope="col">#</th> -->
-                <!-- <th scope="col">{{trans('users.col-head-name')}}</th> -->
-                <th scope="col">Nombre</th>
-                <th scope="col">Email</th>
-                <th scope="col">Role</th>
-                <th scope="col">Status</th>
-                <th scope="col">Fecha</th>
-                <th scope="col">Operaciones</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <!-- <th scope="row">1</th> -->
-                @foreach($usuarios as $usuario)
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <th></th>
-                <th></th>
-                <td>
-                   @include('admin.operationuser')
-                </td>
-                @endforeach
-                </tr>
-            </tbody>
-        </table>
-        </div>
+    <div class="table-responsive-xl">
+    <table class="table table-hover col-lg-12">
+        <!-- <caption>List of users</caption> -->
+        <thead class="thead-blue">
+            <tr>
+            <!-- <th scope="col">#</th> -->
+            <!-- <th scope="col">{{trans('users.col-head-name')}}</th> -->
+            <th scope="col">Nombre</th>
+            <th scope="col">Email</th>
+            <th scope="col">Role</th>
+            <th scope="col">Status</th>
+            <th scope="col">Fecha</th>
+            <th scope="col">Operaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach($usuarios as $usuario)
+            <tr>
+            <!-- <th scope="row">1</th> -->
+            <td>{{($usuario->name)}}</td>
+            <td>{{($usuario->email)}}</td>
+            <td>{{($usuario->role)}}</td>
+            <th>{{($usuario->status)}}</th>
+            <th></th>
+            <td>
+                @include('admin.operationuser')
+            </td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
     </div>
+    
 @endsection
 
 @section('script')

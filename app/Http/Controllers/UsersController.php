@@ -30,6 +30,7 @@ class UsersController extends Controller
             'password_confirmation' => 'required|min:8',
             'role' => 'required|max:15',
             'status' => 'required|max:15',
+            // 'create_at' => 'date',
        ]);
        if($request->hasfile('image')){
             $imguser = $request->file('image');
@@ -48,6 +49,7 @@ class UsersController extends Controller
                'password' => hash::make($request->password),
                'role' => $request->role,
                'status' => $request->status,
+            //    'date' => $request->creat_at,
                //'image' => $filename,
            ]);
            return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
