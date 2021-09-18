@@ -18,5 +18,6 @@
 <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Cambiar Status" data-id="{{ $usuario->id }}">
     <i class="fas fa-exchange-alt"></i>
 </button>
+@include('admin.updateusermodal')
 
 <!-- Agregar funcionalidad tooltip -->
