@@ -22,26 +22,45 @@
             <tr>
             <!-- <th scope="col">#</th> -->
             <!-- <th scope="col">{{trans('users.col-head-name')}}</th> -->
-            <th scope="col">Nombre</th>
-            <th scope="col">Email</th>
-            <th scope="col">Role</th>
-            <th scope="col">Status</th>
-            <th scope="col">Fecha</th>
-            <th scope="col">Operaciones</th>
+               @if(Auth::guest())
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Operaciones</th>
+                @else
+                    <th scope="col">Id</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Role</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Operaciones</th>
+                @endif
+                
             </tr>
         </thead>
         <tbody>
             @foreach($usuarios as $usuario)
             <tr>
             <!-- <th scope="row">1</th> -->
-            <td>{{($usuario->name)}}</td>
-            <td>{{($usuario->email)}}</td>
-            <td>{{($usuario->role)}}</td>
-            <th>{{($usuario->status)}}</th>
-            <th></th>
-            <td>
+             @if (Auth::guest())
+                <td>{{($usuario->name)}}</td>
+                <td>{{($usuario->email)}}</td>
+                <td>{{($usuario->role)}}</td>
+                <td>{{($usuario->status)}}</td>
+            @else
+                <th>{{($usuario->id)}}</th>
+                <td>{{($usuario->name)}}</td>
+                <td>{{($usuario->email)}}</td>
+                <td>{{($usuario->role)}}</td>
+                <td>{{($usuario->status)}}</td>
+                <td>{{($usuario->fecha)}}</td>
+                <td>
                 @include('admin.operationuser')
-            </td>
+                </td>
+            @endif
             </tr>
             @endforeach
         </tbody>

@@ -9,6 +9,7 @@ use Illuminate\Session\SessionManager;
 use Storage;
 use Image;
 use Hash;
+use DB;
 
 class UsersController extends Controller
 {
@@ -17,7 +18,8 @@ class UsersController extends Controller
     public function index(){
         $usuarios = \DB::table('users')
                     -> select('users.*')
-                    ->orderBy('id', 'DESC')
+                    ->orderBy('id', 'ASC')
+                    ->selectRaw('DATE(created_at) AS fecha')
                     ->get();
        return view ('/admin/users')->with('usuarios', $usuarios);
    }
@@ -49,7 +51,7 @@ class UsersController extends Controller
                'password' => hash::make($request->password),
                'role' => $request->role,
                'status' => $request->status,
-            //    'date' => $request->creat_at,
+               'fecha' => $request->fecha,
                //'image' => $filename,
            ]);
            return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
