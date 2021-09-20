@@ -3,13 +3,13 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="ModalUpdUser">Actualizar Usuarios</h5>
+        <h5 class="modal-title" id="ModalUpdUser">Modificar Usuarios</h5>
         <button type="button" class="close" data-dismiss="modal" data-toggle="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
 
-      <form action="/admin/users" method="POST">
+      <form action="/admin/users" method="POST" id="formupdate_{{ $usuario->id }}
         @csrf
         <div class="modal-body">
           @if($message = Session::get('ErrorInsert'))
@@ -65,7 +65,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button type="submit" class="btn btn-primary">Guardar</button>
+          <button type="submit" class="btn btn-primary btnmodalupdate">Guardar</button>
         </div>
       </form>
     </div>

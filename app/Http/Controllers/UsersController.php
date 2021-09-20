@@ -67,8 +67,15 @@ class UsersController extends Controller
 
    }
 
-   public function update (Request $request){
+   public function update ($id){
+        $user = User::find($id);
+        if($user->image != 'user.png'){
+            if(file_exists( public_path('image/users/'.$user->image))){
 
+            }
+        }
+        $user->update();
+        return back() ->with('Listo', 'Se ha actualizado el registro correctamente');
    }
 
 }
