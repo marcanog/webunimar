@@ -66,7 +66,7 @@
                             <i class="fas fa-exchange-alt"></i>
                         </button> -->
                         <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> -->
-                        <button type="button" class="btn btn-warning btnedit open-modal" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar" data-id="{{ $usuario->id }}" data-target="#UserUpdModal">
+                        <button type="button" class="btn btn-warning btnedit open-modal" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar" data-id="{{ ($usuario->id) }}" data-target="#UserUpdModal">
                             <i class="fas fa-edit"></i>
                         </button>
                         
@@ -169,7 +169,7 @@
                 </button>
             </div>
 
-            <form action="/admin/users" method="POST" id="formupdate_{{ $usuario->id }}
+            <form action="/admin/users/edit" method="POST">
                 @csrf
                 <div class="modal-body">
                 @if($message = Session::get('ErrorInsert'))
@@ -184,10 +184,12 @@
                 @endif
                             
                 <div class="form-group row">
+                    <input id="editid" type="hidden" class="form-control" name="id" value="{{( $usuario->id )}}">
+
                     <label for="name" class="col-md-4 col-form-label text-md-right">Nombre: </label>
 
                     <div class="col-md-6">
-                        <input id="name" type="text" class="form-control" name="nombre" value="{{( $usuario->name )}}">
+                        <input id="editname" type="text" class="form-control" name="nombre" value="{{( $usuario->name )}}">
                     </div>
                 </div>
 
@@ -195,7 +197,7 @@
                     <label for="email" class="col-md-4 col-form-label text-md-right">Correo Electrónico: </label>
 
                     <div class="col-md-6">
-                        <input id="email" type="email" class="form-control" name="email" value="{{( $usuario->email )}}">
+                        <input id="editemail" type="email" class="form-control" name="email" value="{{( $usuario->email )}}">
                     </div>
                 </div>
 
@@ -203,7 +205,7 @@
                     <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña: </label>
 
                     <div class="col-md-6">
-                        <input id="password" type="password" class="form-control" name="password" value="{{( $usuario->password )}}">
+                        <input id="editpassword" type="password" class="form-control" name="password" value="{{( $usuario->password )}}">
                     </div>
                 </div>
 
@@ -211,7 +213,7 @@
                     <label for="role" class="col-md-4 col-form-label text-md-right">Role: </label>
                     
                     <div class="col-md-6">
-                        <input id="role" type="text" class="form-control" name="role" value="{{( $usuario->role )}}">
+                        <input id="editrole" type="text" class="form-control" name="role" value="{{( $usuario->role )}}">
                     </div>
                 </div>
 
@@ -219,7 +221,7 @@
                     <label for="satus" class="col-md-4 col-form-label text-md-right">Status: </label>
                     
                     <div class="col-md-6">
-                        <input id="status" type="text" class="form-control" name="status" value="{{( $usuario->status )}}">
+                        <input id="editstatus" type="text" class="form-control" name="status" value="{{( $usuario->status )}}">
                     </div>
                 </div>
                 </div>
@@ -241,12 +243,17 @@
                 $('#UserAddModal').modal('show');
              @endif
              $('.btnedit').click(function(){
-                idupdate =  $(this).data('id');
-                $('#UserUpdModal').modal('show');
+               // idupdate =  $(this).data('id');
+               // $('#UserUpdModal').modal('show');
+               $('#editname').val($(this).data('name'));
+               $('#ediemail').val($(this).data('email'));
+               $('#editpassword').val($(this).data('password'));
+               $('#editrole').val($(this).data('role'));
+               $('#edistatus').val($(this).data('status'));
              });
-             $('.btnmodalupdate').click(function(){
-                $('#formupdate_'+idupdate).submit();
-             })
+            //  $('.btnmodalupdate').click(function(){
+            //     $('#formupdate_'+idupdate).submit();
+            //  })
         });
     </script>
 @endsection

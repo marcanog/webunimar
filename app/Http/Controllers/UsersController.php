@@ -67,7 +67,7 @@ class UsersController extends Controller
 
    }
 
-   public function update ($id){
+   public function updateuser (Request $request){
         $user = User::find($id);
         if($user->image != 'user.png'){
             if(file_exists( public_path('image/users/'.$user->image))){
