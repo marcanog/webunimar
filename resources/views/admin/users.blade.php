@@ -4,9 +4,8 @@
     <!-- Page heading -->
     <div class="d-sm-flex align-items-center justify-content-between shadow-4 mb-2">
         <h1 class="h3 mb-0 text-gray-dark">Usuarios</h1>
-        <a href="#" class="d-none d-xl-inline-block btn btn-sm btn-navbar shadow-sm navbar-blue-u" data-toggle="modal" data-target="#UserAddModal" class="open-modal" data-open="UserAddModal">
+        <a href="#" class="d-none d-xl-inline-block btn btn-sm btn-navbar shadow-sm navbar-blue-u open-modal" data-toggle="modal" data-target="#UserAddModal" data-open="UserAddModal">
             <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Usuario</a>
-            @include('admin.addusermodal')
     </div>
     <div class="row">
         @if($message = Session::get('Listo'))
@@ -66,7 +65,9 @@
                             <i class="fas fa-exchange-alt"></i>
                         </button> -->
                         <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> -->
-                        <button type="button" class="btn btn-warning btnedit open-modal" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar" data-id="{{ ($usuario->id) }}" data-target="#UserUpdModal">
+                        <button type="button" class="btn btn-warning btnedit open-modal" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar" 
+                        data-id="{{ ($usuario->id) }}" data-name="{{ ($usuario->name) }}" data-email="{{ ($usuario->email) }}" data-password="{{ ($usuario->password) }}" 
+                        data-target="#UserUpdModal">
                             <i class="fas fa-edit"></i>
                         </button>
                         
@@ -184,12 +185,12 @@
                 @endif
                             
                 <div class="form-group row">
-                    <input id="editid" type="hidden" class="form-control" name="id" value="{{( $usuario->id )}}">
+                    <input id="editid" type="hidden" class="form-control" name="id" value="{{ old($usuario->id)}}">
 
-                    <label for="name" class="col-md-4 col-form-label text-md-right">Nombre: </label>
+                    <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre: </label>
 
                     <div class="col-md-6">
-                        <input id="editname" type="text" class="form-control" name="nombre" value="{{( $usuario->name )}}">
+                        <input id="editname" type="text" class="form-control" name="nombre" value="{{ old($usuario->name)}}">
                     </div>
                 </div>
 
@@ -197,7 +198,7 @@
                     <label for="email" class="col-md-4 col-form-label text-md-right">Correo Electrónico: </label>
 
                     <div class="col-md-6">
-                        <input id="editemail" type="email" class="form-control" name="email" value="{{( $usuario->email )}}">
+                        <input id="editemail" type="email" class="form-control" name="email" value="{{old($usuario->email)}}">
                     </div>
                 </div>
 
@@ -205,7 +206,7 @@
                     <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña: </label>
 
                     <div class="col-md-6">
-                        <input id="editpassword" type="password" class="form-control" name="password" value="{{( $usuario->password )}}">
+                        <input id="editpassword" type="password" class="form-control" name="password" value="{{old($usuario->password)}}">
                     </div>
                 </div>
 
@@ -213,15 +214,15 @@
                     <label for="role" class="col-md-4 col-form-label text-md-right">Role: </label>
                     
                     <div class="col-md-6">
-                        <input id="editrole" type="text" class="form-control" name="role" value="{{( $usuario->role )}}">
+                        <input id="editrole" type="text" class="form-control" name="role" value="{{old($usuario->role)}}">
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="satus" class="col-md-4 col-form-label text-md-right">Status: </label>
+                    <label for="status" class="col-md-4 col-form-label text-md-right">Status: </label>
                     
                     <div class="col-md-6">
-                        <input id="editstatus" type="text" class="form-control" name="status" value="{{( $usuario->status )}}">
+                        <input id="editstatus" type="text" class="form-control" name="status" value="{{old($usuario->status)}}">
                     </div>
                 </div>
                 </div>
@@ -243,13 +244,13 @@
                 $('#UserAddModal').modal('show');
              @endif
              $('.btnedit').click(function(){
-               // idupdate =  $(this).data('id');
-               // $('#UserUpdModal').modal('show');
-               $('#editname').val($(this).data('name'));
-               $('#ediemail').val($(this).data('email'));
-               $('#editpassword').val($(this).data('password'));
-               $('#editrole').val($(this).data('role'));
-               $('#edistatus').val($(this).data('status'));
+               $('#editid').val($(this).data('id'));
+               alert($('#editid').val($(this).data('id')));
+            //    $('#editname').val($(this).data('name'));
+            //    $('#editemail').val($(this).data('email'));
+            //    $('#editpassword').val($(this).data('password'));
+            //    $('#editrole').val($(this).data('role'));
+            //    $('#edistatus').val($(this).data('status'));
              });
             //  $('.btnmodalupdate').click(function(){
             //     $('#formupdate_'+idupdate).submit();
