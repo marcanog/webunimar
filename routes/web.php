@@ -30,7 +30,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
     Route::get('/events', 'EventsController@index');
     Route::get('/users', 'UsersController@index');
     Route::post('/users', 'UsersController@store');
-    Route::post('/user/edit', 'UserController@updateuser');
+    Route::post('/users/edit', 'UsersController@update');
     Route::resource('users', 'UsersController');
 });
 

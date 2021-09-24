@@ -57,16 +57,14 @@
                         <td>{{($usuario->status)}}</td>
                         <td>{{($usuario->fecha)}}</td>
                         <td>
-                        <!-- <button type="button" class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Ver">
-                            <i class="fas fa-eye"></i>
-                        </button> -->
-                        
-                        <!-- <button type="button" class="btn btn-danger btnupdate" data-toggle="tooltip" data-placement="top" title="Cambiar Status" data-id="{{ $usuario->id }}">
-                            <i class="fas fa-exchange-alt"></i>
-                        </button> -->
-                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter"> -->
-                        <button type="button" class="btn btn-warning btnedit open-modal" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar" 
-                        data-id="{{ ($usuario->id) }}" data-name="{{ ($usuario->name) }}" data-email="{{ ($usuario->email) }}" data-password="{{ ($usuario->password) }}" 
+
+                        <button type="button" class="btn btn-warning open-modal btnedit" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar" 
+                        data-id="{{ $usuario->id }}" 
+                        data-name="{{ $usuario->name }}" 
+                        data-email="{{ $usuario->email }}" 
+                        data-password="{{ $usuario->password }}" 
+                        data-role="{{ $usuario->role }}"
+                        data-status="{{ $usuario->status }}"
                         data-target="#UserUpdModal">
                             <i class="fas fa-edit"></i>
                         </button>
@@ -160,11 +158,11 @@
         </div>
     </div>
     <!-- Modal update user -->
-    <div class="modal fade" id="UserUpdModal" tabindex="-1" role="dialog" aria-labelledby="UserUpdModal" aria-hidden="true">
+   <div class="modal fade" id="UserUpdModal" tabindex="-1" role="dialog" aria-labelledby="UserUpdModal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="ModalUpdUser">Modificar Usuarios</h5>
+                <h5 class="modal-title" id="ModalUpdUser">Actualizar Usuarios</h5>
                 <button type="button" class="close" data-dismiss="modal" data-toggle="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
                 </button>
@@ -185,12 +183,10 @@
                 @endif
                             
                 <div class="form-group row">
-                    <input id="editid" type="hidden" class="form-control" name="id" value="{{ old($usuario->id)}}">
-
-                    <label for="nombre" class="col-md-4 col-form-label text-md-right">Nombre: </label>
+                    <label for="name" class="col-md-4 col-form-label text-md-right">Nombre: </label>
 
                     <div class="col-md-6">
-                        <input id="editname" type="text" class="form-control" name="nombre" value="{{ old($usuario->name)}}">
+                        <input id="nameedit" type="text" class="form-control" name="nombre" value="{{ old('nombre') }}" required autocomplete="nombre" autofocus>
                     </div>
                 </div>
 
@@ -198,7 +194,7 @@
                     <label for="email" class="col-md-4 col-form-label text-md-right">Correo Electrónico: </label>
 
                     <div class="col-md-6">
-                        <input id="editemail" type="email" class="form-control" name="email" value="{{old($usuario->email)}}">
+                        <input id="emailedit" type="email" class="form-control" name="email" value="{{ old('email') }}" required autocomplete="email">
                     </div>
                 </div>
 
@@ -206,55 +202,64 @@
                     <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña: </label>
 
                     <div class="col-md-6">
-                        <input id="editpassword" type="password" class="form-control" name="password" value="{{old($usuario->password)}}">
+                        <input id="passwordedit" type="password" class="form-control" name="password" required autocomplete="new-password">
                     </div>
                 </div>
 
-                <div class="form-group row">
+                <!-- <div class="form-group row">
+                    <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirmar Password: </label>
+
+                    <div class="col-md-6">
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                    </div>
+                </div> -->
+
+                    <div class="form-group row">
                     <label for="role" class="col-md-4 col-form-label text-md-right">Role: </label>
                     
                     <div class="col-md-6">
-                        <input id="editrole" type="text" class="form-control" name="role" value="{{old($usuario->role)}}">
+                        <input id="roleedit" type="text" class="form-control" name="role" required autocomplete="role" autofocus>
                     </div>
                 </div>
 
                 <div class="form-group row">
-                    <label for="status" class="col-md-4 col-form-label text-md-right">Status: </label>
+                    <label for="satus" class="col-md-4 col-form-label text-md-right">Status: </label>
                     
                     <div class="col-md-6">
-                        <input id="editstatus" type="text" class="form-control" name="status" value="{{old($usuario->status)}}">
+                        <input id="statusedit" type="text" class="form-control" name="status" required autocomplete="status" autofocus>
                     </div>
                 </div>
                 </div>
                 <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="submit" class="btn btn-primary btnmodalupdate">Guardar</button>
+                <button type="submit" class="btn btn-primary btnupdtuser">Guardar</button>
                 </div>
             </form>
             </div>
         </div>
     </div>
-@endsection
-
-@section('script')
     <script>
-        $(document).ready(function(){
-            var idupdate = 0;
+        document.addEventListener('DOMContentLoaded',function(){
+        var idupdate = 0;
              @if($message = Session::get('ErrorInsert'))
                 $('#UserAddModal').modal('show');
              @endif
              $('.btnedit').click(function(){
-               $('#editid').val($(this).data('id'));
-               alert($('#editid').val($(this).data('id')));
-            //    $('#editname').val($(this).data('name'));
-            //    $('#editemail').val($(this).data('email'));
-            //    $('#editpassword').val($(this).data('password'));
-            //    $('#editrole').val($(this).data('role'));
-            //    $('#edistatus').val($(this).data('status'));
+               $('#editid').val($(this).attr('data-id'));
+               $('#nameedit').val($(this).attr('data-name'));
+               $('#emailedit').val($(this).attr('data-email'));
+               $('#passwordedit').val($(this).attr('data-password'));
+               $('#roleedit').val($(this).attr('data-role'));
+               $('#statusedit').val($(this).attr('data-status'));
              });
-            //  $('.btnmodalupdate').click(function(){
-            //     $('#formupdate_'+idupdate).submit();
-            //  })
         });
+         
+
+        // const getValueInput = () =>{
+        //     let inputValue = document.querySelector('[name="nombre"]').value; 
+        //     document.getElementById("#editname").innerHTML = inputValue; 
+        // }
+        
     </script>
 @endsection
+
