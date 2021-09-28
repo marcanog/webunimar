@@ -88,11 +88,13 @@ class UsersController extends Controller
             ->with('ErrorInsert', 'Por favor verifquen que los campos estén debidamente llenados')
             ->withErrors($validator);
         }else{
-          $user->name = $request->nombre;
-               $user->email = $request->email;
-               $user->password = hash::make($request->password);
-               $user->role = $request->role;
-               $user->status = $request->status;
+            
+            $user->name = $request->nombre;
+            $user->email = $request->email;
+            $password = bcrypt($request->password);
+            $user->password = $password;
+            $user->role = $request->role;
+            $user->status = $request->status;
             //    $user->update();
         }//else validator
         $user->save();
