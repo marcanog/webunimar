@@ -77,7 +77,7 @@ class UsersController extends Controller
         $validator = validator::make($request->all(),[
             'nombre' => 'required|min:10|max:255',
             'email' => 'required|max:255|unique:users',
-            'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
+            // 'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
             'role' => 'required|max:15',
             'status' => 'required|max:15',
             // 'create_at' => 'date',
@@ -88,16 +88,17 @@ class UsersController extends Controller
             ->with('ErrorInsert', 'Por favor verifquen que los campos estén debidamente llenados')
             ->withErrors($validator);
         }else{
-            
             $user->name = $request->nombre;
             $user->email = $request->email;
-            $password = bcrypt($request->password);
-            $user->password = $password;
+            // $password = bcrypt($request->password);
+            // $user->password = $password;
             $user->role = $request->role;
             $user->status = $request->status;
+            dd($user);
+            $user->save();
             //    $user->update();
         }//else validator
-        $user->save();
+        // $user->save();
         return back() ->with('Listo', 'Se ha actualizado el registro correctamente');
    }//end function
 

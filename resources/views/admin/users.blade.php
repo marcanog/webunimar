@@ -198,7 +198,7 @@
                     </div>
                 </div>
 
-                <div class="form-group row">
+                <!-- <div class="form-group row">
                     <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña: </label>
 
                     <div class="col-md-6">
@@ -206,7 +206,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="form-group row">
+                <div class="form-group row">
                     <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirmar Password: </label>
 
                     <div class="col-md-6">
@@ -214,7 +214,7 @@
                     </div>
                 </div> -->
 
-                    <div class="form-group row">
+                <div class="form-group row">
                     <label for="role" class="col-md-4 col-form-label text-md-right">Role: </label>
                     
                     <div class="col-md-6">
@@ -241,19 +241,19 @@
     <script>
         document.addEventListener('DOMContentLoaded',function(){
         var idupdate = 0;
-             @if($message = Session::get('ErrorInsert'))
-                $('#UserAddModal').modal('show');
-             @endif
+            
              $('.btnedit').click(function(){
                $('#editid').val($(this).attr('data-id'));
                $('#nameedit').val($(this).attr('data-name'));
                $('#emailedit').val($(this).attr('data-email'));
-               $('#passwordedit').val($(this).attr('data-password'));
+            //    $('#passwordedit').val($(this).attr('data-password'));
                $('#roleedit').val($(this).attr('data-role'));
                $('#statusedit').val($(this).attr('data-status'));
              });
         });
-         
+         //  @if($message = Session::get('ErrorInsert'))
+            //     $('#UserAddModal').modal('show');
+            //  @endif
 
         // const getValueInput = () =>{
         //     let inputValue = document.querySelector('[name="nombre"]').value; 
