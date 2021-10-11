@@ -80,7 +80,6 @@ class UsersController extends Controller
             // 'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
             'role' => 'required|max:15',
             'status' => 'required|max:15',
-            // 'create_at' => 'date',
         ]);
         if($validator->fails()) {
             return back()
@@ -96,10 +95,8 @@ class UsersController extends Controller
             $user->status = $request->status;
             dd($user);
             $user->save();
-            //    $user->update();
+            return back() ->with('Listo', 'Se ha actualizado el registro correctamente');
         }//else validator
-        // $user->save();
-        return back() ->with('Listo', 'Se ha actualizado el registro correctamente');
    }//end function
 
 }
