@@ -13,27 +13,25 @@ use DB;
 
 class UsersController extends Controller
 {
-   
-
     public function index(){
-        $usuarios = \DB::table('users')
+        $usuarios = DB::table('users')
                     -> select('users.*')
                     ->orderBy('id', 'ASC')
                     ->selectRaw('DATE(created_at) AS fecha')
                     ->get();
-       return view ('/admin/users')->with('usuarios', $usuarios);
-   }
+        return view ('/admin/users')->with('usuarios', $usuarios);
+    }
 
-   public function store(Request $request){
-       $validator = validator::make($request->all(),[
-            'nombre' => 'required|min:10|max:255',
+    public function store(Request $request){
+        $validator = validator::make($request->all(),[
+            'name' => 'required|min:10|max:255',
             'email' => 'required|max:255|unique:users',
             'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
             'password_confirmation' => 'required|min:8',
             'role' => 'required|max:15',
             'status' => 'required|max:15',
             // 'create_at' => 'date',
-       ]);
+        ]);
     //    if($request->hasfile('image')){
     //         $imguser = $request->file('image');
     //         $filename = time() . '.' . $imguser->getClientOriginalExtension();
@@ -44,42 +42,37 @@ class UsersController extends Controller
             ->withInput()
             ->with('ErrorInsert', 'Por favor verifquen que los campos estén debidamente llenados')
             ->withErrors($validator);
-       }else{
-           $user = User::create([
-               'name' => $request->nombre,
-               'email' => $request->email,
-               'password' => hash::make($request->password),
-               'role' => $request->role,
-               'status' => $request->status,
-               'fecha' => $request->fecha,
-               //'image' => $filename,
-           ]);
-           return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
-       }
-   }
+        }else{
+            $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => hash::make($request->password),
+            'role' => $request->role,
+            'status' => $request->status,
+            'fecha' => $request->fecha,
+            //'image' => $filename,
+            ]);
+            return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
+        }
+    }
 
-   public function create(Request $request){
+    public function create(Request $request){}
 
-   }
+    public function show (Request $request){}
 
-   public function show (Request $request){
-       
-
-   }
-
-   public function update (Request $request){
-        $user = User::find($request->id);
+    public function update (Request $request){
+        $user = User::find($request->idedit);
         // if($user->image != 'user.png'){
         //     if(file_exists( public_path('image/users/'.$user->image))){
 
         //     }
         // }
         $validator = validator::make($request->all(),[
-            'nombre' => 'required|min:10|max:255',
+            'name' => 'required|min:10|max:255',
             'email' => 'required|max:255|unique:users',
-            // 'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
             'role' => 'required|max:15',
             'status' => 'required|max:15',
+            // 'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
         ]);
         if($validator->fails()) {
             return back()
@@ -87,16 +80,14 @@ class UsersController extends Controller
             ->with('ErrorInsert', 'Por favor verifquen que los campos estén debidamente llenados')
             ->withErrors($validator);
         }else{
-            $user->name = $request->nombre;
+            $user->name = $request->name;
             $user->email = $request->email;
             // $password = bcrypt($request->password);
             // $user->password = $password;
             $user->role = $request->role;
             $user->status = $request->status;
-            dd($user);
             $user->save();
-            return back() ->with('Listo', 'Se ha actualizado el registro correctamente');
-        }//else validator
-   }//end function
-
+            return back() ->with('Success', 'Se ha actualizado el registro correctamente');
+        }
+    }
 }

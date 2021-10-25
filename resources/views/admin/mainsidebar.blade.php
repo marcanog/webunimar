@@ -1,4 +1,4 @@
-     <!-- Main Sidebar Container -->
+  <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ url('/admin') }}" class="brand-link">
@@ -31,7 +31,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library -->
-           <li class="nav-item">
+          <li class="nav-item">
             <!-- link news -->
             <ul class="nav">
               <li class="nav-item">

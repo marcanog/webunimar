@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!--
 <!-- <html lang="es"> -->
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -9,11 +8,9 @@
 
   <title>Administrador</title> 
   @include('admin.css')
- 
+
   <!-- REQUIRED SCRIPTS -->
   @include('admin.scripts')
-
- 
 
 </head>
 <body class="hold-transition sidebar-mini">
@@ -35,18 +32,18 @@
         <div class="info">
           @if (auth::guest())
             <a href="{{ route('login') }}">{{trans('header.login')}}</a>
-              <!--Crear redirección-->
-           @else
-            <div class="nav-item dropdown">
-                <a href="#" class="d-inline-flex align-items-center btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffffff">
-                  {{ auth()->user()->name }}
-                </a> 
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="/admin/profile">Perfil</a>
-                  <a class="dropdown-item" href="#">Cerrar Sesión</a>
-                </div>
-            </div>
-               <!-- Crear función en js para  llamar modal para cerrar la sesión -->
+            <!--Crear redirección-->
+            @else
+              <div class="nav-item dropdown">
+                  <a href="#" class="d-inline-flex align-items-center btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: #ffffff">
+                    {{ auth()->user()->name }}
+                  </a> 
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/admin/profile">Perfil</a>
+                    <a class="dropdown-item" href="#">Cerrar Sesión</a>
+                  </div>
+              </div>
+              <!-- Crear función en js para  llamar modal para cerrar la sesión -->
           @endif
         </div>
         
@@ -56,7 +53,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
- @include ('admin.mainsidebar')
+  @include ('admin.mainsidebar')
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -64,7 +61,7 @@
     <!-- /.content-header -->
 
     <!-- Main content -->
-     <div class="p-4">
+    <div class="p-4">
       
           <div class="top-right links">
               @auth
@@ -75,7 +72,7 @@
               @endauth
           </div>
           
-       </div>
+      </div>
   </div>
   <!-- /.content-wrapper -->
 
