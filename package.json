@@ -26,6 +26,7 @@
         "sass-loader": "^8.0.0"
     },
     "dependencies": {
+        "@ckeditor/ckeditor5-build-classic": "^30.0.0",
         "jquery-touchswipe": "^1.6.19",
         "jscs": "^3.0.7",
         "material-dashboard": "^2.1.0",

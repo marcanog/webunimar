@@ -1,4 +1,4 @@
-     <!-- Main Sidebar Container -->
+  <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ url('/admin') }}" class="brand-link">
@@ -14,14 +14,14 @@
           <img src="{{asset('image/user.png')}}" class="img-circle elevation-2" alt="Usuario">
         </div> -->
         <!-- @if (Route::has('login')) -->
-          <div class="info pb-3">
-            @if (Auth::guest())
-              <!-- <a href="{{ route('login') }}">{{trans('header.login')}}</a> -->
-              <span class="d-block">Bienvenid@</san>
-            @else
-                <a href="/admin/profile" class="d-block">Bienvenid@, {{ auth()->user()->name }}</a> 
-            @endif
-          </div>
+        <div class="info pb-3">
+          @if (Auth::guest())
+            <!-- <a href="{{ route('login') }}">{{trans('header.login')}}</a> -->
+            <span class="d-block">Bienvenid@</san>
+          @else
+              <a href="/admin/profile" class="d-block">Bienvenid@, {{ auth()->user()->name }}</a> 
+          @endif
+        </div>
         <!-- @endif -->
       </div>
       <!-- Sidebar user panel (optional) -->
@@ -31,7 +31,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library -->
-           <li class="nav-item">
+          <li class="nav-item">
             <!-- link news -->
             <ul class="nav">
               <li class="nav-item">
