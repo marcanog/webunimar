@@ -1,8 +1,8 @@
-<div class="flex-content position-ref full-height">
+<div class="flex-content position-ref full-height" id="headerunimar">
+{{-- top bar --}}
             <div class="nav-rrss">
-                <div class="top-left links">
-                    <div class="flex-row">
-                        <div class="flex nav-bar">
+                <div class="top-left links navbar navbar-expand-lg navbar-light bg-light navbar-text">
+                        <div class="flex-row nav-bar">
                                 <div class="rss-bar">
                                     <ul>
                                         <a href="mailto:info@unimar.edu.ve"><img class="img-rrss" src="./image/rrss/email.png"></a>
@@ -13,8 +13,9 @@
                                     </ul>
                                 </div>
                                 <nav class="navbar navbar-light bg-light search-bar">
-                                    <form class="form-inline">
-                                        <input class="search" type="text" placeholder="{{trans('header.input_search')}}" arial-label="search"><img class="search-img btn" src="{{ URL::asset('./image/lupa_b.png')}}" href="#">
+                                    <form class="search form-inline">
+                                        <input class="search form-control" type="search" placeholder="{{trans('header.input_search')}}" arial-label="search">
+                                        <img class="search-img btn btn-outline-success" id="btnsearch" src="{{ URL::asset('./image/lupa_b.png')}}" href="#">
                                     </form>
                                 </nav>
                                 <div class="navbar language-icon">
@@ -29,24 +30,23 @@
                                         </div>
                                     </div>
                                 </div>
+                                @if (Route::has('login'))
+                                    <div class="top-right links">
+                                        @auth
+                                            <a href="{{ url('/admin') }}">{{ auth()->user()->name }}</a>
+                                        @else
+                                            <a href="{{ route('login') }}"><img src="{{URL::asset('./image/login.png')}}" style="width: 25px;">{{trans('header.login')}}</a>
+                                        @endauth
+                                    </div>
+                                @endif
                         </div>
-                    
-                        @if (Route::has('login'))
-                            <div class="top-right links">
-                                @auth
-                                    <a href="{{ url('/admin') }}">{{ auth()->user()->name }}</a>
-                                @else
-                                    <a href="{{ route('login') }}"><img src="{{URL::asset('./image/login.png')}}" style="width: 25px;">{{trans('header.login')}}</a>
-                                @endauth
-                            </div>
-                        @endif
-                    </div>
                 </div>
-                <div class="flex flex-container">
-                    <div class="flex logo">
-                                    <a href="/home"><img class="img-logo" src="{{URL::asset ('./image/unimar.jpg') }}"></a>
+{{-- Nav bar --}}
+                <div class="navbar navbar-expand-lg navbar-light bg-light navbar-text">
+                    <div class="content-fluid d-flex logo me-4">
+                        <a href="/home"><img class="img-logo" src="{{URL::asset ('./image/unimar.jpg') }}"></a>
                     </div>
-                    <div class="flex-bar">
+                    <div class="d-flex nav-text">
                         <ul class="navbar navbar-light">
                             <li class="nav-item">
                                 <a class="navbar-brand" id="header-menu" href="/ourinstitution">
