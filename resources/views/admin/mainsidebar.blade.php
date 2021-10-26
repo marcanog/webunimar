@@ -14,14 +14,14 @@
           <img src="{{asset('image/user.png')}}" class="img-circle elevation-2" alt="Usuario">
         </div> -->
         <!-- @if (Route::has('login')) -->
-          <div class="info pb-3">
-            @if (Auth::guest())
-              <!-- <a href="{{ route('login') }}">{{trans('header.login')}}</a> -->
-              <span class="d-block">Bienvenid@</san>
-            @else
-                <a href="/admin/profile" class="d-block">Bienvenid@, {{ auth()->user()->name }}</a> 
-            @endif
-          </div>
+        <div class="info pb-3">
+          @if (Auth::guest())
+            <!-- <a href="{{ route('login') }}">{{trans('header.login')}}</a> -->
+            <span class="d-block">Bienvenid@</san>
+          @else
+              <a href="/admin/profile" class="d-block">Bienvenid@, {{ auth()->user()->name }}</a> 
+          @endif
+        </div>
         <!-- @endif -->
       </div>
       <!-- Sidebar user panel (optional) -->

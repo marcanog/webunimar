@@ -1,6 +1,6 @@
 @section('content')
     <div class="content-links">
-         <div class="links-interest" style="background-color: #336699">
+        <div class="links-interest" style="background-color: #336699">
             <a href="#"><img src="{{URL::asset('./image/studying.png')}}">
             <span>Ofertas de Estudios</span></a>
         </div>
@@ -17,8 +17,8 @@
             <span>Unimar Científica</span></a>
         </div>
     </div>
-     <div class="content-links">
-         <div class="links-interest" style="background-color: #336699">
+    <div class="content-links">
+        <div class="links-interest" style="background-color: #336699">
             <a href="#"><img src="{{URL::asset('./image/idea.png')}}">
             <span>Innovar</span></a>
         </div>

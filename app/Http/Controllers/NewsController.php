@@ -38,8 +38,8 @@ class NewsController extends Controller
             'title' => $request->title,
             'content' => $request->content,
             'resume' => $request->resume,
-            'tag' => $request->tags,
-            'status' => "Activo",
+            'tag' => $request->tag,
+            'status' => "1",
             ]);
             return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
         }

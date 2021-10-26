@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class UserSeeder extends Seeder
 {
@@ -13,22 +14,22 @@ class UserSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
-            'created_at' => '2021-09-20 18:08:47',
-            'updated_at' => '2021-09-20 18:08:47',
+            'created_at' => Carbon::now()->toDateTimeString(),
+            'updated_at' => Carbon::now()->toDateTimeString(),
             'name' => 'Georgelys Marcano',
             'email' => 'georgelys.marcano@unimar.edu.ve',
             'password' => '$2y$10$BJeS.UG0pPvcH3YIpZ1ulunVyTPsCKZaCKYuD683WrsQTOoaCLzW2',
-            'role' => 'Administrador',
-            'status' => 'Activo',
+            'role' => '1',
+            'status' => '1',
         ]);
         DB::table('users')->insert([
-            'created_at' => '2021-09-20 18:30:51',
-            'updated_at' => '2021-09-20 18:30:51',
+            'created_at' => Carbon::now()->toDateTimeString(),
+            'updated_at' => Carbon::now()->toDateTimeString(),
             'name' => 'Francisco Gomez',
             'email' => 'francisco.gomez@unimar.edu.ve',
             'password' => '$2y$10$i9qOub9xA7ku6QcUm9HgluHem3TwsZxSnFIDAXCz.whTg3lF50AXm',
-            'role' => 'Contenido',
-            'status' => 'Activo',
+            'role' => '2',
+            'status' => '2',
         ]);
     }
 }

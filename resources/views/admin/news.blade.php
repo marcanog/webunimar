@@ -18,8 +18,8 @@
                     <th scope="col">Id</th>
                     <th scope="col">Título</th>
                     <th scope="col">Resumen</th>
-                    <th scope="col">Fecha</th>
                     <th scope="col">Status</th>
+                    <th scope="col">Fecha</th>
                     <th scope="col">Operaciones</th>
                 </tr>
             </thead>
@@ -29,14 +29,26 @@
                         @if (Auth::guest())
                             <td>{{($new->title)}}</td>
                             <td>{!!($new->resume)!!}</td>
-                            <td>{{($new->created_at)}}</td>
-                            <td>{{($new->status)}}</td>
+                            <td>
+                                @if($new->status == 1)
+                                    {{'Activo'}}
+                                @else
+                                    {{'Inactivo'}}
+                                @endif
+                            </td>
+                            <td>{{($new->fecha)}}</td>
                         @else
                             <th>{{($new->id)}}</th>
                             <td>{{($new->title)}}</td>
                             <td>{!!($new->resume)!!}</td>
-                            <td>{{($new->created_at)}}</td>
-                            <td>{{($new->status)}}</td>
+                            <td>
+                                @if($new->status == 1)
+                                    {{'Activo'}}
+                                @else
+                                    {{'Inactivo'}}
+                                @endif
+                            </td>
+                            <td>{{($new->fecha)}}</td>
                             <td>
                                 <button type="button" class="btn btn-warning open-modal btnedit" data-open="NewUpdModal" data-toggle="modal" data-placement="top" title="Editar"  
                                 data-id="{{ $new->id }}" 
@@ -89,10 +101,10 @@
                 <div class="form-group">
                     <label for="tag">Tag</label>
                     <select class="form-control" id="tag" name="tag">
-                        <option value="Prensa Unimar">Prensa Unimar</option>
-                        <option value="Rectorado">Rectorado</option>
-                        <option value="Vicerrectorado Académico">Vicerrectorado Académico</option>
-                        <option value="Vicerrectorado de Extensión">Vicerrectorado de Extensión</option>
+                        <option value="1">Prensa Unimar</option>
+                        <option value="2">Rectorado</option>
+                        <option value="3">Vicerrectorado Académico</option>
+                        <option value="4">Vicerrectorado de Extensión</option>
                     </select>
                 </div>
             </div>
@@ -139,18 +151,25 @@
                             <label for="resumeedit">Resumen</label>
                             <textarea class="form-control" id="resumeedit" placeholder="" name="resume" required autocomplete="resumeedit"></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="tagedit">Tag</label>
-                            <select class="form-control" id="tagedit" name="tag">
-                                <option value="Prensa Unimar">Prensa Unimar</option>
-                                <option value="Rectorado">Rectorado</option>
-                                <option value="Vicerrectorado Académico">Vicerrectorado Académico</option>
-                                <option value="Vicerrectorado de Extensión">Vicerrectorado de Extensión</option>
-                            </select>
+                        <div class="form-group row">
+                            <label for="tag" class="col-md-3 col-form-label text-md-right">Tag: </label>
+                            <div class="col-md-7">
+                                <select class="form-control" id="tagedit" name="tag">
+                                    <option value="1">Prensa Unimar</option>
+                                    <option value="2">Rectorado</option>
+                                    <option value="3">Vicerrectorado Académico</option>
+                                    <option value="4">Vicerrectorado de Extensión</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <label for="statusedit">Status</label>
-                            <input type="text" class="form-control" id="statusedit" placeholder="" name='status' value="{{ old('statusedit') }}" required autocomplete="statusedit">
+                        <div class="form-group row">
+                            <label for="statusedit" class="col-md-3 col-form-label text-md-right">Status: </label>
+                            <div class="col-md-7">
+                                <select class="form-control" id="statusedit" name="status">
+                                    <option value="1">Activo</option>
+                                    <option value="2">Inactivo</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="modal-footer">

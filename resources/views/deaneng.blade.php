@@ -1,50 +1,50 @@
 @extends('layouts.layout')
 
 @section ('content')
-<style>
-.d-flex.justify-content-start > span {
-	position: relative;
-	top: .6rem;
-	left: 0.7rem;
-	color: #FFFFFF;
-	font-weight: 700;
-	font-size: 0.95em;
-	letter-spacing: 0.025em;
-	width: 60%;
-}
+    <style>
+        .d-flex.justify-content-start > span {
+            position: relative;
+            top: .6rem;
+            left: 0.7rem;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 0.95em;
+            letter-spacing: 0.025em;
+            width: 60%;
+        }
 
-p {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
+        p {
+        animation-duration: 3s;
+        animation-name: slidein;
+        }
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%
-  }
+        @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%
+        }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+        }
 
-#cardauthor {
-	padding: .5rem;
-	height: 215px !important;
-}
+    #cardauthor {
+        padding: .5rem;
+        height: 215px !important;
+    }
 
-#imgcrd {
-	padding: .5rem;
-}
+    #imgcrd {
+        padding: .5rem;
+    }
 
-.card-title {
-	margin-bottom: .5rem;
-	float: right;
-	position: relative;
-	bottom: 10rem;
-}
+    .card-title {
+        margin-bottom: .5rem;
+        float: right;
+        position: relative;
+        bottom: 10rem;
+    }
 
 .card-columns {
 	-webkit-column-count: 2;

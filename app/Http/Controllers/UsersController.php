@@ -28,8 +28,8 @@ class UsersController extends Controller
             'email' => 'required|max:255|unique:users',
             'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
             'password_confirmation' => 'required|min:8',
-            'role' => 'required|max:15',
-            'status' => 'required|max:15',
+            'role' => 'required',
+            'status' => 'required',
             // 'create_at' => 'date',
         ]);
     //    if($request->hasfile('image')){
@@ -67,13 +67,23 @@ class UsersController extends Controller
 
         //     }
         // }
-        $validator = validator::make($request->all(),[
-            'name' => 'required|min:10|max:255',
-            'email' => 'required|max:255|unique:users',
-            'role' => 'required|max:15',
-            'status' => 'required|max:15',
-            // 'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
-        ]);
+        if($user->email == $request->email){
+            $validator = validator::make($request->all(),[
+                'name' => 'required|min:10|max:255',
+                'role' => 'required',
+                'status' => 'required',
+                // 'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
+            ]);
+        }
+        else{
+            $validator = validator::make($request->all(),[
+                'name' => 'required|min:10|max:255',
+                'email' => 'required|max:255|unique:users',
+                'role' => 'required',
+                'status' => 'required',
+                // 'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
+            ]);
+        }
         if($validator->fails()) {
             return back()
             ->withInput()

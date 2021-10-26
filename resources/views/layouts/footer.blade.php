@@ -143,7 +143,7 @@
                 </div>
             </div>
         </div>
-         <div class="copyright-content">
+        <div class="copyright-content">
             <span>{{trans('footer.f-copyrigth')}}</span>
         </div>
     </div>

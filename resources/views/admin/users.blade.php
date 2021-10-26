@@ -53,8 +53,20 @@
                             <th>{{($usuario->id)}}</th>
                                 <td>{{($usuario->name)}}</td>
                                 <td>{{($usuario->email)}}</td>
-                                <td>{{($usuario->role)}}</td>
-                                <td>{{($usuario->status)}}</td>
+                                <td>
+                                    @if($usuario->role == 1)
+                                        {{'Administrador'}}
+                                    @else
+                                        {{'Contenido'}}
+                                    @endif
+                                </td>
+                                <td>
+                                    @if($usuario->status == 1)
+                                        {{'Activo'}}
+                                    @else
+                                        {{'Inactivo'}}
+                                    @endif
+                                </td>
                                 <td>{{($usuario->fecha)}}</td>
                             <td>
                                 <button type="button" class="btn btn-warning open-modal btnedit" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar" 
@@ -124,14 +136,20 @@
                         </div>
                         <div class="form-group row">
                             <label for="role" class="col-md-4 col-form-label text-md-right">Role: </label>
-                            <div class="col-md-6">
-                                <input id="role" type="text" class="form-control" name="role" required autocomplete="role">
+                            <div class="col-md-6">    
+                                <select class="form-control" id="role" name="role">
+                                    <option value="1">Administrador</option>
+                                    <option value="2">Contenido</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="satus" class="col-md-4 col-form-label text-md-right">Status: </label>
+                            <label for="status" class="col-md-4 col-form-label text-md-right">Status: </label>
                             <div class="col-md-6">
-                                <input id="status" type="text" class="form-control" name="status" required autocomplete="status">
+                                <select class="form-control" id="status" name="status">
+                                    <option value="1">Activo</option>
+                                    <option value="2">Inactivo</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -195,14 +213,20 @@
                         </div> -->
                         <div class="form-group row">
                             <label for="roleedit" class="col-md-4 col-form-label text-md-right">Role: </label>
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" id="roleedit" placeholder="" name='role' required autocomplete="roleedit">
+                            <div class="col-md-6">    
+                                <select class="form-control" id="roleedit" name="role">
+                                    <option value="1">Administrador</option>
+                                    <option value="2">Contenido</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="statusedit" class="col-md-4 col-form-label text-md-right">Status: </label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" id="statusedit" placeholder="" name='status' required autocomplete="statusedit">
+                                <select class="form-control" id="statusedit" name="status">
+                                    <option value="1">Activo</option>
+                                    <option value="2">Inactivo</option>
+                                </select>
                             </div>
                         </div>
                     </div>
