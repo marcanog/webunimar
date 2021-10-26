@@ -8693,7 +8693,7 @@ button.bg-dark:focus {
   padding-right: 1.5rem !important;
 }
 
-.pb-4, 
+.pb-4,
 .py-4 {
   padding-bottom: 1.5rem !important;
   padding-left: 0 !important;
@@ -11037,7 +11037,7 @@ a.navbar-brand {
 .navbar-brand {
   float: left;
   height: 50px;
-  font-size: 0.95rem !important;
+  font-size: 0.95rem;
   line-height: 20px;
 }
 
@@ -11265,7 +11265,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
  .card-title {
   font-size: 0.95rem;
-}  
+}
 
 .card{
   border: 1px solid #c1c1c1 !important;
