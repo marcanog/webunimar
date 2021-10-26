@@ -3,17 +3,17 @@
             <div class="nav-rrss">
                 <div class="top-left links navbar navbar-expand-lg navbar-light bg-light navbar-text">
                         <div class="flex-row nav-bar">
-                                <div class="rss-bar">
-                                    <ul>
-                                        <a href="mailto:info@unimar.edu.ve"><img class="img-rrss" src="./image/rrss/email.png"></a>
-                                        <a href="https://www.facebook.com/univ.demargarita"><img class="img-rrss" src="./image/rrss/facebook.png"></a>
-                                        <a href="https://www.instagram.com/universidademargarita"><img class="img-rrss" src="./image/rrss/instagram.png"></a>
-                                        <a href="https://www.twitter.com/somosunimar"><img class="img-rrss" src="./image/rrss/gorjeo.png"></a>
-                                        <a href="https://www.linkedin.com/company/univdemargarita"><img class="img-rrss" src="./image/rrss/linkedin.png"></a>
-                                    </ul>
-                                </div>
-                                <nav class="navbar navbar-light bg-light search-bar">
-                                    <form class="search form-inline">
+                            <div class="rss-bar">
+                                <ul>
+                                    <a href="mailto:info@unimar.edu.ve"><img class="img-rrss" src="./image/rrss/email.png"></a>
+                                    <a href="https://www.facebook.com/univ.demargarita"><img class="img-rrss" src="./image/rrss/facebook.png"></a>
+                                    <a href="https://www.instagram.com/universidademargarita"><img class="img-rrss" src="./image/rrss/instagram.png"></a>
+                                    <a href="https://www.twitter.com/somosunimar"><img class="img-rrss" src="./image/rrss/gorjeo.png"></a>
+                                    <a href="https://www.linkedin.com/company/univdemargarita"><img class="img-rrss" src="./image/rrss/linkedin.png"></a>
+                                </ul>
+                            </div>
+                            <nav class="navbar navbar-light bg-light search-bar">
+                                <form class="search form-inline">
                                         <input class="search form-control" type="search" placeholder="{{trans('header.input_search')}}" arial-label="search">
                                         <img class="search-img btn btn-outline-success" id="btnsearch" src="{{ URL::asset('./image/lupa_b.png')}}" href="#">
                                     </form>
@@ -43,7 +43,7 @@
                 </div>
 {{-- Nav bar --}}
                 <div class="navbar navbar-expand-lg navbar-light bg-light navbar-text">
-                    <div class="content-fluid d-flex logo me-4">
+                <div class="content-fluid d-flex logo me-4">
                         <a href="/home"><img class="img-logo" src="{{URL::asset ('./image/unimar.jpg') }}"></a>
                     </div>
                     <div class="d-flex nav-text">

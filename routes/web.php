@@ -18,7 +18,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-
 Route::group(['prefix' => 'home', 'as' => 'home'], function(){
     Route::get('/', function () {return view('home');});
     // Route::get('home', function () {return view('home');});
@@ -27,6 +26,8 @@ Route::group(['prefix' => 'home', 'as' => 'home'], function(){
 Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
     Route::get('/', 'AdminController@index');
     Route::get('/news', 'NewsController@index');
+    Route::post('/news', 'NewsController@store');
+    Route::post('/news/edit', 'NewsController@update');
     Route::get('/events', 'EventsController@index');
     Route::get('/users', 'UsersController@index');
     Route::post('/users', 'UsersController@store');
