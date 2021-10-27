@@ -45,29 +45,41 @@
                     <tr>
                     <!-- <th scope="row">1</th> -->
                         @if (Auth::guest())
-                            <td>{{($usuario->name)}}</td>
-                            <td>{{($usuario->email)}}</td>
-                            <td>{{($usuario->role)}}</td>
-                            <td>{{($usuario->status)}}</td>
+                            <td title="{{($usuario->name)}}">{{($usuario->name)}}</td>
+                            <td title="{{($usuario->email)}}">{{($usuario->email)}}</td>
+                            <td title="{{($usuario->role)}}">{{($usuario->role)}}</td>
+                            <td title="{{($usuario->status)}}">{{($usuario->status)}}</td>
                         @else
-                            <th>{{($usuario->id)}}</th>
-                                <td>{{($usuario->name)}}</td>
-                                <td>{{($usuario->email)}}</td>
-                                <td>
-                                    @if($usuario->role == 1)
-                                        {{'Administrador'}}
-                                    @else
-                                        {{'Contenido'}}
-                                    @endif
-                                </td>
-                                <td>
-                                    @if($usuario->status == 1)
-                                        {{'Activo'}}
-                                    @else
-                                        {{'Inactivo'}}
-                                    @endif
-                                </td>
-                                <td>{{($usuario->fecha)}}</td>
+                            <th title="{{($usuario->id)}}">{{($usuario->id)}}</th>
+                            <td  title="{{($usuario->name)}}">{{($usuario->name)}}</td>
+                            <td title="{{($usuario->email)}}">{{($usuario->email)}}</td>
+                            <td title="
+                                @if($usuario->role == 1)
+                                    {{'Administrador'}}
+                                @else
+                                    {{'Contenido'}}
+                                @endif"
+                            >
+                                @if($usuario->role == 1)
+                                    {{'Administrador'}}
+                                @else
+                                    {{'Contenido'}}
+                                @endif
+                            </td>
+                            <td title="
+                                @if($usuario->role == 1)
+                                    {{'Activo'}}
+                                @else
+                                    {{'Inactivo'}}
+                                @endif"
+                            >
+                                @if($usuario->status == 1)
+                                    {{'Activo'}}
+                                @else
+                                    {{'Inactivo'}}
+                                @endif
+                            </td>
+                            <td title="{{($usuario->fecha)}}">{{($usuario->fecha)}}</td>
                             <td>
                                 <button type="button" class="btn btn-warning open-modal btnedit" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar" 
                                 data-id="{{ $usuario->id }}" 

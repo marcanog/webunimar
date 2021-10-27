@@ -27,28 +27,27 @@
                 @foreach($news as $new)
                     <tr>
                         @if (Auth::guest())
-                            <td>{{($new->title)}}</td>
-                            <td>{!!($new->resume)!!}</td>
-                            <td>
-                                @if($new->status == 1)
-                                    {{'Activo'}}
-                                @else
-                                    {{'Inactivo'}}
-                                @endif
-                            </td>
-                            <td>{{($new->fecha)}}</td>
+                            <td title="{{($new->title)}}">{{($new->title)}}</td>
+                            <td title="{!!($new->resume)!!}">{!!($new->resume)!!}</td>
+                            <td title="{{($new->fecha)}}">{{($new->fecha)}}</td>
                         @else
-                            <th>{{($new->id)}}</th>
-                            <td>{{($new->title)}}</td>
-                            <td>{!!($new->resume)!!}</td>
-                            <td>
+                            <th title="{{($new->id)}}">{{($new->id)}}</th>
+                            <td title="{{($new->title)}}">{{($new->title)}}</td>
+                            <td class="resume_text" title="">{!!($new->resume)!!}</td>
+                            <td title="
+                                @if($new->status == 1)
+                                    {{'Activo'}}
+                                @else
+                                    {{'Inactivo'}}
+                                @endif"
+                            >
                                 @if($new->status == 1)
                                     {{'Activo'}}
                                 @else
                                     {{'Inactivo'}}
                                 @endif
                             </td>
-                            <td>{{($new->fecha)}}</td>
+                            <td title="{{($new->fecha)}}">{{($new->fecha)}}</td>
                             <td>
                                 <button type="button" class="btn btn-warning open-modal btnedit" data-open="NewUpdModal" data-toggle="modal" data-placement="top" title="Editar"  
                                 data-id="{{ $new->id }}" 
@@ -181,16 +180,41 @@
         </div>
     </div>
 
+    <style>
+        .ck .ck-editor__editable_inline{
+            resize: vertical;
+            min-height: 54.78px;
+        }
+    </style>
+
     <!--Page scripts -->
-    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
     <script>
         //CKEDITOR Textareas replacement
-        CKEDITOR.replace( 'content' );
-        CKEDITOR.replace( 'resume' );
+        cked.create( document.querySelector( '#content' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        cked.create( document.querySelector( '#resume' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        cked.create( document.querySelector( '#contentedit' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        cked.create( document.querySelector( '#resumeedit' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+        /*CKEDITOR.replace( 'resume' );
         CKEDITOR.replace( 'contentedit' );
-        CKEDITOR.replace( 'resumeedit' );
+        CKEDITOR.replace( 'resumeedit' );*/
 
         document.addEventListener('DOMContentLoaded',function(){
+            for(let i = 0 ; i < document.getElementsByClassName('resume_text').length ; i++)
+            {
+                document.getElementsByClassName('resume_text')[i].setAttribute('title' , document.getElementsByClassName('resume_text')[i].textContent);
+            }
             //Data load in edit form 
             $('.btnedit').click(function(){
                 $('#idedit').val($(this).attr('data-id'));

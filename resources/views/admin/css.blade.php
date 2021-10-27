@@ -1,4 +1,4 @@
-
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="shortcut icon" href="{{{ asset('image/unimar.ico') }}}">
     <!-- Google Font: Source Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
