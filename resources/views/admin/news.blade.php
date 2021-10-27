@@ -180,13 +180,6 @@
         </div>
     </div>
 
-    <style>
-        .ck .ck-editor__editable_inline{
-            resize: vertical;
-            min-height: 54.78px;
-        }
-    </style>
-
     <!--Page scripts -->
     <script>
         //CKEDITOR Textareas replacement
