@@ -28,13 +28,15 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
     Route::get('/news', 'NewsController@index');
     Route::post('/news', 'NewsController@store');
     Route::post('/news/edit', 'NewsController@update');
+    Route::get('/addnews', function(){
+        return view ('/admin/addnews');
+    });
     Route::get('/events', 'EventsController@index');
     Route::get('/users', 'UsersController@index');
     Route::post('/users', 'UsersController@store');
     Route::post('/users/edit', 'UsersController@update');
     Route::resource('users', 'UsersController');
 });
-
 
 Route::group( ['middleware' => 'auth' ], function(){
     Route::get('admin/home', 'AdminController@index');

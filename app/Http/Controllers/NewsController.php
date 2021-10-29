@@ -31,7 +31,7 @@ class NewsController extends Controller
         if($validator->fails()) {
             return back()
             ->withInput()
-            ->with('ErrorInsert', 'Por favor verifquen que los campos estén debidamente llenados')
+            ->with('ErrorInsert', 'Por favor verifiquen que los campos estén debidamente llenados')
             ->withErrors($validator);
         }else{
             $news = News::create([
