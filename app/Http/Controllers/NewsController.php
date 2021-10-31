@@ -26,7 +26,7 @@ class NewsController extends Controller
             'title' => 'required|max:255',
             'content' => 'required|max:255',
             'resume' => 'required|max:255',
-            'tag' => 'required|max:15',
+            'tags' => 'required|max:15',
         ]);
         if($validator->fails()) {
             return back()
@@ -38,10 +38,13 @@ class NewsController extends Controller
             'title' => $request->title,
             'content' => $request->content,
             'resume' => $request->resume,
-            'tag' => $request->tag,
+            'tags' => $request->tags,
             'status' => "1",
             ]);
-            return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
+//            return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
+//            $tags = explode(",", $request->tags);
+//            $news->tag($tags);
+            return redirect('news')->with('success','Post created successfully');
         }
     }
 
@@ -51,7 +54,7 @@ class NewsController extends Controller
             'title' => 'required|max:255',
             'content' => 'required|max:255',
             'resume' => 'required|max:255',
-            'tag' => 'required|max:15',
+            'tags' => 'required|max:15',
         ]);
         if($validator->fails()) {
             return back()
@@ -62,7 +65,7 @@ class NewsController extends Controller
             $news->title = $request->title;
             $news->content = $request->content;
             $news->resume = $request->resume;
-            $news->tag = $request->tag;
+            $news->tags = $request->tags;
             $news->status = $request->status;
             $news->save();
             return back() ->with('Listo', 'Se ha actualizado el registro correctamente');

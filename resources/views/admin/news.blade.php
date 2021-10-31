@@ -5,7 +5,7 @@
     <div class="d-sm-flex align-items-center justify-content-between shadow-4 mb-2">
         <h1 class="h3 mb-0 text-gray-dark">Noticias</h1>
         <a href="/admin/addnews" class="d-none d-xl-inline-block btn btn-sm btn-navbar shadow-sm navbar-blue-u">
-            <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Notica</a>
+            <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Noticia</a>
     </div>
     <!-- Success message for registry -->
     <div class="row">

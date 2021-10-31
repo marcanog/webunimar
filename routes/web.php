@@ -32,6 +32,9 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
         return view ('/admin/addnews');
     });
     Route::get('/events', 'EventsController@index');
+    Route::get('/addevent', function(){
+        return view ('/admin/addevent');
+    });
     Route::get('/users', 'UsersController@index');
     Route::post('/users', 'UsersController@store');
     Route::post('/users/edit', 'UsersController@update');

@@ -33,12 +33,18 @@
                 </div>
                 <div class="form-group">
                     <label for="tag">Tag</label>
-                    <select class="form-control" id="tag" name="tag">
-                        <option value="1">Prensa Unimar</option>
-                        <option value="2">Rectorado</option>
-                        <option value="3">Vicerrectorado Académico</option>
-                        <option value="4">Vicerrectorado de Extensión</option>
-                    </select>
+{{--                    <select class="form-control" id="tag" name="tag">--}}
+{{--                        <option value="1">Prensa Unimar</option>--}}
+{{--                        <option value="2">Rectorado</option>--}}
+{{--                        <option value="3">Vicerrectorado Académico</option>--}}
+{{--                        <option value="4">Vicerrectorado de Extensión</option>--}}
+{{--                    </select>--}}
+                    <div class="form-group-lg">
+{{--                        @foreach($news as $story)--}}
+{{--                            <label class="label label-info">{{ $story->tags }}</label>--}}
+                            <input type="text" name="tag" value="Prensa,Unimar,Rectorado,Vicerrectorado,Académico,Extensión" data-role="tagsinput"/>
+{{--                        @endforeach--}}
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -115,7 +121,7 @@
     </div>
 
     <!--Page scripts -->
-    <script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
+
     <script>
         //CKEDITOR Textareas replacement
         CKEDITOR.replace( 'content' );
