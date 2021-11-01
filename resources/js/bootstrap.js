@@ -25,11 +25,6 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 window.cked = require('@ckeditor/ckeditor5-build-classic');
 
-require('@fullcalendar/core');
-require('@fullcalendar/daygrid');
-require('@fullcalendar/common');
-
-
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
