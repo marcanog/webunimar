@@ -91,11 +91,11 @@
                 </div>
                 <div class="form-group">
                     <label for="content">Contenido</label>
-                    <textarea class="form-control" id="content" placeholder="" name="content" value="{{ old('content') }}" required autocomplete="content">{{ old('content') }}</textarea>
+                    <textarea class="form-control" id="content" placeholder="" name="content" value="{{ old('content') }}" autocomplete="content">{{ old('content') }}</textarea>
                 </div>
                 <div class="form-group">
                     <label for="resume">Resumen</label>
-                    <textarea class="form-control" id="resume" placeholder="" name="resume" value="{{ old('resume') }}" required autocomplete="resume">{{ old('resume') }}</textarea>
+                    <textarea class="form-control" id="resume" placeholder="" name="resume" value="{{ old('resume') }}" autocomplete="resume">{{ old('resume') }}</textarea>
                 </div>
                 <div class="form-group">
                     <label for="tag">Tag</label>
@@ -124,7 +124,7 @@
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="/admin/news/edit" method="POST">
+                <form action="/admin/news/update" method="POST">
                     @csrf
                     <div class="modal-body">
                         @if($message = Session::get('ErrorInsert'))
@@ -144,11 +144,11 @@
                         </div>
                         <div class="form-group">
                             <label for="contentedit">Contenido</label>
-                            <textarea class="form-control" id="contentedit" placeholder="" name="content" required autocomplete="contentedit"></textarea>
+                            <textarea class="form-control" id="contentedit" placeholder="" name="content" autocomplete="contentedit"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="resumeedit">Resumen</label>
-                            <textarea class="form-control" id="resumeedit" placeholder="" name="resume" required autocomplete="resumeedit"></textarea>
+                            <textarea class="form-control" id="resumeedit" placeholder="" name="resume" autocomplete="resumeedit"></textarea>
                         </div>
                         <div class="form-group row">
                             <label for="tag" class="col-md-3 col-form-label text-md-right">Tag: </label>
@@ -191,17 +191,22 @@
             .catch( error => {
                 console.error( error );
             } );
+        let contentedit;
         cked.create( document.querySelector( '#contentedit' ) )
+            .then(editor => {
+                contentedit = editor;
+            })
             .catch( error => {
                 console.error( error );
             } );
+        let resumeedit;
         cked.create( document.querySelector( '#resumeedit' ) )
+            .then(editor => {
+                resumeedit = editor;
+            })
             .catch( error => {
                 console.error( error );
             } );
-        /*CKEDITOR.replace( 'resume' );
-        CKEDITOR.replace( 'contentedit' );
-        CKEDITOR.replace( 'resumeedit' );*/
 
         document.addEventListener('DOMContentLoaded',function(){
             for(let i = 0 ; i < document.getElementsByClassName('resume_text').length ; i++)
@@ -212,8 +217,8 @@
             $('.btnedit').click(function(){
                 $('#idedit').val($(this).attr('data-id'));
                 $('#titleedit').val($(this).attr('data-title'));
-                CKEDITOR.instances['contentedit'].setData($(this).attr('data-content'));
-                CKEDITOR.instances['resumeedit'].setData($(this).attr('data-resume'));
+                contentedit.setData($(this).attr('data-content'));
+                resumeedit.setData($(this).attr('data-resume'));
                 $('#tagedit').val($(this).attr('data-tag'));
                 $('#statusedit').val($(this).attr('data-status'));
             });

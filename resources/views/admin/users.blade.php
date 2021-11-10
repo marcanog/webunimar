@@ -184,7 +184,7 @@
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="/admin/users/edit" method="POST">
+                <form action="/admin/users/update" method="POST">
                     @csrf
                     <div class="modal-body">
                         @if($message = Session::get('ErrorInsert'))

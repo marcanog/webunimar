@@ -97,7 +97,7 @@ class UsersController extends Controller
             $user->role = $request->role;
             $user->status = $request->status;
             $user->save();
-            return back() ->with('Success', 'Se ha actualizado el registro correctamente');
+            return back()->with('Success', 'Se ha actualizado el registro correctamente');
         }
     }
 }
