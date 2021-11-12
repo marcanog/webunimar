@@ -1,31 +1,36 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <link rel="shortcut icon" href="{{{ asset('image/unimar.ico') }}}">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Font Awesome -->
-        <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        rel="stylesheet"
-        />
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
-        <!-- MDB -->
-        <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
-        rel="stylesheet"
-        />
+    <link rel="stylesheet" href="{{ asset('css/stylecss.css') }}">
+
+    <link rel="shortcut icon" href="{{{ asset('image/unimar.ico') }}}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.css"
+    rel="stylesheet"
+
+/>
         <script src="{{ asset('js/app.js') }}" defer></script>
 
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -51,28 +56,30 @@
 
         <!-- Styles -->
     <style>
-        .flex-content.position-ref.full-height {
-            display: flex;
-            justify-content: space-around;
-            height: auto;
-        }
-        .dropdown-item:hover, .dropdown-item:focus {
-            color: #16181b;
-            text-decoration: none;
-            background-color: #336699;
-            color: #fff !important;
-        }
+        /*.flex-content.position-ref.full-height {*/
+        /*    display: flex;*/
+        /*    justify-content: space-around;*/
+        /*    height: auto;*/
+        /*}*/
+        /*.dropdown-item:hover, .dropdown-item:focus {*/
+        /*    color: #16181b;*/
+        /*    text-decoration: none;*/
+        /*    background-color: #336699;*/
+        /*    color: #fff !important;*/
+        /*}*/
     </style>
 
-    </head>
-        <body>
-            <!-- Header -->
-            @include('layouts.header')
-            <!-- content page -->
-                <main class="py-main">
-                    @yield ('content')
-                </main>
-            <!-- Footer -->
-            @include('layouts.footer')
-    </body>
+</head>
+    <body>
+        <!-- Header -->
+        @include('layouts.header')
+        <!-- content page -->
+            <main class="py-main">
+                @yield ('content')
+            </main>
+        <!-- Footer -->
+        @include('layouts.footer')
+
+
+</body>
 </html>

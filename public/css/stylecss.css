@@ -1,0 +1,53 @@
+
+.flex-content.position-ref.full-height {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    text-decoration: none;
+    background-color: #336699;
+    color: #fff;
+}
+#header-menu {
+    font-size: 0.95rem;
+}
+#btnsearch {
+    border-color: transparent;
+}
+nav.navbar.navbar-light {
+    flex: 0 0 30%;
+}
+form.form-inline {
+    position: relative;
+    top: 0.75rem;
+}
+/*news contents*/
+.title-news > span {
+    font-size: 0.85em;
+}
+/*Deanship content*/
+.content-deanship {
+    width: 18%;
+}
+/*Link of interest*/
+.links-interest {
+    width: 18%;
+}
+/*location content*/
+.map-direction > p {
+    font-size: 0.85rem;
+}
+/* Responsive */
+@media screen and (min-width:1200px){
+    nav.navbar.navbar-light {
+        display: block ruby;
+    }
+    #header-menu {
+        font-size: 0.83rem;
+    }
+    .img-logo {
+        width: 300px;
+    }
+}
+

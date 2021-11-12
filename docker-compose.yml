@@ -1,0 +1,41 @@
+# For more information: https://laravel.com/docs/sail
+version: '3'
+services:
+  laravel:
+    build: .
+    networks:
+      - local
+    ports:
+      - 80:80
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/var/www/html
+      - vendordata:/var/www/html/vendor:rw,delegated
+  db:
+    image: mariadb:10.3
+    restart: always
+    networks:
+      - local
+    ports:
+      - 3306:3306
+    volumes:
+      - mysqldata:/var/lib/mysql:rw,delegated
+    environment:
+      MYSQL_ROOT_PASSWORD: laravel
+      MYSQL_DATABASE: portalwebunimar
+      MYSQL_USER: laravel
+      MYSQL_PASSWORD: laravel
+  redis:
+    ports:
+      - 6379:6379
+    networks:
+      - local
+    image: redis:4.0.14-alpine
+volumes:
+  mysqldata:
+    driver: local
+  vendordata:
+    driver: local
+networks:
+  local:

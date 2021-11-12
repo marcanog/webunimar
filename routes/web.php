@@ -40,7 +40,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
     Route::post('/events/destroy', 'EventsController@destroy');
 });
 
-
 Route::group( ['middleware' => 'auth' ], function(){
     Route::get('admin/home', 'AdminController@index');
     Route::get('admin/profile', function(){
