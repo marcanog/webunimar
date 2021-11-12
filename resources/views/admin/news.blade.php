@@ -33,28 +33,27 @@
                 @foreach($news as $new)
                     <tr>
                         @if (Auth::guest())
-                            <td>{{($new->title)}}</td>
-                            <td>{!!($new->resume)!!}</td>
-                            <td>
-                                @if($new->status == 1)
-                                    {{'Activo'}}
-                                @else
-                                    {{'Inactivo'}}
-                                @endif
-                            </td>
-                            <td>{{($new->fecha)}}</td>
+                            <td title="{{($new->title)}}">{{($new->title)}}</td>
+                            <td title="{!!($new->resume)!!}">{!!($new->resume)!!}</td>
+                            <td title="{{($new->fecha)}}">{{($new->fecha)}}</td>
                         @else
-                            <th>{{($new->id)}}</th>
-                            <td>{{($new->title)}}</td>
-                            <td>{!!($new->resume)!!}</td>
-                            <td>
+                            <th title="{{($new->id)}}">{{($new->id)}}</th>
+                            <td title="{{($new->title)}}">{{($new->title)}}</td>
+                            <td class="resume_text" title="">{!!($new->resume)!!}</td>
+                            <td title="
+                                @if($new->status == 1)
+                                    {{'Activo'}}
+                                @else
+                                    {{'Inactivo'}}
+                                @endif"
+                            >
                                 @if($new->status == 1)
                                     {{'Activo'}}
                                 @else
                                     {{'Inactivo'}}
                                 @endif
                             </td>
-                            <td>{{($new->fecha)}}</td>
+                            <td title="{{($new->fecha)}}">{{($new->fecha)}}</td>
                             <td>
                                 <button type="button" class="btn btn-warning open-modal btnedit" data-open="NewUpdModal" data-toggle="modal" data-placement="top" title="Editar"
                                 data-id="{{ $new->id }}"

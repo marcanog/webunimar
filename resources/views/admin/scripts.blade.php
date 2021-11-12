@@ -1,3 +1,4 @@
+    <script src="{{ asset('js/app.js') }}"></script>
     <!-- jQuery -->
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}" defer></script>
     <!-- Bootstrap 4 -->

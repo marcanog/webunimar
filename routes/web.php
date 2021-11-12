@@ -25,17 +25,19 @@ Route::group(['prefix' => 'home', 'as' => 'home'], function(){
 
 Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
     Route::get('/', 'AdminController@index');
-    Route::get('/news', 'NewsController@index');
-    Route::post('/news', 'NewsController@store');
-    Route::post('/news/edit', 'NewsController@update');
-    Route::get('/addnews', function(){
-        return view ('/admin/addnews');
-    });
-    Route::get('/events', 'EventsController@index');
+    //USERS
     Route::get('/users', 'UsersController@index');
     Route::post('/users', 'UsersController@store');
-    Route::post('/users/edit', 'UsersController@update');
-    Route::resource('users', 'UsersController');
+    Route::post('/users/update', 'UsersController@update');
+    //NEWS
+    Route::get('/news', 'NewsController@index');
+    Route::post('/news', 'NewsController@store');
+    Route::post('/news/update', 'NewsController@update');
+    //EVENTS
+    Route::get('/events', 'EventsController@index');
+    Route::post('/events', 'EventsController@store');
+    Route::post('/events/update', 'EventsController@update');
+    Route::post('/events/destroy', 'EventsController@destroy');
 });
 
 Route::group( ['middleware' => 'auth' ], function(){
