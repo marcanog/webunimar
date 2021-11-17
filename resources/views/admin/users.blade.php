@@ -47,33 +47,33 @@
                         @if (Auth::guest())
                             <td title="{{($usuario->name)}}">{{($usuario->name)}}</td>
                             <td title="{{($usuario->email)}}">{{($usuario->email)}}</td>
-                            <td title="{{($usuario->role)}}">{{($usuario->role)}}</td>
-                            <td title="{{($usuario->status)}}">{{($usuario->status)}}</td>
+                            <td title="{{($usuario->role_id)}}">{{($usuario->role_id)}}</td>
+                            <td title="{{($usuario->status_id)}}">{{($usuario->status_id)}}</td>
                         @else
                             <th title="{{($usuario->id)}}">{{($usuario->id)}}</th>
                             <td  title="{{($usuario->name)}}">{{($usuario->name)}}</td>
                             <td title="{{($usuario->email)}}">{{($usuario->email)}}</td>
                             <td title="
-                                @if($usuario->role == 1)
+                                @if($usuario->role_id == 1)
                                     {{'Administrador'}}
                                 @else
                                     {{'Contenido'}}
                                 @endif"
                             >
-                                @if($usuario->role == 1)
+                                @if($usuario->role_id == 1)
                                     {{'Administrador'}}
                                 @else
                                     {{'Contenido'}}
                                 @endif
                             </td>
                             <td title="
-                                @if($usuario->role == 1)
+                                @if($usuario->role_id == 1)
                                     {{'Activo'}}
                                 @else
                                     {{'Inactivo'}}
                                 @endif"
                             >
-                                @if($usuario->status == 1)
+                                @if($usuario->status_id == 1)
                                     {{'Activo'}}
                                 @else
                                     {{'Inactivo'}}
@@ -86,8 +86,8 @@
                                 data-name="{{ $usuario->name }}" 
                                 data-email="{{ $usuario->email }}" 
                                 data-password="{{ $usuario->password }}" 
-                                data-role="{{ $usuario->role }}"
-                                data-status="{{ $usuario->status }}"
+                                data-role="{{ $usuario->role_id }}"
+                                data-status="{{ $usuario->status_id }}"
                                 data-target="#UserUpdModal">
                                     <i class="fas fa-edit"></i>
                                 </button>
@@ -147,18 +147,18 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="role" class="col-md-4 col-form-label text-md-right">Role: </label>
+                            <label for="role_id" class="col-md-4 col-form-label text-md-right">Role: </label>
                             <div class="col-md-6">    
-                                <select class="form-control" id="role" name="role">
+                                <select class="form-control" id="role_id" name="role_id">
                                     <option value="1">Administrador</option>
                                     <option value="2">Contenido</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="status" class="col-md-4 col-form-label text-md-right">Status: </label>
+                            <label for="status_id" class="col-md-4 col-form-label text-md-right">Status: </label>
                             <div class="col-md-6">
-                                <select class="form-control" id="status" name="status">
+                                <select class="form-control" id="status_id" name="status_id">
                                     <option value="1">Activo</option>
                                     <option value="2">Inactivo</option>
                                 </select>
@@ -226,7 +226,7 @@
                         <div class="form-group row">
                             <label for="roleedit" class="col-md-4 col-form-label text-md-right">Role: </label>
                             <div class="col-md-6">    
-                                <select class="form-control" id="roleedit" name="role">
+                                <select class="form-control" id="roleedit" name="role_id">
                                     <option value="1">Administrador</option>
                                     <option value="2">Contenido</option>
                                 </select>
@@ -235,7 +235,7 @@
                         <div class="form-group row">
                             <label for="statusedit" class="col-md-4 col-form-label text-md-right">Status: </label>
                             <div class="col-md-6">
-                                <select class="form-control" id="statusedit" name="status">
+                                <select class="form-control" id="statusedit" name="status_id">
                                     <option value="1">Activo</option>
                                     <option value="2">Inactivo</option>
                                 </select>

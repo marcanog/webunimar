@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
 class EventsSeeder extends Seeder
@@ -21,7 +20,7 @@ class EventsSeeder extends Seeder
             'color' => 'rgb(60, 141, 188)',
             'start' => '2021-11-01',
             'end' => '2021-11-01',
-            'status' => '1',
+            'status_id' => '1',
         ]);
         DB::table('Events')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
@@ -31,7 +30,7 @@ class EventsSeeder extends Seeder
             'color' => 'rgb(186, 139, 0)',
             'start' => '2021-11-10',
             'end' => '2021-11-18',
-            'status' => '1',
+            'status_id' => '1',
         ]);
         DB::table('Events')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
@@ -39,9 +38,9 @@ class EventsSeeder extends Seeder
             'title' => 'Evento 3',
             'description' => 'Descripción del evento 3',
             'color' => 'rgb(111, 66, 193)',
-            'start' => '2021-11-09 05:30:00',
-            'end' => '2021-11-10 08:00:00',
-            'status' => '1',
+            'start' => '2021-11-09 09:30:00.000Z',
+            'end' => '2021-11-10 12:00:00.000Z',
+            'status_id' => '1',
         ]);
         DB::table('Events')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
@@ -49,9 +48,9 @@ class EventsSeeder extends Seeder
             'title' => 'Evento 4',
             'description' => 'Descripción del evento 4',
             'color' => 'rgb(167, 29, 42)',
-            'start' => '2021-11-13 07:30:00',
-            'end' => '2021-11-13 12:30:00',
-            'status' => '1',
+            'start' => '2021-11-13 11:30:00.000Z',
+            'end' => '2021-11-13 16:30:00.000Z',
+            'status_id' => '1',
         ]);
     }
 }

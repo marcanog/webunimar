@@ -15,12 +15,12 @@ class StatusSeeder extends Seeder
         DB::table('status')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'status' => 'Activo',
+            'name' => 'Activo',
         ]);
         DB::table('status')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'status' => 'Inactivo',
+            'name' => 'Inactivo',
         ]);
     }
 }

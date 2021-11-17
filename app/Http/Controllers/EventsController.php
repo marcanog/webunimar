@@ -4,10 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Event;
-use Validator;
 use Illuminate\Session\SessionManager;
 use Storage;
-use Carbon\Carbon;
 use DB;
 
 class EventsController extends Controller
@@ -42,13 +40,19 @@ class EventsController extends Controller
      */
     public function store(Request $request)
     {
-        $startHour = Carbon::createFromFormat('d/m/Y H:i:s', $request->start)->format('H:i:s');
-        if($startHour == '00:00:00') $start = Carbon::createFromFormat('d/m/Y H:i:s', $request->start)->format('Y-m-d');
-        else $start = Carbon::createFromFormat('d/m/Y H:i:s', $request->start)->format('Y-m-d H:i:s');
+        /*$startHour = date("H:i:s", strtotime($request->start));
+        if($startHour == '00:00:00') $start = date("Y-m-d", strtotime($request->start));
+        else $start = date("Y-m-d H:i:s", strtotime($request->start));
 
-        $endHour = Carbon::createFromFormat('d/m/Y H:i:s', $request->end)->format('H:i:s');
-        if($endHour == '00:00:00') $end = Carbon::createFromFormat('d/m/Y H:i:s', $request->end)->format('Y-m-d');
-        else $end = Carbon::createFromFormat('d/m/Y H:i:s', $request->end)->format('Y-m-d H:i:s');
+        $endHour = date("H:i:s", strtotime($request->end));
+        if($endHour == '00:00:00') $end = date("Y-m-d", strtotime($request->end));
+        else $end = date("Y-m-d H:i:s", strtotime($request->end));*/
+
+        if($request->start[1] == "04:00:00.000Z") $start = $request->start[0];
+        else $start = $request->start[0]." ".$request->start[1];
+
+        if($request->end[1] == "04:00:00.000Z") $end = $request->end[0];
+        else $end = $request->end[0]." ".$request->end[1];
 
         $event = Event::create([
             'title' => $request->title,
@@ -56,7 +60,7 @@ class EventsController extends Controller
             'color' => $request->color,
             'start' => $start,
             'end' => $end,
-            'status' => $request->status,
+            'status_id' => $request->status_id,
             ]);
     }
 
@@ -85,13 +89,19 @@ class EventsController extends Controller
      */
     public function update(Request $request)
     {
-        $startHour = Carbon::createFromFormat('d/m/Y H:i:s', $request->start)->format('H:i:s');
-        if($startHour == '00:00:00') $start = Carbon::createFromFormat('d/m/Y H:i:s', $request->start)->format('Y-m-d');
-        else $start = Carbon::createFromFormat('d/m/Y H:i:s', $request->start)->format('Y-m-d H:i:s');
+        /*$startHour = date("H:i:s", strtotime($request->start));
+        if($startHour == '00:00:00') $start = date("Y-m-d", strtotime($request->start));
+        else $start = date("Y-m-d H:i:s", strtotime($request->start));
 
-        $endHour = Carbon::createFromFormat('d/m/Y H:i:s', $request->end)->format('H:i:s');
-        if($endHour == '00:00:00') $end = Carbon::createFromFormat('d/m/Y H:i:s', $request->end)->format('Y-m-d');
-        else $end = Carbon::createFromFormat('d/m/Y H:i:s', $request->end)->format('Y-m-d H:i:s');
+        $endHour = date("H:i:s", strtotime($request->end));
+        if($endHour == '00:00:00') $end = date("Y-m-d", strtotime($request->end));
+        else $end = date("Y-m-d H:i:s", strtotime($request->end));*/
+        
+        if($request->start[1] == "04:00:00.000Z") $start = $request->start[0];
+        else $start = $request->start[0]." ".$request->start[1];
+
+        if($request->end[1] == "04:00:00.000Z") $end = $request->end[0];
+        else $end = $request->end[0]." ".$request->end[1];
         
         $eventUp = Event::find($request->id);
         $eventUp->start = $start;
@@ -109,7 +119,7 @@ class EventsController extends Controller
     {
         if($request->idDelete){
             $eventDel = Event::find($request->idDelete);
-            $eventDel->status = '2';
+            $eventDel->status_id = '2';
             $eventDel->save();
         }
         return back();

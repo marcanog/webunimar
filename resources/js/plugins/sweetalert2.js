@@ -2623,7 +2623,7 @@ if (typeof window !== 'undefined' && window.Sweetalert2) {
   "    bottom: auto;\n" +
   "    left: 50%;\n" +
   "    -webkit-transform: translateX(-50%);\n" +
-  "            transform: translateX(-50%); }\n" +
+  "            transform-origin: translateX(-50%); }\n" +
   "  body.swal2-toast-shown > .swal2-container.swal2-top-end, body.swal2-toast-shown > .swal2-container.swal2-top-right {\n" +
   "    top: 0;\n" +
   "    right: 0;\n" +

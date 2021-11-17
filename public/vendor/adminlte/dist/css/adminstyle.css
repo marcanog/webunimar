@@ -1,3 +1,21 @@
+.bootstrap-tagsinput {
+    display: flex !important;
+    width: 100%;
+}
+.bootstrap-tagsinput .tag {
+    margin-right: 2px;
+    color: #fff;
+    background: #0f4d98 !important;
+    border-radius: 0.15rem !important;
+    padding: .15rem !important;
+}
+.btn.btn-default {
+    background-color: #fff;
+}
+.d-none.d-xl-inline-block.btn.btn-sm.btn-navbar.shadow-sm.navbar-blue-u {
+    background-color: #004b9a;
+    color: #fff;
+}
 .sidebar-blue-color{
     background-color: #004b9a;
 }
@@ -41,7 +59,7 @@ body:not(.layout-fixed) .main-sidebar {
     left: 0;
 }
 
-#pubtitle{ 
+#pubtitle{
     color: #000000;
 }
 

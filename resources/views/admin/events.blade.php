@@ -129,7 +129,7 @@
         locale: 'es',
         events: [
           @foreach($currentEvents as $currentEvent)
-            @if($currentEvent->status == '1')
+            @if($currentEvent->status_id == '1')
               {
                 updateStatus: 'old',
                 id: '{{($currentEvent->id)}}',
@@ -151,21 +151,20 @@
       calendar.render();
       function getDataGUI(){
         newEvents = calendar.getEvents().filter(calendar => calendar.extendedProps.updateStatus == "new");
-        updEvents = calendar.getEvents().filter(calendar => calendar.extendedProps.updateStatus == "update");
         for(var newEvent of newEvents){
           events = {
             id: newEvent.id,
             title: newEvent.title,
             description: newEvent.extendedProps.description,
             color: newEvent.backgroundColor,
-            start: newEvent.start.toLocaleString(),
+            start: newEvent.start.toISOString().split('T'),
             end: newEvent.end,
-            status: '1',
+            status_id: '1',
             '_token':$("meta[name = 'csrf-token']").attr("content"),
           }
           //Avoid events.end to be null
           if(events.end == null) events.end = events.start;
-          else events.end = events.end.toLocaleString();
+          else events.end = events.end.toISOString().split('T');
           $.ajax(
             {
               type: "POST",
@@ -176,16 +175,17 @@
             }
           );
         }
+        updEvents = calendar.getEvents().filter(calendar => calendar.extendedProps.updateStatus == "update");
         for(var updEvent of updEvents){
           events = {
             id: updEvent.id,
-            start: updEvent.start.toLocaleString(),
+            start: updEvent.start.toISOString().split('T'),
             end: updEvent.end,
             '_token':$("meta[name = 'csrf-token']").attr("content"),
           }
           //Avoid events.end to be null
           if(events.end == null) events.end = events.start;
-          else events.end = events.end.toLocaleString();
+          else events.end = events.end.toISOString().split('T');
           $.ajax(
             {
               type: "POST",
@@ -217,7 +217,7 @@
           
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
           <button id="saveUpdate" type="button" class="btn btn-primary">Save changes</button>
         </div>
       </div>
@@ -239,7 +239,7 @@
           <div id="eventStart"></div>
           <div id="eventEnd"></div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
             <button type="submit" class="btn btn-primary btnupdtuser">Delete</button>
           </div>
         </div>
@@ -286,11 +286,11 @@
             <div class="row">
               <input id="new-event" type="text" class="form-control" placeholder="Event Title"><br>
               <input id="new-event-desc" type="text" class="form-control" placeholder="Event Description">
-              <button id="add-new-event" type="button" class="btn btn-primary">Add</button>
               <!-- /btn-group -->
             </div>
             <!-- /input-group -->
           </div>
+          <button id="add-new-event" type="button" class="btn btn-primary">Add</button>
         </div>
       </div>
     </div>

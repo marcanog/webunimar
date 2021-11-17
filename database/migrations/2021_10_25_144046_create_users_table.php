@@ -20,8 +20,8 @@ class CreateUsersTable extends Migration
             $table->char('email', 50)->unique();
             $table->char('password', 255);
             $table->string('image', 255)->default('user.png');
-            $table->foreignId('role')->references('id')->on('roles'); 
-            $table->foreignId('status')->references('id')->on('status'); 
+            $table->foreignId('role_id')->references('id')->on('roles'); 
+            $table->foreignId('status_id')->references('id')->on('status'); 
         });
     }
 
