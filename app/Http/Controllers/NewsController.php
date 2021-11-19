@@ -92,17 +92,31 @@ class NewsController extends Controller
             $news->resume = $request->resume;
             $news->status_id = $request->status_id;
             $news->save();
+
             $editTags = explode(",", $request->tags);
             $allTags = array_column(DB::table('tags')
                                 ->select('name')
                                 ->get()->toArray(), 'name');
-        $newTags = array_diff($editTags,$allTags);
-            print_r($newTags);
-            /*$createTag = Tag::create([
-                'name' => "1",
-                ]);*/
+            $newTags = array_diff($editTags,$allTags);
+            DB::table('tags_news')->where('new_id', '=', $request->idedit)->delete();
+            foreach($newTags as $newTag){
+                $createTag = Tag::create([
+                    'name' => $newTag,
+                ]);
+            }
+            foreach($editTags as $editTag){
+                $tag_id = DB::table('tags')
+                    ->select('id')
+                    ->where('name', '=', $editTag)
+                    ->get();
+                $tags_news = tags_new::create([
+                    'tag_id' => $tag_id[0]->id,
+                    'new_id' => $request->idedit,
+                ]);
+            }
+            return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
         }
-        //return back() ->with('Listo', 'Se ha actualizado el registro correctamente');
+        
     }
 
     public function showtags(Request $request){
