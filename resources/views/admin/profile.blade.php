@@ -30,11 +30,6 @@
                     <div class="card-header">Detalles de cuenta</div>
                     <div class="card-body">
                         <form>
-                            <!-- Form Group (username)-->
-{{--                            <div class="mb-3">--}}
-{{--                                <label class="small mb-1" for="inputUsername">Nombre</label>--}}
-{{--                                <input class="form-control" id="inputUsername" type="text" placeholder="Enter your username" value="usuario">--}}
-{{--                            </div>--}}
                             <!-- Form Row-->
                             <div class="row gx-3 mb-3">
                                 <!-- Form Group (first name)-->
@@ -42,11 +37,6 @@
                                     <label class="small mb-1" for="inputFirstName">Nombre</label>
                                     <input class="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" value="{{($user->name)}}">
                                 </div>
-{{--                                <!-- Form Group (last name)-->--}}
-{{--                                <div class="col-md-6">--}}
-{{--                                    <label class="small mb-1" for="inputLastName">Apellido</label>--}}
-{{--                                    <input class="form-control" id="inputLastName" type="text" placeholder="Enter your last name" value="Luna">--}}
-{{--                                </div>--}}
                             </div>
                             <!-- Form Row        -->
                             <div class="row gx-3 mb-3">
