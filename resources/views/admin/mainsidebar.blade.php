@@ -2,7 +2,7 @@
   <aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ url('/admin') }}" class="brand-link">
-      <img src="{{asset('image/unimar.jpg')}}" alt="Logo UNIMAR" class="brand-image" style="opacity: .8">
+      <img src="{{asset('image/logo-formal-horizontal.jpg')}}" alt="Logo UNIMAR" class="brand-image" style="opacity: .8">
       <span class="brand-text font-weight-normal text-nowrap" style="width: 8rem;"></span>
     </a>
 
@@ -19,7 +19,7 @@
             <!-- <a href="{{ route('login') }}">{{trans('header.login')}}</a> -->
             <span class="d-block">Bienvenid@</san>
           @else
-              <a href="/admin/profile" class="d-block">Bienvenid@, {{ auth()->user()->name }}</a> 
+              <a href="/admin/profile" class="d-block">Bienvenid@, {{ auth()->user()->name }}</a>
           @endif
         </div>
         <!-- @endif -->

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Validator;
 use App\User;
 use Illuminate\Session\SessionManager;
@@ -19,6 +20,8 @@ class UsersController extends Controller
                     ->orderBy('id', 'ASC')
                     ->selectRaw('DATE(created_at) AS fecha')
                     ->get();
+        //var_dump($usuarios);die();
+
         return view ('/admin/users')->with('usuarios', $usuarios);
     }
 
@@ -28,8 +31,8 @@ class UsersController extends Controller
             'email' => 'required|max:255|unique:users',
             'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
             'password_confirmation' => 'required|min:8',
-            'role' => 'required',
-            'status' => 'required',
+            'role_id' => 'required',
+            'status_id' => 'required',
             // 'create_at' => 'date',
         ]);
     //    if($request->hasfile('image')){
@@ -40,15 +43,15 @@ class UsersController extends Controller
         if($validator->fails()) {
             return back()
             ->withInput()
-            ->with('ErrorInsert', 'Por favor verifquen que los campos estén debidamente llenados')
+            ->with('ErrorInsert', 'Por favor verifque que los campos estén debidamente llenados')
             ->withErrors($validator);
         }else{
             $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => hash::make($request->password),
-            'role' => $request->role,
-            'status' => $request->status,
+            'role_id' => $request->role_id,
+            'status_id' => $request->status_id,
             'fecha' => $request->fecha,
             //'image' => $filename,
             ]);
@@ -58,7 +61,12 @@ class UsersController extends Controller
 
     public function create(Request $request){}
 
-    public function show (Request $request){}
+    public function show (Request $request){
+        $user = Auth::user();
+//        print_r($user);
+//        die();
+        return view ('/admin/profile')->with('user', $user);
+    }
 
     public function update (Request $request){
         $user = User::find($request->idedit);
@@ -70,8 +78,8 @@ class UsersController extends Controller
         if($user->email == $request->email){
             $validator = validator::make($request->all(),[
                 'name' => 'required|min:10|max:255',
-                'role' => 'required',
-                'status' => 'required',
+                'role_id' => 'required',
+                'status_id' => 'required',
                 // 'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
             ]);
         }
@@ -79,25 +87,25 @@ class UsersController extends Controller
             $validator = validator::make($request->all(),[
                 'name' => 'required|min:10|max:255',
                 'email' => 'required|max:255|unique:users',
-                'role' => 'required',
-                'status' => 'required',
+                'role_id' => 'required',
+                'status_id' => 'required',
                 // 'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
             ]);
         }
         if($validator->fails()) {
             return back()
             ->withInput()
-            ->with('ErrorInsert', 'Por favor verifquen que los campos estén debidamente llenados')
+            ->with('ErrorInsert', 'Por favor verifque que los campos estén debidamente llenados')
             ->withErrors($validator);
         }else{
             $user->name = $request->name;
             $user->email = $request->email;
             // $password = bcrypt($request->password);
             // $user->password = $password;
-            $user->role = $request->role;
-            $user->status = $request->status;
+            $user->role_id = $request->role_id;
+            $user->status_id = $request->status_id;
             $user->save();
-            return back() ->with('Success', 'Se ha actualizado el registro correctamente');
+            return back()->with('Success', 'Se ha actualizado el registro correctamente');
         }
     }
 }

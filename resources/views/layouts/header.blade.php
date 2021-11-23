@@ -44,7 +44,7 @@
 {{-- Nav bar --}}
                 <div class="navbar navbar-expand-lg navbar-light bg-light navbar-text">
                 <div class="content-fluid d-flex logo me-4">
-                        <a href="/home"><img class="img-logo" src="{{URL::asset ('./image/unimar.jpg') }}"></a>
+                        <a href="/home"><img class="img-logo" src="{{URL::asset ('./image/logo-web-02.png') }}"></a>
                     </div>
                     <div class="d-flex nav-text">
                         <ul class="navbar navbar-light">

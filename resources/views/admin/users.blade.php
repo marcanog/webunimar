@@ -37,7 +37,7 @@
                         <th scope="col">Fecha</th>
                         <th scope="col">Operaciones</th>
                     @endif
-                    
+
                 </tr>
             </thead>
             <tbody>
@@ -45,36 +45,42 @@
                     <tr>
                     <!-- <th scope="row">1</th> -->
                         @if (Auth::guest())
-                            <td>{{($usuario->name)}}</td>
-                            <td>{{($usuario->email)}}</td>
-                            <td>{{($usuario->role)}}</td>
-                            <td>{{($usuario->status)}}</td>
+                            <td title="{{($usuario->name)}}">{{($usuario->name)}}</td>
+                            <td title="{{($usuario->email)}}">{{($usuario->email)}}</td>
+                            <td title="{{($usuario->role)}}">{{($usuario->role)}}</td>
+                            <td title="{{($usuario->status)}}">{{($usuario->status)}}</td>
                         @else
-                            <th>{{($usuario->id)}}</th>
-                                <td>{{($usuario->name)}}</td>
-                                <td>{{($usuario->email)}}</td>
-                                <td>
-                                    @if($usuario->role == 1)
-                                        {{'Administrador'}}
-                                    @else
-                                        {{'Contenido'}}
-                                    @endif
-                                </td>
-                                <td>
-                                    @if($usuario->status == 1)
-                                        {{'Activo'}}
-                                    @else
-                                        {{'Inactivo'}}
-                                    @endif
-                                </td>
-                                <td>{{($usuario->fecha)}}</td>
+                            <th title="{{($usuario->id)}}">{{($usuario->id)}}</th>
+                            <td title="{{($usuario->name)}}">{{($usuario->name)}}</td>
+                            <td title="{{($usuario->email)}}">{{($usuario->email)}}</td>
+                            <td title="@if($usuario->role == '1') {{'Administrador'}} @else  {{'Contenido'}} @endif ">
+                                @if($usuario->role == '1')
+                                    {{'Administrador'}}
+                                @else
+                                    {{'Contenido'}}
+                                @endif
+                            </td>
+                            <td title="
+                                @if($usuario->role == '1')
+                                    {{'Activo'}}
+                                @else
+                                    {{'Inactivo'}}
+                                @endif"
+                            >
+                                @if($usuario->status== '1')
+                                    {{'Activo'}}
+                                @else
+                                    {{'Inactivo'}}
+                                @endif
+                            </td>
+                            <td title="{{($usuario->fecha)}}">{{($usuario->fecha)}}</td>
                             <td>
-                                <button type="button" class="btn btn-warning open-modal btnedit" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar" 
-                                data-id="{{ $usuario->id }}" 
-                                data-name="{{ $usuario->name }}" 
-                                data-email="{{ $usuario->email }}" 
-                                data-password="{{ $usuario->password }}" 
-                                data-role="{{ $usuario->role }}"
+                                <button type="button" class="btn btn-warning open-modal btnedit" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar"
+                                data-id="{{ $usuario->id }}"
+                                data-name="{{ $usuario->name }}"
+                                data-email="{{ $usuario->email }}"
+                                data-password="{{ $usuario->password }}"
+                                data-role="{{ $usuario->role}}"
                                 data-status="{{ $usuario->status }}"
                                 data-target="#UserUpdModal">
                                     <i class="fas fa-edit"></i>
@@ -135,18 +141,18 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="role" class="col-md-4 col-form-label text-md-right">Role: </label>
-                            <div class="col-md-6">    
-                                <select class="form-control" id="role" name="role">
+                            <label for="role_id" class="col-md-4 col-form-label text-md-right">Role: </label>
+                            <div class="col-md-6">
+                                <select class="form-control" id="role_id" name="role_id">
                                     <option value="1">Administrador</option>
                                     <option value="2">Contenido</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="status" class="col-md-4 col-form-label text-md-right">Status: </label>
+                            <label for="status_id" class="col-md-4 col-form-label text-md-right">Status: </label>
                             <div class="col-md-6">
-                                <select class="form-control" id="status" name="status">
+                                <select class="form-control" id="status_id" name="status_id">
                                     <option value="1">Activo</option>
                                     <option value="2">Inactivo</option>
                                 </select>
@@ -172,7 +178,7 @@
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="/admin/users/edit" method="POST">
+                <form action="/admin/users/update" method="POST">
                     @csrf
                     <div class="modal-body">
                         @if($message = Session::get('ErrorInsert'))
@@ -213,8 +219,8 @@
                         </div> -->
                         <div class="form-group row">
                             <label for="roleedit" class="col-md-4 col-form-label text-md-right">Role: </label>
-                            <div class="col-md-6">    
-                                <select class="form-control" id="roleedit" name="role">
+                            <div class="col-md-6">
+                                <select class="form-control" id="roleedit" name="role_id">
                                     <option value="1">Administrador</option>
                                     <option value="2">Contenido</option>
                                 </select>
@@ -223,7 +229,7 @@
                         <div class="form-group row">
                             <label for="statusedit" class="col-md-4 col-form-label text-md-right">Status: </label>
                             <div class="col-md-6">
-                                <select class="form-control" id="statusedit" name="status">
+                                <select class="form-control" id="statusedit" name="status_id">
                                     <option value="1">Activo</option>
                                     <option value="2">Inactivo</option>
                                 </select>
@@ -254,10 +260,10 @@
             //  @endif
 
         // const getValueInput = () =>{
-        //     let inputValue = document.querySelector('[name="nombre"]').value; 
-        //     document.getElementById("#editname").innerHTML = inputValue; 
+        //     let inputValue = document.querySelector('[name="nombre"]').value;
+        //     document.getElementById("#editname").innerHTML = inputValue;
         // }
-        
+
     </script>
 @endsection
 

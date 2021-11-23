@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use App\news;
+use App\tag;
+use App\tags_new;
 use Illuminate\Session\SessionManager;
 use Storage;
 use Image;
@@ -21,30 +23,53 @@ class NewsController extends Controller
         return view ('/admin/news')->with('news', $news);
     }
 
+    public function addnews(){
+        return view ('/admin/addnews');
+    }
+
     public function store(Request $request){
         $validator = validator::make($request->all(),[
             'title' => 'required|max:255',
-            'content' => 'required|max:255',
-            'resume' => 'required|max:255',
-            'tags' => 'required|max:15',
+            'content' => 'required',
+            'resume' => 'required',
+            'tags' => 'required',
         ]);
         if($validator->fails()) {
             return back()
             ->withInput()
-            ->with('ErrorInsert', 'Por favor verifiquen que los campos estén debidamente llenados')
+            ->with('ErrorInsert', 'Por favor verifquen que los campos estén debidamente llenados')
             ->withErrors($validator);
         }else{
+            //Insert news
             $news = News::create([
             'title' => $request->title,
             'content' => $request->content,
             'resume' => $request->resume,
-            'tags' => $request->tags,
-            'status' => "1",
+            'status_id' => "1",
             ]);
-//            return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
-//            $tags = explode(",", $request->tags);
-//            $news->tag($tags);
-            return redirect('news')->with('success','Post created successfully');
+            //Insert unrepeated tags
+            foreach(explode(",", $request->tags) as $tag){
+                $tagId = DB::table('tags')
+                    ->select('id')
+                    ->where('name', '=', $tag)
+                    ->get();
+                if(!sizeof($tagId)){
+                    $createTag = Tag::create([
+                    'name' => $tag,
+                    ]);
+                    $tags_news = tags_new::create([
+                        'tag_id' => $createTag->id,
+                        'new_id' => $news->id,
+                    ]);
+                }
+                else{
+                    $tags_news = tags_new::create([
+                        'tag_id' => $tagId[0]->id,
+                        'new_id' => $news->id,
+                    ]);
+                }
+            }
+            return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
         }
     }
 
@@ -52,9 +77,9 @@ class NewsController extends Controller
         $news = News::find($request->idedit);
         $validator = validator::make($request->all(),[
             'title' => 'required|max:255',
-            'content' => 'required|max:255',
-            'resume' => 'required|max:255',
-            'tags' => 'required|max:15',
+            'content' => 'required',
+            'resume' => 'required',
+            'tags' => 'required',
         ]);
         if($validator->fails()) {
             return back()
@@ -65,10 +90,57 @@ class NewsController extends Controller
             $news->title = $request->title;
             $news->content = $request->content;
             $news->resume = $request->resume;
-            $news->tags = $request->tags;
-            $news->status = $request->status;
+            $news->status_id = $request->status_id;
             $news->save();
-            return back() ->with('Listo', 'Se ha actualizado el registro correctamente');
+
+            $editTags = explode(",", $request->tags);
+            $allTags = array_column(DB::table('tags')
+                                ->select('name')
+                                ->get()->toArray(), 'name');
+            $newTags = array_diff($editTags,$allTags);
+            DB::table('tags_news')->where('new_id', '=', $request->idedit)->delete();
+            foreach($newTags as $newTag){
+                $createTag = Tag::create([
+                    'name' => $newTag,
+                ]);
+            }
+            foreach($editTags as $editTag){
+                $tag_id = DB::table('tags')
+                    ->select('id')
+                    ->where('name', '=', $editTag)
+                    ->get();
+                $tags_news = tags_new::create([
+                    'tag_id' => $tag_id[0]->id,
+                    'new_id' => $request->idedit,
+                ]);
+            }
+            return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
         }
+        
+    }
+
+    public function showtags(Request $request){
+        /*
+        $tagsId = DB::table('tags_news')
+            ->select('tags')
+            ->where('news', '=', $request->id)
+            ->get();
+        $tagsNames = "";
+        foreach($tagsId as $tagId){
+            $currentTag = DB::table('tags')
+                ->select('tag')
+                ->where('id', '=', $tagId->tags)
+                ->get();
+            $tagsNames .= $currentTag[0]->tag.",";
+        }
+        */
+        $news = news::with('tags')->where('id', '=', $request->id)->firstOrFail();
+        $tagsNames = [];
+        foreach($news->tags as $tag){
+            $tagsNames[] = $tag->name;
+        }
+        return response()->json([
+            'tagsNames' => $tagsNames,
+        ]);
     }
 }

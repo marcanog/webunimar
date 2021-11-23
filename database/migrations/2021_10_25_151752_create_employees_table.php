@@ -18,14 +18,15 @@ class CreateEmployeesTable extends Migration
             $table->timestamps();
             $table->char('name', 255);
             $table->char('email', 50)->unique();
-            $table->char('role', 255);
+            $table->char('job', 255);
+            $table->char('organization',255);
             $table->date('birthday');
             $table->char('password', 255);
             $table->decimal('Salary', 8, 2);
             $table->decimal('SSO', 8, 2);
             $table->decimal('LPH', 8, 2);
             $table->decimal('IVSS', 8, 2);
-            $table->foreignId('status')->references('id')->on('status'); 
+            $table->foreignId('status_id')->references('id')->on('status');
         });
     }
 

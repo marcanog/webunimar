@@ -15,32 +15,22 @@ class TagSeeder extends Seeder
         DB::table('tags')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'tag' => 'Prensa',
+            'name' => 'Prensa Unimar',
         ]);
         DB::table('tags')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'tag' => 'Unimar',
+            'name' => 'Rectorado',
         ]);
         DB::table('tags')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'tag' => 'Rectorado',
+            'name' => 'Vicerrectorado Académico',
         ]);
         DB::table('tags')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'tag' => 'Académico',
-        ]);
-        DB::table('tags')->insert([
-            'created_at' => Carbon::now()->toDateTimeString(),
-            'updated_at' => Carbon::now()->toDateTimeString(),
-            'tag' => 'Vicerrectorado',
-        ]);
-        DB::table('tags')->insert([
-            'created_at' => Carbon::now()->toDateTimeString(),
-            'updated_at' => Carbon::now()->toDateTimeString(),
-            'tag' => 'Extensión',
+            'name' => 'Vicerrectorado de Extensión',
         ]);
     }
 }
