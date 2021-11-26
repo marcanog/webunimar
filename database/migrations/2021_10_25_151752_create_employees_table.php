@@ -22,7 +22,7 @@ class CreateEmployeesTable extends Migration
             $table->char('organization',255);
             $table->date('birthday');
             $table->char('password', 255);
-            $table->decimal('Salary', 8, 2);
+            $table->decimal('salary', 8, 2);
             $table->decimal('SSO', 8, 2);
             $table->decimal('LPH', 8, 2);
             $table->decimal('IVSS', 8, 2);

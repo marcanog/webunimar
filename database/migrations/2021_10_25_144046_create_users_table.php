@@ -26,6 +26,7 @@ class CreateUsersTable extends Migration
             $table->foreignId('status_id')->references('id')->on('status');
         });
     }
+    //crear la tabla estudiante donde se agregue los campos universidad, carrera, materias, notas
 
     /**
      * Reverse the migrations.
