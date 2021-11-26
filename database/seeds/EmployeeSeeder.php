@@ -1,9 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use Carbon\Carbon;
 
-class TagSeeder extends Seeder
+class EmployeeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,30 +11,25 @@ class TagSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('tags')->insert([
+        DB::table('employees_types')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Prensa',
+            'name' => 'Administrativo',
         ]);
         DB::table('tags')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Rectorado',
+            'name' => 'Profesor',
         ]);
         DB::table('tags')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Vicerrectorado',
+            'name' => 'Mantenimiento',
         ]);
         DB::table('tags')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Extensión',
-        ]);
-        DB::table('tags')->insert([
-            'created_at' => Carbon::now()->toDateTimeString(),
-            'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Académico',
+            'name' => 'Control_Seguridad',
         ]);
     }
 }
