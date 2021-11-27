@@ -61,7 +61,7 @@
         //Add draggable funtionality
         ini_events(event)
       })
-      
+
       /* BUILDING CALENDAR */
       var calendarEl = document.getElementById('calendar');
       var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -111,10 +111,10 @@
           $('#deleteEvent').modal('toggle');
         },
         eventDrop: function(arg) {
-          if(arg.event.extendedProps.updateStatus != "new") arg.event.setExtendedProp('updateStatus', 'update'); 
+          if(arg.event.extendedProps.updateStatus != "new") arg.event.setExtendedProp('updateStatus', 'update');
         },
         eventResize: function(arg) {
-          if(arg.event.extendedProps.updateStatus != "new") arg.event.setExtendedProp('updateStatus', 'update'); 
+          if(arg.event.extendedProps.updateStatus != "new") arg.event.setExtendedProp('updateStatus', 'update');
         },
         editable: true,
         dayMaxEvents: true, // allow "more" link when too many events
@@ -139,7 +139,7 @@
                 color    : '{{($currentEvent->color)}}',
                 @if($currentEvent->start == $currentEvent->end)
                   start: '{{($currentEvent->start)}}'
-                @else 
+                @else
                   start: '{{($currentEvent->start)}}',
                   end: '{{($currentEvent->end)}}'
                 @endif
@@ -210,15 +210,15 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Actualizar Evento</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div id="updateModalText" class="modal-body">
-          
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <button id="saveUpdate" type="button" class="btn btn-primary">Save changes</button>
+          <button id="saveUpdate" type="button" class="btn btn-primary">Guardar</button>
         </div>
       </div>
     </div>
@@ -229,7 +229,7 @@
       <form action="/admin/events/destroy" method="POST">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Seguro que desea eliminar este evento?</h5>
+            <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea eliminar este evento?</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           @csrf
@@ -240,7 +240,7 @@
           <div id="eventEnd"></div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="submit" class="btn btn-primary btnupdtuser">Delete</button>
+            <button type="submit" class="btn btn-primary btnupdtuser">Borrar</button>
           </div>
         </div>
       </form>
@@ -251,7 +251,7 @@
       <div class="sticky-top mb-3">
         <div class="card">
           <div class="card-header">
-            <h4 class="card-title">Draggable Events</h4>
+            <h4 class="card-title">Eventos arrastrables</h4>
           </div>
           <div class="card-body">
             <!-- the events -->
@@ -259,7 +259,7 @@
               <div class="checkbox">
                 <label for="drop-remove">
                   <input type="checkbox" id="drop-remove">
-                  remove after drop
+                  Remover luego de arrastrar
                 </label>
               </div>
             </div>
@@ -269,7 +269,7 @@
         <!-- /.card -->
         <div class="card">
           <div class="card-header">
-            <h3 class="card-title">Create Event</h3>
+            <h3 class="card-title">Crear evento</h3>
           </div>
           <div class="card-body">
             <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
@@ -284,22 +284,25 @@
             </div>
             <!-- /btn-group -->
             <div class="row">
-              <input id="new-event" type="text" class="form-control" placeholder="Event Title"><br>
-              <input id="new-event-desc" type="text" class="form-control" placeholder="Event Description">
+              <input id="new-event" type="text" class="form-control" placeholder="Título del Evento"><br>
+              <input id="new-event-desc" type="text" class="form-control" placeholder="Descripción del evento">
               <!-- /btn-group -->
             </div>
             <!-- /input-group -->
           </div>
-          <button id="add-new-event" type="button" class="btn btn-primary">Add</button>
+          <button id="add-new-event" type="button" class="btn btn-primary">Agregar</button>
         </div>
       </div>
-    </div>
+     </div>
+{{--  </div>--}}
     <div class="col-md-10">
-      <div class="card card-primary">
+        <div class="card card-primary">
         <div class="card-body p-0">
           <div id='calendar'></div>
         </div>
       </div>
     </div>
   </div>
+
+
 @endsection

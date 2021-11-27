@@ -44748,4 +44748,10 @@ a.text-muted:hover {
 .dark-mode .dark-mode.accent-gray-dark .page-item .page-link:hover {
  color:#3f474e
 }
+/* Profile view */
+#card-profeusr{
+    width: 12rem;
+    padding: 1rem;
+}
+
 /*# sourceMappingURL=adminlte.min.css.map */

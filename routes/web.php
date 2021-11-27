@@ -44,9 +44,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
 
 Route::group( ['middleware' => 'auth' ], function(){
     Route::get('admin/home', 'AdminController@index');
-    Route::get('admin/profile', function(){
-        return view ('admin/profile');
-    });
+    Route::get('admin/profile', 'UsersController@show');
     // Route::get('admin/ajuda', 'AdminController@ajuda');
 });
 

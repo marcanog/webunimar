@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Validator;
 use App\User;
 use Illuminate\Session\SessionManager;
@@ -19,6 +20,8 @@ class UsersController extends Controller
                     ->orderBy('id', 'ASC')
                     ->selectRaw('DATE(created_at) AS fecha')
                     ->get();
+        //var_dump($usuarios);die();
+
         return view ('/admin/users')->with('usuarios', $usuarios);
     }
 
@@ -40,7 +43,7 @@ class UsersController extends Controller
         if($validator->fails()) {
             return back()
             ->withInput()
-            ->with('ErrorInsert', 'Por favor verifquen que los campos estén debidamente llenados')
+            ->with('ErrorInsert', 'Por favor verifque que los campos estén debidamente llenados')
             ->withErrors($validator);
         }else{
             $user = User::create([
@@ -58,7 +61,12 @@ class UsersController extends Controller
 
     public function create(Request $request){}
 
-    public function show (Request $request){}
+    public function show (Request $request){
+        $user = Auth::user();
+//        print_r($user);
+//        die();
+        return view ('/admin/profile')->with('user', $user);
+    }
 
     public function update (Request $request){
         $user = User::find($request->idedit);
@@ -87,7 +95,7 @@ class UsersController extends Controller
         if($validator->fails()) {
             return back()
             ->withInput()
-            ->with('ErrorInsert', 'Por favor verifquen que los campos estén debidamente llenados')
+            ->with('ErrorInsert', 'Por favor verifque que los campos estén debidamente llenados')
             ->withErrors($validator);
         }else{
             $user->name = $request->name;
