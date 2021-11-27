@@ -11,25 +11,6 @@ class EmployeeSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('employees_types')->insert([
-            'created_at' => Carbon::now()->toDateTimeString(),
-            'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Administrativo',
-        ]);
-        DB::table('tags')->insert([
-            'created_at' => Carbon::now()->toDateTimeString(),
-            'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Profesor',
-        ]);
-        DB::table('tags')->insert([
-            'created_at' => Carbon::now()->toDateTimeString(),
-            'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Mantenimiento',
-        ]);
-        DB::table('tags')->insert([
-            'created_at' => Carbon::now()->toDateTimeString(),
-            'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Control_Seguridad',
-        ]);
+
     }
 }
