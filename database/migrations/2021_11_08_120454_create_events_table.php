@@ -14,14 +14,16 @@ class CreateEventsTable extends Migration
     public function up()
     {
         Schema::create('events', function (Blueprint $table) {
-            $table->bigIncrements('id')->unique();
+            $table->engine = 'InnoDB';
+            $table->id();
             $table->timestamps();
             $table->char('title', 255);
             $table->text('description');
             $table->char('color', 20);
             $table->char('start', 255)->nullable();
             $table->char('end', 255)->nullable();
-           // $table->foreignId('status_id')->references('id')->on('status');
+//            $table->foreignId('tag_id')->references('id')->on('tags');
+            $table->foreignId('status_id')->references('id')->on('status');
         });
     }
 

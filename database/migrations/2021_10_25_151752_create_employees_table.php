@@ -14,7 +14,8 @@ class CreateEmployeesTable extends Migration
     public function up()
     {
         Schema::create('employees', function (Blueprint $table) {
-            $table->bigIncrements('id')->unique();
+            $table->engine = 'InnoDB';
+            $table->id();
             $table->timestamps();
             $table->char('name', 255);
             $table->char('email', 50)->unique();
@@ -27,6 +28,7 @@ class CreateEmployeesTable extends Migration
             $table->decimal('LPH', 8, 2);
             $table->decimal('IVSS', 8, 2);
             $table->foreignId('status_id')->references('id')->on('status');
+            //$table->foreignId('employeestypes_id')->references('id')->on('employees_types');
         });
     }
 

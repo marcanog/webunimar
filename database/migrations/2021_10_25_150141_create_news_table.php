@@ -14,14 +14,15 @@ class CreateNewsTable extends Migration
     public function up()
     {
         Schema::create('news', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->timestamps();
             $table->char('title', 255);
             $table->text('content');
             $table->text('resume');
             $table->char('image', 255)->default('new.png');
-            //$table->foreignId('tag')->references('id')->on('tags'); 
-            $table->foreignId('status_id')->references('id')->on('status'); 
+//            $table->foreignId('tag_id')->references('id')->on('tags');
+            $table->foreignId('status_id')->references('id')->on('status');
         });
     }
 
