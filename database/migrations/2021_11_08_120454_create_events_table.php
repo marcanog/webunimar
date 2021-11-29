@@ -21,7 +21,7 @@ class CreateEventsTable extends Migration
             $table->char('color', 20);
             $table->char('start', 255)->nullable();
             $table->char('end', 255)->nullable();
-            $table->foreignId('status')->references('id')->on('status'); 
+            $table->foreignId('status_id')->references('id')->on('status'); 
         });
     }
 

@@ -7,20 +7,15 @@
         <a href="#" class="d-none d-xl-inline-block btn btn-sm btn-navbar shadow-sm navbar-blue-u open-modal" data-toggle="modal" data-target="#UserAddModal" data-open="UserAddModal">
         <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Usuario</a>
     </div>
-    <div class="row">
-        @if($message = Session::get('Listo'))
-            <div class="col-12 alert alert-success alert-dismissible fade show" role="alert">
-                <span>{{ $message }}</span>
-            </div>
-        @endif
-    </div>
+
+    <!-- Success message for registry -->
+    @include('layouts.registryStatus')
+
+    <!-- List of users -->
     <div class="table-responsive-xl">
         <table class="table table-hover col-lg-12 text-center">
-            <!-- <caption>List of users</caption> -->
             <thead class="thead-blue">
                 <tr>
-                <!-- <th scope="col">#</th> -->
-                <!-- <th scope="col">{{trans('users.col-head-name')}}</th> -->
                     @if(Auth::guest())
                         <th scope="col">Nombre</th>
                         <th scope="col">Email</th>
@@ -43,51 +38,50 @@
             <tbody>
                 @foreach($usuarios as $usuario)
                     <tr>
-                    <!-- <th scope="row">1</th> -->
                         @if (Auth::guest())
                             <td title="{{($usuario->name)}}">{{($usuario->name)}}</td>
                             <td title="{{($usuario->email)}}">{{($usuario->email)}}</td>
-                            <td title="{{($usuario->role)}}">{{($usuario->role)}}</td>
-                            <td title="{{($usuario->status)}}">{{($usuario->status)}}</td>
+                            <td title="{{($usuario->role_id)}}">{{($usuario->role_id)}}</td>
+                            <td title="{{($usuario->status_id)}}">{{($usuario->status_id)}}</td>
                         @else
                             <th title="{{($usuario->id)}}">{{($usuario->id)}}</th>
                             <td  title="{{($usuario->name)}}">{{($usuario->name)}}</td>
                             <td title="{{($usuario->email)}}">{{($usuario->email)}}</td>
                             <td title="
-                                @if($usuario->role == 1)
-                                    {{'Administrador'}}
-                                @else
+                                @if($usuario->role_id == 1)
                                     {{'Contenido'}}
+                                @else
+                                    {{'Administrador'}}
                                 @endif"
                             >
-                                @if($usuario->role == 1)
-                                    {{'Administrador'}}
-                                @else
+                                @if($usuario->role_id == 1)
                                     {{'Contenido'}}
+                                @else
+                                    {{'Administrador'}}
                                 @endif
                             </td>
                             <td title="
-                                @if($usuario->role == 1)
+                                @if($usuario->role_id == 1)
                                     {{'Activo'}}
                                 @else
                                     {{'Inactivo'}}
                                 @endif"
                             >
-                                @if($usuario->status == 1)
+                                @if($usuario->status_id == 1)
                                     {{'Activo'}}
                                 @else
                                     {{'Inactivo'}}
                                 @endif
                             </td>
-                            <td title="{{($usuario->fecha)}}">{{($usuario->fecha)}}</td>
+                            <td title="{{($usuario->created_at)}}">{{($usuario->created_at)}}</td>
                             <td>
                                 <button type="button" class="btn btn-warning open-modal btnedit" data-open="UserUpdModal" data-toggle="modal" data-placement="top" title="Editar" 
                                 data-id="{{ $usuario->id }}" 
                                 data-name="{{ $usuario->name }}" 
                                 data-email="{{ $usuario->email }}" 
                                 data-password="{{ $usuario->password }}" 
-                                data-role="{{ $usuario->role }}"
-                                data-status="{{ $usuario->status }}"
+                                data-role="{{ $usuario->role_id }}"
+                                data-status="{{ $usuario->status_id }}"
                                 data-target="#UserUpdModal">
                                     <i class="fas fa-edit"></i>
                                 </button>
@@ -112,20 +106,10 @@
                 <form action="/admin/users" method="POST">
                     @csrf
                     <div class="modal-body">
-                        @if($message = Session::get('ErrorInsert'))
-                            <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
-                                <h5>Errores: </h5>
-                                <ul>
-                                    @foreach($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Nombre: </label>
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required minlength="10" autocomplete="name" autofocus>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -137,28 +121,28 @@
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña: </label>
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required autocomplete="password">
+                                <input id="password" type="password" class="form-control" name="password" required minlength="8" autocomplete="password">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="password_confirmation" class="col-md-4 col-form-label text-md-right">Confirmar Password: </label>
                             <div class="col-md-6">
-                                <input id="password_confirmation" type="password" class="form-control" name="password_confirmation" required autocomplete="password_confirmation">
+                                <input id="password_confirmation" type="password" class="form-control" name="password_confirmation" required minlength="8" autocomplete="password_confirmation">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="role" class="col-md-4 col-form-label text-md-right">Role: </label>
+                            <label for="role_id" class="col-md-4 col-form-label text-md-right">Role: </label>
                             <div class="col-md-6">    
-                                <select class="form-control" id="role" name="role">
-                                    <option value="1">Administrador</option>
-                                    <option value="2">Contenido</option>
+                                <select class="form-control" id="role_id" name="role_id">
+                                    <option value="1">Contenido</option>
+                                    <option value="2">Administrador</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="status" class="col-md-4 col-form-label text-md-right">Status: </label>
+                            <label for="status_id" class="col-md-4 col-form-label text-md-right">Status: </label>
                             <div class="col-md-6">
-                                <select class="form-control" id="status" name="status">
+                                <select class="form-control" id="status_id" name="status_id">
                                     <option value="1">Activo</option>
                                     <option value="2">Inactivo</option>
                                 </select>
@@ -187,55 +171,32 @@
                 <form action="/admin/users/update" method="POST">
                     @csrf
                     <div class="modal-body">
-                        @if($message = Session::get('ErrorInsert'))
-                            <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
-                                <h5>Errores: </h5>
-                                <ul>
-                                    @foreach($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                        <input type="hidden" class="form-control" id="idedit" placeholder="" name='idedit' value="{{ old('idedit') }}" required autocomplete="idedit">
+                        <input type="hidden" class="form-control" id="idedit" placeholder="" name='idedit' required>
                         <div class="form-group row">
                             <label for="nameedit" class="col-md-4 col-form-label text-md-right">Nombre: </label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" id="nameedit" placeholder="" name='name' required autocomplete="nameedit">
+                                <input type="text" class="form-control" id="nameedit" placeholder="" name='name' required minlength="10">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="emailedit" class="col-md-4 col-form-label text-md-right">Correo Electrónico: </label>
                             <div class="col-md-6">
-                                <input type="email" class="form-control" id="emailedit" placeholder="" name='email' required autocomplete="emailedit">
+                                <input type="email" class="form-control" id="emailedit" placeholder="" name='email' required>
                             </div>
                         </div>
-                        <!-- <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña: </label>
-
-                            <div class="col-md-6">
-                                <input id="passwordedit" type="password" class="form-control" name="password" required autocomplete="new-password">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirmar Password: </label>
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div> -->
                         <div class="form-group row">
                             <label for="roleedit" class="col-md-4 col-form-label text-md-right">Role: </label>
                             <div class="col-md-6">    
-                                <select class="form-control" id="roleedit" name="role">
-                                    <option value="1">Administrador</option>
-                                    <option value="2">Contenido</option>
+                                <select class="form-control" id="roleedit" name="role_id">
+                                    <option value="1">Contenido</option>
+                                    <option value="2">Administrador</option>
                                 </select>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="statusedit" class="col-md-4 col-form-label text-md-right">Status: </label>
                             <div class="col-md-6">
-                                <select class="form-control" id="statusedit" name="status">
+                                <select class="form-control" id="statusedit" name="status_id">
                                     <option value="1">Activo</option>
                                     <option value="2">Inactivo</option>
                                 </select>
@@ -250,26 +211,19 @@
             </div>
         </div>
     </div>
+
+    <!-- Local scripts -->
     <script>
+        //Fill forms
         document.addEventListener('DOMContentLoaded',function(){
             $('.btnedit').click(function(){
                 $('#idedit').val($(this).attr('data-id'));
                 $('#nameedit').val($(this).attr('data-name'));
                 $('#emailedit').val($(this).attr('data-email'));
-                //$('#passwordedit').val($(this).attr('data-password'));
                 $('#roleedit').val($(this).attr('data-role'));
                 $('#statusedit').val($(this).attr('data-status'));
             });
         });
-         //  @if($message = Session::get('ErrorInsert'))
-            //     $('#UserAddModal').modal('show');
-            //  @endif
-
-        // const getValueInput = () =>{
-        //     let inputValue = document.querySelector('[name="nombre"]').value; 
-        //     document.getElementById("#editname").innerHTML = inputValue; 
-        // }
-        
     </script>
 @endsection
 
