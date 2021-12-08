@@ -14,6 +14,7 @@ class CreateStatusTable extends Migration
     public function up()
     {
         Schema::create('status', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->char('name', 30);
             $table->timestamps();

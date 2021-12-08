@@ -1,9 +1,10 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Carbon\Carbon;
 
-class EventsSeeder extends Seeder
+class EventSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,7 +13,7 @@ class EventsSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('Events')->insert([
+        DB::table('events')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
             'title' => 'Evento 1',
@@ -22,7 +23,7 @@ class EventsSeeder extends Seeder
             'end' => '2021-11-01',
             'status_id' => '1',
         ]);
-        DB::table('Events')->insert([
+        DB::table('events')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
             'title' => 'Evento 2',
@@ -32,7 +33,7 @@ class EventsSeeder extends Seeder
             'end' => '2021-11-18',
             'status_id' => '1',
         ]);
-        DB::table('Events')->insert([
+        DB::table('events')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
             'title' => 'Evento 3',
@@ -42,7 +43,7 @@ class EventsSeeder extends Seeder
             'end' => '2021-11-10 12:00:00.000Z',
             'status_id' => '1',
         ]);
-        DB::table('Events')->insert([
+        DB::table('events')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
             'title' => 'Evento 4',

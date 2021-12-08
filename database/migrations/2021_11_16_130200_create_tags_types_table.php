@@ -13,14 +13,13 @@ class CreateTagsTypesTable extends Migration
      */
     public function up()
     {
-        Schema::create('tags_type', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-            $table->char('name', 255);
-            $table->foreignId('tag_id')->references('id')->on('tags');
-            $table->foreignId('new_id')->references('id')->on('news');
-            $table->foreignId('event_id')->references('id')->on('events');
-        });
+//        Schema::create('tags_types', function (Blueprint $table) {
+//            $table->engine = 'InnoDB';
+//            $table->id();
+//            $table->timestamps();
+//            $table->char('name',255);
+//           // $table->foreignId('tag_id')->references('id')->on('tags');
+//        });
     }
 
     /**
@@ -30,6 +29,6 @@ class CreateTagsTypesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tags_news');
+        Schema::dropIfExists('tags_types');
     }
 }

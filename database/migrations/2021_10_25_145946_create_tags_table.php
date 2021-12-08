@@ -14,10 +14,12 @@ class CreateTagsTable extends Migration
     public function up()
     {
         Schema::create('tags', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
-            $table->char('name', 255)->unique();
-            $table->char('tags_type', 255);
+            $table->string('name',255)->unique();
             $table->timestamps();
+           // $table->foreignId('new_id')->references('id')->on('news');
+           // $table->foreignId('event_id')->references('id')->on('events');
         });
     }
 

@@ -14,12 +14,10 @@ class CreateEmployeesTypesTable extends Migration
     public function up()
     {
         Schema::create('employees_types', function (Blueprint $table) {
+            $table->engine = 'InnoDB';
             $table->id();
             $table->timestamps();
-            $table->char('Administrativo', 255);
-            $table->char('Control_seguridad', 255);
-            $table->char('Profesor', 255);
-            $table->char('Mantenimiento', 255);
+            $table->char('name', 255);
         });
     }
 
