@@ -20,8 +20,8 @@ class CreateNewsTable extends Migration
             $table->char('title', 255);
             $table->text('content');
             $table->text('resume');
+            $table->text('tags_id');
             $table->char('image', 255)->default('new.png');
-//            $table->foreignId('tag_id')->references('id')->on('tags');
             $table->foreignId('status_id')->references('id')->on('status');
         });
     }

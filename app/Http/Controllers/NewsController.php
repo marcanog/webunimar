@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\news;
+use App\status;
 use App\tag;
 
 class NewsController extends Controller
 {
     public function index(){
-        return view ('/admin/news')->with('news', News::get());
+        return view ('/admin/news')->with('news', News::get())->with('tags', tag::get())->with('status', status::get());
     }
 
     public function addnews(){
@@ -23,13 +24,6 @@ class NewsController extends Controller
             'resume' => 'required|min:10',
             'tags' => 'required',
         ]);
-        //Insert news
-        $news = News::create([
-            'title' => $request->title,
-            'content' => $request->content,
-            'resume' => $request->resume,
-            'status_id' => "1",
-        ]);
         //Insert unrepeated tags and get IDs of sent tags
         $tagsId = [];
         foreach(explode(",", $request->tags) as $tagName){
@@ -37,8 +31,14 @@ class NewsController extends Controller
                 'name' => $tagName,
             ])->id;
         }
-        //Create relations between the news and its tags
-        News::find($news->id)->tags()->attach($tagsId);
+        //Insert news
+        $news = News::create([
+            'title' => $request->title,
+            'content' => $request->content,
+            'resume' => $request->resume,
+            'tags_id' => implode(",",$tagsId),
+            'status_id' => "1",
+        ]);
         return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
     }
 
@@ -49,13 +49,6 @@ class NewsController extends Controller
             'resume' => 'required|min:10',
             'tags' => 'required',
         ]);
-        //Update news
-        News::find($request->idedit)->update([
-            'title' => $request->title,
-            'content' => $request->content,
-            'resume' => $request->resume,
-            'status_id' => $request->status_id,
-        ]);
         //Insert unrepeated tags and get IDs of sent tags
         $tagsId = [];
         foreach(explode(",", $request->tags) as $tagName){
@@ -63,19 +56,14 @@ class NewsController extends Controller
                 'name' => $tagName,
             ])->id;
         }
-        //Create and delete relations between the news and its tags
-        News::find($request->idedit)->tags()->sync($tagsId);
-        return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
-    }
-
-    public function showtags(Request $request){
-        $news = news::with('tags')->where('id', '=', $request->id)->firstOrFail();
-        $tagsNames = [];
-        foreach($news->tags as $tag){
-            $tagsNames[] = $tag->name;
-        }
-        return response()->json([
-            'tagsNames' => $tagsNames,
+        //Update news
+        News::find($request->idedit)->update([
+            'title' => $request->title,
+            'content' => $request->content,
+            'resume' => $request->resume,
+            'tags_id' => implode(",",$tagsId),
+            'status_id' => $request->status_id,
         ]);
+        return back() ->with('Listo', 'Se ha guardado satisfactoriamente');
     }
 }

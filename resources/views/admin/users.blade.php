@@ -23,7 +23,6 @@
                         <th scope="col">Teléfono</th>
                         <th scope="col">Role</th>
                         <th scope="col">Status</th>
-                        <th scope="col">Operaciones</th>
                     @else
                         <th scope="col">Id</th>
                         <th scope="col">Nombre</th>

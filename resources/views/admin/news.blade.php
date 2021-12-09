@@ -16,47 +16,79 @@
         <table class="table table-hover col-lg-12 text-center">
             <thead class="thead-blue">
                 <tr>
-                    <th scope="col">Id</th>
-                    <th scope="col">Título</th>
-                    <th scope="col">Resumen</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Fecha</th>
-                    <th scope="col">Operaciones</th>
+                    @if (Auth::guest())
+                        <th scope="col">Título</th>
+                        <th scope="col">Resumen</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Status</th>
+                    @else
+                        <th scope="col">Id</th>
+                        <th scope="col">Título</th>
+                        <th scope="col">Resumen</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Operaciones</th>
+                    @endif
                 </tr>
             </thead>
             <tbody>
                 @foreach($news as $new)
                     <tr>
                         @if (Auth::guest())
-                            <td>{{($new->title)}}</td>
-                            <td>{!!($new->resume)!!}</td>
-                            <td>
-                                @if($new->status_id == 1)
-                                    {{'Activo'}}
-                                @else
-                                    {{'Inactivo'}}
-                                @endif
+                            <td title="{{($new->title)}}">{{($new->title)}}</td>
+                            <td title="{{strip_tags($new->resume)}}">{!!($new->resume)!!}</td>
+                            <td title="{{($new->created_at)}}">{{($new->created_at)}}</td>
+                            <td title="
+                                @foreach($status as $curr_status)
+                                    @if($new->status_id == $curr_status->id)
+                                        {{$curr_status->name}}
+                                        @break
+                                    @endif
+                                @endforeach
+                            ">
+                                @foreach($status as $curr_status)
+                                    @if($new->status_id == $curr_status->id)
+                                        {{$curr_status->name}}
+                                        @break
+                                    @endif
+                                @endforeach
                             </td>
-                            <td>{{($new->fecha)}}</td>
                         @else
-                            <th>{{($new->id)}}</th>
-                            <td>{{($new->title)}}</td>
-                            <td>{!!($new->resume)!!}</td>
-                            <td>
-                                @if($new->status_id == 1)
-                                    {{'Activo'}}
-                                @else
-                                    {{'Inactivo'}}
-                                @endif
+                            <th title="{{($new->id)}}">{{($new->id)}}</th>
+                            <td title="{{($new->title)}}">{{($new->title)}}</td>
+                            <td title="{{strip_tags($new->resume)}}">{!!($new->resume)!!}</td>
+                            <td title="{{($new->created_at)}}">{{($new->created_at)}}</td>
+                            <td title="
+                                @foreach($status as $curr_status)
+                                    @if($new->status_id == $curr_status->id)
+                                        {{$curr_status->name}}
+                                        @break
+                                    @endif
+                                @endforeach
+                            ">
+                                @foreach($status as $curr_status)
+                                    @if($new->status_id == $curr_status->id)
+                                        {{$curr_status->name}}
+                                        @break
+                                    @endif
+                                @endforeach
                             </td>
-                            <td>{{($new->created_at)}}</td>
                             <td>
-                                <button type="button" class="btn btn-warning open-modal btnedit"  data-placement="top" title="Editar"
+                                <button type="button" class="btn btn-warning open-modal btnedit" data-open="NewUpdModal" data-toggle="modal"  data-placement="top" title="Editar"
                                 data-id="{{ $new->id }}"
                                 data-title="{{ $new->title }}"
                                 data-content="{{ $new->content }}"
                                 data-resume="{{ $new->resume }}"
                                 data-status="{{ $new->status_id }}"
+                                data-tags="@php
+                                        foreach(explode(',',$new->tags_id) as $tag_id){
+                                            foreach($tags as $tag){
+                                                if($tag_id == $tag->id){
+                                                    echo $tag->name.',';
+                                                }
+                                            }
+                                        }
+                                    @endphp"
                                 data-target="#NewUpdModal">
                                     <i class="fas fa-edit"></i>
                                 </button>
@@ -104,8 +136,9 @@
                             <label for="statusedit" class="col-md-3 col-form-label text-md-right">Status: </label>
                             <div class="col-md-7">
                                 <select class="form-control" id="statusedit" name="status_id">
-                                    <option value="1">Activo</option>
-                                    <option value="2">Inactivo</option>
+                                    @foreach($status as $curr_status)
+                                        <option value="{{$curr_status->id}}">{{$curr_status->name}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
@@ -154,18 +187,7 @@
                 $('#statusedit').val($(this).attr('data-status'));
                 //Fill each tagname 
                 $('#tagedit').tagsinput('removeAll');
-                $.ajax(
-                    {
-                    type: "POST",
-                    url: "{{ url('/admin/showtags') }}",
-                    data: { id : $(this).attr('data-id') , '_token':$("meta[name = 'csrf-token']").attr("content") },
-                    success: function(msg){
-                        $('#tagedit').tagsinput('add', msg.tagsNames.join(','));
-                        $('#NewUpdModal').modal('toggle');
-                    },
-                    error: function(){ alert("Hay un error"); }
-                    }
-                );
+                $('#tagedit').tagsinput('add',$(this).attr('data-tags'));
             });
         });
     </script>
