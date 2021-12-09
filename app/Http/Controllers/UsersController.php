@@ -4,19 +4,23 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use App\Role;
+use App\Status;
 use Hash;
 use Auth;
 
 class UsersController extends Controller
 {
     public function index(){
-        return view ('/admin/users')->with('usuarios', User::get());
+        return view ('/admin/users')->with('users', User::get())->with('roles', Role::get())->with('status', Status::get());
     }
 
     public function store(Request $request){
         $request->validate([
             'name' => 'required|min:10|max:255',
             'email' => 'required|email|max:255|unique:users',
+            'birth' => 'required|date',
+            'phone' => 'required|min:11|max:15',
             'password' => 'required|min:8|required_with:password_confirmation|same:password_confirmation',
             'password_confirmation' => 'required|min:8',
             'role_id' => 'required',
@@ -25,6 +29,8 @@ class UsersController extends Controller
         User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'birth' => $request->birth,
+            'phone' => $request->phone,
             'password' => hash::make($request->password),
             'role_id' => $request->role_id,
             'status_id' => $request->status_id,
@@ -46,12 +52,16 @@ class UsersController extends Controller
         $request->validate([
             'name' => 'required|min:10|max:255',
             'email' => 'required|email|max:255|unique:users,email,'.$request->idedit,
+            'birth' => 'required|date',
+            'phone' => 'required|min:11|max:15',
             'role_id' => 'required',
             'status_id' => 'required',
         ]);
         $user->update([
             'name' => $request->name,
             'email' => $request->email,
+            'birth' => $request->birth,
+            'phone' => $request->phone,
             'role_id' => $request->role_id,
             'status_id' => $request->status_id,
         ]);
