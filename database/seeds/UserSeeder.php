@@ -18,7 +18,7 @@ class UserSeeder extends Seeder
             'updated_at' => Carbon::now()->toDateTimeString(),
             'name' => 'Master',
             'email' => 'master@email.com',
-            'birth'=> '0-0-0',
+            'birth'=> '2021-12-09',
             'phone' => '04121234567',
             'password' => '$2y$10$BJeS.UG0pPvcH3YIpZ1ulunVyTPsCKZaCKYuD683WrsQTOoaCLzW2',
             'role_id' => '2',
