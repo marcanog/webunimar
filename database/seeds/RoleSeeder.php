@@ -16,12 +16,12 @@ class RoleSeeder extends Seeder
         DB::table('roles')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Administrador',
+            'name' => 'Contenido',
         ]);
         DB::table('roles')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Contenido',
+            'name' => 'Administrador',
         ]);
 
         DB::table('roles')->insert([

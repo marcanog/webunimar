@@ -9,19 +9,12 @@
         <form action="/admin/news" method="POST">
             @csrf
             <div class="card-body">
-                @if($message = Session::get('ErrorInsert'))
-                <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
-                    <h5>Errores: </h5>
-                    <ul>
-                        @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-                @endif
+                <!-- Success message for registry -->
+                @include('layouts.registryStatus')
+                
                 <div class="form-group">
                     <label for="title">Título</label>
-                    <input type="text" class="form-control" id="title" placeholder="" name='title' value="{{ old('title') }}" required autocomplete="title" autofocus>
+                    <input type="text" class="form-control" id="title" placeholder="" name='title' value="{{ old('title') }}" required minlength="10" autocomplete="title" autofocus>
                 </div>
                 <div class="form-group">
                     <label for="content">Contenido</label>
@@ -33,17 +26,8 @@
                 </div>
                 <div class="form-group">
                     <label for="tag">Tag</label>
-{{--                    <select class="form-control" id="tag" name="tag">--}}
-{{--                        <option value="1">Prensa Unimar</option>--}}
-{{--                        <option value="2">Rectorado</option>--}}
-{{--                        <option value="3">Vicerrectorado Académico</option>--}}
-{{--                        <option value="4">Vicerrectorado de Extensión</option>--}}
-{{--                    </select>--}}
                     <div class="form-group-lg">
-{{--                        @foreach($news as $story)--}}
-{{--                            <label class="label label-info">{{ $story->tags }}</label>--}}
-                            <input type="text" name="tags" value="Prensa,Unimar,Rectorado,Vicerrectorado,Académico,Extensión" data-role="tagsinput"/>
-{{--                        @endforeach--}}
+                        <input type="text" name="tags" value="Prensa,Unimar,Rectorado,Vicerrectorado,Académico,Extensión" data-role="tagsinput"/>
                     </div>
                 </div>
             </div>
@@ -54,6 +38,7 @@
         </form>
     </div>
 
+    <!-- Local scripts -->
     <script>
         //CKEDITOR Textareas replacement
         ClassicEditor.create( document.querySelector( '#content' ) )

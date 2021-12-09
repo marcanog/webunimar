@@ -15,8 +15,8 @@ class CreateEmployeesTypesTable extends Migration
     {
         Schema::create('employees_types', function (Blueprint $table) {
             $table->engine = 'InnoDB';
-            $table->id();
             $table->timestamps();
+            $table->id();
             $table->char('name', 255);
         });
     }

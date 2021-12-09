@@ -1,20 +1,15 @@
 @extends('admin.home')
 
 @section ('admincontent')
-{{--    btn add news --}}
+    <!-- Page heading -->
     <div class="d-sm-flex align-items-center justify-content-between shadow-4 mb-2">
         <h1 class="h3 mb-0 text-gray-dark">Noticias</h1>
         <a href="/admin/addnews" class="d-none d-xl-inline-block btn btn-sm btn-navbar shadow-sm navbar-blue-u">
-            <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Noticia</a>
+        <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Noticia</a>
     </div>
+
     <!-- Success message for registry -->
-    <div class="row">
-        @if($message = Session::get('Sucess'))
-            <div class="col-12 alert alert-success alert-dismissible fade show" role="alert">
-                <span>{{ $message }}</span>
-            </div>
-        @endif
-    </div>
+    @include('layouts.registryStatus')
 
     <!-- List of news -->
     <div class="table-responsive-xl">
@@ -54,7 +49,7 @@
                                     {{'Inactivo'}}
                                 @endif
                             </td>
-                            <td>{{($new->fecha)}}</td>
+                            <td>{{($new->created_at)}}</td>
                             <td>
                                 <button type="button" class="btn btn-warning open-modal btnedit"  data-placement="top" title="Editar"
                                 data-id="{{ $new->id }}"
@@ -86,28 +81,18 @@
                 <form action="/admin/news/update" method="POST">
                     @csrf
                     <div class="modal-body">
-                        @if($message = Session::get('ErrorInsert'))
-                        <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
-                            <h5>Errores: </h5>
-                            <ul>
-                                @foreach($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                        @endif
-                        <input type="hidden" class="form-control" id="idedit" placeholder="" name='idedit' value="{{ old('idedit') }}" required autocomplete="idedit">
+                        <input type="hidden" class="form-control" id="idedit" placeholder="" name='idedit' required>
                         <div class="form-group">
                             <label for="titleedit">Título</label>
-                            <input type="text" class="form-control" id="titleedit" placeholder="" name='title' required autocomplete="titleedit">
+                            <input type="text" class="form-control" id="titleedit" placeholder="" name='title' required minlength="10">
                         </div>
                         <div class="form-group">
                             <label for="contentedit">Contenido</label>
-                            <textarea class="form-control" id="contentedit" placeholder="" name="content" autocomplete="contentedit"></textarea>
+                            <textarea class="form-control" id="contentedit" placeholder="" name="content"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="resumeedit">Resumen</label>
-                            <textarea class="form-control" id="resumeedit" placeholder="" name="resume" autocomplete="resumeedit"></textarea>
+                            <textarea class="form-control" id="resumeedit" placeholder="" name="resume"></textarea>
                         </div>
                         <div class="form-group row">
                             <label for="tag" class="col-md-3 col-form-label text-md-right">Tag: </label>
@@ -134,9 +119,9 @@
         </div>
     </div>
 
-    <!--Page scripts -->
+    <!-- Local scripts -->
     <script>
-        //Fill modal
+        //Set ckeditors in modal
         let contentedit;
         ClassicEditor.create( document.querySelector( '#contentedit' ) )
             .then(editor => {
@@ -155,18 +140,20 @@
             } );
 
         document.addEventListener('DOMContentLoaded',function(){
+            //Set resume text inside title atribute of news' table
             for(let i = 0 ; i < document.getElementsByClassName('resume_text').length ; i++)
             {
                 document.getElementsByClassName('resume_text')[i].setAttribute('title' , document.getElementsByClassName('resume_text')[i].textContent);
             }
-            //Data load in edit form 
+            //Fill forms
             $('.btnedit').click(function(){
-                $('#tagedit').tagsinput('removeAll');
                 $('#idedit').val($(this).attr('data-id'));
                 $('#titleedit').val($(this).attr('data-title'));
                 contentedit.setData($(this).attr('data-content'));
                 resumeedit.setData($(this).attr('data-resume'));
                 $('#statusedit').val($(this).attr('data-status'));
+                //Fill each tagname 
+                $('#tagedit').tagsinput('removeAll');
                 $.ajax(
                     {
                     type: "POST",
