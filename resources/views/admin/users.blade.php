@@ -47,27 +47,27 @@
                         @if (Auth::guest())
                             <td title="{{($usuario->name)}}">{{($usuario->name)}}</td>
                             <td title="{{($usuario->email)}}">{{($usuario->email)}}</td>
-                            <td title="{{($usuario->role)}}">{{($usuario->role)}}</td>
-                            <td title="{{($usuario->status)}}">{{($usuario->status)}}</td>
+                            <td title="{{($usuario->role_id)}}">{{($usuario->role_id)}}</td>
+                            <td title="{{($usuario->status_id)}}">{{($usuario->status_id)}}</td>
                         @else
                             <th title="{{($usuario->id)}}">{{($usuario->id)}}</th>
                             <td title="{{($usuario->name)}}">{{($usuario->name)}}</td>
                             <td title="{{($usuario->email)}}">{{($usuario->email)}}</td>
-                            <td title="@if($usuario->role == '1') {{'Administrador'}} @else  {{'Contenido'}} @endif ">
-                                @if($usuario->role == '1')
+                            <td title="@if($usuario->role_id == '1') {{'Administrador'}} @else  {{'Contenido'}} @endif ">
+                                @if($usuario->role_id == '1')
                                     {{'Administrador'}}
                                 @else
                                     {{'Contenido'}}
                                 @endif
                             </td>
                             <td title="
-                                @if($usuario->role == '1')
+                                @if($usuario->role_id == '1')
                                     {{'Activo'}}
                                 @else
                                     {{'Inactivo'}}
                                 @endif"
                             >
-                                @if($usuario->status== '1')
+                                @if($usuario->status_id== '1')
                                     {{'Activo'}}
                                 @else
                                     {{'Inactivo'}}
@@ -80,8 +80,8 @@
                                 data-name="{{ $usuario->name }}"
                                 data-email="{{ $usuario->email }}"
                                 data-password="{{ $usuario->password }}"
-                                data-role="{{ $usuario->role}}"
-                                data-status="{{ $usuario->status }}"
+                                data-role="{{ $usuario->role_id }}"
+                                data-status="{{ $usuario->status_id }}"
                                 data-target="#UserUpdModal">
                                     <i class="fas fa-edit"></i>
                                 </button>
