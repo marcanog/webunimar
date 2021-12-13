@@ -18,6 +18,5 @@ class DatabaseSeeder extends Seeder
         $this->call(EventSeeder::class);
         $this->call(EmployeeSeeder::class);
         $this->call(EmployeeTypeSeeder::class);
-        $this->call(TagTypeSeeder::class);
     }
 }

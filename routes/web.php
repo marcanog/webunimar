@@ -105,6 +105,10 @@ Route::get('regulations', function () {
     return view('regulations');
 });
 
+Route::get('healthystudent', function () {
+    return view('healthystudent');
+});
+
 // languaje
 Route::get('lang/{locale}', function ($locale){
     session()->put('locale', $locale);

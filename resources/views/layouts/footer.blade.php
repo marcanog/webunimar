@@ -22,7 +22,7 @@
                             <a class="footer-title" href="/deans">{{trans('footer.f_deanchip')}}</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-title" href="#">{{trans('footer.f_student_welfare')}}</a>
+                            <a class="footer-title" href="/healthystudent">{{trans('footer.f_student_welfare')}}</a>
                         </li>
                     </ul>
                 </div>
@@ -83,7 +83,8 @@
                         </li>
                         <li class="footer-item">
                             <a class="footer-title" href="#">
-                                {{trans('footer.f_academic_schec')}}
+                               {{-- {{trans('footer.f_academic_schec')}}--}}
+                                {{trans('footer.f_calendar')}}
                             </a>
                         </li>
                     </ul>
@@ -96,13 +97,15 @@
                             <a class="footer-title font-weight-bold" href="#">{{trans('footer.f_quick_links')}}</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-title" href="#">{{trans('footer.f_calendar')}}</a>
-                        </li>
-                        <li class="footer-item">
+                            {{--<a class="footer-title" href="#">{{trans('footer.f_calendar')}}</a>--}}
                             <a class="footer-title" href="#">{{trans('footer.f_dir_telf')}}</a>
                         </li>
+                        {{--<li class="footer-item">
+                            --}}{{--<a class="footer-title" href="#">{{trans('footer.f_dir_telf')}}</a>--}}{{--
+                        </li>--}}
                         <li class="footer-item">
-                            <span class="footer-text">{{trans('footer.f_contact_us')}}</span>
+                            {{--<span class="footer-text">{{trans('footer.f_contact_us')}}</span>--}}
+                            <a class="footer-title" href="#">{{trans('footer.f_contact_us')}}</a>
                         </li>
                     </ul>
                     <div class="rrss">
@@ -140,6 +143,19 @@
                             </li>
                         </ul>
                     </div>
+                    <li class="footer-item justify-content-center">
+                            <span class="d-flex bd-highlight mt-2 ml-4">
+                                    @if (Route::has('login'))
+                                    {{--<div class="top-right links">--}}
+                                    @auth
+                                        <a class="footer-title" href="{{ url('/admin') }}">{{ auth()->user()->name }}</a>
+                                    @else
+                                        <a class="footer-title" href="{{ route('login') }}"><img src="{{URL::asset('./image/login.png')}}" style="width: 25px;">{{trans('header.login')}}</a>
+                                    @endauth
+                                    {{-- </div>--}}
+                                @endif
+                            </span>
+                    </li>
                 </div>
             </div>
         </div>

@@ -16,12 +16,23 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
+            'name' => 'Master',
+            'email' => 'master@email.com',
+            'birth'=> '2021-12-09',
+            'phone' => '04121234567',
+            'password' => '$2y$10$BJeS.UG0pPvcH3YIpZ1ulunVyTPsCKZaCKYuD683WrsQTOoaCLzW2',
+            'role_id' => '2',
+            'status_id' => '1',
+        ]);
+        DB::table('users')->insert([
+            'created_at' => Carbon::now()->toDateTimeString(),
+            'updated_at' => Carbon::now()->toDateTimeString(),
             'name' => 'Georgelys Marcano',
             'email' => 'georgelys.marcano@unimar.edu.ve',
             'birth'=> '1992-03-15',
             'phone' => '04127957268',
             'password' => '$2y$10$BJeS.UG0pPvcH3YIpZ1ulunVyTPsCKZaCKYuD683WrsQTOoaCLzW2',
-            'role_id' => '1',
+            'role_id' => '2',
             'status_id' => '1',
         ]);
         DB::table('users')->insert([
@@ -32,7 +43,7 @@ class UserSeeder extends Seeder
             'birth'=> '1992-03-15',
             'phone' => '04127957268',
             'password' => '$2y$10$i9qOub9xA7ku6QcUm9HgluHem3TwsZxSnFIDAXCz.whTg3lF50AXm',
-            'role_id' => '2',
+            'role_id' => '1',
             'status_id' => '2',
         ]);
     }

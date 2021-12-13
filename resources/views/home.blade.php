@@ -181,7 +181,7 @@
                 <div class="d-flex justify-content-start">
                     <img id="img-section" src="{{URL::asset('./image/calendar.png')}}"><span>{{trans('home.events')}}</span>
                 </div>
-            </div> 
+            </div>
             <div class="content-event">
                 <div class="content-date">
                     <div class="date-news">
@@ -278,7 +278,7 @@
                     <span>{{trans('home.uniradio')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="#"><img src="{{URL::asset('./image/healthy.png')}}">
+                    <a href="/healthystudent"><img src="{{URL::asset('./image/healthy.png')}}">
                     <span>{{trans('home.students-healthy')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">

@@ -103,3 +103,8 @@ body:not(.layout-fixed) .main-sidebar {
     background-color: #69c;
     color: #ffffff;
 }
+
+#content-wrapper-fc{
+    height: auto  !important;
+    min-height: auto  !important;
+}
