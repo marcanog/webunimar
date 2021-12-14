@@ -44,7 +44,18 @@ class UserSeeder extends Seeder
             'phone' => '04127957268',
             'password' => '$2y$10$i9qOub9xA7ku6QcUm9HgluHem3TwsZxSnFIDAXCz.whTg3lF50AXm',
             'role_id' => '1',
-            'status_id' => '2',
+            'status_id' => '1',
+        ]);
+        DB::table('users')->insert([
+            'created_at' => Carbon::now()->toDateTimeString(),
+            'updated_at' => Carbon::now()->toDateTimeString(),
+            'name' => 'Georgelys Marcano',
+            'email' => 'gmarcano@unimar.edu.ve',
+            'birth'=> '1992-03-15',
+            'phone' => '04127957268',
+            'password' => '$2y$10$BJeS.UG0pPvcH3YIpZ1ulunVyTPsCKZaCKYuD683WrsQTOoaCLzW2',
+            'role_id' => '3',
+            'status_id' => '1',
         ]);
     }
 }

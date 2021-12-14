@@ -19,7 +19,7 @@ class CreateEmployeesTable extends Migration
             $table->timestamps();
             $table->char('name', 255);
             $table->char('email', 50)->unique();
-            $table->char('job', 255);
+            $table->char('job', 255); //cargo
             $table->char('organization',255);
             $table->date('birthday');
             $table->char('password', 255);

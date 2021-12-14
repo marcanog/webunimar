@@ -33,34 +33,87 @@
                 with font-awesome or any other icon font library -->
           <li class="nav-item">
             <!-- link news -->
-            <ul class="nav">
-              <li class="nav-item">
-                <a href="/admin/users" class="nav-link" id="btn-nav">
-                  <i class="fas fa-users nav-icon grape" id="navicon"></i>
-                  <p> Usuarios </p>
-                </a>
-                <!-- agregar condicion en js para cambiar de color el icono cuando se haga hover en el item -->
-              </li>
-              <li class="nav-item">
+           @if( auth()->user()->role_id == '1')
+                    <ul class="nav">
+                      <li class="nav-item">
+                        <a href="/admin/users" class="nav-link" id="btn-nav">
+                          <i class="fas fa-users nav-icon grape" id="navicon"></i>
+                          <p> Usuarios </p>
+                        </a>
+                        <!-- agregar condicion en js para cambiar de color el icono cuando se haga hover en el item -->
+                      </li>
+                @endif
+                @if((auth()->user()->role_id=='3') or (auth()->user()->role_id=='1'))
+                    <li class="nav-item">
+                        <a href="/admin/events" class="nav-link" id="btn-nav">
+                            <i class="fas fa-circle-notch nav-icon grape"></i>
+                            <p>Notas</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/events" class="nav-link" id="btn-nav">
+                            <i class="fas fa-circle-notch nav-icon grape"></i>
+                            <p>Horarios</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/events" class="nav-link" id="btn-nav">
+                            <i class="fas fa-circle-notch nav-icon grape"></i>
+                            <p>Materias Cursadas</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/events" class="nav-link" id="btn-nav">
+                            <i class="fas fa-circle-notch nav-icon grape"></i>
+                            <p>Citas de Inscripción</p>
+                        </a>
+                    </li>
+               @endif
+              @if((auth()->user()->role_id=='2') or (auth()->user()->role_id=='1'))
+                {{--@if( auth()->user()->role_id == '1')--}}
+                      <li class="nav-item">
+                        <span class="nav-link" id="pubtitle">
+                          <i class="fas fa-book-open nav-icon grape"></i>
+                          <p> Publicaciones </p>
+                        </span>
+                      </li>
+                      <li class="nav-item">
+                        <a href="/admin/news" class="nav-link active" id="btn-nav">
+                          <i class="far fa-circle nav-icon grape"></i>
+                          <p>Noticias</p>
+                        </a>
+                      </li>
+                      <!-- links events -->
+                      <li class="nav-item">
+                        <a href="/admin/events" class="nav-link" id="btn-nav">
+                          <i class="far fa-circle nav-icon grape"></i>
+                          <p>Eventos</p>
+                        </a>
+                      </li>
+                @endif
+                @if((auth()->user()->role_id=='4') or (auth()->user()->role_id=='1'))
+                    <li class="nav-item">
                 <span class="nav-link" id="pubtitle">
-                  <i class="fas fa-book-open nav-icon grape"></i>
-                  <p> Publicaciones </p>
+                  <i class="far fa-id-badge nav-icon grape"></i>
+                  <p> Empleados </p>
                 </span>
-              </li>
-              <li class="nav-item">
-                <a href="/admin/news" class="nav-link active" id="btn-nav">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Noticias</p>
-                </a>
-              </li>
-              <!-- links events -->
-              <li class="nav-item">
-                <a href="/admin/events" class="nav-link" id="btn-nav">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Eventos</p>
-                </a>
-              </li>
-            </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/admin/news" class="nav-link active" id="btn-nav">
+                            <i class="far fa-circle nav-icon grape"></i>
+                            <p>Notificaciones</p>
+                        </a>
+                    </li>
+                    <!-- links events -->
+                    <li class="nav-item">
+                        <a href="/admin/events" class="nav-link" id="btn-nav">
+                            <i class="far fa-circle nav-icon grape"></i>
+                            <p>Recibos de Pago</p>
+                        </a>
+                    </li>
+                @endif
+                </ul>
+            {{--@endif--}}
           </li>
         </ul>
       </nav>

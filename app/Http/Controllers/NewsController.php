@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\news;
-use App\status;
+use App\News;
+use App\Status;
 use App\tag;
 
 class NewsController extends Controller
