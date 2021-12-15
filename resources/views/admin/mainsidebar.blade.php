@@ -45,6 +45,12 @@
                 @endif
                 @if((auth()->user()->role_id=='3') or (auth()->user()->role_id=='1'))
                     <li class="nav-item">
+                        <span class="nav-link" id="pubtitle">
+                              <i class="fas fa-user nav-icon grape"></i>
+                              <p> Estudiantes </p>
+                        </span>
+                    </li>
+                    <li class="nav-item">
                         <a href="/admin/events" class="nav-link" id="btn-nav">
                             <i class="fas fa-circle-notch nav-icon grape"></i>
                             <p>Notas</p>
@@ -94,7 +100,7 @@
                 @if((auth()->user()->role_id=='4') or (auth()->user()->role_id=='1'))
                     <li class="nav-item">
                 <span class="nav-link" id="pubtitle">
-                  <i class="far fa-id-badge nav-icon grape"></i>
+                  <i class="fas fa-id-badge nav-icon grape"></i>
                   <p> Empleados </p>
                 </span>
                     </li>
