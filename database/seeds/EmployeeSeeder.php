@@ -27,6 +27,7 @@ class EmployeeSeeder extends Seeder
             'LPH' => '2.00',
             'IVSS' => '2.00',
             'status_id' => '1',
+            'role_id' => '3',
             //'employeestypes_id' => '2',
         ]);
     }

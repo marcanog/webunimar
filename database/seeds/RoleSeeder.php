@@ -17,27 +17,23 @@ class RoleSeeder extends Seeder
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
             'name' => 'Contenido',
-            $roles=>save();
         ]);
         DB::table('roles')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
             'name' => 'Administrador',
-            $roles=>save();
         ]);
 
         DB::table('roles')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
             'name' => 'Empleado',
-            $roles=>save();
         ]);
 
         DB::table('roles')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
             'name' => 'Estudiante',
-            $roles=>save();
         ]);
 
     }

@@ -50,11 +50,22 @@ class UserSeeder extends Seeder
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
             'name' => 'Georgelys Marcano',
-            'email' => 'gmarcano@unimar.edu.ve',
+            'email' => 'scardenas@unimar.edu.ve',
             'birth'=> '1992-03-15',
             'phone' => '04127957268',
             'password' => '$2y$10$BJeS.UG0pPvcH3YIpZ1ulunVyTPsCKZaCKYuD683WrsQTOoaCLzW2',
             'role_id' => '3',
+            'status_id' => '1',
+        ]);
+        DB::table('users')->insert([
+            'created_at' => Carbon::now()->toDateTimeString(),
+            'updated_at' => Carbon::now()->toDateTimeString(),
+            'name' => 'José Perez',
+            'email' => 'jperez@unimar.edu.ve',
+            'birth'=> '1992-03-15',
+            'phone' => '04127957268',
+            'password' => '$2y$10$BJeS.UG0pPvcH3YIpZ1ulunVyTPsCKZaCKYuD683WrsQTOoaCLzW2',
+            'role_id' => '4',
             'status_id' => '1',
         ]);
     }

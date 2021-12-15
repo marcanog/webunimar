@@ -28,6 +28,7 @@ class CreateEmployeesTable extends Migration
             $table->decimal('LPH', 8, 2);
             $table->decimal('IVSS', 8, 2);
             $table->foreignId('status_id')->references('id')->on('status');
+            $table->foreignId('role_id')->references('id')->on('roles'); //Tipo de role de usuario
             //$table->foreignId('employeestypes_id')->references('id')->on('employees_types');
         });
     }

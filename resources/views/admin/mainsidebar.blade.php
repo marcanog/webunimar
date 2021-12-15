@@ -33,7 +33,7 @@
                 with font-awesome or any other icon font library -->
           <li class="nav-item">
             <!-- link news -->
-           @if( auth()->user()->role_id == '1')
+           @if( auth()->user()->role_id == '2')
                     <ul class="nav">
                       <li class="nav-item">
                         <a href="/admin/users" class="nav-link" id="btn-nav">
@@ -43,7 +43,7 @@
                         <!-- agregar condicion en js para cambiar de color el icono cuando se haga hover en el item -->
                       </li>
                 @endif
-                @if((auth()->user()->role_id=='3') or (auth()->user()->role_id=='1'))
+                @if((auth()->user()->role_id=='4') or (auth()->user()->role_id=='2'))
                     <li class="nav-item">
                         <span class="nav-link" id="pubtitle">
                               <i class="fas fa-user nav-icon grape"></i>
@@ -97,7 +97,7 @@
                         </a>
                       </li>
                 @endif
-                @if((auth()->user()->role_id=='4') or (auth()->user()->role_id=='1'))
+                @if((auth()->user()->role_id=='3') or (auth()->user()->role_id=='2'))
                     <li class="nav-item">
                 <span class="nav-link" id="pubtitle">
                   <i class="fas fa-id-badge nav-icon grape"></i>

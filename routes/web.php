@@ -40,6 +40,10 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
     Route::post('/events', 'EventsController@store');
     Route::post('/events/update', 'EventsController@update');
     Route::post('/events/destroy', 'EventsController@destroy');
+    //Employees
+    Route::get('/employee', 'EmployeesController@index');
+    //Students
+    Route::get('/student', 'StudentsController@index');
 });
 
 Route::group( ['middleware' => 'auth' ], function(){
