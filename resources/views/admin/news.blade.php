@@ -185,10 +185,15 @@
                 contentedit.setData($(this).attr('data-content'));
                 resumeedit.setData($(this).attr('data-resume'));
                 $('#statusedit').val($(this).attr('data-status'));
-                //Fill each tagname 
+                //Fill each tagname
                 $('#tagedit').tagsinput('removeAll');
                 $('#tagedit').tagsinput('add',$(this).attr('data-tags'));
             });
         });
+        /*Ckeditor uploadimage*/
+       /* CKEDITOR.replace('summary-ckeditor', {
+            filebrowserUploadUrl: "{{route('/upload_image', ['_token' => csrf_token() ])}}",
+            filebrowserUploadMethod: 'form'
+        });*/
     </script>
 @endsection

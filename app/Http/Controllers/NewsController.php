@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\News;
 use App\Status;
-use App\tag;
+use App\Tag;
 
 class NewsController extends Controller
 {
@@ -16,7 +16,21 @@ class NewsController extends Controller
     public function addnews(){
         return view ('/admin/addnews');
     }
-
+    public function uploadImage(Request $request) {
+        if($request->hasFile('upload_image')) {
+            $originName = $request->file('upload_image')->getClientOriginalName();
+            $fileName = pathinfo($originName, PATHINFO_FILENAME);
+            $extension = $request->file('upload_image')->getClientOriginalExtension();
+            $fileName = $fileName.'_'.time().'.'.$extension;
+            $request->file('upload_image')->move(public_path('images'), $fileName);
+            $CKEditorFuncNum = $request->input('CKEditorFuncNum');
+            $url = asset('images/'.$fileName);
+            $msg = 'La imagen se ha cargado exitosamente';
+            $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
+            @header('Content-type: text/html; charset=utf-8');
+            echo $response;
+        }
+    }
     public function store(Request $request){
         $request->validate([
             'title' => 'required|min:10|max:255',

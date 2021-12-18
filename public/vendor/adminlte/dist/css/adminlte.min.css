@@ -11398,7 +11398,8 @@ body:not(.layout-fixed) .main-sidebar {
  top:0
 }
 body:not(.layout-fixed) .main-sidebar .sidebar {
- overflow-y:auto
+ overflow-y:auto;
+ min-height: 520px;
 }
 .layout-fixed .brand-link {
  width:250px
@@ -44753,5 +44754,7 @@ a.text-muted:hover {
     width: 12rem;
     padding: 1rem;
 }
-
+#sidebar{
+    list-style: none;
+}
 /*# sourceMappingURL=adminlte.min.css.map */

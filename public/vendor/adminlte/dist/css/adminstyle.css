@@ -1,5 +1,5 @@
 .bootstrap-tagsinput {
-    display: flex !important;
+    display: flow-root !important;
     width: 100%;
 }
 .bootstrap-tagsinput .tag {

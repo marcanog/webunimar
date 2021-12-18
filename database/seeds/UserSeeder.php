@@ -68,5 +68,16 @@ class UserSeeder extends Seeder
             'role_id' => '4',
             'status_id' => '1',
         ]);
+        DB::table('users')->insert([
+            'created_at' => Carbon::now()->toDateTimeString(),
+            'updated_at' => Carbon::now()->toDateTimeString(),
+            'name' => 'Rae Gonzalez',
+            'email' => 'rgonzalez@unimar.edu.ve',
+            'birth'=> '1992-03-15',
+            'phone' => '04127957268',
+            'password' => '$2y$10$BJeS.UG0pPvcH3YIpZ1ulunVyTPsCKZaCKYuD683WrsQTOoaCLzW2',
+            'role_id' => '5',
+            'status_id' => '1',
+        ]);
     }
 }

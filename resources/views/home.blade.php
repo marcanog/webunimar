@@ -90,7 +90,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 clearfix d-none d-md-block">
+                               {{-- <div class="col-md-4 clearfix d-none d-md-block">
                                     <div class="card mb-2">
                                     <img class="card-img-top" src={{asset('./image/unimar2.jpg')}}
                                     alt="Card image cap">
@@ -101,8 +101,8 @@
                                         <a class="btn btn-link">Ver más</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 clearfix d-none d-md-block">
+                            </div>--}}
+                           {{-- <div class="col-md-4 clearfix d-none d-md-block">
                                 <div class="card mb-2">
                                     <img class="card-img-top" src={{asset("./image/unimar3.jpg")}}
                                     alt="Card image cap">
@@ -113,7 +113,7 @@
                                             <a class="btn btn-link">Ver más</a>
                                         </div>
                                     </div>
-                                </div>
+                                </div>--}}
                             </div>
                         </div>
                         <!--/.Second slide-->

@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,12 +19,14 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::group(['prefix' => 'home', 'as' => 'home'], function(){
-    Route::get('/', function () {return view('home');});
+Route::group(['prefix' => 'home', 'as' => 'home'], function () {
+    Route::get('/', function () {
+        return view('home');
+    });
     // Route::get('home', function () {return view('home');});
 });
 
-Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
+Route::group(['prefix' => 'admin', 'as' => 'admin'], function () {
     Route::get('/', 'AdminController@index');
     //USERS
     Route::get('/users', 'UsersController@index');
@@ -35,21 +38,27 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function(){
     Route::post('/news', 'NewsController@store');
     Route::post('/news/update', 'NewsController@update');
     Route::post('/showtags', 'NewsController@showtags');
+    /*Route::post('/upload_image', 'ArticleController@uploadImage');*/
     //EVENTS
     Route::get('/events', 'EventsController@index');
     Route::post('/events', 'EventsController@store');
     Route::post('/events/update', 'EventsController@update');
     Route::post('/events/destroy', 'EventsController@destroy');
-    //Employees
-    Route::get('/employee', 'EmployeesController@index');
-    //Students
-    Route::get('/student', 'StudentsController@index');
+
 });
 
-Route::group( ['middleware' => 'auth' ], function(){
+Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/home', 'AdminController@index');
     Route::get('admin/profile', 'UsersController@show');
     // Route::get('admin/ajuda', 'AdminController@ajuda');
+    //Employees
+    Route::get('admin/employee/notifications', function () {
+        return view('/employee/notifications');
+    });
+    //Students
+    Route::get('admin/student/record', function () {
+        return view('admin/student/record');
+    });
 });
 
 
@@ -114,7 +123,7 @@ Route::get('healthystudent', function () {
 });
 
 // languaje
-Route::get('lang/{locale}', function ($locale){
+Route::get('lang/{locale}', function ($locale) {
     session()->put('locale', $locale);
     return redirect()->back();
 });

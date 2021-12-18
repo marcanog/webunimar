@@ -11534,6 +11534,7 @@ p.card-text {
     font-size: 0.95em;
     justify-content: center;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .links-interest > a {
