@@ -192,7 +192,7 @@
         });
         /*Ckeditor uploadimage*/
        /* CKEDITOR.replace('summary-ckeditor', {
-            filebrowserUploadUrl: "{{route('/upload_image', ['_token' => csrf_token() ])}}",
+            filebrowserUploadUrl: "{{--{{route('/upload_image', ['_token' => csrf_token() ])}}--}}",
             filebrowserUploadMethod: 'form'
         });*/
     </script>

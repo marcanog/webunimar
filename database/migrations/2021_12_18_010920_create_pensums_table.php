@@ -16,6 +16,7 @@ class CreatePensumsTable extends Migration
         Schema::create('pensums', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('name', 255);
         });
     }
 

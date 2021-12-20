@@ -16,7 +16,7 @@ class NewsController extends Controller
     public function addnews(){
         return view ('/admin/addnews');
     }
-    public function uploadImage(Request $request) {
+    /*public function uploadImage(Request $request) {
         if($request->hasFile('upload_image')) {
             $originName = $request->file('upload_image')->getClientOriginalName();
             $fileName = pathinfo($originName, PATHINFO_FILENAME);
@@ -30,7 +30,7 @@ class NewsController extends Controller
             @header('Content-type: text/html; charset=utf-8');
             echo $response;
         }
-    }
+    }*/
     public function store(Request $request){
         $request->validate([
             'title' => 'required|min:10|max:255',

@@ -19,23 +19,24 @@
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
     <!-- Navbar -->
-    <nav class="main-header navbar navbar-expand navbar-blue-u justify-content-between">
+    <nav class="navbar navbar-expand navbar-blue-u justify-content-between">
         <!-- Left navbar links -->
         <ul class="navbar-nav">
-            <li class="nav-item">
+            {{--<li class="nav-item">
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button">
                     <i class="fas fa-bars" style="color: #ffffff"></i>
                 </a>
-            </li>
+            </li>--}}
         </ul>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav text-end">
             <div class="user-panel d-inline-flex align-items-center">
                 <div class="image">
                     <img src="{{asset('image/user.png')}}" class="img-circle elevation-2" alt="Usuario">
                 </div>
                 <div class="info">
                     @if (auth::guest())
-                        <a href="{{ route('login') }}">{{trans('header.login')}}</a>
+                        {{--<a href="{{ route('login') }}">{{trans('header.login')}}</a>--}}
+                        <h6>Bienvenid@</h6>
                         <!--Crear redirección-->
                     @else
                         {{ auth()->user()->name }}
@@ -58,9 +59,10 @@
             @auth
                 @yield('admincontent')
             @else
-                <a href="{{ route('login') }}">{{trans('header.login')}}</a>
+                {{--<a href="{{ route('login') }}">{{trans('header.login')}}</a>--}}
+
                     <!-- Debe aparecer un mensaje -->
-                @endauth
+            @endauth
             </div>
         </div>
     </div>

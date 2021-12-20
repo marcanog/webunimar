@@ -10,7 +10,7 @@
     <!-- Sidebar -->
     <div class="sidebar">
         <!-- Sidebar user panel (optional) -->
-        <div class="mt-3 mb-3 d-flex">
+        {{--<div class="mt-3 mb-3 d-flex">
         <!-- <div class="image">
           <img src="{{asset('image/user.png')}}" class="img-circle elevation-2" alt="Usuario">
         </div> -->
@@ -25,7 +25,7 @@
                 @endif
             </div>
         <!-- @endif -->
-        </div>
+        </div>--}}
         <!-- Sidebar user panel (optional) -->
         <!-- Sidebar Menu -->
         <nav class="mt-2">
@@ -37,6 +37,7 @@
                       with font-awesome or any other icon font library -->
                 <li class="nav-item">
                     <!-- link news -->
+                @auth
                     @if( auth()->user()->role_id == '2')
                         <ul class="nav list-unstyled ps-0">
                             <li class="nav-item">
@@ -220,46 +221,71 @@
                                     </div>
                                 </li>
                             @endif
-                            @if (auth::guest())
-                                <a href="{{ route('login') }}">{{trans('header.login')}}</a>
-                                <!--Crear redirección-->
-                            @else
-                                <li class="nav-item has-treeview" data-bs-toggle="collapse"
-                                    href="#collapseExample5"
-                                    role="button" aria-expanded="false" aria-controls="collapseExample5">
-                                    <a class="nav-link " id="btn-nav">
-                                        <i class="fas fa-id-badge nav-icon grape"></i>
-                                        <p> Cuenta </p>
-                                    </a>
-                                    <div class="collapse" id="collapseExample5">
-                                        <ul class="nav-item list-unstyled ps-0" id="sidebar">
-                                            <li class="nav-item mb-1">
-                                                <a href="/admin/profile" class="nav-link active "
-                                                   id="btn-nav">
-                                                    <i class="fas fa-circle-notch nav-icon grape"></i>
-                                                    <p>Perfil</p>
-                                                </a>
-                                            </li>
-                                            <!-- links events -->
-                                            <li class="nav-item">
-                                                <a href="{{ url('/logout') }}" class="nav-link" id="btn-nav">
-                                                    <i class="fas fa-circle-notch nav-icon grape"></i>
-                                                    <p>Cerrar Sesión</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            @endif
-                            @if(auth::guest())
-                                {{--Colocar redirección a la vista de loginl--}}
-                                {{--<a href="{{ url('/login?redirect_to='.url()->current()) }}" class="btn blue no-margin">
-                                   Debe loguearse para acceder a esta funcionalidad
-                                </a>--}}
-                            @endif
+                            <li class="nav-item has-treeview" data-bs-toggle="collapse"
+                                href="#collapseExample5"
+                                role="button" aria-expanded="false" aria-controls="collapseExample5">
+                                <a class="nav-link " id="btn-nav">
+                                    <i class="fas fa-id-badge nav-icon grape"></i>
+                                    <p> Cuenta </p>
+                                </a>
+                                <div class="collapse" id="collapseExample5">
+                                    <ul class="nav-item list-unstyled ps-0" id="sidebar">
+                                        <li class="nav-item mb-1">
+                                            <a href="/admin/profile" class="nav-link active "
+                                               id="btn-nav">
+                                                <i class="fas fa-circle-notch nav-icon grape"></i>
+                                                <p>Perfil</p>
+                                            </a>
+                                        </li>
+                                        <!-- links events -->
+                                        <li class="nav-item">
+                                            <a href="{{ url('/logout') }}" class="nav-link" id="btn-nav">
+                                                <i class="fas fa-circle-notch nav-icon grape"></i>
+                                                <p>Cerrar Sesión</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            @else{{--if (auth::guest())--}}
+                           {{-- <a href="{{ route('login') }}">{{trans('header.login')}}</a>--}}
+                            <!--Crear redirección-->
+                            <li class="nav-item has-treeview" data-bs-toggle="collapse"
+                                href="#collapseExample5"
+                                role="button" aria-expanded="false" aria-controls="collapseExample5">
+                                <a class="nav-link " id="btn-nav">
+                                    <i class="fas fa-id-badge nav-icon grape"></i>
+                                    <p> Cuenta </p>
+                                </a>
+                                <div class="collapse" id="collapseExample5">
+                                    <ul class="nav-item list-unstyled ps-0" id="sidebar">
+                                        {{--<li class="nav-item mb-1">
+                                            <a href="/admin/profile" class="nav-link active "
+                                               id="btn-nav">
+                                                <i class="fas fa-circle-notch nav-icon grape"></i>
+                                                <p>Perfil</p>
+                                            </a>
+                                        </li>--}}
+                                        <!-- links events -->
+                                        <li class="nav-item">
+                                            <a href="{{ url('/login?redirect_to='.url()->current()) }}" class="nav-link" id="btn-nav">
+                                                <i class="fas fa-circle-notch nav-icon grape"></i>
+                                                <p>Iniciar Sesión</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            @endauth
+                            {{-- @if(auth::guest())
+                                 --}}{{--Colocar redirección a la vista de loginl--}}{{--
+                                 --}}{{--<a href="{{ url('/login?redirect_to='.url()->current()) }}" class="btn blue no-margin">
+                                    Debe loguearse para acceder a esta funcionalidad
+                                 </a>--}}{{--
+                             @endif--}}
                         </ul>
                         {{--@endif--}}
-                </li>
+                        </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->
