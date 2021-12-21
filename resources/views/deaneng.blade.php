@@ -137,7 +137,7 @@
 <div class=".xl-container">
 
     <div class="banner-main">
-        <img src="{{asset('./image/engineerie.png')}}">
+        <img src="{{URL::asset('./image/engineerie.png')}}">
     </div>
    <div class="section-content">
         <div class="d-flex justify-content-start">
@@ -145,7 +145,7 @@
         </div>
     </div>
     <!-- Information depto -->
- <p> 
+ <p>
     <div class=".xl-container">
         <div class="card-columns col-sm-11">
             <a class="btn-link card-img" id="imgcard">
@@ -266,7 +266,7 @@
                     </div>
                 </div>
             </div> -->
-            
+
             <div class="info-dept col-sm-11 card card-body">
                 <h5>{{trans('engineering.deaneng-info-title')}}</h5>
                 <p><b>{{trans('engineering.deaneng-info-etitle')}}</b>&nbsp {{trans('engineering.deaneng-info-email')}}</p>

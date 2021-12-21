@@ -1,5 +1,5 @@
 @extends('admin.home')
 
 @section('content')
-    <h1>Hola</h1>
+    <h1>Notas</h1>
 @endsection

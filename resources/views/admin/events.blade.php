@@ -27,7 +27,7 @@
   <!-- Delete new modal -->
   <div class="modal fade" id="deleteEvent" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <form action="/admin/events/destroy" method="POST">
+      <form action="{{url('/admin/events/destroy')}}" method="POST">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">¿Seguro que desea eliminar este evento?</h5>

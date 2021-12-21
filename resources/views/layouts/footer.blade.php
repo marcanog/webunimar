@@ -1,14 +1,14 @@
     <div class="footer col-sm-12">
         <div class="footer-item">
             <div class="info-university">
-                <img src={{("./image/logo-blanco.png")}}>
+                <img src={{URL::asset("./image/logo-blanco.png")}}>
                 <span>{{trans('footer.f_location')}}</span>
             </div>
             <div class="our-institution">
                 <div>
                     <ul>
                         <li class="footer-item">
-                            <a class="footer-title font-weight-bold" href="/ourinstitution">
+                            <a class="footer-title font-weight-bold" href="{{ URL('/ourinstitution') }}">
                                 {{trans('footer.f_organization')}}
                             </a>
                         </li>
@@ -16,13 +16,13 @@
                             <a class="footer-title" href="#">{{trans('footer.f_rectors_office')}}</a>
                         </li>
                         <li class="footer-item">
-                                <a class="footer-title" href="/vicerectorades">{{trans('footer.f_vice_chancellor')}}</a>
+                                <a class="footer-title" href="{{ URL('/vicerectorades') }}">{{trans('footer.f_vice_chancellor')}}</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-title" href="/deans">{{trans('footer.f_deanchip')}}</a>
+                            <a class="footer-title" href="{{ URL('/deans') }}">{{trans('footer.f_deanchip')}}</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-title" href="/healthystudent">{{trans('footer.f_student_welfare')}}</a>
+                            <a class="footer-title" href="{{ URL('/healthystudent') }}">{{trans('footer.f_student_welfare')}}</a>
                         </li>
                     </ul>
                 </div>
@@ -114,31 +114,31 @@
                                 <a href="mailto:info@unimar.edu.ve">
                                 <!-- <a onclick="location.href='mailto:info@unimar.edu.ve'"> -->
                                 <!-- <a onclick="sendmail()"> -->
-                                    <img class="w-6 h-6" src={{('./image/rrss/email.png')}}>
+                                    <img class="w-6 h-6" src={{ URL::asset('./image/rrss/email.png') }}>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <!-- <a onclick="rrss()"> -->
                                 <a href="https://www.facebook.com/univ.demargarita">
-                                    <img class="w-6 h-6" src={{('./image/rrss/facebook.png')}}>
+                                    <img class="w-6 h-6" src={{ URL::asset('./image/rrss/facebook.png') }}>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <!-- <a onclick="rrss()"> -->
                                 <a href="https://www.twitter.com/somosunimar">
-                                    <img class="w-6 h-6" src={{('./image/rrss/gorjeo.png')}}>
+                                    <img class="w-6 h-6" src={{ URL::asset('./image/rrss/gorjeo.png') }}>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <!-- <a onclick="rrss()"> -->
                                 <a href="https://www.instagram.com/universidademargarita">
-                                    <img class="w-6 h-6" src={{('./image/rrss/instagram.png')}}>
+                                    <img class="w-6 h-6" src={{ URL::asset('./image/rrss/instagram.png') }}>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <!-- <a onclick="rrss()"> -->
                                 <a href="https://www.linkedin.com/company/univdemargarita">
-                                    <img class="w-6 h-6" src={{('./image/rrss/linkedin.png')}}>
+                                    <img class="w-6 h-6" src={{ URL::asset('./image/rrss/linkedin.png') }}>
                                 </a>
                             </li>
                         </ul>

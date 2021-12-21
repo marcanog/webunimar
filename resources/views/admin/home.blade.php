@@ -31,7 +31,7 @@
         <ul class="navbar-nav text-end">
             <div class="user-panel d-inline-flex align-items-center">
                 <div class="image">
-                    <img src="{{asset('image/user.png')}}" class="img-circle elevation-2" alt="Usuario">
+                    <img src="{{URL::asset('image/user.png')}}" class="img-circle elevation-2" alt="Usuario">
                 </div>
                 <div class="info">
                     @if (auth::guest())

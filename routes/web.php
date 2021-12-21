@@ -24,7 +24,16 @@ Route::group(['prefix' => 'home', 'as' => 'home'], function () {
         return view('home');
     });
     // Route::get('home', function () {return view('home');});
+  /*  Route::post('/home', 'NewsController@shownews');*/
+   /* Route::get('/home',function(){
+        $news = App\News::all();
+
+        foreach ($news as $new) {
+            echo $new->modelo."<br/>";
+        }
+    });*/
 });
+
 
 Route::group(['prefix' => 'admin', 'as' => 'admin'], function () {
     Route::get('/', 'AdminController@index');

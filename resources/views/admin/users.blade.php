@@ -206,7 +206,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="/admin/users/update" method="POST">
+                <form action="{{URL('/admin/users/update')}}" method="POST">
                     @csrf
                     <div class="modal-body">
                         <input type="hidden" class="form-control" id="idedit" placeholder="" name='idedit' required>

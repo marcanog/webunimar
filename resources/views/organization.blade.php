@@ -35,7 +35,7 @@
             /* max-width: 12rem;
             /* -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.2),0 2px 10px 0 rgba(0,0,0,.1);
             box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1),0 2px 10px 0 rgba(0,0,0,.1); */
-            /* padding: .5rem; */ 
+            /* padding: .5rem; */
             text-align: center;
             text-decoration-line: none;
             color: #4f4f4f !important;
@@ -87,7 +87,7 @@
     </style>
     <div class=".xl-container">
         <div class="banner-main">
-            <img src="{{asset('./image/nuestrosfundadores.png')}}">
+            <img src="{{URL::asset('./image/nuestrosfundadores.png')}}">
         </div>
         <div  class="section-content">
             <div class="d-flex justify-content-start">
@@ -168,7 +168,7 @@
                         </div>
                     </div>
                 </a>
-            </div>    
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="collapse multi-collapse" id="multiCollapse1">
@@ -178,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-12">
                     <div class="collapse multi-collapse" id="multiCollapse2">
                         <div class="card card-body" id="card-b-author">
@@ -252,7 +252,7 @@
                         </div>
                     </div>
                 </a>
-            </div>    
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <div class="collapse multi-collapse" id="multiCollapse1">
@@ -262,7 +262,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-12">
                     <div class="collapse multi-collapse" id="multiCollapse2">
                         <div class="card card-body" id="card-b-author">

@@ -16,7 +16,7 @@
                     <div class="card-header">Avatar</div>
                     <div class="card-body text-center">
                         <!-- Profile picture image-->
-                        <img class="img-account-profile rounded-circle mb-2" src="{{asset('image/user.png')}}" alt="user-image" style="width:10rem;">
+                        <img class="img-account-profile rounded-circle mb-2" src="{{URL::asset('image/user.png')}}" alt="user-image" style="width:10rem;">
                         <!-- Profile picture help block-->
                         <div class="small font-italic text-muted mb-4">Formato png o jpg menor a 5Mb</div>
                         <!-- Profile picture upload button-->

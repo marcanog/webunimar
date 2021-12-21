@@ -6,7 +6,7 @@
         <div class="modal-header">
             <h3 class="card-title">Agregar Noticia</h3>
         </div>
-        <form action="/admin/news" method="POST">
+        <form action="{{URL('/admin/news')}}" method="POST">
             @csrf
             <div class="card-body">
                 <!-- Success message for registry -->

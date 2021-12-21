@@ -10,7 +10,7 @@
     </style>
     <div class=".xl-container">
         <div class="banner-main">
-            <img src="{{asset('./image/viceacademic.png')}}">
+            <img src="{{URL::asset('./image/viceacademic.png')}}">
         </div>
         <div class="section-content">
             <div class="d-flex justify-content-start">
@@ -19,12 +19,12 @@
         </div>
         <div class="flex content-vext">
             <div class="links-interest" id="contentimg" style="background-color: #336699">
-                <a href="/vacademic" id="foundbtn">
+                <a href="{{URL('/vacademic')}}" id="foundbtn">
                 <img src="{{URL::asset('./image/academic.svg')}}">
                 <span>{{trans('commons.vice-acad-title')}}</span></a>
             </div>
             <div class="links-interest" id="contentimg" style="background-color: #336699">
-                <a href="/vextension" id="campusbtn">
+                <a href="{{URL('/vextension')}}" id="campusbtn">
                 <img src="{{URL::asset('./image/educationv.svg')}}">
                 <span>{{trans('commons.vice-ext-title')}}</span></a>
             </div>
