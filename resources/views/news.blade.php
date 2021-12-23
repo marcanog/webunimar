@@ -5,5 +5,8 @@
         <div class="banner-main">
             <img src="{{URL::asset('./image/nuestrosdecanatos.png')}}">
         </div>
+        <div class="d-flex">
+            
+        </div>
     </div>
 @endsection

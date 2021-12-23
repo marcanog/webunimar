@@ -24,14 +24,14 @@ Route::group(['prefix' => 'home', 'as' => 'home'], function () {
         return view('home');
     });
     // Route::get('home', function () {return view('home');});
-  /*  Route::post('/home', 'NewsController@shownews');*/
-   /* Route::get('/home',function(){
-        $news = App\News::all();
+    /*  Route::post('/home', 'NewsController@shownews');*/
+    /* Route::get('/home',function(){
+         $news = App\News::all();
 
-        foreach ($news as $new) {
-            echo $new->modelo."<br/>";
-        }
-    });*/
+         foreach ($news as $new) {
+             echo $new->modelo."<br/>";
+         }
+     });*/
 });
 
 
@@ -41,18 +41,23 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function () {
     Route::get('/users', 'UsersController@index');
     Route::post('/users', 'UsersController@store');
     Route::post('/users/update', 'UsersController@update');
+
     //NEWS
     Route::get('/news', 'NewsController@index');
     Route::get('/addnews', 'NewsController@addnews');
+
+    Route::post('/addnews/upload', 'NewsController@upload');
+
     Route::post('/news', 'NewsController@store');
     Route::post('/news/update', 'NewsController@update');
     Route::post('/showtags', 'NewsController@showtags');
-    /*Route::post('/upload_image', 'ArticleController@uploadImage');*/
+
     //EVENTS
     Route::get('/events', 'EventsController@index');
     Route::post('/events', 'EventsController@store');
     Route::post('/events/update', 'EventsController@update');
     Route::post('/events/destroy', 'EventsController@destroy');
+
 
 });
 
@@ -64,15 +69,20 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/employee/notifications', function () {
         return view('/employee/notifications');
     });
-    //Students
-    Route::get('admin/student/record', function () {
-        return view('admin/student/record');
-    });
+});
+
+//Students
+Route::get('admin/student/record', function () {
+    return view('admin/student/record');
 });
 
 
 Route::get('ourinstitution', function () {
     return view('ourinstitution');
+});
+
+Route::get('orgstructure', function(){
+    return view('orgstructure');
 });
 
 Route::get('organization', function () {

@@ -19,21 +19,27 @@ class NewsController extends Controller
         return view('/admin/addnews');
     }
 
-    /*public function uploadImage(Request $request) {
-        if($request->hasFile('upload_image')) {
-            $originName = $request->file('upload_image')->getClientOriginalName();
+    public function upload(Request $request)
+    {
+        if ($request->hasFile('upload')) {
+            $originName = $request->file('upload')->getClientOriginalName();
             $fileName = pathinfo($originName, PATHINFO_FILENAME);
-            $extension = $request->file('upload_image')->getClientOriginalExtension();
-            $fileName = $fileName.'_'.time().'.'.$extension;
-            $request->file('upload_image')->move(public_path('images'), $fileName);
+            $extension = $request->file('upload')->getClientOriginalExtension();
+            $fileName = $fileName . '_' . time() . '.' . $extension;
+
+            $request->file('upload')->move(public_path('images/newsimg'), $fileName);
+
             $CKEditorFuncNum = $request->input('CKEditorFuncNum');
-            $url = asset('images/'.$fileName);
-            $msg = 'La imagen se ha cargado exitosamente';
+            $url = asset('images/newsimg' . $fileName);
+            dd($url);
+            $msg = 'Image uploaded successfully';
             $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
+
             @header('Content-type: text/html; charset=utf-8');
             echo $response;
         }
-    }*/
+    }
+
     public function store(Request $request)
     {
         $request->validate([

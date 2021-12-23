@@ -116,7 +116,7 @@
                 <span>{{trans('org.campus')}}</span></a>
             </div>
             <div class="links-interest" id="contentimg headingFour" style="background-color: #336699">
-                <a id="orgbtn" href="#"><img src="{{URL::asset('./image/flow-chart.svg')}}">
+                <a id="orgbtn" href="{{url('/orgstructure')}}"><img src="{{URL::asset('./image/flow-chart.svg')}}">
                 <span>{{trans('org.struct-org')}}</span></a>
             </div>
         </div>

@@ -56,5 +56,33 @@
             .catch(error => {
                 console.error(error);
             });
+
+        /*Ckeditor uploadimage*/
+
+        /*ClassicEditor.create(document.querySelector('#content'), {
+            ckfinder: {
+                // Use named route for CKFinder connector entry point
+                uploadUrl: '@{{ route(' / admin / addnews / upload') }}?command=QuickUpload&type=Files',
+            }
+            options: {
+                resourceType: 'Images'
+            }
+        });
+        ClassicEditor.create(document.querySelector('#resume'), {
+            ckfinder: {
+                // Use named route for CKFinder connector entry point
+                uploadUrl: '@{{ route(' / admin / addnews / upload') }}?command=QuickUpload&type=Files',
+            }
+            options: {
+                resourceType: 'Images'
+            }
+        });*/
+
+        {{--CKEDITOR.replace('resume', {
+        filebrowserUploadUrl: "{{ asset('/admin/addnews/upload', ['_token' => csrf_token() ])}}",
+        filebrowserBrowserdUrl: "{{ asset('/admin/addnews/file_browser', ['_token' => csrf_token() ])}}",
+        filebrowserUploadMethod: 'form'
+    });--}}
+
     </script>
 @endsection
