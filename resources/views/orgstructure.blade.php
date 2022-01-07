@@ -1,227 +1,166 @@
 @extends('layouts.layout')
 
 @section('content')
-    <link rel="stylesheet" href="{{URL::asset('orgchart/src/css/jquery.orgchart.css')}}">
-    {{--<link rel="stylesheet" href="styles/kendo.common.min.css"/>
-    <link rel="stylesheet" href="styles/kendo.default.min.css"/>
-    <link rel="stylesheet" href="styles/kendo.default.mobile.min.css"/>
-    <script src="https://kendo.cdn.telerik.com/2021.3.1207/js/jquery.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/2021.3.1207/js/kendo.all.min.js"></script>--}}
-    {{-- <script src="//code.jquery.com/jquery-1.12.4.min.js"></script>--}}
-    <script src="{{URL::asset('orgchart/src/js/jquery.orgchart.js')}}"></script>
-    <div class="content ml-4 mr-4 mb-4 mt-0 text-center">
-        <div id="chart-container"></div>
-        <button class="oc-export-btn btn btn-default"><i class="fas fa-file-image" style="width:1rem;"></i></button>
-    </div>
-
-    {{-- <a id="github-link" href="https://github.com/dabeng/OrgChart" target="_blank"><i
-             class="fa fa-github-square"></i></a>--}}
+    <script src="https://balkan.app/js/OrgChart.js"></script>
+    <div id="tree"/>
     <style>
-        .btn{
-           font-size:1rem;
-        }
-        #chart-container {
-            font-family: Arial;
-            height: 420px;
-            /*border: 2px dashed #aaa;*/
-            border-radius: 5px;
-            overflow: auto;
+        /*html, body {
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
             text-align: center;
+            font-family: Helvetica;
+        }*/
+
+        #tree {
+            width: 100%;
+            height: 100%;
+            position: relative;
+
         }
 
-        #github-link {
-            position: fixed;
-            right: 10px;
-            font-size: 3em;
+        .field_0, .field_1 [data-l-id] {
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+
+        .field_0, .field_1 {
+            font-size: 12px;
+            fill: #cfcfcf;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
     </style>
     <script>
-        'use strict';
-
-        (function ($) {
-
-            $(function () {
-
-                var datascource = {
-                    'name': ' Rector(a) ',
-                    'title': 'Gerente General del Sistema',
-                    'children': [
-                        {'name': 'Coord. del Departamento', 'title': 'Departamento de Relaciones Interinstitucionales'},
-                        {'name': 'Coord. del Departamento', 'title': 'Departamento de Relaciones Públicas'},
-                        {
-                            'name': 'Vicerrector(a) Académico',
-                            'title': 'SUBSISTEMA DE DOCENCIA ',
-                            'children': [
-                                {
-                                    'name': 'Coordinador(a) del Centro',
-                                    'title': 'Centro de recursos para el aprendizaje'
-                                },
-                                {
-                                    'name': 'Decano(a)', 'title': 'Área de Humanidades',
-                                    'children': [
-                                        {'name': 'Coord. del Departamento', 'title': 'Dpto. Educación Integral'},
-                                        {'name': 'Coord. del Departamento', 'title': 'Dpto. Idiomas Modernos'},
-                                        {
-                                            'name': 'Coord. del Departamento',
-                                            'title': 'Dpto. Arte mención Diseño Gráfico'
-                                        }
-                                    ]
-                                }, //insertar hijos acá
-                                {
-                                    'name': 'Decano(a)', 'title': 'Área de Ciencias Sociales y Económicas',
-                                    'children': [
-                                        {
-                                            'name': 'Coord. del Departamento',
-                                            'title': 'Dpto. Administración y Contaduría'
-                                        }
-                                    ]
-                                },
-                                {
-                                    'name': 'Decano(a)', 'title': 'Área de Ciencias jurídicas y Políticas',
-                                    'children': [
-                                        {'name': 'Coord. del Departamento', 'title': 'Dpto. Derecho'}
-                                    ]
-                                },
-                                {
-                                    'name': 'Decano(a)', 'title': 'Área curso introductorio y estudios generales',
-                                    'children': [
-                                        {'name': 'Coord. del Departamento', 'title': ' Estudios generales'}
-                                    ]
-                                },
-                                {
-                                    'name': 'Decano(a)', 'title': 'Área de Ingeniería',
-                                    'children': [
-                                        {'name': 'Coord. del Departamento', 'title': ' Ingeniería'}
-                                    ]
-                                },
-                                {'name': 'Coordinador(a) de Área', 'title': 'Área de Pasantías'},
-                            ]
-                        },//acá termina susbsistema de docencia y sus hijos
-                        {
-                            'name': 'Vicerrector(a) de Extensión',
-                            'title': 'SUBSISTEMA DE EXTENSIÓN ',
-                            'children': [
-                                {'name': 'Coord. del Departamento', 'title': 'Dpto. de Educación permanente'},
-                                {
-                                    'name': 'Coord. del Departamento',
-                                    'title': 'Dpto. de Deporte, recreación y uso del tiempo libre'
-                                },
-                                {
-                                    'name': 'Coord. del Departamento',
-                                    'title': 'Dpto. de Cultura'
-                                },
-                                {
-                                    'name': 'Coord. del Departamento',
-                                    'title': 'Dpto. de Proyectos Especiales'
-                                },
-                                {
-                                    'name': 'Coord. del Departamento',
-                                    'title': 'Dpto. de Servicio Comunitario'
-                                },
-                            ]
-                        },
-                        {
-                            'name': 'Vicerrector(a) de Investigación y PostGrado',
-                            'title': 'SUBSISTEMA DE INVESTIGACIÓN Y POSTGRADO',
-                            'children': [
-                                {
-                                    'name': 'Decano(a)', 'title': 'Área de Investigación Postgrado',
-                                    'children': [
-                                        {'name': 'Coord. del Departamento', 'title': 'Dpto. de Investigación'},
-                                        {'name': 'Coord. del Departamento', 'title': 'Dpto. de Docencia Postgrado'},
-                                        {'name': 'Coord. del Departamento', 'title': 'Dpto. de Promoción y Desarrollo'},
-                                        {
-                                            'name': 'Coord. del Departamento',
-                                            'title': 'Dpto. de Administración y logística'
-                                        }
-                                    ]
-                                },
-                            ]
-                        },
-                        {
-                            'name': 'Secretario(a) General',
-                            'title': 'SUBSISTEMA DE SECRETARIA Y BIENESTAR ESTUDIANTIL',
-                            'children': [
-                                {'name': 'Coord. del Departamento', 'title': 'Dpto. de Bienestar Estudiantil'},
-                                {'name': 'Coord. del Departamento', 'title': 'Dpto. de Control de Estudios'},
-                                {
-                                    'name': 'Coord. del Departamento',
-                                    'title': 'Dpto. de Archivo General y secretaría de Actas'
-                                },
-                                {'name': 'Coord. del Departamento', 'title': 'Dpto. de Proyectos Especiales'}
-                            ]
-                        },
-                        {
-                            'name': 'Director(a) General', 'title': 'DIRECCIÓN GENERAL DE ADMINISTRACIÓN Y SERVICIOS',
-                            'children': [
-                                {
-                                    'name': 'Gerente General del Dpto',
-                                    'title': 'Gerente General de Administración y Servicios',
-                                    'children': [
-                                        {'name': 'Coord. del Departamento', 'title': 'Dpto. de Finanzas'},
-                                        {'name': 'Coord. del Departamento', 'title': 'Dpto. de Recursos Humanos'},
-                                        {'name': 'Coord. del Departamento', 'title': 'Dpto. de Compras'},
-                                        {'name': 'Coord. del Departamento', 'title': 'Dpto. de Mantenimiento'},
-                                    ]
-                                },
-                            ]
-                        },
-
-                        {
-                            'name': 'Director(a) General',
-                            'title': 'DIRECCIÓN GENERAL DE PLANIFICACIÓN, DESARROLLO Y EVALUACIÓN INSTITUCIONAL',
-                            'children': [
-                                {'name': 'Coord. del Departamento', 'title': 'Dpto. de Planificación y Desarrollo'},
-                                {'name': 'Coord. del Centro', 'title': 'Centro de Estadísticas e Informática'},
-                                {'name': 'Coord. del Departamento', 'title': 'Dpto. de Evaluación Institucional'},
-                            ]
-                        }
-
-                    ]
-                };
-
-                var oc = $('#chart-container').orgchart({
-                    'data': datascource,
-                    'nodeContent': 'title',
-                    'exportButton': true,
-                    'exportFilename': 'OrgChart',
-                    'exportFileextension': 'png',
-                    'pan': true,
-                    'zoom': false,
-                    'zoominLimit': 7,
-                    'zoomoutLimit': 0.5
-                });
-
-            });
-
-        })(jQuery);
-        /*  var crudServiceBaseUrl = "https://demos.telerik.com/kendo-ui/service";
-          $("#chart-container").kendoOrgChart({
-              editable: false,
-              dataSource: {
-                  transport: {
-                      read: {
-                          url: crudServiceBaseUrl + "/orgstructure",
-                          dataType: "json"
-                      }
-                  },
-                  schema: {
-                      model: {
-                          id: "Id",
-                          parentId: "ParentId",
-                          fields: {
-                              Id: {type: "number", editable: false, nullable: false},
-                              ParentId: {field: "ParentId", nullable: true},
-                              hasChildren: {field: "HasChildren", nullable: true},
-                              expanded: {field: "Expanded", nullable: true},
-                              title: {field: "Position", nullable: true},
-                              avatar: {field: "Avatar", nullable: true},
-                              name: {field: "FullName"}
-                          }
-                      }
-                  }
-              }
-          });*/
-
+        OrgChart.templates.ula = Object.assign({}, OrgChart.templates.ula);
+        OrgChart.templates.ula.field_1 =
+            '<text data-width="150" data-text-overflow="multiline" style="font-size: 12px;" fill="#757575" x="160" y="75" text-anchor="middle">{val}</text>';
+        var chart = new OrgChart(document.getElementById("tree"), {
+            template: "ula",
+            enableSearch: false,
+            mouseScrool: OrgChart.action.none,
+            menu: {
+                pdf: {text: "Export PDF"},
+                png: {text: "Export PNG"},
+                /*svg: { text: "Export SVG" },
+                csv: { text: "Export CSV" }*/
+            },
+            nodeMenu: {
+                details: {text: "Details"},
+                /*edit: {text:"Edit"},
+                add: {text:"Add"},
+                remove: {text:"Remove"}*/
+            },
+            nodeBinding: {
+                field_0: "name",
+                field_1: "title",
+                img_0: "img"
+            },
+            nodes: [
+                {
+                    id: 1,
+                    name: "Antonieta Rosales de Oxford",
+                    title: "Rector, Gerente General del Sistema",
+                    img: "https://cdn.balkan.app/shared/2.jpg"
+                },
+                {
+                    id: 2,
+                    pid: 1,
+                    name: "Antonio Martínez",
+                    title: "Vicerrector Subsistema de Docencia",
+                    img: "https://cdn.balkan.app/shared/1.jpg",
+                },
+                {
+                    id: 3,
+                    pid: 1,
+                    name: "Thamara Echegaray",
+                    title: "Vicerrectora Susbsistema de Extensión",
+                    img: "https://cdn.balkan.app/shared/6.jpg"
+                },
+                {
+                    id: 4,
+                    pid: 1,
+                    name: " ",
+                    title: "Vicerrector de Investigación y Postgrado",
+                    img: "https://cdn.balkan.app/shared/3.jpg"
+                },
+                {
+                    id: 5,
+                    pid: 4,
+                    name: "Antonio Torrealba",
+                    title: "Decano Área de Postgrado",
+                    img: "https://cdn.balkan.app/shared/3.jpg"
+                },
+                {
+                    id: 6,
+                    pid: 4,
+                    name: "Antonio Sereno",
+                    title: "Decano Área de Investigación",
+                    img: "https://cdn.balkan.app/shared/3.jpg"
+                },
+                {
+                    id: 7,
+                    pid: 1,
+                    name: "Fanny Marcano",
+                    title: "Subsistema de Secretaría y Bienestar Estudiantil",
+                    img: "https://cdn.balkan.app/shared/4.jpg"
+                },
+                {
+                    id: 8,
+                    pid: 1,
+                    name: "Beatriz Cabello",
+                    title: "Dirección General de Administración y Servicios",
+                    img: "https://cdn.balkan.app/shared/12.jpg"
+                },
+                {
+                    id: 9,
+                    pid: 1,
+                    name: "Director General",
+                    title: "Dirección General de Planificación, Desarrollo y Evaluación Insitucional",
+                    img: "https://cdn.balkan.app/shared/10.jpg"
+                },
+                {
+                    id: 10,
+                    pid: 2,
+                    name: "Juana Sanchez",
+                    title: "Decana de Humanidades, Artes y Educación",
+                    img: "https://cdn.balkan.app/shared/4.jpg"
+                },
+                {
+                    id: 11,
+                    pid: 2,
+                    name: "Cristina Agostini Cancino",
+                    title: "Decano de Ciencias Jurídicas y Políticas",
+                    img: "https://cdn.balkan.app/shared/4.jpg"
+                },
+                {
+                    id: 12,
+                    pid: 2,
+                    name: "Karely J. Gil González",
+                    title: "Decana de Ciencias Económicas y Sociales",
+                    img: "https://cdn.balkan.app/shared/4.jpg"
+                },
+                {
+                    id: 13,
+                    pid: 2,
+                    name: "Andrés R. Pedroza R.",
+                    title: "Decano de Ingeniería y Afines",
+                    img: "https://cdn.balkan.app/shared/3.jpg"
+                },
+                {
+                    id: 14,
+                    pid: 2,
+                    name: "Damelis Vásquez de Villegas",
+                    title: "Decana de Estudios Generales",
+                    img: "https://cdn.balkan.app/shared/4.jpg"
+                },
+            ]
+        });
     </script>
 @endsection
