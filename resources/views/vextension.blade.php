@@ -2,9 +2,6 @@
 
 @section('content')
     <style>
-        /* .d-flex.justify-content-start > span{
-            top: .5rem;
-        } */
         .d-flex.justify-content-start > span {
             position: relative;
             top: .6rem;
@@ -17,8 +14,8 @@
         }
 
         p {
-        animation-duration: 3s;
-        animation-name: slidein;
+            animation-duration: 3s;
+            animation-name: slidein;
         }
 
         @keyframes slidein {
@@ -70,15 +67,15 @@
             padding: .5rem;
         }
 
-        #vext-author{
+        #vext-author {
             font-size: 1.5rem;
         }
 
-        #vext-authort{
+        #vext-authort {
             font-size: 1rem;
         }
 
-        #vext-email{
+        #vext-email {
             font-size: .75rem;
         }
 
@@ -106,14 +103,11 @@
             text-indent: 1.5em;
             margin-top: 0;
         }
-
-        /* .collapse.show {
-            display: block;
-            margin: 0 auto;
-        } */
-        #collapse , #collapse2 , #collapse3 {
+        
+        #collapse, #collapse2, #collapse3 {
             margin: 0 auto;
         }
+
         .info-dept.col-md-10.card.card-body {
             margin: 0 auto;
         }
@@ -127,6 +121,7 @@
             margin: 0 auto;
             padding: 1rem;
         }
+
         .conten-subsytem {
             display: flex;
             border-radius: 20px;
@@ -134,6 +129,7 @@
             width: 20%;
             padding: .5rem;
         }
+
         #link-subsystem > span {
             display: flex;
             flex: 0 0 25%;
@@ -143,6 +139,7 @@
             color: #FFFFFF;
             text-align: center;
         }
+
         #link-subsystem > span:hover {
             text-decoration: none;
         }
@@ -153,17 +150,19 @@
         </div>
         <div class="section-content">
             <div class="d-flex justify-content-start">
-                <img id="img-section" src="{{URL::asset('./image/graduate.png')}}"><span>{{trans('vextension.vext-title')}}</span>
+                <img id="img-section"
+                     src="{{URL::asset('./image/graduate.png')}}"><span>{{trans('vextension.vext-title')}}</span>
             </div>
         </div>
         <p>
         <div class=".xl-container">
-            <!-- <p class="titlefound">{{trans('org.authorities')}}</p> -->
+        <!-- <p class="titlefound">{{trans('org.authorities')}}</p> -->
             <div class="card-columns col-sm-11">
                 <a class="btn-link card-img" id="imgcard">
                     <div class="card row" id="cardauthor">
                         <div class="col-md-4">
-                            <img id="imgcrd" src="{{URL::asset('./image/csuperior/thamaraechegaray.jpg')}}" alt="Dra. Thamara Echegaray">
+                            <img id="imgcrd" src="{{URL::asset('./image/csuperior/thamaraechegaray.jpg')}}"
+                                 alt="Dra. Thamara Echegaray">
                         </div>
                         <div class="card-title col-md-8">
                             <p id="vext-author">{{trans('vextension.vext-author')}}</p>
@@ -176,7 +175,8 @@
                     <div class="card row" id="cardauthor">
                         <div class="col-md-4">
                             <div style="width:95%; height:180px; background-color: #6699cc; margin: .5rem;">
-                                <img id="imgcrd" src="{{URL::asset('./image/avatar.svg')}}" alt="Isabel Luna" style="width:100%; height: 70%; position: relative; top: 1rem;"></div>
+                                <img id="imgcrd" src="{{URL::asset('./image/avatar.svg')}}" alt="Isabel Luna"
+                                     style="width:100%; height: 70%; position: relative; top: 1rem;"></div>
                         </div>
                         <div class="card-title col-md-8">
                             <p id="vext-author">{{trans('vextension.vext-asist')}}</p>
@@ -187,20 +187,26 @@
                 </a>
             </div>
             <div class="flex content-vext">
-                <div class="links-interest" id="contentimg headingOne" style="background-color: #336699" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
+                <div class="links-interest" id="contentimg headingOne" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
+                     aria-controls="collapse">
                     <a id="foundbtn">
-                    <img src="{{URL::asset('./image/target.svg')}}">
-                    <span>{{trans('vextension.vext-mission-title')}}</span></a>
+                        <img src="{{URL::asset('./image/target.svg')}}">
+                        <span>{{trans('vextension.vext-mission-title')}}</span></a>
                 </div>
-                <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
+                     aria-controls="collapse2">
                     <a id="campusbtn">
-                    <img src="{{URL::asset('./image/settings.svg')}}">
-                    <span>{{trans('vextension.vext-functions')}}</span></a>
+                        <img src="{{URL::asset('./image/settings.svg')}}">
+                        <span>{{trans('vextension.vext-functions')}}</span></a>
                 </div>
-                <div class="links-interest" id="contentimg headingThree" style="background-color: #336699" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                <div class="links-interest" id="contentimg headingThree" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
+                     aria-controls="collapse3">
                     <a id="campusbtn">
-                    <img src="{{URL::asset('./image/flow-chart.svg')}}">
-                    <span>{{trans('vextension.vext-subsystems')}}</span></a>
+                        <img src="{{URL::asset('./image/flow-chart.svg')}}">
+                        <span>{{trans('vextension.vext-subsystems')}}</span></a>
                 </div>
             </div>
             <div class="col-md-12" id="contevext">
@@ -213,7 +219,7 @@
                 <div class="collapse col-sm-11" id="collapse2">
                     <div class="card card-body">
                         <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('vextension.vext-functions')}}
+                            {{trans('vextension.vext-functions')}}
                         </p>
                         <ul>
                             <li><p> {{trans('vextension.vext-functions-1')}}</p></li>
@@ -230,7 +236,7 @@
                 <div class="collapse col-sm-11" id="collapse3">
                     <div class="container col-md-12">
                         <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('vextension.vext-subsystems')}}</p>
+                            {{trans('vextension.vext-subsystems')}}</p>
                         <div class="content-areas">
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#">
@@ -240,15 +246,15 @@
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/sports.svg')}}">
-                                <span>{{trans('vextension.vext-sports')}}</span></a>
+                                    <span>{{trans('vextension.vext-sports')}}</span></a>
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/history.svg')}}">
-                                <span>{{trans('vextension.vext-culture')}}</span></a>
+                                    <span>{{trans('vextension.vext-culture')}}</span></a>
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/smartphone.png')}}">
-                                <span>{{trans('vextension.vext-prom')}}</span></a>
+                                    <span>{{trans('vextension.vext-prom')}}</span></a>
                             </div>
                         </div>
                         <div class="content-areas">
@@ -260,20 +266,20 @@
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/first-aid-kit.svg')}}">
-                                <span>{{trans('vextension.vext-ceu')}}</span></a>
+                                    <span>{{trans('vextension.vext-ceu')}}</span></a>
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/listening.png')}}">
-                                <span>{{trans('vextension.vext-uniradio')}}</span></a>
+                                    <span>{{trans('vextension.vext-uniradio')}}</span></a>
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/social-care.png')}}">
-                                <span>{{trans('vextension.vext-servcomuny')}}</span></a>
+                                    <span>{{trans('vextension.vext-servcomuny')}}</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="info-dept col-sm-11 card card-body">
                     <h5>{{trans('vextension.vext-info-title')}}</h5>
                     <p><b>{{trans('vextension.vext-info-etitle')}}</b>&nbsp {{trans('vextension.vext-info-email')}}</p>

@@ -14,21 +14,6 @@
             width: 65%;
         }
 
-
-        /* .d-flex.justify-content-start > span{
-            top: .5rem;
-        } */
-        /* .d-flex.justify-content-start > span {
-            position: relative;
-            top: .6rem;
-            left: 0.7rem;
-            color: #FFFFFF;
-            font-weight: 700;
-            font-size: 0.95em;
-            letter-spacing: 0.025em;
-            width: 40%;
-        } */
-
         p {
             animation-duration: 3s;
             animation-name: slidein;
@@ -77,15 +62,15 @@
             font-weight: 600;
         }
 
-        #vext-author{
+        #vext-author {
             font-size: 1.5rem;
         }
 
-        #vext-authort{
+        #vext-authort {
             font-size: 1rem;
         }
 
-        #vext-email{
+        #vext-email {
             font-size: .75rem;
         }
 
@@ -114,13 +99,10 @@
             margin-top: 0;
         }
 
-        /* .collapse.show {
-            display: block;
-            margin: 0 auto;
-        } */
-        #collapse , #collapse2 , #collapse3 {
+        #collapse, #collapse2, #collapse3 {
             margin: 0 auto;
         }
+
         .info-dept.col-md-10.card.card-body {
             margin: 0 auto;
         }
@@ -134,6 +116,7 @@
             margin: 0 auto;
             padding: 1rem;
         }
+
         .conten-subsytem {
             display: flex;
             border-radius: 20px;
@@ -141,6 +124,7 @@
             width: 20%;
             padding: .5rem;
         }
+
         #link-subsystem > span {
             display: flex;
             flex: 0 0 25%;
@@ -150,9 +134,11 @@
             color: #FFFFFF;
             text-align: center;
         }
+
         #link-subsystem > span:hover {
             text-decoration: none;
         }
+
         .content-areas.col-12 {
             justify-content: space-evenly;
             margin: 0 auto;
@@ -164,7 +150,8 @@
         </div>
         <div class="section-content">
             <div class="d-flex justify-content-start">
-                <img id="img-section" src="{{URL::asset('./image/graduate.png')}}"><span>{{trans('vacademy.vacad-title')}}</span>
+                <img id="img-section"
+                     src="{{URL::asset('./image/graduate.png')}}"><span>{{trans('vacademy.vacad-title')}}</span>
             </div>
         </div>
         <div class=".xl-container">
@@ -172,7 +159,8 @@
                 <a class="btn-link card-img" id="imgcard">
                     <div class="card row" id="cardauthor">
                         <div class="col-md-4">
-                            <img id="imgcrd" src="{{URL::asset('./image/csuperior/antoniomartinez.jpg')}}" alt="Ing. Antonio Martínez">
+                            <img id="imgcrd" src="{{URL::asset('./image/csuperior/antoniomartinez.jpg')}}"
+                                 alt="Ing. Antonio Martínez">
                         </div>
                         <div class="card-title col-md-8">
                             <p id="vext-author">{{trans('vacademy.vacad-author')}}</p>
@@ -184,7 +172,8 @@
                 <a class="btn-link card-img" id="imgcard">
                     <div class="card row" id="cardauthor">
                         <div class="col-md-4">
-                            <img id="imgcrd" src="{{URL::asset('./image/asistenteviceacadem.jpg')}}" alt="Livia García" style="width:105%; height:12.5rem;">
+                            <img id="imgcrd" src="{{URL::asset('./image/asistenteviceacadem.jpg')}}" alt="Livia García"
+                                 style="width:105%; height:12.5rem;">
                         </div>
                         <div class="card-title col-md-8">
                             <p id="vext-author">{{trans('vacademy.vacad-asist')}}</p>
@@ -195,23 +184,31 @@
                 </a>
             </div>
             <div class="flex content-vext">
-                <div class="links-interest" id="contentimg headingThree" style="background-color: #336699" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                <div class="links-interest" id="contentimg headingThree" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
+                     aria-controls="collapse2">
                     <a id="foundbtn">
-                    <img src="{{URL::asset('./image/settings.svg')}}">
-                    <span>{{trans('vacademy.vacad-functions')}}</span></a>
+                        <img src="{{URL::asset('./image/settings.svg')}}">
+                        <span>{{trans('vacademy.vacad-functions')}}</span>
+                    </a>
                 </div>
-                <div class="links-interest" id="contentimg headingOne" style="background-color: #336699" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                <div class="links-interest" id="contentimg headingOne" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
+                     aria-controls="collapse3">
                     <a id="campusbtn">
-                    <img src="{{URL::asset('./image/unity.svg')}}">
-                    <span>{{trans('vacademy.vacad-units')}}</span></a>
+                        <img src="{{URL::asset('./image/unity.svg')}}">
+                        <span>{{trans('vacademy.vacad-units')}}</span>
+                    </a>
                 </div>
-                <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse1">
+                <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
+                     aria-controls="collapse1">
                     <a id="campusbtn">
-                    <img src="{{URL::asset('./image/flow-chart.svg')}}">
-                    <span>{{trans('vacademy.vacad-struct')}}</span></a>
+                        <img src="{{URL::asset('./image/flow-chart.svg')}}">
+                        <span>{{trans('vacademy.vacad-struct')}}</span>
+                    </a>
                 </div>
             </div>
-            <p>
             <div class="col-md-12" id="contevext">
                 <div class="collapse col-sm-11" id="collapse">
                     <div class="card card-body">
@@ -224,7 +221,7 @@
                 <div class="collapse col-sm-11" id="collapse2">
                     <div class="card card-body">
                         <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('vacademy.vacad-functions')}}
+                            {{trans('vacademy.vacad-functions')}}
                         </p>
                         <ul>
                             <li><p> {{trans('vacademy.vacad-functions-1')}}</p></li>
@@ -239,7 +236,8 @@
                 <div class="collapse col-sm-11" id="collapse3">
                     <div class="container col-md-12">
                         <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('vacademy.vacad-units')}}</p>
+                            {{trans('vacademy.vacad-units')}}
+                        </p>
                         <div class="content-areas">
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#">
@@ -263,7 +261,7 @@
                         <div class="content-areas">
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/elearning.png')}}">
-                                <span>{{trans('vacademy.vacad-elearning')}}</span></a>
+                                    <span>{{trans('vacademy.vacad-elearning')}}</span></a>
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#">
@@ -271,33 +269,36 @@
                                     <span>{{trans('vacademy.vacad-prep')}}</span>
                                 </a>
                             </div>
-                            <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                                 href="#collapseExample" role="button" aria-expanded="false"
+                                 aria-controls="collapseExample">
                                 <a id="link-subsystem">
                                     <img src="{{URL::asset('./image/conection.png')}}">
                                     <span>{{trans('vacademy.vacad-links')}}</span></a>
                             </div>
                         </div>
                         <div class="content-areas col-md-12" id="contevac">
-                                <div class="collapse col-sm-11" id="collapseExample">
-                                    <div class="content-areas col-12">
-                                        <div class="conten-subsytem" style="background-color: #004c9c">
-                                            <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/graduation.svg')}}">
+                            <div class="collapse col-sm-11" id="collapseExample">
+                                <div class="content-areas col-12">
+                                    <div class="conten-subsytem" style="background-color: #004c9c">
+                                        <a id="link-subsystem" href="#"><img
+                                                src="{{URL::asset('./image/graduation.svg')}}">
                                             <span>{{trans('vacademy.vacad-nva')}}</span></a>
-                                        </div>
-                                        <div class="conten-subsytem" style="background-color: #004c9c">
-                                            <a id="link-subsystem" href="#">
-                                                <img src="{{URL::asset('./image/university.svg')}}">
-                                                <span>{{trans('vacademy.vacad-unesco')}}</span>
-                                            </a>
-                                        </div>
-                                        <div class="conten-subsytem" style="background-color: #004c9c">
-                                            <a id="link-subsystem" href="#">
-                                                <img src="{{URL::asset('./image/graduation-hat.svg')}}">
-                                                <span>{{trans('vacademy.vacad-other')}}</span>
-                                            </a>
-                                        </div>
+                                    </div>
+                                    <div class="conten-subsytem" style="background-color: #004c9c">
+                                        <a id="link-subsystem" href="#">
+                                            <img src="{{URL::asset('./image/university.svg')}}">
+                                            <span>{{trans('vacademy.vacad-unesco')}}</span>
+                                        </a>
+                                    </div>
+                                    <div class="conten-subsytem" style="background-color: #004c9c">
+                                        <a id="link-subsystem" href="#">
+                                            <img src="{{URL::asset('./image/graduation-hat.svg')}}">
+                                            <span>{{trans('vacademy.vacad-other')}}</span>
+                                        </a>
                                     </div>
                                 </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -308,7 +309,6 @@
                     <p><b>{{trans('vacademy.vacad-info-schedtit')}}</b>&nbsp{{trans('vacademy.vacad-info-sched')}}</p>
                 </div>
             </div>
-            </p>
         </div>
     </div>
 @endsection

@@ -64,6 +64,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin'], function () {
 Route::group(['middleware' => 'auth'], function () {
     Route::get('admin/home', 'AdminController@index');
     Route::get('admin/profile', 'UsersController@show');
+    Route::post('/login', 'LoginController@login');
+    // ->name('');
     // Route::get('admin/ajuda', 'AdminController@ajuda');
     //Employees
     Route::get('admin/employee/notifications', function () {
@@ -81,7 +83,7 @@ Route::get('ourinstitution', function () {
     return view('ourinstitution');
 });
 
-Route::get('orgstructure', function(){
+Route::get('orgstructure', function () {
     return view('orgstructure');
 });
 
