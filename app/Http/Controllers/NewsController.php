@@ -31,7 +31,6 @@ class NewsController extends Controller
 
             $CKEditorFuncNum = $request->input('CKEditorFuncNum');
             $url = asset('images/newsimg' . $fileName);
-            dd($url);
             $msg = 'Image uploaded successfully';
             $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
 

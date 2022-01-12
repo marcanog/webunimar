@@ -18,7 +18,7 @@ return [
     'dinvest-info-etitle' => 'Correo electrónico:',
     'dinvest-info-teltit' => 'Teléfono:',
     'dinvest-info-schedtit' => 'Horario de atención:',
-    'dinvest-info-email' => 'dptoinvestigacion@unimar.edu.ve',
+    'dinvest-info-email' => 'direccion.investigacion@unimar.edu.ve',
     'dinvest-info-telf' => '+58  0295 2870466 ext. 115 - 117 (Fax)',
     'dinvest-info-sched' => 'Lunes - Viernes 8am - 12pm y 1pm a 5pm',
     'dinvest-functions' => 'Funciones',
@@ -38,6 +38,9 @@ return [
     'dinvest-nva' => 'Núcleo de Vicerrectores Académicos',
     'dinvest-unesco' => 'Unesco - IESALC',
     'dinvest-other' => 'Universia',
+    'dinvest-know' => 'Encuentro de Saberes',
+    'dinvest-certf' => 'Certificaciones',
+    'dinvest-journal' => 'Revista Científica',
 
 ];
 

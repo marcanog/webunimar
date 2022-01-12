@@ -199,7 +199,7 @@
                      data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
                      aria-controls="collapse1">
                     <a id="campusbtn">
-                        <img src="{{URL::asset('./image/eye.svg')}}">
+                        <img src="{{URL::asset('/image/eye.svg')}}">
                         <span>{{trans('dptoinvestigation.dinvest-vision-title')}}</span>
                     </a>
                 </div>
@@ -208,7 +208,7 @@
                      data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
                      aria-controls="collapse2">
                     <a id="foundbtn">
-                        <img src="{{URL::asset('./image/target.svg')}}">
+                        <img src="{{URL::asset('/image/target.svg')}}">
                         <span>{{trans('dptoinvestigation.dinvest-mission-title')}}</span>
                     </a>
                 </div>
@@ -217,19 +217,55 @@
                      data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
                      aria-controls="collapse2">
                     <a id="foundbtn">
-                        <img src="{{URL::asset('./image/settings.svg')}}">
+                        <img src="{{URL::asset('/image/settings.svg')}}">
                         <span>{{trans('dptoinvestigation.dinvest-functions')}}</span>
                     </a>
                 </div>
                 {{--units--}}
-                <div class="links-interest" id="contentimg headingOne" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
-                     aria-controls="collapse3">
+                {{-- <div class="links-interest" id="contentimg headingOne" style="background-color: #336699"
+                      data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
+                      aria-controls="collapse3">
+                     <a id="campusbtn">
+                         <img src="{{URL::asset('./image/unity.svg')}}">
+                         <span>{{trans('dptoinvestigation.dinvest-units')}}</span>
+                     </a>
+                 </div>--}}
+            </div>
+            <div class="d-inline-flex justify-content-around m-4 content-vext">
+                {{--Encuentro de Saberes--}}
+                <div class="links-interest" id="contentimg headingFive" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
+                     aria-controls="collapse5">
                     <a id="campusbtn">
-                        <img src="{{URL::asset('./image/unity.svg')}}">
-                        <span>{{trans('dptoinvestigation.dinvest-units')}}</span>
+                        <img src="{{URL::asset('/image/knowledge.png')}}">
+                        <span>{{trans('dptoinvestigation.dinvest-know')}}</span>
                     </a>
                 </div>
+                {{--<div class="links-interest" id="contentimg headingFive" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
+                     aria-controls="collapse2">
+                    <a id="foundbtn">
+                        <img src="{{URL::asset('./image/knowledge.png')}}">
+                        <span>{{trans('dptoinvestigation.dinvest-know')}}</span>
+                    </a>
+                </div>--}}
+                {{--Certificaciones--}}
+                <div class="links-interest" id="contentimg headingSix" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false"
+                     aria-controls="collapse2">
+                    <a id="foundbtn">
+                        <img src="{{URL::asset('/image/certificade.png')}}">
+                        <span>{{trans('dptoinvestigation.dinvest-certf')}}</span>
+                    </a>
+                </div>
+                {{--Revista Cientifica--}}
+                <button class="links-interest" id="contentimg" style="background-color: #336699;"
+                        role="button">
+                    <a href="https://www.unimarcientifica.edu.ve/revista" id="foundbtn" style="margin: 0 auto">
+                        <img src="{{URL::asset('/image/unimarcientif.svg')}}" style="margin: 0 auto;">
+                        <span>{{trans('dptoinvestigation.dinvest-journal')}}</span>
+                    </a>
+                </button>
             </div>
             <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
                 <div class="collapse col-lg-12" id="collapse">
@@ -337,6 +373,36 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="collapse col-lg-12" id="collapse5">
+                    <div class="card card-body">
+                        <p style="font-size: 1.25rem; font-weight: 600;">
+                            {{trans('dptoinvestigation.dinvest-functions')}}
+                        </p>
+                        <ul>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-1')}}</p></li>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-2')}}</p></li>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-3')}}</p></li>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-4')}}</p></li>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-5')}}</p></li>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-6')}}</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse col-lg-12" id="collapse6">
+                    <div class="card card-body">
+                        <p style="font-size: 1.25rem; font-weight: 600;">
+                            {{trans('dptoinvestigation.dinvest-functions')}}
+                        </p>
+                        <ul>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-1')}}</p></li>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-2')}}</p></li>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-3')}}</p></li>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-4')}}</p></li>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-5')}}</p></li>
+                            <li><p> {{trans('dptoinvestigation.dinvest-functions-6')}}</p></li>
+                        </ul>
                     </div>
                 </div>
             </div>

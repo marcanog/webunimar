@@ -17,7 +17,7 @@ return [
     'dinvest-info-etitle' => 'E-mail address:',
     'dinvest-info-teltit' => 'Phone:',
     'dinvest-info-schedtit' => 'Hours of operation:',
-    'dinvest-info-email' => 'dptoinvestigacion@unimar.edu.ve',
+    'dinvest-info-email' => 'direccion.investigacion@unimar.edu.ve',
     'dinvest-info-telf' => '+58  0295 2870466 ext. 115 - 117 (Fax)',
     'dinvest-info-sched' => 'Monday - Friday 8am - 12pm y 1pm a 5pm',
     'dinvest-functions' => 'Functions',
@@ -37,6 +37,9 @@ return [
     'dinvest-nva' => 'Núcleo de Vicerrectores Académicos',
     'dinvest-unesco' => 'Unesco - IESALC',
     'dinvest-other' => 'Universia',
+    'dinvest-know' => 'Encounter of Knowledge',
+    'dinvest-certf' => 'Certifications',
+    'dinvest-journal' => 'Scientific Journal',
 
 ];
 

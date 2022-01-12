@@ -103,7 +103,7 @@
             text-indent: 1.5em;
             margin-top: 0;
         }
-        
+
         #collapse, #collapse2, #collapse3 {
             margin: 0 auto;
         }
@@ -151,7 +151,8 @@
         <div class="section-content">
             <div class="d-flex justify-content-start">
                 <img id="img-section"
-                     src="{{URL::asset('./image/graduate.png')}}"><span>{{trans('vextension.vext-title')}}</span>
+                     src="{{URL::asset('./image/graduate.png')}}"><span
+                    style="font-size: 0.84rem;">{{trans('vextension.vext-title')}}</span>
             </div>
         </div>
         <p>
