@@ -1,14 +1,14 @@
 <?php
 
 return [
-    'dinvest-title' => 'Research Dean Office',
+    'dinvest-title' => 'Directorate of Research',
     'dinvest-vision-title' => 'Vision',
     'dinvest-mission-title' => 'Mission',
     'dinvest-mission' => '',
     'dinvest-vision' => 'The main objective of the Directorate of Research is the planning, coordination and execution of scientific, development and innovation policies that support academic programs of excellence at the University of Margarita, towards topics of national interest, maintaining its leadership in scientific productivity. In this way, it seeks to generate solutions to social, cultural, scientific and technological problems from academic knowledge. It is also responsible for the dissemination of scientific work.',
     'dinvest-units' => 'Assignment Units',
     'dinvest-author' => 'Antonio Sereno',
-    'dinvest-author-title' => 'Dean of Research',
+    'dinvest-author-title' => 'General Director of Research',
     'dinvest-author-email' => 'antonio.sereno@unimar.edu.ve',
     'dinvest-asist' => 'Name',
     'dinvest-atitle' => 'Secretary',

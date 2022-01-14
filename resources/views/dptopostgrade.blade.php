@@ -155,7 +155,7 @@
         <div class="section-content">
             <div class="d-flex justify-content-start">
                 <img id="img-section"
-                     src="{{URL::asset('./image/graduate.png')}}"><span>{{trans('postgrade.postg-title')}}</span>
+                     src="{{URL::asset('./image/master-sect.png')}}"><span>{{trans('postgrade.postg-title')}}</span>
             </div>
         </div>
         <div class="d-inline-flex flex-column justify-content-around m-4">
@@ -193,80 +193,6 @@
                     </div>
                 </a>
             </div>
-            {{--<div class="d-inline-flex justify-content-around m-4 content-vext">
-                --}}{{--Vision--}}{{--
-                <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
-                     aria-controls="collapse1">
-                    <a id="campusbtn">
-                        <img src="{{URL::asset('/image/eye.svg')}}">
-                        <span>{{trans('dptoinvestigation.postg-vision-title')}}</span>
-                    </a>
-                </div>
-                --}}{{--Mission--}}{{--
-                <div class="links-interest" id="contentimg headingFour" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
-                     aria-controls="collapse2">
-                    <a id="foundbtn">
-                        <img src="{{URL::asset('/image/target.svg')}}">
-                        <span>{{trans('dptoinvestigation.postg-mission-title')}}</span>
-                    </a>
-                </div>
-                --}}{{--functions--}}{{--
-                <div class="links-interest" id="contentimg headingThree" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
-                     aria-controls="collapse2">
-                    <a id="foundbtn">
-                        <img src="{{URL::asset('/image/settings.svg')}}">
-                        <span>{{trans('dptoinvestigation.postg-functions')}}</span>
-                    </a>
-                </div>
-                --}}{{--units--}}{{--
-                --}}{{-- <div class="links-interest" id="contentimg headingOne" style="background-color: #336699"
-                      data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
-                      aria-controls="collapse3">
-                     <a id="campusbtn">
-                         <img src="{{URL::asset('./image/unity.svg')}}">
-                         <span>{{trans('dptoinvestigation.postg-units')}}</span>
-                     </a>
-                 </div>--}}{{--
-            </div>
-            <div class="d-inline-flex justify-content-around m-4 content-vext">
-                --}}{{--Encuentro de Saberes--}}{{--
-                <div class="links-interest" id="contentimg headingFive" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
-                     aria-controls="collapse5">
-                    <a id="campusbtn">
-                        <img src="{{URL::asset('/image/knowledge.png')}}">
-                        <span>{{trans('dptoinvestigation.postg-know')}}</span>
-                    </a>
-                </div>
-                --}}{{--<div class="links-interest" id="contentimg headingFive" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
-                     aria-controls="collapse2">
-                    <a id="foundbtn">
-                        <img src="{{URL::asset('./image/knowledge.png')}}">
-                        <span>{{trans('dptoinvestigation.postg-know')}}</span>
-                    </a>
-                </div>--}}{{--
-                --}}{{--Certificaciones--}}{{--
-                <div class="links-interest" id="contentimg headingSix" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false"
-                     aria-controls="collapse2">
-                    <a id="foundbtn">
-                        <img src="{{URL::asset('/image/certificade.png')}}">
-                        <span>{{trans('dptoinvestigation.postg-certf')}}</span>
-                    </a>
-                </div>
-                --}}{{--Revista Cientifica--}}{{--
-                <button class="links-interest" id="contentimg" style="background-color: #336699;"
-                        role="button">
-                    <a href="https://www.unimarcientifica.edu.ve/revista" id="foundbtn" style="margin: 0 auto">
-                        <img src="{{URL::asset('/image/unimarcientif.svg')}}" style="margin: 0 auto;">
-                        <span>{{trans('dptoinvestigation.postg-journal')}}</span>
-                    </a>
-                </button>
-            </div>--}}
             <div class="d-inline-flex justify-content-around m-4 content-vext">
                 {{--Vision--}}
                 <div class="links-interest" id="contentimg" style="background-color: #336699"
@@ -279,7 +205,7 @@
                 </div>
                 {{--Mission--}}
                 <div class="links-interest" id="contentimg" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
+                     data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
                      aria-controls="collapse2">
                     <a id="foundbtn">
                         <img src="{{URL::asset('/image/target.svg')}}">
@@ -287,70 +213,74 @@
                     </a>
                 </div>
                 {{--functions--}}
-                <div class="links-interest" id="contentimg headingThree" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
+                <div class="links-interest" id="contentimg" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
                      aria-controls="collapse2">
                     <a id="foundbtn">
                         <img src="{{URL::asset('/image/settings.svg')}}">
                         <span>{{trans('postgrade.postg-functions')}}</span>
                     </a>
                 </div>
-                {{--units--}}
-                {{-- <div class="links-interest" id="contentimg headingOne" style="background-color: #336699"
-                      data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
-                      aria-controls="collapse3">
-                     <a id="campusbtn">
-                         <img src="{{URL::asset('./image/unity.svg')}}">
-                         <span>{{trans('dptoinvestigation.postg-units')}}</span>
-                     </a>
-                 </div>--}}
             </div>
             <div class="d-inline-flex justify-content-around m-4 content-vext">
-                {{--Encuentro de Saberes--}}
+                {{--PhD--}}
                 <div class="links-interest" id="contentimg" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
-                     aria-controls="collapse5">
+                     data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
+                     aria-controls="collapse4">
                     <a id="campusbtn">
                         <img src="{{URL::asset('/image/doctor.png')}}">
                         <span>{{trans('postgrade.postg-doctor')}}</span>
                     </a>
                 </div>
-                {{--<div class="links-interest" id="contentimg headingFive" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
-                     aria-controls="collapse2">
-                    <a id="foundbtn">
-                        <img src="{{URL::asset('./image/knowledge.png')}}">
-                        <span>{{trans('dptoinvestigation.postg-know')}}</span>
-                    </a>
-                </div>--}}
-                {{--Certificaciones--}}
+                {{--Masters--}}
                 <div class="links-interest" id="contentimg" style="background-color: #336699"
-                     data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false"
-                     aria-controls="collapse2">
+                     data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
+                     aria-controls="collapse5">
                     <a id="foundbtn">
                         <img src="{{URL::asset('/image/master.png')}}">
                         <span>{{trans('postgrade.postg-certf')}}</span>
                     </a>
                 </div>
-                {{--Revista Cientifica--}}
-                <button class="links-interest" id="contentimg" style="background-color: #336699;"
+                {{--especializations--}}
+                <div class="links-interest" id="contentimg" style="background-color: #336699"
+                     data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false"
+                     aria-controls="collapse6">
+                    <a id="foundbtn">
+                        <img src="{{URL::asset('/image/specialization.png')}}">
+                        <span>{{trans('postgrade.postg-spec')}}</span>
+                    </a>
+                </div>
+                {{--<button class="links-interest" id="contentimg" style="background-color: #336699;"
                         role="button">
-                    <a href="https://www.unimarcientifica.edu.ve/revista" id="foundbtn" style="margin: 0 auto">
+                    <a href="#" id="foundbtn" style="margin: 0 auto">
                         <img src="{{URL::asset('/image/specialization.png')}}" style="margin: 0 auto;">
                         <span>{{trans('postgrade.postg-spec')}}</span>
                     </a>
-                </button>
+                </button>--}}
             </div>
+            {{--cards bodies--}}
             <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
-                <div class="collapse col-lg-12" id="collapse">
-                    <div class="card card-body">
+                <div class="collapse col-lg-12 m-4" id="collapse">{{--vision--}}
+                    <div class="card card-body sectionbody">
                         <p style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('postgrade.postg-vision-title')}}
                         </p>
-                        <p> {{trans('postgrade.postg-vision')}}</p>
+                        <p class="text-justify"> {{trans('postgrade.postg-vision')}}</p>
                     </div>
                 </div>
-                <div class="collapse col-lg-12" id="collapse2">
+                <div class="collapse col-lg-12 m-4" id="collapse2"> {{--mision--}}
+                    <div class="card card-body">
+                        <p style="font-size: 1.25rem; font-weight: 600;">
+                            {{trans('postgrade.postg-mission-title')}}
+                        </p>
+                        <ul>
+                            <div class="sectionbody">
+                                <p> {{trans('postgrade.postg-mission')}}</p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse col-lg-12 m-4" id="collapse3"> {{--functions--}}
                     <div class="card card-body">
                         <p style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('postgrade.postg-functions')}}
@@ -365,119 +295,42 @@
                         </ul>
                     </div>
                 </div>
-                <div class="collapse col-lg-12" id="collapse4">
+                <div class="collapse col-lg-12 m-4" id="collapse4">{{--PhD card-body--}}
                     <div class="card card-body">
                         <p style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('postgrade.postg-functions')}}
                         </p>
                         <ul>
-                            <li><p> {{trans('postgrade.postg-functions-1')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-2')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-3')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-4')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-5')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-6')}}</p></li>
+                            <div class="sectionbody">
+                                <p> {{trans('postgrade.postg-functions-1')}}</p>
+                            </div>
                         </ul>
                     </div>
                 </div>
-                <div class="collapse col-lg-12" id="collapse3">
-                    <div class="container col-md-12">
-                        <p style="font-size: 1.25rem; font-weight: 600;">
-                            {{trans('postgrade.postg-units')}}
-                        </p>
-                        <div class="content-areas">
-                            <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="#">
-                                    <img src="{{URL::asset('.
-
-/image/libraryonline.png')}}">
-                                    <span>{{trans('postgrade.postg-biblioc')}}</span>
-                                </a>
-                            </div>
-                            <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="#">
-                                    <img src="{{URL::asset('./image/algorithm.svg')}}">
-                                    <span>{{trans('postgrade.postg-comcurric')}}</span>
-                                </a>
-                            </div>
-                            <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="/deans">
-                                    <img src="{{URL::asset('./image/insurance.svg')}}">
-                                    <span>{{trans('postgrade.postg-deans')}}</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="content-areas">
-                            <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/elearning.png')}}">
-                                    <span>{{trans('postgrade.postg-elearning')}}</span></a>
-                            </div>
-                            <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="#">
-                                    <img src="{{URL::asset('./image/lecture.svg')}}">
-                                    <span>{{trans('postgrade.postg-prep')}}</span>
-                                </a>
-                            </div>
-                            <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
-                                 href="#collapseExample" role="button" aria-expanded="false"
-                                 aria-controls="collapseExample">
-                                <a id="link-subsystem">
-                                    <img src="{{URL::asset('./image/conection.png')}}">
-                                    <span>{{trans('postgrade.postg-links')}}</span></a>
-                            </div>
-                        </div>
-                        <div class="content-areas col-md-12" id="contevac">
-                            <div class="collapse col-sm-11" id="collapseExample">
-                                <div class="content-areas col-12">
-                                    <div class="conten-subsytem" style="background-color: #004c9c">
-                                        <a id="link-subsystem" href="#"><img
-                                                src="{{URL::asset('./image/graduation.svg')}}">
-                                            <span>{{trans('postgrade.postg-nva')}}</span></a>
-                                    </div>
-                                    <div class="conten-subsytem" style="background-color: #004c9c">
-                                        <a id="link-subsystem" href="#">
-                                            <img src="{{URL::asset('./image/university.svg')}}">
-                                            <span>{{trans('postgrade.postg-unesco')}}</span>
-                                        </a>
-                                    </div>
-                                    <div class="conten-subsytem" style="background-color: #004c9c">
-                                        <a id="link-subsystem" href="#">
-                                            <img src="{{URL::asset('./image/graduation-hat.svg')}}">
-                                            <span>{{trans('postgrade.postg-other')}}</span>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse col-lg-12" id="collapse5">
+                <div class="collapse col-lg-12 m-4" id="collapse5">{{--masters card body--}}
                     <div class="card card-body">
                         <p style="font-size: 1.25rem; font-weight: 600;">
-                            {{trans('postgrade.postg-functions')}}
+                            {{trans('postgrade.postg-certf')}}
                         </p>
                         <ul>
-                            <li><p> {{trans('postgrade.postg-functions-1')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-2')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-3')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-4')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-5')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-6')}}</p></li>
+                            <li><a href="">{{trans('postgrade.postg-certf-csamb')}}</a></li>
+                            <li><a href="">{{trans('postgrade.postg-certf-auditfors')}}</a></li>
+                            <li><a href="">{{trans('postgrade.postg-certf-procpenal')}}</a></li>
+                            <li><a href="">{{trans('postgrade.postg-certf-managecustom')}}</a></li>
+                            <li><a href="">{{trans('postgrade.postg-certf-multij')}}</a></li>
+                            <li><a href="">{{trans('postgrade.postg-certf-histreg')}}</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="collapse col-lg-12" id="collapse6">
+                <div class="collapse col-lg-12 m-4" id="collapse6">{{--espc card body--}}
                     <div class="card card-body">
                         <p style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('postgrade.postg-functions')}}
                         </p>
                         <ul>
-                            <li><p> {{trans('postgrade.postg-functions-1')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-2')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-3')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-4')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-5')}}</p></li>
-                            <li><p> {{trans('postgrade.postg-functions-6')}}</p></li>
+                            <div class="sectionbody">
+                                <p> {{trans('postgrade.postg-functions-1')}}</p>
+                            </div>
                         </ul>
                     </div>
                 </div>

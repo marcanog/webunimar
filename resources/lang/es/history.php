@@ -1,0 +1,10 @@
+<?php
+
+return [
+    'our-history-title' => 'Nuestra Historia',
+    'our-history-1' => 'La Universidad de Margarita inició actividades académicas el 24 de enero del año 2000, al pie la santificada serranía de la Patrona del Oriente de Venezuela; la Virgen del Valle. Está ubicada en la Isla de Margarita, estado Nueva Esparta, exactamente a unos 38 kilómetros de la costa nor-oriental venezolana.',
+    'our-history-2' => 'Con la apertura del Campus Universitario, se concretó un antiguo anhelo de la gran mayoría de los neoespartanos: Contar con una casa de estudios superiores privada, capaz de ofrecer formación integral, oportunidades académicas diferentes, alta calidad en la enseñanza y de albergar en su seno, a los cientos de margariteños, cochenses y residentes que año tras año logran su grado en educación secundaria.',
+    'our-history-3' => 'Fue así como se abrió un nuevo horizonte a nuestros estudiantes, bajo la conducción de un grupo de hombres y mujeres, ligados íntimamente a la educación superior en Venezuela; hablamos de Pedro Augusto Beauperthuy, María Eugenia Morales, Raquel Pérez Henríquez, Pedro Cabello Poleo y Aníbal Gómez.',
+    'our-history-4' => 'Este grupo de emprendedores educadores, luego de una perseverante constancia, logró que en el año 98, se oficializara mediante Decreto Presidencial N ª 3034, fechado el 20 de noviembre de ese mismo año, la creación de La Universidad de Margarita, con las Facultades de Ciencias Económicas y Sociales, Ingeniería, Humanidades Artes y Educación y Ciencias Jurídicas y Políticas.',
+    'our-history-5' => 'Hoy gracias a la visión futurista de ese grupo, en nuestra Alma Mater del Caribe, se han otorgado 8.396 títulos de grado superior, al nivel de licenciatura en las siguientes carreras: Administración de Empresas, Artes Mención Diseño Gráfico, Contaduría Pública, Derecho, Educación Integral, Idiomas Modernos e Ingeniería en Sistemas. En postgrado la universidad ha otorgado diplomas y certificados en diferentes área de estudios; y 601 títulos entre las especializaciones y maestrías que ofrece.'
+];

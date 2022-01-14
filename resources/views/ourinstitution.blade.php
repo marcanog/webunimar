@@ -17,7 +17,8 @@
         <div class="section-content">
             <div class="d-flex justify-content-start">
                 <img id="img-section"
-                     src="{{URL::asset('./image/logo-unimar.png')}}"><span>{{trans('home.our-intstitution')}}</span>
+                     src="{{URL::asset('./image/logo-unimar.png')}}">
+                <span>{{trans('home.our-intstitution')}}</span>
             </div>
         </div>
         <div class="content-links">
@@ -46,18 +47,15 @@
         </div>
         <div class="content-links">
             <div class="links-interest" id="contentimg" style="background-color: #336699">
-                <a href="#"><img src="{{URL::asset('./image/history.svg')}}">
+                <a href="{{url('/ourhistory')}}"><img src="{{URL::asset('./image/history.svg')}}">
                     <span>{{trans('ourinstitute.our-history-title')}}</span></a>
             </div>
             <div class="links-interest" id="contentimg" style="background-color: #336699">
-                <a type="nav-link" style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    <img src="{{URL::asset('./image/cube.svg')}}">
-                    <span>{{trans('ourinstitute.our-identity-title')}}</span>
-                </a>
+                <a href="{{url('/simbology')}}"><img src="{{URL::asset('./image/cube.svg')}}">
+                    <span>{{trans('ourinstitute.our-identity-title')}}</span></a>
             </div>
-            @include('simbology')
             <div class="links-interest" id="contentimg" style="background-color: #336699">
-                <a href="/organization"><img src="{{URL::asset('./image/flow-chart.svg')}}">
+                <a href="{{URL('/organization')}}"><img src="{{URL::asset('./image/flow-chart.svg')}}">
                     <span>{{trans('ourinstitute.our-organization-title')}}</span></a>
             </div>
         </div>
@@ -69,41 +67,27 @@
                         {{trans('ourinstitute.our-mission-title')}}
                     </p>
                     <ul>
-                        <li><p> {{trans('ourinstitute.our-mission-1')}}</p></li>
-                        <li><p> {{trans('ourinstitute.our-mission-2')}}</p></li>
-                        <li><p> {{trans('ourinstitute.our-mission-3')}}</p></li>
+                        <div class="sectionbody">
+                            <li><p> {{trans('ourinstitute.our-mission-1')}}</p></li>
+                            <li><p> {{trans('ourinstitute.our-mission-2')}}</p></li>
+                            <li><p> {{trans('ourinstitute.our-mission-3')}}</p></li>
+                        </div>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="collapse col-lg-12" id="collapse2">
+        <div class="collapse col-lg-12 m-4" id="collapse2">
             <div class="card card-body">
                 <p style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('ourinstitute.our-vision-title')}}
                 </p>
                 <ul>
-                    <li><p> {{trans('ourinstitute.our-vision-1')}}</p></li>
-                    <li><p> {{trans('ourinstitute.our-vision-2')}}</p></li>
-                    <li><p> {{trans('ourinstitute.our-vision-3')}}</p></li>
+                    <div class="sectionbody">
+                        <li><p> {{trans('ourinstitute.our-vision-1')}}</p></li>
+                        <li><p> {{trans('ourinstitute.our-vision-2')}}</p></li>
+                        <li><p> {{trans('ourinstitute.our-vision-3')}}</p></li>
+                    </div>
                 </ul>
-            </div>
-        </div>
-
-        <div class="modal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">{{trans('ourinstitute.our-simbology')}}</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <p>{{trans('ourinstitute.our-logo')}}</p>
-                        <img src="{{url('/image/logo-web-02.png')}}">
-                    </div>
-                    <div class="modal-footer">
-                        <span class="footermodal">"{{trans('ourconcept.our-modal-footer')}}"</span>
-                    </div>
-                </div>
             </div>
         </div>
 

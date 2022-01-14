@@ -1,7 +1,12 @@
 <?php
 return [
-    'vicerectorades-title' => 'Vicerrectorados',
-    'vice-acad-title' => 'Vicerrectorado Académico',
-    'vice-ext-title' => 'Vicerrectorado de Extensión',
-    'user_login' => 'Usuario:',
+    'vicerectorades-title' => 'Vice Rectorates',
+    'vice-acad-title' => 'Academic Vicerectorate',
+    'vice-ext-title' => 'Vice-rectorate of Extension',
+    'user_login' => 'User:',
+    'pay-online' => 'Online Payments',
+    'est-pregrade' => 'Pregrade',
+    'calendar-academy' => 'Academic Calendar',
+    'contactus' => 'Contact Directory',
+    'general-secretary' => 'General Secretariat',
 ];

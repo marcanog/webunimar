@@ -13,5 +13,10 @@ return [
     'our-vision-1' => 'The University is the leading institution for the integration of regional Higher Education, placing itself at the forefront of ecological protection programs and initiatives.',
     'our-vision-2' => 'The University has strengthened its character as an eminently social institution, open, plural and free, supportive and representative of the highest values of the people and society.',
     'our-vision-3' => 'The University has consolidated the changes in its organizational structures, evolving towards a systemic paradigm, and achieving a high degree of effectiveness, efficiency and productivity.',
-
+    'our-symbology' => 'Our Symbology',
+    'our-logo' => 'Our Logo',
+    'our-logoh' => 'Formal Logo Horizontal Version',
+    'our-logov' => 'Formal Logo Vertical Version',
+    'our-hymn' => 'Our Hymn',
+    'our-brigade' => 'Our Volunteer Fire Brigade',
 ];

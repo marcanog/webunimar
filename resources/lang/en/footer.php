@@ -1,13 +1,13 @@
 <?php
 
 return [
-   //firt column
+    //firt column
     'f_location' => 'Av. Concepción Mariño, Sector El Toporo, El Valle del Espíritu Santo, Edo. Nueva Esparta, Venezuela.',
     //second column
     'f_organization' => 'Our Institution',
     'f_rectors_office' => 'Rectorate',
     'f_vice_chancellor' => 'Vice rectorates',
-    'f_deanchip' => 'Deaneries',
+    'f_deanchip' => 'Deans Office',
     'f_student_welfare' => 'Student Welfare',
     //third column
     'f_study_offers' => 'Study Offers',
@@ -28,6 +28,6 @@ return [
     'f_calendar' => 'Academic Calendar',
     'f_dir_telf' => 'Telephone Directory',
     'f_contact_us' => 'Contact us through',
-     'f-copyrigth' => '© Copyright 2001-2021 Universidad de Margarita, Rif: J-30660040-0. Phone: 800-UNIMAR (800-864627). Margarita Island - Venezuela.',
+    'f-copyrigth' => '© Copyright 2001-2021 Universidad de Margarita, Rif: J-30660040-0. Phone: 800-UNIMAR (800-864627). Margarita Island - Venezuela.',
 
 ];

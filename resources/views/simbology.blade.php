@@ -1,50 +1,36 @@
-<div class="modal" id="modal2" data-animation="slideInOutLeft">
-    <div class="modal-dialog" id="modaldialog">
-        <header class="modal-header">
-            <span>{{trans('ourinstitute.our-simbology')}}</span>
-            <button class="close-modal" aria-label="close modal font-weight-bold" data-close>
-                ✕
-            </button>
-        </header>
-        <section>
-            <div class="sectionbody">
-                <p>{{trans('ourinstitute.our-logo')}}</p>
-                <img src="{{url('/image/logo-web-02.png')}}">
+@extends('layouts.layout')
+
+@section ('content')
+    <div class=".xl-container">
+        <div class="banner-main">
+            <img src="{{URL::asset('./image/ourinstitution.png')}}">
+        </div>
+        <div class="section-content">
+            <div class="d-flex justify-content-start">
+                <img id="img-section"
+                     src="{{URL::asset('./image/logo-unimar.png')}}"><span>{{trans('ourinstitute.our-symbology')}}</span>
             </div>
-        </section>
-        <footer class="modal-footer">
-            <span class="footermodal">"{{trans('ourconcept.our-modal-footer')}}"</span>
-        </footer>
+        </div>
+        <div class="d-flex m-4">
+            <div class="d-flex flex-column">
+                {{-- <p class="font-weight-bold">{{trans('ourinstitute.our-logo')}}</p>--}}
+                <div class="d-flex">
+                    <div class="col-md-6 px-4 m-auto text-center text-bold">
+                        <p class="m-4">{{trans('ourinstitute.our-logoh')}}</p>
+                        <img src="{{URL::asset('/image/logo-formal-horizontal.jpg')}}" style="width: 70%;">
+                    </div>
+                    <div class="col-md-6 px-4 m-auto text-center text-bold">
+                        <p class="m-4">{{trans('ourinstitute.our-logov')}}</p>
+                        <img src="{{URL::asset('/image/logo-formal-vertical.jpg')}}" style="width: 35%;">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-around">
+                    <div class="col-md-6 px-4 m-auto text-center text-bold">
+                        <p class="m-4">{{trans('ourinstitute.our-hymn')}}</p>
+                        <img src="{{URL::asset('/image/himnounimar.png')}}" style="width: 75%;">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
-{{--<script>
-    const openElss = document.querySelectorAll("[data-open]");
-    const closeElss = document.querySelectorAll("[data-close]");
-    const isVisible = "is-visible";
-
-    for (const el of openElss) {
-        el.addEventListener("click", function () {
-            const modalId = this.dataset.open;
-            document.getElementById(modalId).classList.add(isVisible);
-        });
-    }
-
-    for (const el of closeElss) {
-        el.addEventListener("click", function () {
-            this.parentElement.parentElement.parentElement.classList.remove(isVisible);
-        });
-    }
-
-    document.addEventListener("click", e => {
-        if (e.target == document.querySelector(".modal.is-visible")) {
-            document.querySelector(".modal.is-visible [data-close]").click();
-        }
-    });
-
-    document.addEventListener("keyup", e => {
-        // if we press the ESC
-        if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
-            document.querySelector(".modal.is-visible [data-close]").click();
-        }
-    });
-</script>--}}
+@endsection

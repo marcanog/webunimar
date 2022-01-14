@@ -1,0 +1,10 @@
+<?php
+
+return [
+    'our-history-title' => 'Our History',
+    'our-history-1' => 'The University of Margarita began academic activities on January 24, 2000, at the foot of the sanctified mountain range of the Patroness of Eastern Venezuela; the Virgin of the Valley. It is located on Margarita Island, Nueva Esparta state, exactly 38 kilometers from the north-eastern Venezuelan coast',
+    'our-history-2' => 'With the opening of the University Campus, a long-standing desire of the vast majority of the people of Nueva Esparta was fulfilled: to have a private higher education institution, capable of offering comprehensive training, different academic opportunities, high quality teaching and to house in its bosom, hundreds of Margaritans, locals and residents who year after year achieve their degree in secondary education.',
+    'our-history-3' => 'This is how a new horizon was opened to our students, under the leadership of a group of men and women, intimately linked to higher education in Venezuela; we are talking about Pedro Augusto Beauperthuy, María Eugenia Morales, Raquel Pérez Henríquez, Pedro Cabello Poleo and Aníbal Gómez.',
+    'our-history-4' => 'This group of enterprising educators, after a persevering perseverance, achieved that in 1998, the creation of the University of Margarita, with the Faculties of Economic and Social Sciences, Engineering, Humanities, Arts and Education and Legal and Political Sciences, was made official by Presidential Decree No. 3034, dated November 20 of the same year.',
+    'our-history-5' => 'Today, thanks to the futuristic vision of that group, in our Alma Mater of the Caribbean, 8,396 higher degrees have been awarded at the undergraduate level in the following careers: Business Administration, Arts with Mention in Graphic Design, Public Accounting, Law, Integral Education, Modern Languages and Systems Engineering. In postgraduate studies, the university has awarded diplomas and certificates in different areas of study; and 601 degrees among the specializations and masters degrees it offers.',
+];

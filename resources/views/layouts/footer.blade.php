@@ -33,17 +33,17 @@
             <div>
                 <ul>
                     <li class="footer-item">
-                        <a class="footer-title font-weight-bold" href="#">
+                        <a class="footer-title font-weight-bold" href="{{url('/studyoffers')}}">
                             {{trans('footer.f_study_offers')}}
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title" href="#">
+                        <a class="footer-title" href="{{url('/pregrade')}}">
                             {{trans('footer.f_undergraduate')}}
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title" href="#">
+                        <a class="footer-title" href="{{url('/postgrade')}}">
                             {{trans('footer.f_postgraduate')}}
                         </a>
                     </li>
@@ -64,12 +64,12 @@
             <div>
                 <ul>
                     <li class="footer-item">
-                        <a class="footer-title font-weight-bold" href="#">
+                        <a class="footer-title font-weight-bold" href="{{url('/services')}}">
                             {{trans('footer.f_web_services')}}
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title " href="#">
+                        <a class="footer-title " href="{{url('/payments')}}">
                             {{trans('footer.f_online_payments')}}
                         </a>
                     </li>
@@ -79,12 +79,12 @@
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title " href="#">
+                        <a class="footer-title " href="https://www.unimarcientifica.edu.ve/adminmoodle/">
                             {{trans('footer.f_elearning')}}
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title" href="#">
+                        <a class="footer-title" href="{{url('/calendaracademy')}}">
                             {{-- {{trans('footer.f_academic_schec')}}--}}
                             {{trans('footer.f_calendar')}}
                         </a>
@@ -100,7 +100,7 @@
                     </li>
                     <li class="footer-item">
                         {{--<a class="footer-title" href="#">{{trans('footer.f_calendar')}}</a>--}}
-                        <a class="footer-title" href="#">{{trans('footer.f_dir_telf')}}</a>
+                        <a class="footer-title" href="{{url('/contactus')}}">{{trans('footer.f_dir_telf')}}</a>
                     </li>
                     {{--<li class="footer-item">
                         --}}{{--<a class="footer-title" href="#">{{trans('footer.f_dir_telf')}}</a>--}}{{--
@@ -116,31 +116,31 @@
                             <a href="mailto:info@unimar.edu.ve">
                                 <!-- <a onclick="location.href='mailto:info@unimar.edu.ve'"> -->
                                 <!-- <a onclick="sendmail()"> -->
-                                <img class="w-6 h-6" src={{ URL::asset('./image/rrss/email.png') }}>
+                                <img class="w-6 h-6" src={{ URL::asset('/image/rrss/email.png') }}>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- <a onclick="rrss()"> -->
                             <a href="https://www.facebook.com/univ.demargarita">
-                                <img class="w-6 h-6" src={{ URL::asset('./image/rrss/facebook.png') }}>
+                                <img class="w-6 h-6" src={{ URL::asset('/image/rrss/facebook.png') }}>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- <a onclick="rrss()"> -->
                             <a href="https://www.twitter.com/somosunimar">
-                                <img class="w-6 h-6" src={{ URL::asset('./image/rrss/gorjeo.png') }}>
+                                <img class="w-6 h-6" src={{ URL::asset('/image/rrss/gorjeo.png') }}>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- <a onclick="rrss()"> -->
                             <a href="https://www.instagram.com/universidademargarita">
-                                <img class="w-6 h-6" src={{ URL::asset('./image/rrss/instagram.png') }}>
+                                <img class="w-6 h-6" src={{ URL::asset('/image/rrss/instagram.png') }}>
                             </a>
                         </li>
                         <li class="nav-item">
                             <!-- <a onclick="rrss()"> -->
                             <a href="https://www.linkedin.com/company/univdemargarita">
-                                <img class="w-6 h-6" src={{ URL::asset('./image/rrss/linkedin.png') }}>
+                                <img class="w-6 h-6" src={{ URL::asset('/image/rrss/linkedin.png') }}>
                             </a>
                         </li>
                     </ul>

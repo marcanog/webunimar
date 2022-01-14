@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'dinvest-title' => 'Decanato de Investigación',
+    'dinvest-title' => 'Dirección de Investigación',
     'dinvest-vision-title' => 'Visión',
     'dinvest-mission-title' => 'Misión',
     'dinvest-mission' => '',
@@ -9,7 +9,7 @@ return [
                         hacia los temas de interés nacional, manteniendo su liderazgo en productividad científica. De esta manera, busca generar soluciones a problemas sociales, culturales, científicos y tecnológicos desde el conocimiento académico. Asimismo, se encarga e la difusión del quehacer científico.',
     'dinvest-units' => 'Unidades de Adscripción',
     'dinvest-author' => 'Antonio Sereno',
-    'dinvest-author-title' => 'Decano de Investigación',
+    'dinvest-author-title' => 'Director General de Investigación',
     'dinvest-author-email' => 'antonio.sereno@unimar.edu.ve',
     'dinvest-asist' => 'Nombre ',
     'dinvest-atitle' => 'Secretaria',

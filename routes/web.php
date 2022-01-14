@@ -91,8 +91,20 @@ Route::get('organization', function () {
     return view('organization');
 });
 
+Route::get('simbology', function () {
+    return view('simbology');
+});
+
+Route::get('ourhistory', function () {
+    return view('ourhistory');
+});
+
 Route::get('deans', function () {
     return view('deans');
+});
+
+Route::get('studyoffers', function () {
+    return view('studyoffers');
 });
 
 Route::get('vextension', function () {
@@ -101,6 +113,14 @@ Route::get('vextension', function () {
 
 Route::get('vacademic', function () {
     return view('vacademic');
+});
+
+Route::get('comcurricula', function () {
+    return view('comcurricula');
+});
+
+Route::get('estprepareds', function () {
+    return view('estprepareds');
 });
 
 Route::get('cssocecon', function () {
@@ -123,6 +143,10 @@ Route::get('postgrade', function () {
     return view('dptopostgrade');
 });
 
+Route::get('pregrade', function () {
+    return view('pregrade');
+});
+
 Route::get('engineerie', function () {
     return view('deaneng');
 });
@@ -135,12 +159,40 @@ Route::get('humarte', function () {
     return view('deanhumarte');
 });
 
+Route::get('generalsecretariat', function () {
+    return view('generalsecretariat');
+});
+
+Route::get('controlstudies', function () {
+    return view('controlstudies');
+});
+
 Route::get('regulations', function () {
     return view('regulations');
 });
 
 Route::get('healthystudent', function () {
     return view('healthystudent');
+});
+
+Route::get('healthymental', function () {
+    return view('healthymental');
+});
+
+Route::get('calendaracademy', function () {
+    return view('calendaracademy');
+});
+
+Route::get('payments', function () {
+    return view('paymentsonline');
+});
+
+Route::get('services', function () {
+    return view('servicesonline');
+});
+
+Route::get('contactus', function () {
+    return view('contactus');
 });
 
 // languaje
