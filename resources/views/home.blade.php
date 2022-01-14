@@ -13,13 +13,13 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-interval="10000">
-                        <img class="d-block w-100" src="image/banners-medallas.png" alt="">
+                        <img class="d-block w-100" src="{{asset('image/banners-medallas.png')}}" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="image/ourinstitution.png" alt="">
+                        <img class="d-block w-100" src="{{asset('image/ourinstitution.png')}}" alt="">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="image/ourauthorities.png" alt="">
+                        <img class="d-block w-100" src="{{asset('image/ourauthorities.png')}}" alt="">
                     </div>
                 </div>
             </div>
