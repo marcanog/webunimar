@@ -26,7 +26,7 @@
             <div class="section-content">
                 <div class="d-flex justify-content-start">
                     <img id="img-section"
-                         src="{{ URL::asset('./image/megafono.png')}}"><span>{{trans('home.news')}}</span>
+                         src="{{URL::asset('image/megafono.png')}}"><span>{{trans('home.news')}}</span>
                 </div>
             </div>
 
@@ -40,7 +40,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="card mb-2">
-                                        <img class="card-img-top" src={{ URL::asset('./image/unimar1.jpg')}}
+                                        <img class="card-img-top" src={{URL::asset('image/unimar1.jpg')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>
@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="col-md-4 clearfix d-none d-md-block">
                                     <div class="card mb-2">
-                                        <img class="card-img-top" src={{ URL::asset('./image/unimar2.jpg')}}
+                                        <img class="card-img-top" src={{URL::asset('image/unimar2.jpg')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>
@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="col-md-4 clearfix d-none d-md-block">
                                     <div class="card mb-2">
-                                        <img class="card-img-top" src={{ URL::asset('./image/unimar3.jpg')}}
+                                        <img class="card-img-top" src={{URL::asset('image/unimar3.jpg')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>
@@ -85,7 +85,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="card mb-2">
-                                        <img class="card-img-top" src={{ URL::asset('./image/unimar1.jpg')}}
+                                        <img class="card-img-top" src={{URL::asset('image/unimar1.jpg')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>
@@ -98,7 +98,7 @@
                                 </div>
                                 <div class="col-md-4 clearfix d-none d-md-block">
                                     <div class="card mb-2">
-                                        <img class="card-img-top" src={{ URL::asset('./image/unimar2.jpg')}}
+                                        <img class="card-img-top" src={{URL::asset('image/unimar2.jpg')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>
@@ -111,7 +111,7 @@
                                 </div>
                                 <div class="col-md-4 clearfix d-none d-md-block">
                                     <div class="card mb-2">
-                                        <img class="card-img-top" src={{ URL::asset('./image/unimar3.jpg')}}
+                                        <img class="card-img-top" src={{URL::asset('image/unimar3.jpg')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>
@@ -130,7 +130,7 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="card mb-2">
-                                        <img class="card-img-top" src={{ URL::asset('./image/unimar1.jpg')}}
+                                        <img class="card-img-top" src={{URL::asset('image/unimar1.jpg')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>
@@ -143,7 +143,7 @@
                                 </div>
                                 <div class="col-md-4 clearfix d-none d-md-block">
                                     <div class="card mb-2">
-                                        <img class="card-img-top" src={{ URL::asset('./image/unimar2.jpg')}}
+                                        <img class="card-img-top" src={{URL::asset('image/unimar2.jpg')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>
@@ -156,7 +156,7 @@
                                 </div>
                                 <div class="col-md-4 clearfix d-none d-md-block">
                                     <div class="card mb-2">
-                                        <img class="card-img-top" src={{ URL::asset('./image/unimar3.jpg')}}
+                                        <img class="card-img-top" src={{URL::asset('image/unimar3.jpg')}}
                                             alt="Card image cap">
                                         <div class="card-body">
                                             <h4 class="card-title">Card title</h4>
@@ -194,7 +194,7 @@
             <div class="section-content">
                 <div class="d-flex justify-content-start">
                     <img id="img-section"
-                         src="{{URL::asset('./image/calendar.png')}}"><span>{{trans('home.events')}}</span>
+                         src="{{URL::asset('image/calendar.png')}}"><span>{{trans('home.events')}}</span>
                 </div>
             </div>
             <div class="content-event">
@@ -220,94 +220,94 @@
             <div class="section-content">
                 <div class="d-flex justify-content-start">
                     <img id="img-section"
-                         src="{{URL::asset('./image/graduate.png')}}"><span>{{trans('home.academics_areas')}}</span>
+                         src="{{URL::asset('image/graduate.png')}}"><span>{{trans('home.academics_areas')}}</span>
                 </div>
             </div>
             <div class="content-areas">
                 <div class="content-deanship" style="background-color: #BFBABB">
                     <a href="{{URL('/humarte')}}">
-                        <img src="{{URL::asset('./image/deans/humanity.png')}}">
+                        <img src="{{URL::asset('image/deans/humanity.png')}}">
                         <span>{{trans('home.humarte')}}</span>
                     </a>
                 </div>
                 <div class="content-deanship" style="background-color: #E4032C">
-                    <a href="{{URL('/csjurpol')}}"><img src="{{URL::asset('./image/deans/csjuridics.png')}}">
+                    <a href="{{URL('/csjurpol')}}"><img src="{{URL::asset('image/deans/csjuridics.png')}}">
                         <span>{{trans('home.cjyp')}}</span></a>
                 </div>
                 <div class="content-deanship" style="background-color: #B22029">
-                    <a href="{{URL('/cssocecon')}}"><img src="{{URL::asset('./image/deans/cseconomicsocials.png')}}">
+                    <a href="{{URL('/cssocecon')}}"><img src="{{URL::asset('image/deans/cseconomicsocials.png')}}">
                         <span>{{trans('home.ceys')}}</span></a>
                 </div>
                 <div class="content-deanship" style="background-color: #003B71">
-                    <a href="{{URL('/engineerie')}}"><img src="{{URL::asset('./image/deans/ingenery.png')}}">
+                    <a href="{{URL('/engineerie')}}"><img src="{{URL::asset('image/deans/ingenery.png')}}">
                         <span>{{trans('home.ingsyst')}}</span></a>
                 </div>
             </div>
             <div class="content-areas">
                 <div class="content-deanship" style="background-color: #00A8E2">
-                    <a href="{{URL('/genestud')}}"><img src="{{URL::asset('./image/deans/estgenerals.png')}}">
+                    <a href="{{URL('/genestud')}}"><img src="{{URL::asset('image/deans/estgenerals.png')}}">
                         <span>{{trans('home.estgen')}}</span></a>
                 </div>
                 <div class="content-deanship" style="background-color: #EC7700">
-                    <a href="{{URL('/vextension')}}"><img src="{{URL::asset('./image/deans/extension.png')}}">
+                    <a href="{{URL('/vextension')}}"><img src="{{URL::asset('image/deans/extension.png')}}">
                         <span>{{trans('home.extent')}}</span></a>
                 </div>
                 <div class="content-deanship" style="background-color: #00953E">
-                    <a href="{{URL('/postgrade')}}"><img src="{{URL::asset('./image/deans/postgrade.png')}}">
+                    <a href="{{URL('/postgrade')}}"><img src="{{URL::asset('image/deans/postgrade.png')}}">
                         <span>{{trans('home.posteinvg')}}</span></a>
                 </div>
                 <div class="content-deanship" style="background-color: #f6A016">
-                    <a href="#"><img src="{{URL::asset('./image/deans/agreements.png')}}">
+                    <a href="#"><img src="{{URL::asset('image/deans/agreements.png')}}">
                         <span>{{trans('home.acadconvens')}}</span></a>
                 </div>
             </div>
             <div class="section-content">
                 <div class="d-flex justify-content-start">
                     <img id="img-section"
-                         src="{{URL::asset('./image/conection.png')}}"><span
+                         src="{{URL::asset('image/conection.png')}}"><span
                         style="width: 35%;">{{trans('home.links_interest')}}</span>
                 </div>
             </div>
             <div class="content-links">
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="#"><img src="{{URL::asset('./image/studying.png')}}">
+                    <a href="#"><img src="{{URL::asset('image/studying.png')}}">
                         <span>{{trans('home.study_offers')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="{{url('/generalsecretariat')}}"><img src="{{URL::asset('./image/secretary.png')}}">
+                    <a href="{{url('/generalsecretariat')}}"><img src="{{URL::asset('image/secretary.png')}}">
                         <span>{{trans('home.general-secretary')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="#"><img src="{{URL::asset('./image/elearning.png')}}">
+                    <a href="#"><img src="{{URL::asset('image/elearning.png')}}">
                         <span>{{trans('home.elearning')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="#"><img src="{{URL::asset('./image/analisys.png')}}">
+                    <a href="#"><img src="{{URL::asset('image/analisys.png')}}">
                         <span>{{trans('home.cientific_unimar')}}</span></a>
                 </div>
             </div>
             <div class="content-links">
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="{{URL('/regulations')}}"><img src="{{URL::asset('./image/procedure.svg')}}">
+                    <a href="{{URL('/regulations')}}"><img src="{{URL::asset('image/procedure.svg')}}">
                         <span>{{trans('home.h-regulations')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="#"><img src="{{URL::asset('./image/listening.png')}}">
+                    <a href="#"><img src="{{URL::asset('image/listening.png')}}">
                         <span>{{trans('home.uniradio')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="{{URL('/healthystudent')}}"><img src="{{URL::asset('./image/healthy.png')}}">
+                    <a href="{{URL('/healthystudent')}}"><img src="{{URL::asset('image/healthy.png')}}">
                         <span>{{trans('home.students-healthy')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="{{url('/healthymental')}}"><img src="{{URL::asset('./image/mental-healthy.png')}}">
+                    <a href="{{url('/healthymental')}}"><img src="{{URL::asset('image/mental-healthy.png')}}">
                         <span>{{trans('home.sicologyc-healthy')}}</span></a>
                 </div>
             </div><!-- end content-links-->
             <div class="section-content">
                 <div class="d-flex justify-content-start">
                     <img id="img-section"
-                         src="{{URL::asset('./image/map.png')}}"><span>{{trans('home.location')}}</span>
+                         src="{{URL::asset('image/map.png')}}"><span>{{trans('home.location')}}</span>
                 </div>
             </div>
             <div class="location-content">
