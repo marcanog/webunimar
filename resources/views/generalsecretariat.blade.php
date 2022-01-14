@@ -319,7 +319,7 @@
                 <b>{{trans('secretarygeneral.secretaryofic-info-teltit')}}</b>&nbsp{{trans('secretarygeneral.secretaryofic-info-telf')}}
             </p>
             <p>
-                <b>{{trans('secretarygeneral.psecretaryofic-info-schedtit')}}</b>&nbsp{{trans('secretarygeneral.secretaryofic-info-sched')}}
+                <b>{{trans('secretarygeneral.secretaryofic-info-schedtit')}}</b>&nbsp{{trans('secretarygeneral.secretaryofic-info-sched')}}
             </p>
         </div>
 
