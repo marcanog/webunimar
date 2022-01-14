@@ -14,21 +14,6 @@
             width: 65%;
         }
 
-
-        /* .d-flex.justify-content-start > span{
-            top: .5rem;
-        } */
-        /* .d-flex.justify-content-start > span {
-            position: relative;
-            top: .6rem;
-            left: 0.7rem;
-            color: #FFFFFF;
-            font-weight: 700;
-            font-size: 0.95em;
-            letter-spacing: 0.025em;
-            width: 40%;
-        } */
-
         p {
             animation-duration: 3s;
             animation-name: slidein;
@@ -114,10 +99,6 @@
             margin-top: 0;
         }
 
-        /* .collapse.show {
-            display: block;
-            margin: 0 auto;
-        } */
         #collapse, #collapse2, #collapse3 {
             margin: 0 auto;
         }

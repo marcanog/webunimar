@@ -18,7 +18,7 @@ return [
     'health-info-etitle' => 'Correo electrónico:',
     'health-info-teltit' => 'Teléfono:',
     'health-info-schedtit' => 'Horario de atención:',
-    'health-info-email' => 'bienestar.estudios@unimar.edu.ve',
+    'health-info-email' => 'bienestar.estudiantil@unimar.edu.ve',
     'health-info-telf' => '+58  0295 2870466 ext. 115 - 117 (Fax)',
     'health-info-sched' => 'Lunes - Viernes 8am - 12pm y 1pm a 5pm',
     'health-functions' => 'Funciones',
