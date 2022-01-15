@@ -214,7 +214,7 @@
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="#">
-                                <img src="{{URL::asset('image/recuersos-humanos.png')}}">
+                                <img src="{{URL::asset('image/recursos-humanos.png')}}">
                                 <span>{{trans('offers.o-ceys')}}</span></a>
                         </div>
                         {{--links interest--}}
@@ -249,7 +249,7 @@
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="#">
                                 <img src="{{URL::asset('image/specialization.png')}}">
-                                <span>{{trans('offers.o-ceys')}}</span></a>
+                                <span>{{trans('offers.o-spec')}}</span></a>
                         </div>
                         {{--links interest--}}
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
@@ -257,7 +257,7 @@
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
                                 <img src="{{URL::asset('image/education.png')}}">
-                                <span>{{trans('offers.o-cjyp')}}</span></a>
+                                <span>{{trans('offers.o-spec-tec')}}</span></a>
                         </div>
                     </div>
                 </div>
