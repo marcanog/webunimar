@@ -171,6 +171,10 @@ Route::get('regulations', function () {
     return view('regulations');
 });
 
+Route::get('offerstudy', function () {
+    return view('offerstudy');
+});
+
 Route::get('healthystudent', function () {
     return view('healthystudent');
 });

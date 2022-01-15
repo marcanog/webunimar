@@ -270,7 +270,7 @@
             </div>
             <div class="content-links">
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="#"><img src="{{URL::asset('image/studying.png')}}">
+                    <a href="{{url('/offerstudy')}}"><img src="{{URL::asset('image/studying.png')}}">
                         <span>{{trans('home.study_offers')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
@@ -278,7 +278,7 @@
                         <span>{{trans('home.general-secretary')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="#"><img src="{{URL::asset('image/elearning.png')}}">
+                    <a href="https://wwww.unimarcientifica.edu.ve/moodle"><img src="{{URL::asset('image/elearning.png')}}">
                         <span>{{trans('home.elearning')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
@@ -292,7 +292,7 @@
                         <span>{{trans('home.h-regulations')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="#"><img src="{{URL::asset('image/listening.png')}}">
+                    <a href="https://twitter.com/uniradio_unimar?s=20"><img src="{{URL::asset('image/listening.png')}}">
                         <span>{{trans('home.uniradio')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
