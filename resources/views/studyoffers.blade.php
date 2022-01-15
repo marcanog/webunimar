@@ -217,22 +217,27 @@
                                 <img src="{{URL::asset('image/languages.png')}}">
                                 <span>{{trans('offers.o-langs')}}</span></a>
                         </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="#">
-                                <img src="{{URL::asset('image/recursos-humanos.png')}}">
-                                <span>{{trans('offers.o-admins')}}</span></a>
-                        </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="#">
-                                <img src="{{URL::asset('image/recursos-humanos.png')}}">
-                                <span>{{trans('offers.o-contpub')}}</span></a>
-                        </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
-                             href="#collapseExample" role="button" aria-expanded="false"
-                             aria-controls="collapseExample">
-                            <a id="link-subsystem">
-                                <img src="{{URL::asset('image/law.png')}}">
-                                <span>{{trans('offers.o-law')}}</span></a>
+                    </div>     
+                <div class="collapse col-md-12" id="collapse">
+                    <div class="container col-md-12"> 
+                        <div class="content-areas">
+                            <div class="conten-subsytem" style="background-color: #6699cc">
+                                <a id="link-subsystem" href="#">
+                                    <img src="{{URL::asset('image/recursos-humanos.png')}}">
+                                    <span>{{trans('offers.o-admins')}}</span></a>
+                            </div>
+                            <div class="conten-subsytem" style="background-color: #6699cc">
+                                <a id="link-subsystem" href="#">
+                                    <img src="{{URL::asset('image/recursos-humanos.png')}}">
+                                    <span>{{trans('offers.o-contpub')}}</span></a>
+                            </div>
+                            <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                                href="#collapseExample" role="button" aria-expanded="false"
+                                aria-controls="collapseExample">
+                                <a id="link-subsystem">
+                                    <img src="{{URL::asset('image/law.png')}}">
+                                    <span>{{trans('offers.o-law')}}</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
