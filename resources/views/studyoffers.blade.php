@@ -146,12 +146,12 @@
     </style>
     <div class=".xl-container">
         <div class="banner-main">
-            <img src="{{URL::asset('/image/viceacademic.png')}}">
+            <img src="{{URL::asset('image/viceacademic.png')}}">
         </div>
         <div class="section-content">
             <div class="d-flex justify-content-start">
                 <img id="img-section"
-                     src="{{URL::asset('/image/logo-unimar.png')}}"><span
+                     src="{{URL::asset('image/logo-unimar.png')}}"><span
                     style="font-size: 0.85em; width: 55%;">{{trans('offers.o-title')}}</span>
             </div>
         </div>
@@ -162,7 +162,7 @@
                  data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
                  aria-controls="collapse1">
                 <a id="campusbtn">
-                    <img src="{{URL::asset('/image/student.png')}}">
+                    <img src="{{URL::asset('image/student.png')}}">
                     <span>{{trans('offers.o-pregrade')}}</span>
                 </a>
             </div>
@@ -171,7 +171,7 @@
                  data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
                  aria-controls="collapse2">
                 <a id="foundbtn">
-                    <img src="{{URL::asset('/image/master.png')}}">
+                    <img src="{{URL::asset('image/master.png')}}">
                     <span>{{trans('offers.o-postgrade')}}</span>
                 </a>
             </div>
@@ -180,7 +180,7 @@
                  data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
                  aria-controls="collapse4">
                 <a id="campusbtn">
-                    <img src="{{URL::asset('/image/certificade.png')}}">
+                    <img src="{{URL::asset('image/certificade.png')}}">
                     <span>{{trans('offers.o-diplmade')}}</span>
                 </a>
             </div>
@@ -189,7 +189,7 @@
                  data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
                  aria-controls="collapse4">
                 <a id="campusbtn">
-                    <img src="{{URL::asset('/image/online-learning.png')}}">
+                    <img src="{{URL::asset('image/online-learning.png')}}">
                     <span>{{trans('offers.o-courses')}}</span>
                 </a>
             </div>
@@ -203,18 +203,18 @@
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('')}}">
-                                <img src="{{URL::asset('./image/scholarship.png')}}">
+                                <img src="{{URL::asset('image/scholarship.png')}}">
                                 <span>{{trans('offers.o-enginerrs')}}</span>
                             </a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('/healthymental')}}">
-                                <img src="{{URL::asset('./image/mental-healthy.png')}}">
+                                <img src="{{URL::asset('image/mental-healthy.png')}}">
                                 <span>{{trans('offers.o-humarte')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="#">
-                                <img src="{{URL::asset('./image/social-teaching.png')}}">
+                                <img src="{{URL::asset('image/social-teaching.png')}}">
                                 <span>{{trans('offers.o-ceys')}}</span></a>
                         </div>
                         {{--links interest--}}
@@ -222,7 +222,7 @@
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
-                                <img src="{{URL::asset('/image/conection.png')}}">
+                                <img src="{{URL::asset('image/conection.png')}}">
                                 <span>{{trans('offers.o-cjyp')}}</span></a>
                         </div>
                     </div>
@@ -238,27 +238,27 @@
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem" href="{{url('')}}">
-                                <img src="{{URL::asset('./image/scholarship.png')}}">
+                                <img src="{{URL::asset('image/scholarship.png')}}">
                                 <span>{{trans('o-doctor')}}</span>
                             </a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
-                                <img src="{{URL::asset('./image/mental-healthy.png')}}">
+                                <img src="{{URL::asset('image/mental-healthy.png')}}">
                                 <span>{{trans('offers.o-certf')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
-                                <img src="{{URL::asset('./image/social-teaching.png')}}">
+                                <img src="{{URL::asset('image/social-teaching.png')}}">
                                 <span>{{trans('offers.o-spec')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
-                                <img src="{{URL::asset('/image/conection.png')}}">
+                                <img src="{{URL::asset('image/conection.png')}}">
                                 <span>{{trans('offers.o-spec-tec')}}</span></a>
                         </div>
                     </div>
@@ -274,27 +274,27 @@
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem" href="{{url('')}}">
-                                <img src="{{URL::asset('./image/certificade.png')}}">
+                                <img src="{{URL::asset('image/certificade.png')}}">
                                 <span>{{trans('offers.o-doctor')}}</span>
                             </a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
-                                <img src="{{URL::asset('./image/mental-healthy.png')}}">
+                                <img src="{{URL::asset('image/mental-healthy.png')}}">
                                 <span>{{trans('offers.o-certf')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
-                                <img src="{{URL::asset('./image/social-teaching.png')}}">
+                                <img src="{{URL::asset('image/social-teaching.png')}}">
                                 <span>{{trans('offers.o-spec')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
-                                <img src="{{URL::asset('/image/conection.png')}}">
+                                <img src="{{URL::asset('image/conection.png')}}">
                                 <span>{{trans('offers.o-spec-tec')}}</span></a>
                         </div>
                     </div>
@@ -310,27 +310,27 @@
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem" href="{{url('')}}">
-                                <img src="{{URL::asset('./image/scholarship.png')}}">
+                                <img src="{{URL::asset('image/scholarship.png')}}">
                                 <span>{{trans('offers.o-doctor')}}</span>
                             </a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
-                                <img src="{{URL::asset('./image/mental-healthy.png')}}">
+                                <img src="{{URL::asset('image/mental-healthy.png')}}">
                                 <span>{{trans('offers.o-certf')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
-                                <img src="{{URL::asset('./image/social-teaching.png')}}">
+                                <img src="{{URL::asset('image/social-teaching.png')}}">
                                 <span>{{trans('offers.o-spec')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
-                                <img src="{{URL::asset('/image/conection.png')}}">
+                                <img src="{{URL::asset('image/conection.png')}}">
                                 <span>{{trans('offers.o-spec-tec')}}</span></a>
                         </div>
                     </div>
