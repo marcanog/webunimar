@@ -276,13 +276,13 @@
                         {{trans('healthy.health-depts')}}</p>
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="{{url('/controlstudies')}}">
+                            <a id="link-subsystem" href="{{url('')}}">
                                 <img src="{{URL::asset('./image/scholarship.png')}}">
                                 <span>{{trans('healthy.health-becas')}}</span>
                             </a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="{{url('/healthystudent')}}">
+                            <a id="link-subsystem" href="{{url('/healthymental')}}">
                                 <img src="{{URL::asset('./image/mental-healthy.png')}}">
                                 <span>{{trans('healthy.health-psico')}}</span></a>
                         </div>
@@ -312,13 +312,13 @@
                                 <span>{{trans('healthy.health-gazzete')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #004c9c">
-                            <a id="link-subsystem" href="{{url('/healthymental')}}">
+                            <a id="link-subsystem" href="{{url('')}}">
                                 <img src="{{URL::asset('/image/personal-information.png')}}">
                                 <span>{{trans('healthy.health-report')}}</span>
                             </a>
                         </div>
                         {{--<div class="conten-subsytem" style="background-color: #004c9c">
-                            <a id="link-subsystem" href="{{url('/healthystudent')}}">
+                            <a id="link-subsystem" href="{{url('')}}">
                                 <img src="{{URL::asset('/image/social-care.png')}}">
                                 <span>{{trans('healthy.health-econ')}}</span>
                             </a>
