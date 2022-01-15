@@ -162,7 +162,7 @@
                  data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
                  aria-controls="collapse1">
                 <a id="campusbtn">
-                    <img src="{{URL::asset('/image/secretary.png')}}">
+                    <img src="{{URL::asset('/image/student.png')}}">
                     <span>{{trans('offers.o-pregrade')}}</span>
                 </a>
             </div>
@@ -171,7 +171,7 @@
                  data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
                  aria-controls="collapse2">
                 <a id="foundbtn">
-                    <img src="{{URL::asset('/image/settings.svg')}}">
+                    <img src="{{URL::asset('/image/master.png')}}">
                     <span>{{trans('offers.o-postgrade')}}</span>
                 </a>
             </div>
@@ -180,7 +180,7 @@
                  data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
                  aria-controls="collapse4">
                 <a id="campusbtn">
-                    <img src="{{URL::asset('/image/lecture.png')}}">
+                    <img src="{{URL::asset('/image/certificade.png')}}">
                     <span>{{trans('offers.o-diplmade')}}</span>
                 </a>
             </div>
@@ -189,7 +189,7 @@
                  data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
                  aria-controls="collapse4">
                 <a id="campusbtn">
-                    <img src="{{URL::asset('/image/lecture.png')}}">
+                    <img src="{{URL::asset('/image/online-learning.png')}}">
                     <span>{{trans('offers.o-courses')}}</span>
                 </a>
             </div>
@@ -265,7 +265,7 @@
                 </div>
             </div>
             {{--diplomas--}}
-            <div class="collapse col-md-12" id="collapse2">
+            <div class="collapse col-md-12" id="collapse3">
                 <div class="container col-md-12">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('offers.o-diplomas')}}</p>
@@ -274,7 +274,7 @@
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem" href="{{url('')}}">
-                                <img src="{{URL::asset('./image/scholarship.png')}}">
+                                <img src="{{URL::asset('./image/certificade.png')}}">
                                 <span>{{trans('offers.o-doctor')}}</span>
                             </a>
                         </div>
@@ -301,7 +301,7 @@
                 </div>
             </div>
             {{--courses--}}
-            <div class="collapse col-md-12" id="collapse2">
+            <div class="collapse col-md-12" id="collapse4">
                 <div class="container col-md-12">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('offers.o-courses')}}</p>
