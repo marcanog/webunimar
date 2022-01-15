@@ -146,7 +146,7 @@
     </style>
     <div class=".xl-container">
         <div class="banner-main">
-            <img src="{{URL::asset('image/viceacademic.png')}}">
+            <img src="{{URL::asset('image/banners-medallas.png')}}">
         </div>
         <div class="section-content">
             <div class="d-flex justify-content-start">
@@ -227,7 +227,7 @@
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="#">
-                                <img src="{{URL::asset('image/recursos-humanos.png')}}">
+                                <img src="{{URL::asset('image/contabilidad.png')}}">
                                 <span>{{trans('offers.o-contpub')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
