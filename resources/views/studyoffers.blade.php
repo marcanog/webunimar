@@ -181,7 +181,7 @@
                  aria-controls="collapse4">
                 <a id="campusbtn">
                     <img src="{{URL::asset('image/certificade.png')}}">
-                    <span>{{trans('offers.o-diplmade')}}</span>
+                    <span>{{trans('offers.o-diplomas')}}</span>
                 </a>
             </div>
             {{--courses--}}
@@ -228,6 +228,7 @@
                     </div>
                 </div>
             </div>
+
             {{--postgrade--}}
             <div class="collapse col-md-12" id="collapse2">
                 <div class="container col-md-12">
@@ -261,6 +262,7 @@
                     </div>
                 </div>
             </div>
+
             {{--diplomas--}}
             <div class="collapse col-md-12" id="collapse3">
                 <div class="container col-md-12">

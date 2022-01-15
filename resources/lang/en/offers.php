@@ -34,7 +34,7 @@ return[
     'o-spec-tec-csamb' => 'Specialization in Environmental Sciences',
     'o-spec-tec-servmanag' => 'Specialization in Service Management',
     'o-spec-tec-infmanag' => 'Specialization in Information Management',
-    'o-diplmade' => 'Diplomas',
+    'o-diplomas' => 'Diplomas',
     'o-courses' => 'Courses and Workshops',
 
 ];
