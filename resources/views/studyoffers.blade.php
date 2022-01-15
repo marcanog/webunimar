@@ -203,18 +203,18 @@
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('')}}">
-                                <img src="{{URL::asset('image/scholarship.png')}}">
+                                <img src="{{URL::asset('image/engineering.png')}}">
                                 <span>{{trans('offers.o-enginerrs')}}</span>
                             </a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('/healthymental')}}">
-                                <img src="{{URL::asset('image/mental-healthy.png')}}">
+                                <img src="{{URL::asset('image/artes.png')}}">
                                 <span>{{trans('offers.o-humarte')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="#">
-                                <img src="{{URL::asset('image/social-teaching.png')}}">
+                                <img src="{{URL::asset('image/recuersos-humanos.png')}}">
                                 <span>{{trans('offers.o-ceys')}}</span></a>
                         </div>
                         {{--links interest--}}
@@ -222,7 +222,7 @@
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
-                                <img src="{{URL::asset('image/conection.png')}}">
+                                <img src="{{URL::asset('image/law.png')}}">
                                 <span>{{trans('offers.o-cjyp')}}</span></a>
                         </div>
                     </div>
@@ -237,18 +237,18 @@
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('')}}">
-                                <img src="{{URL::asset('image/scholarship.png')}}">
-                                <span>{{trans('offers.o-enginerrs')}}</span>
+                                <img src="{{URL::asset('image/doctor.png')}}">
+                                <span>{{trans('offers.o-doctor')}}</span>
                             </a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('/healthymental')}}">
-                                <img src="{{URL::asset('image/mental-healthy.png')}}">
-                                <span>{{trans('offers.o-humarte')}}</span></a>
+                                <img src="{{URL::asset('image/master.png')}}">
+                                <span>{{trans('offers.o-certf')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="#">
-                                <img src="{{URL::asset('image/social-teaching.png')}}">
+                                <img src="{{URL::asset('image/specialization.png')}}">
                                 <span>{{trans('offers.o-ceys')}}</span></a>
                         </div>
                         {{--links interest--}}
@@ -256,7 +256,7 @@
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
-                                <img src="{{URL::asset('image/conection.png')}}">
+                                <img src="{{URL::asset('image/education.png')}}">
                                 <span>{{trans('offers.o-cjyp')}}</span></a>
                         </div>
                     </div>
