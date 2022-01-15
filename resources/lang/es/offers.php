@@ -34,4 +34,6 @@ return[
     'o-spec-tec-csamb' => 'Especialización en Ciencias Ambientales',
     'o-spec-tec-servmanag' => 'Especialización en Gestión de Servicios',
     'o-spec-tec-infmanag' => 'Especialización en Gestión de la Información',
-];
+    'o-diplmade' => 'Diplomados',
+    'o-courses' => 'Cursos y Talleres'
+]; 
