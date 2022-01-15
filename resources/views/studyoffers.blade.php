@@ -309,7 +309,7 @@
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
-                            <a id="link-subsystem" href="{{url('')}}">
+                            <a id="link-subsystem" href="#">
                                 <img src="{{URL::asset('image/scholarship.png')}}">
                                 <span>{{trans('offers.o-doctor')}}</span>
                             </a>
