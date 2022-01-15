@@ -103,7 +103,7 @@ Route::get('deans', function () {
     return view('deans');
 });
 
-Route::get('studyoffers', function () {
+Route::get('offerstudy', function () {
     return view('studyoffers');
 });
 
