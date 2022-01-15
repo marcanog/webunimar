@@ -35,6 +35,6 @@ return[
     'o-spec-tec-servmanag' => 'Specialization in Service Management',
     'o-spec-tec-infmanag' => 'Specialization in Information Management',
     'o-diplmade' => 'Diplomas',
-    'o-courses' => 'Courses and Workshops' => 'Courses and Workshops'.
+    'o-courses' => 'Courses and Workshops',
 
 ];
