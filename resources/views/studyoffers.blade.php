@@ -199,12 +199,12 @@
             <div class="collapse col-md-12" id="collapse">
                 <div class="container col-md-12">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('offers.o-systemeng')}}</p>
+                        {{trans('offers.o-pregrade')}}</p>
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('')}}">
                                 <img src="{{URL::asset('./image/scholarship.png')}}">
-                                <span>{{trans('offers.o-humarte')}}</span>
+                                <span>{{trans('offers.o-enginerrs')}}</span>
                             </a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
@@ -215,7 +215,7 @@
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="#">
                                 <img src="{{URL::asset('./image/social-teaching.png')}}">
-                                <span>{{trans('offers.o-humarte')}}</span></a>
+                                <span>{{trans('offers.o-ceys')}}</span></a>
                         </div>
                         {{--links interest--}}
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
@@ -223,44 +223,118 @@
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
                                 <img src="{{URL::asset('/image/conection.png')}}">
-                                <span>{{trans('offers.oo-humarte')}}</span></a>
+                                <span>{{trans('offers.o-cjyp')}}</span></a>
                         </div>
                     </div>
                 </div>
             </div>
             {{--postgrade--}}
-            <div class="collapse col-md-12" id="collapse">
+            <div class="collapse col-md-12" id="collapse2">
                 <div class="container col-md-12">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('healthy.health-depts')}}</p>
+                        {{trans('offers.o-postgrade')}}</p>
                     <div class="content-areas">
-                        <div class="conten-subsytem" style="background-color: #6699cc">
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
                             <a id="link-subsystem" href="{{url('')}}">
                                 <img src="{{URL::asset('./image/scholarship.png')}}">
-                                <span>{{trans('healthy.health-becas')}}</span>
+                                <span>{{trans('o-doctor')}}</span>
                             </a>
                         </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="{{url('/healthymental')}}">
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
                                 <img src="{{URL::asset('./image/mental-healthy.png')}}">
-                                <span>{{trans('healthy.health-psico')}}</span></a>
+                                <span>{{trans('offers.o-certf')}}</span></a>
                         </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="#">
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
                                 <img src="{{URL::asset('./image/social-teaching.png')}}">
-                                <span>{{trans('healthy.health-pedag')}}</span></a>
+                                <span>{{trans('offers.o-spec')}}</span></a>
                         </div>
-                        {{--links interest--}}
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
                                 <img src="{{URL::asset('/image/conection.png')}}">
-                                <span>{{trans('healthy.health-links')}}</span></a>
+                                <span>{{trans('offers.o-spec-tec')}}</span></a>
                         </div>
                     </div>
                 </div>
             </div>
-
+            {{--diplomas--}}
+            <div class="collapse col-md-12" id="collapse2">
+                <div class="container col-md-12">
+                    <p style="font-size: 1.25rem; font-weight: 600;">
+                        {{trans('offers.o-diplomas')}}</p>
+                    <div class="content-areas">
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
+                            <a id="link-subsystem" href="{{url('')}}">
+                                <img src="{{URL::asset('./image/scholarship.png')}}">
+                                <span>{{trans('offers.o-doctor')}}</span>
+                            </a>
+                        </div>
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
+                                <img src="{{URL::asset('./image/mental-healthy.png')}}">
+                                <span>{{trans('offers.o-certf')}}</span></a>
+                        </div>
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
+                                <img src="{{URL::asset('./image/social-teaching.png')}}">
+                                <span>{{trans('offers.o-spec')}}</span></a>
+                        </div>
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
+                            <a id="link-subsystem">
+                                <img src="{{URL::asset('/image/conection.png')}}">
+                                <span>{{trans('offers.o-spec-tec')}}</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{--courses--}}
+            <div class="collapse col-md-12" id="collapse2">
+                <div class="container col-md-12">
+                    <p style="font-size: 1.25rem; font-weight: 600;">
+                        {{trans('offers.o-courses')}}</p>
+                    <div class="content-areas">
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
+                            <a id="link-subsystem" href="{{url('')}}">
+                                <img src="{{URL::asset('./image/scholarship.png')}}">
+                                <span>{{trans('offers.o-doctor')}}</span>
+                            </a>
+                        </div>
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
+                                <img src="{{URL::asset('./image/mental-healthy.png')}}">
+                                <span>{{trans('offers.o-certf')}}</span></a>
+                        </div>
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
+                                <img src="{{URL::asset('./image/social-teaching.png')}}">
+                                <span>{{trans('offers.o-spec')}}</span></a>
+                        </div>
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapseExample" role="button" aria-expanded="false"
+                             aria-controls="collapseExample">
+                            <a id="link-subsystem">
+                                <img src="{{URL::asset('/image/conection.png')}}">
+                                <span>{{trans('offers.o-spec-tec')}}</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 @endsection
