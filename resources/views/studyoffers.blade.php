@@ -209,21 +209,30 @@
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('/healthymental')}}">
-                                <img src="{{URL::asset('image/artes.png')}}">
-                                <span>{{trans('offers.o-humarte')}}</span></a>
+                                <img src="{{URL::asset('image/desing.png')}}">
+                                <span>{{trans('offers.o-arte')}}</span></a>
+                        </div>
+                        <div class="conten-subsytem" style="background-color: #6699cc">
+                            <a id="link-subsystem" href="{{url('/healthymental')}}">
+                                <img src="{{URL::asset('image/languages.png')}}">
+                                <span>{{trans('offers.o-langs')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="#">
                                 <img src="{{URL::asset('image/recursos-humanos.png')}}">
-                                <span>{{trans('offers.o-ceys')}}</span></a>
+                                <span>{{trans('offers.o-admins')}}</span></a>
                         </div>
-                        {{--links interest--}}
+                        <div class="conten-subsytem" style="background-color: #6699cc">
+                            <a id="link-subsystem" href="#">
+                                <img src="{{URL::asset('image/recursos-humanos.png')}}">
+                                <span>{{trans('offers.o-contpub')}}</span></a>
+                        </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
                                 <img src="{{URL::asset('image/law.png')}}">
-                                <span>{{trans('offers.o-cjyp')}}</span></a>
+                                <span>{{trans('offers.o-law')}}</span></a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +242,7 @@
             <div class="collapse col-md-12" id="collapse2">
                 <div class="container col-md-12">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('offers.o-pregrade')}}</p>
+                        {{trans('offers.o-postgrade')}}</p>
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('')}}">
@@ -251,7 +260,6 @@
                                 <img src="{{URL::asset('image/specialization.png')}}">
                                 <span>{{trans('offers.o-spec')}}</span></a>
                         </div>
-                        {{--links interest--}}
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
@@ -267,7 +275,7 @@
             <div class="collapse col-md-12" id="collapse3">
                 <div class="container col-md-12">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('offers.o-pregrade')}}</p>
+                        {{trans('offers.o-diplomas')}}</p>
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('')}}">
@@ -285,7 +293,6 @@
                                 <img src="{{URL::asset('image/social-teaching.png')}}">
                                 <span>{{trans('offers.o-ceys')}}</span></a>
                         </div>
-                        {{--links interest--}}
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
@@ -301,7 +308,7 @@
             <div class="collapse col-md-12" id="collapse4">
                 <div class="container col-md-12">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('offers.o-pregrade')}}</p>
+                        {{trans('offers.o-courses')}}</p>
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('')}}">
