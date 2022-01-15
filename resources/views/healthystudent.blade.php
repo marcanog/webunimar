@@ -303,6 +303,7 @@
                 </div>
             </div>
             {{--units ads to depts--}}
+            {{--Gazzete--}}
             <div class="content-areas col-md-12" id="contevac">
                 <div class="collapse col-sm-11" id="collapseExample">
                     <div class="content-areas col-12">
@@ -311,18 +312,13 @@
                                     src="{{URL::asset('/image/gaceta.png')}}">
                                 <span>{{trans('healthy.health-gazzete')}}</span></a>
                         </div>
+                        {{--reports--}}
                         <div class="conten-subsytem" style="background-color: #004c9c">
                             <a id="link-subsystem" href="{{url('')}}">
                                 <img src="{{URL::asset('/image/personal-information.png')}}">
                                 <span>{{trans('healthy.health-report')}}</span>
                             </a>
                         </div>
-                        {{--<div class="conten-subsytem" style="background-color: #004c9c">
-                            <a id="link-subsystem" href="{{url('')}}">
-                                <img src="{{URL::asset('/image/social-care.png')}}">
-                                <span>{{trans('healthy.health-econ')}}</span>
-                            </a>
-                        </div>--}}
                     </div>
                 </div>
             </div>
