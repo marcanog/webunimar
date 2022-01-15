@@ -172,7 +172,7 @@ Route::get('regulations', function () {
 });
 
 Route::get('offerstudy', function () {
-    return view('offerstudy');
+    return view('studyoffers');
 });
 
 Route::get('healthystudent', function () {

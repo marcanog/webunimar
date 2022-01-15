@@ -282,7 +282,7 @@
                         <span>{{trans('home.elearning')}}</span></a>
                 </div>
                 <div class="links-interest" style="background-color: #336699">
-                    <a href="#"><img src="{{URL::asset('image/analisys.png')}}">
+                    <a href="https://wwww.unimarcientifica.edu.ve/revista"><img src="{{URL::asset('image/analisys.png')}}">
                         <span>{{trans('home.cientific_unimar')}}</span></a>
                 </div>
             </div>
