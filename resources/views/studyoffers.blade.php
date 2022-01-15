@@ -310,27 +310,27 @@
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem" href="#">
-                                <img src="{{URL::asset('image/scholarship.png')}}">
+                                <img src="{{URL::asset('image/doctor.png')}}">
                                 <span>{{trans('offers.o-doctor')}}</span>
                             </a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
-                                <img src="{{URL::asset('image/mental-healthy.png')}}">
+                                <img src="{{URL::asset('image/master.png')}}">
                                 <span>{{trans('offers.o-certf')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
-                                <img src="{{URL::asset('image/social-teaching.png')}}">
+                                <img src="{{URL::asset('image/specialization.png')}}">
                                 <span>{{trans('offers.o-spec')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
                              href="#collapseExample" role="button" aria-expanded="false"
                              aria-controls="collapseExample">
                             <a id="link-subsystem">
-                                <img src="{{URL::asset('image/conection.png')}}">
+                                <img src="{{URL::asset('image/education.png')}}">
                                 <span>{{trans('offers.o-spec-tec')}}</span></a>
                         </div>
                     </div>
