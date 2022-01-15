@@ -35,5 +35,5 @@ return[
     'o-spec-tec-servmanag' => 'Especialización en Gestión de Servicios',
     'o-spec-tec-infmanag' => 'Especialización en Gestión de la Información',
     'o-diplmade' => 'Diplomados',
-    'o-courses' => 'Cursos y Talleres'
+    'o-courses' => 'Cursos y Talleres',
 ]; 
