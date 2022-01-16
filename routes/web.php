@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 //App::setLocale("en");
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('home');
+});
 
 Route::group(['prefix' => 'home', 'as' => 'home'], function () {
     Route::get('/', function () {
