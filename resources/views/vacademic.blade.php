@@ -155,6 +155,7 @@
             </div>
         </div>
         <div class=".xl-container">
+            {{--card represents--}}
             <div class="card-columns col-sm-11">
                 <a class="btn-link card-img" id="imgcard">
                     <div class="card row" id="cardauthor">
@@ -183,8 +184,9 @@
                     </div>
                 </a>
             </div>
-            <div class="flex content-vext">
-                <div class="links-interest" id="contentimg headingThree" style="background-color: #336699"
+            {{--contents--}}
+            <div class="d-flex content-vext">
+                <div class="links-interest" id="contentimg" style="background-color: #336699"
                      data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
                      aria-controls="collapse2">
                     <a id="foundbtn">
@@ -192,7 +194,7 @@
                         <span>{{trans('vacademy.vacad-functions')}}</span>
                     </a>
                 </div>
-                <div class="links-interest" id="contentimg headingOne" style="background-color: #336699"
+                <div class="links-interest" id="contentimg" style="background-color: #336699"
                      data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
                      aria-controls="collapse3">
                     <a id="campusbtn">
@@ -205,7 +207,8 @@
                         <img src="{{URL::asset('/image/flow-chart.svg')}}">
                         <span>{{trans('vacademy.vacad-struct')}}</span>
                     </a>
-                </div>{{--fin struct--}}
+                </div>
+            {{--end contents--}}
             </div>
             <div class="col-md-12" id="contevext">
                 {{--<div class="collapse col-sm-11" id="collapse">
@@ -301,12 +304,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="info-dept col-sm-11 card card-body">
-                    <h5>{{trans('vacademy.vacad-info-title')}}</h5>
-                    <p><b>{{trans('vacademy.vacad-info-etitle')}}</b>&nbsp {{trans('vacademy.vacad-info-email')}}</p>
-                    <p><b>{{trans('vacademy.vacad-info-teltit')}}</b>&nbsp{{trans('vacademy.vacad-info-telf')}}</p>
-                    <p><b>{{trans('vacademy.vacad-info-schedtit')}}</b>&nbsp{{trans('vacademy.vacad-info-sched')}}</p>
-                </div>
+                {{--info contact--}}
+            </div>
+            <div class="info-dept col-sm-12 card card-body">
+                <h5>{{trans('vacademy.vacad-info-title')}}</h5>
+                <p><b>{{trans('vacademy.vacad-info-etitle')}}</b>&nbsp {{trans('vacademy.vacad-info-email')}}</p>
+                <p><b>{{trans('vacademy.vacad-info-teltit')}}</b>&nbsp{{trans('vacademy.vacad-info-telf')}}</p>
+                <p><b>{{trans('vacademy.vacad-info-schedtit')}}</b>&nbsp{{trans('vacademy.vacad-info-sched')}}</p>
             </div>
         </div>
     </div>

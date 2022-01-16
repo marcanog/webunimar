@@ -36,5 +36,9 @@ return[
     'o-spec-tec-infmanag' => 'Specialization in Information Management',
     'o-diplomas' => 'Diplomas',
     'o-courses' => 'Courses and Workshops',
+    'o-cenglish' => 'English',
+    'o-ruso' => 'Russian',
+    'o-chinese' => 'Chinese',
+    'o-message' => 'This offer is not currently open',
 
 ];

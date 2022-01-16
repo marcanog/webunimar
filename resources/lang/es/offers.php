@@ -36,4 +36,8 @@ return[
     'o-spec-tec-infmanag' => 'Especialización en Gestión de la Información',
     'o-diplomas' => 'Diplomados',
     'o-courses' => 'Cursos y Talleres',
+    'o-cenglish' => 'Inglés',
+    'o-ruso' => 'Ruso',
+    'o-chinese' => 'Chino',
+    'o-messages' => 'Actualmente no se encuentra abierta esta oferta',
 ]; 
