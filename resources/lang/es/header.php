@@ -16,4 +16,6 @@ return [
     'services' => 'Servicios',
     'input_search' => 'Buscar',
     'postgrade' => 'Postgrado',
+    'secretariat' => 'Secretaría General',
+    'pregrade' => 'Pregrado',
 ];

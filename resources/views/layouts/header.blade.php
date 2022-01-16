@@ -115,7 +115,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="navbar-brand" id="header-menu" href="#">
-                            {{trans('header.teachers')}}
+                            {{trans('header.secretariat')}}
                         </a>
                     </li>
                     {{-- <li class="nav-item">

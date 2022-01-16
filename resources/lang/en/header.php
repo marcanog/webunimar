@@ -19,5 +19,7 @@ return [
     'services' => 'Services',
     'input_search' => 'Search',
     'postgrade' => 'Post-grade',
+    'secretariat' => 'General Secretariat',
+    'pregrade' => 'Pregrade',
 
 ];
