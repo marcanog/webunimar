@@ -114,7 +114,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-brand" id="header-menu" href="#">
+                        <a class="navbar-brand" id="header-menu" href="{{url('/generalsecretariat')}}">
                             {{trans('header.secretariat')}}
                         </a>
                     </li>
