@@ -74,6 +74,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="navbar-brand" id="header-menu" href="{{url('/generalsecretariat')}}">
+                            {{trans('header.secretariat')}}
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="navbar-brand" id="header-menu" href="{{url('/vacademic')}}">
                             {{trans('header.academics')}}
                         </a>
@@ -94,6 +99,11 @@
                         </a>
                     </li>
                     <li class="nav-item">
+                        <a class="navbar-brand" id="header-menu" href="{{url('/postgrade')}}">
+                            {{trans('header.postgrade')}}
+                        </a>
+                    </li>
+                    <li class="nav-item">
                         <a class="navbar-brand" id="header-menu" href="#">
                             {{trans('header.new_additions')}}
                         </a>
@@ -106,16 +116,6 @@
                     <li class="nav-item">
                         <a class="navbar-brand" id="header-menu" href="#">
                             {{trans('header.graduates')}}
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-brand" id="header-menu" href="{{url('/postgrade')}}">
-                            {{trans('header.postgrade')}}
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar-brand" id="header-menu" href="{{url('/generalsecretariat')}}">
-                            {{trans('header.secretariat')}}
                         </a>
                     </li>
                     {{-- <li class="nav-item">
