@@ -47,19 +47,52 @@
             </div>
 
             <div class="d-flex justify-content-around m-4">
-                @foreach($news as $new)
+                <!-- @foreach($news as $new) -->
                 <div class="card m-2" style="width: 18rem;height: 25rem;">
-                    {{--<img src="{{($new->image)}}" class="card-img-top" alt="image-news">--}}
+                    {{--<img src="{{asset('image/unimar3.jpg')}}" class="card-img-top" alt="image-news">--}}
                     <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
-                        <h5 class="card-title font-weight-bold">{{($new->title)}}</h5>
+                        <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
                             <div class="text-justify m-0" id="card-content" style="font-size: small;">
-                                {!! ($new->resume) !!}
+                                <p>El pasado 20 de octubre la Universidad de Margarita, UNIMAR , y el Colegio de Contadores Públicos de Nueva Esparta, CCPENE, firmaron un Convenio de cooperación interinstitucional, con el objetivo de desarrollar actividades conjuntas encaminadas a la formación, capacitación y divulgación de conocimientos de contaduría pública.</p>
                             </div>
                         <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
-                @endforeach
+                <div class="card m-2" style="width: 18rem;height: 25rem;">
+                    {{--<img src="{{asset('image/unimar3.jpg')}}" class="card-img-top" alt="image-news">--}}
+                    <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
+                            <div class="text-justify m-0" id="card-content" style="font-size: small;">
+                                <p>El pasado 20 de octubre la Universidad de Margarita, UNIMAR , y el Colegio de Contadores Públicos de Nueva Esparta, CCPENE, firmaron un Convenio de cooperación interinstitucional, con el objetivo de desarrollar actividades conjuntas encaminadas a la formación, capacitación y divulgación de conocimientos de contaduría pública.</p>
+                            </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 18rem;height: 25rem;">
+                    {{--<img src="{{asset('image/unimar3.jpg')}}" class="card-img-top" alt="image-news">--}}
+                    <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
+                            <div class="text-justify m-0" id="card-content" style="font-size: small;">
+                                <p>El pasado 20 de octubre la Universidad de Margarita, UNIMAR , y el Colegio de Contadores Públicos de Nueva Esparta, CCPENE, firmaron un Convenio de cooperación interinstitucional, con el objetivo de desarrollar actividades conjuntas encaminadas a la formación, capacitación y divulgación de conocimientos de contaduría pública.</p>
+                            </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 18rem;height: 25rem;">
+                    {{--<img src="{{asset('image/unimar3.jpg')}}" class="card-img-top" alt="image-news">--}}
+                    <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
+                            <div class="text-justify m-0" id="card-content" style="font-size: small;">
+                                <p>El pasado 20 de octubre la Universidad de Margarita, UNIMAR , y el Colegio de Contadores Públicos de Nueva Esparta, CCPENE, firmaron un Convenio de cooperación interinstitucional, con el objetivo de desarrollar actividades conjuntas encaminadas a la formación, capacitación y divulgación de conocimientos de contaduría pública.</p>
+                            </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <!-- @endforeach -->
             </div>
 
             <div class="section-content">
@@ -69,7 +102,7 @@
                 </div>
             </div>
             <div class="content-event">
-                @foreach($events as $event)
+                <!-- @foreach($events as $event)
                     <div class="content-date card-content m-2">
                         <div class="date-news">
                             <span>{{ \Carbon\Carbon::parse(strtotime($event->start))->formatLocalized("%d %b")}}</span>
@@ -82,13 +115,28 @@
                             </div>
                             <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                         </div>
-                        {{--<div class="title-news">
-                            <p class="font-weight-bold">{{($event->title)}}</p>
-                            <p class="text-justify m-4">{{($event->description)}}</p>
-                            <a href="{{url('/eventsunimar')}}" class="card-link">{{trans('home.more')}}</a>
-                        </div>--}}
                     </div>
-                @endforeach
+                @endforeach -->
+                <div class="content-date">
+                    <div class="date-news">
+                        <span>23 Jun</span>
+                    </div>
+                    <div class="title-news">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>
+                        <a href="#">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="content-date">
+                    <div class="date-news">
+                        <span>23 Jun</span>
+                    </div>
+                    <div class="title-news">
+                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>
+                        <a href="#">Leer más</a>
+                    </div>
+                </div>
+
             </div>
             <div class="section-content">
                 <div class="d-flex justify-content-start">
