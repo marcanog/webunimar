@@ -6,7 +6,7 @@
  */
 
 
-:root {
+ :root {
     --blue: #0f4c98;
     --indigo: #6574cd;
     --purple: #9561e2;
@@ -11283,6 +11283,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 
 .card-body {
     color: #212121;
+    flex: 0 0 auto;
 }
 
 .card-img-top {
@@ -11419,7 +11420,8 @@ form.form-inline {
 }
 
 #img-section {
-    width: 2.5vw;
+   // width: 2.5vw;
+    width: 35px;
     margin: 1em;
 }
 
@@ -11428,12 +11430,21 @@ form.form-inline {
 }
 
 /*--------------------------------------- events --------------------------------------------*/
-.date-news {
+/*.date-news {
     background: #336699;
     border-radius: 20px;
     text-align: center;
     flex: 0 0 15%;
     height: 5em;
+}*/
+.date-news {
+    background: #336699;
+    border-radius: 20px;
+    text-align: center;
+    flex: 0 0 30%;
+    height: 5em;
+    position: relative;
+    top: 0.65em;
 }
 
 .content-date {
@@ -11443,11 +11454,18 @@ form.form-inline {
     flex: 0 0 45%;
 }
 
-.content-event {
+/*.content-event {
     flex-direction: row;
     flex: 0 0 100%;
     display: flex;
     justify-content: space-around;
+}*/
+.content-event {
+    display: flex;
+    justify-content: center;
+    width:  calc(60% - 8em);
+    margin: 0 auto;
+    height: auto;
 }
 
 .date-news > span {

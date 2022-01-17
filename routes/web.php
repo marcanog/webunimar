@@ -87,6 +87,10 @@ Route::get('newsunimar', function(){
     return view('newsunimar');
 });
 
+Route::get('eventsunimar', function(){
+    return view('eventsunimar');
+});
+
 Route::get('orgstructure', function () {
     return view('orgstructure');
 });
@@ -113,6 +117,10 @@ Route::get('offerstudy', function () {
 
 Route::get('vextension', function () {
     return view('vextension');
+});
+
+Route::get('agreements', function(){
+    return view('agreements');
 });
 
 Route::get('vacademic', function () {
