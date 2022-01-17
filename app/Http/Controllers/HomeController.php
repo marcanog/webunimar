@@ -22,8 +22,9 @@ class HomeController extends Controller
     public function index(){
 
         //$news = News::all();
-        $news = DB::table('news')->get();
-        return view ('/home')->with('news', $news);
+        // $news = DB::table('news')->get();
+        // return view ('/home')->with('news', $news);
+        return view('/home');
     }
     // public function show(){
     //     $news = News::all();
