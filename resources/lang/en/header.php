@@ -21,5 +21,4 @@ return [
     'postgrade' => 'Post-grade',
     'secretariat' => 'General Secretariat',
     'pregrade' => 'Pregrade',
-
 ];

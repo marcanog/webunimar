@@ -15,14 +15,14 @@ use Illuminate\Support\Facades\Route;
 */
 //App::setLocale("en");
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('home');
-});
+});*/
+
+Route::get('/', 'HomeController@index');
 
 Route::group(['prefix' => 'home', 'as' => 'home'], function () {
-    Route::get('/', function () {
-        return view('home');
-    });
+    Route::get('/', 'HomeController@index');
     // Route::get('home', function () {return view('home');});
     /*  Route::post('/home', 'NewsController@shownews');*/
     /* Route::get('/home',function(){
@@ -81,6 +81,10 @@ Route::get('admin/student/record', function () {
 
 Route::get('ourinstitution', function () {
     return view('ourinstitution');
+});
+
+Route::get('newsunimar', function(){
+    return view('newsunimar');
 });
 
 Route::get('orgstructure', function () {

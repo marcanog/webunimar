@@ -60,4 +60,6 @@ return [
     'lang-en' => 'En',
     'lang-es' => 'Es',
     'lang-it' => 'It',
+
+    'more' => 'See more',
 ];

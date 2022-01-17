@@ -155,7 +155,7 @@
             </div>
         </div>
         <div class=".xl-container">
-            {{--card represents--}}
+            {{--info represents--}}
             <div class="card-columns col-sm-11">
                 <a class="btn-link card-img" id="imgcard">
                     <div class="card row" id="cardauthor">
@@ -184,8 +184,8 @@
                     </div>
                 </a>
             </div>
-            {{--contents--}}
-            <div class="d-flex content-vext">
+            {{--contens--}}
+            <div class="flex content-vext">
                 <div class="links-interest" id="contentimg" style="background-color: #336699"
                      data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
                      aria-controls="collapse2">
@@ -207,8 +207,7 @@
                         <img src="{{URL::asset('/image/flow-chart.svg')}}">
                         <span>{{trans('vacademy.vacad-struct')}}</span>
                     </a>
-                </div>
-            {{--end contents--}}
+                </div>{{--fin struct--}}
             </div>
             <div class="col-md-12" id="contevext">
                 {{--<div class="collapse col-sm-11" id="collapse">
@@ -240,19 +239,19 @@
                             {{trans('vacademy.vacad-units')}}
                         </p>
                         <div class="content-areas">
-                            <div class="conten-subsytem" style="background-color: #6699cc">
+                            <div class="conten-subsytem" style="background-color: #6699cc;">
                                 <a id="link-subsystem" href="http://biblioteca.ucv.ve/">
                                     <img src="{{URL::asset('/image/libraryonline.png')}}">
                                     <span>{{trans('vacademy.vacad-biblioc')}}</span>
                                 </a>
                             </div>
-                            <div class="conten-subsytem" style="background-color: #6699cc">
+                            <div class="conten-subsytem" style="background-color: #6699cc;">
                                 <a id="link-subsystem" href="{{url('/comcurricula')}}">
                                     <img src="{{URL::asset('/image/algorithm.svg')}}">
                                     <span>{{trans('vacademy.vacad-comcurric')}}</span>
                                 </a>
                             </div>
-                            <div class="conten-subsytem" style="background-color: #6699cc">
+                            <div class="conten-subsytem" style="background-color: #6699cc;">
                                 <a id="link-subsystem" href="{{url('/deans')}}">
                                     <img src="{{URL::asset('/image/insurance.svg')}}">
                                     <span>{{trans('vacademy.vacad-deans')}}</span>
@@ -260,9 +259,9 @@
                             </div>
                         </div>
                         <div class="content-areas">
-                            <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="https://www.unimarcientifica.edu.ve/adminmoodle/"><img
-                                        src="{{URL::asset('/image/elearning.png')}}">
+                            <div class="conten-subsytem" style="background-color: #6699cc;">
+                                <a id="link-subsystem" href="https://www.unimarcientifica.edu.ve/adminmoodle/">
+                                    <img src="{{URL::asset('/image/elearning.png')}}">
                                     <span>{{trans('vacademy.vacad-elearning')}}</span></a>
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
@@ -304,9 +303,8 @@
                         </div>
                     </div>
                 </div>
-                {{--info contact--}}
             </div>
-            <div class="info-dept col-sm-12 card card-body">
+            <div class="info-dept col-sm-11 card card-body">
                 <h5>{{trans('vacademy.vacad-info-title')}}</h5>
                 <p><b>{{trans('vacademy.vacad-info-etitle')}}</b>&nbsp {{trans('vacademy.vacad-info-email')}}</p>
                 <p><b>{{trans('vacademy.vacad-info-teltit')}}</b>&nbsp{{trans('vacademy.vacad-info-telf')}}</p>

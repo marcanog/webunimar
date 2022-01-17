@@ -1,6 +1,21 @@
 @extends('layouts.layout')
 
 @section('content')
+    <style>
+        #card-content p{
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            height: 100px;
+        }
+        .card-title.font-weight-bold {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+    </style>
     <div class=".xl-container">
         <div class="content">
             <div id="carousel-home" class="carousel slide" data-ride="carousel">
@@ -30,165 +45,19 @@
                 </div>
             </div>
 
-            <div class="container my-4">
-                <!--Carousel Wrapper-->
-                <div id="multi-item-carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
-                    <!--Slides-->
-                    <div class="carousel-inner" role="listbox">
-                        <!--First slide-->
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top" src={{URL::asset('image/unimar1.jpg')}}
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-link">Ver más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top" src={{URL::asset('image/unimar2.jpg')}}
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-link">Ver más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top" src={{URL::asset('image/unimar3.jpg')}}
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-link">Ver más</a>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="d-flex justify-content-around m-4">
+                @foreach($news as $new)
+                <div class="card m-2" style="width: 18rem;height: 25rem;">
+                    <img src="{{($new->image)}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">{{($new->title)}}</h5>
+                            <div class="text-justify m-0" id="card-content" style="font-size: small;">
+                                {!! ($new->resume) !!}
                             </div>
-                        </div>
-                        <!--/.First slide-->
-                        <!--Second slide-->
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top" src={{URL::asset('image/unimar1.jpg')}}
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-link">Ver más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top" src={{URL::asset('image/unimar2.jpg')}}
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-link">Ver más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top" src={{URL::asset('image/unimar3.jpg')}}
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-link">Ver más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Second slide-->
-                        <!--Third slide-->
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top" src={{URL::asset('image/unimar1.jpg')}}
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-link">Ver más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top" src={{URL::asset('image/unimar2.jpg')}}
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-link">Ver más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 clearfix d-none d-md-block">
-                                    <div class="card mb-2">
-                                        <img class="card-img-top" src={{URL::asset('image/unimar3.jpg')}}
-                                            alt="Card image cap">
-                                        <div class="card-body">
-                                            <h4 class="card-title">Card title</h4>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make up the bulk of the
-                                                card's content.</p>
-                                            <a class="btn btn-link">Ver más</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/.Third slide-->
+                        <a href="{{url('/newsunimar')}}" class="card-link">{{trans('home.more')}}</a>
                     </div>
-                    <!--/.Slides-->
-                    <!--Controls-->
-                    <div class="controls-top">
-                        <a class="btn-floating" href="#multi-item-carousel" data-slide="prev"><i
-                                class="fa fa-chevron-left"></i></a>
-                        <a class="btn-floating" href="#multi-item-carousel" data-slide="next"><i
-                                class="fa fa-chevron-right"></i></a>
-                    </div>
-                    <!--/.Controls-->
-                    <!--Indicators-->
-                    <ol class="carousel-indicators">
-                        <li data-target="#multi-item-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#multi-item-carousel" data-slide-to="1"></li>
-                        <li data-target="#multi-item-carouselcls" data-slide-to="2"></li>
-                    </ol>
-                    <!--/.Indicators-->
                 </div>
-                <!--/.Carousel Wrapper-->
+                @endforeach
             </div>
 
             <div class="section-content">

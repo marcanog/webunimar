@@ -11288,7 +11288,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .card-img-top {
     /* width: 100%; */
     /* width: 26.05vw !important; */
-    height: 40vh !important;
+    /*height: 40vh !important;*/
+    height: 160px !important;
 }
 
 .card-img, .card-img-top {

@@ -58,12 +58,9 @@ return [
     'aschedule' => 'Horarios Académicos',
     'phonedirectory' => 'Directorio Telefónico',
     'contactus' => 'Contáctanos a través de',
+    'more' => 'Ver más',
     //language
     'lang-en' => 'En',
     'lang-es' => 'Es',
     'lang-it' => 'It',
-    //urls
-    //  'es-flags' => 'URL::asset('./image/flags/flag-spain.png')',
-    //  'en-flags' => 'URL::asset('./image/flags/flag-usa.png')',
-    //  'it-flags' => 'URL::asset('./image/flags/flag-italy.png')',
 ];

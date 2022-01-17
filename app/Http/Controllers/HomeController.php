@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\News;
 
 class HomeController extends Controller
 {
@@ -13,7 +14,17 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+      //  $this->middleware('auth');
+    }
+    public function index(){
+        $news = News::all();
+
+        return view ('/home')->with('news', $news);
+
+    }
+    public function show(){
+        $news = News::all();
+        var_dump($news); die();
     }
 
     /**

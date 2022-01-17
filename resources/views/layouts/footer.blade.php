@@ -33,7 +33,7 @@
             <div>
                 <ul>
                     <li class="footer-item">
-                        <a class="footer-title font-weight-bold" href="{{url('/studyoffers')}}">
+                        <a class="footer-title font-weight-bold" href="{{url('/offerstudy')}}">
                             {{trans('footer.f_study_offers')}}
                         </a>
                     </li>

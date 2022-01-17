@@ -5,14 +5,14 @@ return[
     'o-enginerrs' => 'Ingeniería y Afines',
     'o-systemeng' => 'Ingeniería de Sistemas',
     'o-humarte' => 'Humanidades, Artes y Educación',
-    'o-arte' => 'Artes Mención Diseño Gráfico', 
+    'o-arte' => 'Artes Mención Diseño Gráfico',
     'o-langs' => 'Idiomas Modernos',
     'o-ceys' => 'Ciencias Económicas y Sociales',
     'o-admins' => 'Administración',
     'o-contpub' => 'Contaduría Pública',
     'o-cjyp' => 'Ciencias Jurídicas y Políticas',
     'o-law' => 'Derecho',
-    'o-postgrade' => 'Ofertas de Postgrados', 
+    'o-postgrade' => 'Ofertas de Postgrados',
     'o-doctor' => 'Doctorados',
     'o-certf' => 'Maestrías',
     'o-certf-csamb' => 'Maestría en Ciencias Ambientales',
@@ -40,4 +40,4 @@ return[
     'o-ruso' => 'Ruso',
     'o-chinese' => 'Chino',
     'o-messages' => 'Actualmente no se encuentra abierta esta oferta',
-]; 
+];
