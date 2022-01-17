@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use App\News;
 
 class HomeController extends Controller
@@ -17,9 +20,9 @@ class HomeController extends Controller
       //  $this->middleware('auth');
     }
     public function index(){
-        
-        $news = News::all();
 
+        //$news = News::all();
+        $news = DB::table('news')->get();
         return view ('/home')->with('news', $news);
     }
     // public function show(){
