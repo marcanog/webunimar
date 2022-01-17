@@ -104,36 +104,36 @@
                     <div class="date-news">
                         <span>23 Jun</span>
                     </div>
-                    <div class="title-news">
-                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-                        <a href="#">Leer más</a>
+                    <div class="title-news" id="card-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
                 <div class="content-date">
                     <div class="date-news">
                         <span>23 Jun</span>
                     </div>
-                    <div class="title-news">
-                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-                        <a href="#">Leer más</a>
+                    <div class="title-news" id="card-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
                 <div class="content-date">
                     <div class="date-news">
                         <span>23 Jun</span>
                     </div>
-                    <div class="title-news">
-                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-                        <a href="#">Leer más</a>
+                    <div class="title-news" id="card-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
                 <div class="content-date">
                     <div class="date-news">
                         <span>23 Jun</span>
                     </div>
-                    <div class="title-news">
-                        <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-                        <a href="#">Leer más</a>
+                    <<div class="title-news" id="card-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
 
