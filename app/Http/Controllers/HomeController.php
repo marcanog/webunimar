@@ -17,10 +17,10 @@ class HomeController extends Controller
       //  $this->middleware('auth');
     }
     public function index(){
+        
         $news = News::all();
 
         return view ('/home')->with('news', $news);
-
     }
     // public function show(){
     //     $news = News::all();
