@@ -11450,8 +11450,8 @@ form.form-inline {
 .content-date {
     display: flex;
     justify-content: space-around;
-    margin: 1em;
-    flex: 0 0 45%;
+    margin: 2em;
+    flex: 0 0 40%;
 }
 
 /*.content-event {
