@@ -101,7 +101,7 @@
                     </div>
                     <div class="title-news">
                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>
-                        <a href="#">Leer más</a>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
                 <div class="content-date">
@@ -110,7 +110,7 @@
                     </div>
                     <div class="title-news">
                         <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</span>
-                        <a href="#">Leer más</a>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
             </div>
