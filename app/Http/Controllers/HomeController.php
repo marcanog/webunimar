@@ -22,10 +22,10 @@ class HomeController extends Controller
         return view ('/home')->with('news', $news);
 
     }
-    public function show(){
-        $news = News::all();
-        var_dump($news); die();
-    }
+    // public function show(){
+    //     $news = News::all();
+    //     var_dump($news); die();
+    // }
 
     /**
      * Show the application dashboard.
