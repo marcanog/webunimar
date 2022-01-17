@@ -107,6 +107,10 @@ Route::get('ourhistory', function () {
     return view('ourhistory');
 });
 
+Route::get('rectorade', function(){
+    return view('rectorade');
+});
+
 Route::get('deans', function () {
     return view('deans');
 });
@@ -117,6 +121,10 @@ Route::get('offerstudy', function () {
 
 Route::get('vextension', function () {
     return view('vextension');
+});
+
+Route::get('englishcourses', function(){
+    return view('englishcourses');
 });
 
 Route::get('agreements', function(){

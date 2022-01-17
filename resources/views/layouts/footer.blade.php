@@ -13,7 +13,7 @@
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title" href="#">{{trans('footer.f_rectors_office')}}</a>
+                        <a class="footer-title" href="{{url('/rectorade')}}">{{trans('footer.f_rectors_office')}}</a>
                     </li>
                     <li class="footer-item">
                         <a class="footer-title"
