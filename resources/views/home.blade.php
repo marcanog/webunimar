@@ -46,7 +46,7 @@
             </div>
 
             <div class="d-flex justify-content-around m-4">
-                @foreach($news as $new)
+                <!-- @foreach($news as $new)
                 <div class="card m-2" style="width: 18rem;height: 25rem;">
                     <img src="{{($new->image)}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
@@ -57,7 +57,47 @@
                         <a href="{{url('/newsunimar')}}" class="card-link">{{trans('home.more')}}</a>
                     </div>
                 </div>
-                @endforeach
+                @endforeach -->
+                <div class="card m-2" style="width: 18rem;height: 25rem;">
+                    <img src="{{($new->image)}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
+                            <div class="text-justify m-0" id="card-content" style="font-size: small;">
+                            El pasado 20 de octubre la Universidad de Margarita, UNIMAR , y el Colegio de Contadores Públicos de Nueva Esparta, CCPENE, firmaron un Convenio de cooperación interinstitucional, con el objetivo de desarrollar actividades conjuntas encaminadas a la formación, capacitación y divulgación de conocimientos de contaduría pública.
+                            </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 18rem;height: 25rem;">
+                    <img src="{{($new->image)}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
+                            <div class="text-justify m-0" id="card-content" style="font-size: small;">
+                            El pasado 20 de octubre la Universidad de Margarita, UNIMAR , y el Colegio de Contadores Públicos de Nueva Esparta, CCPENE, firmaron un Convenio de cooperación interinstitucional, con el objetivo de desarrollar actividades conjuntas encaminadas a la formación, capacitación y divulgación de conocimientos de contaduría pública.
+                            </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 18rem;height: 25rem;">
+                    <img src="{{($new->image)}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
+                            <div class="text-justify m-0" id="card-content" style="font-size: small;">
+                            El pasado 20 de octubre la Universidad de Margarita, UNIMAR , y el Colegio de Contadores Públicos de Nueva Esparta, CCPENE, firmaron un Convenio de cooperación interinstitucional, con el objetivo de desarrollar actividades conjuntas encaminadas a la formación, capacitación y divulgación de conocimientos de contaduría pública.
+                            </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 18rem;height: 25rem;">
+                    <img src="{{($new->image)}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
+                            <div class="text-justify m-0" id="card-content" style="font-size: small;">
+                            El pasado 20 de octubre la Universidad de Margarita, UNIMAR , y el Colegio de Contadores Públicos de Nueva Esparta, CCPENE, firmaron un Convenio de cooperación interinstitucional, con el objetivo de desarrollar actividades conjuntas encaminadas a la formación, capacitación y divulgación de conocimientos de contaduría pública.
+                            </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link">{{trans('home.more')}}</a>
+                    </div>
+                </div>
             </div>
 
             <div class="section-content">
