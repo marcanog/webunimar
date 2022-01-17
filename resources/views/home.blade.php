@@ -47,7 +47,6 @@
             </div>
 
             <div class="d-flex justify-content-around m-4">
-                <!-- @foreach($news as $new) -->
                 <div class="card m-2" style="width: 18rem;height: 25rem;">
                     {{--<img src="{{asset('image/unimar3.jpg')}}" class="card-img-top" alt="image-news">--}}
                     <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
@@ -92,7 +91,6 @@
                         <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
-                <!-- @endforeach -->
             </div>
 
             <div class="section-content">
@@ -102,21 +100,6 @@
                 </div>
             </div>
             <div class="content-event">
-                <!-- @foreach($events as $event)
-                    <div class="content-date card-content m-2">
-                        <div class="date-news">
-                            <span>{{ \Carbon\Carbon::parse(strtotime($event->start))->formatLocalized("%d %b")}}</span>
-
-                        </div>
-                        <div class="card-body text-justify">
-                            <h5 class="card-title title-news font-weight-bold">{{($event->title)}}</h5>
-                            <div class="text-justify m-0" id="card-content" style="font-size: small;">
-                                {{($event->description)}}
-                            </div>
-                            <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
-                        </div>
-                    </div>
-                @endforeach -->
                 <div class="content-date">
                     <div class="date-news">
                         <span>23 Jun</span>
