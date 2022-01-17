@@ -46,18 +46,6 @@
             </div>
 
             <div class="d-flex justify-content-around m-4">
-                <!-- @foreach($news as $new)
-                <div class="card m-2" style="width: 18rem;height: 25rem;">
-                    <img src="{{($new->image)}}" class="card-img-top" alt="image-news">
-                    <div class="card-body">
-                        <h5 class="card-title font-weight-bold">{{($new->title)}}</h5>
-                            <div class="text-justify m-0" id="card-content" style="font-size: small;">
-                                {!! ($new->resume) !!}
-                            </div>
-                        <a href="{{url('/newsunimar')}}" class="card-link">{{trans('home.more')}}</a>
-                    </div>
-                </div>
-                @endforeach -->
                 <div class="card m-2" style="width: 18rem;height: 25rem;">
                     <img src="{{($new->image)}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
