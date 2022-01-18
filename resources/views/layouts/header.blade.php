@@ -104,17 +104,17 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-brand" id="header-menu" href="#">
+                        <a class="navbar-brand" id="header-menu" href="{{url('/newstudents')}}">
                             {{trans('header.new_additions')}}
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-brand" id="header-menu" href="#">
+                        <a class="navbar-brand" id="header-menu" href="{{url('/regstudents')}}">
                             {{trans('header.students')}}
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="navbar-brand" id="header-menu" href="#">
+                        <a class="navbar-brand" id="header-menu" href="{{('/alumni')}}">
                             {{trans('header.graduates')}}
                         </a>
                     </li>

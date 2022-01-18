@@ -47,7 +47,7 @@
             </div>
 
             <div class="d-flex justify-content-around m-4">
-                <div class="card m-2" style="width: 18rem;height: 25rem;">
+            <div class="card m-2" style="width: 18rem;height: 25rem;">
                     {{--<img src="{{asset('image/unimar3.jpg')}}" class="card-img-top" alt="image-news">--}}
                     <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
@@ -100,7 +100,7 @@
                 </div>
             </div>
             <div class="content-event">
-                <div class="content-date">
+            <div class="content-date">
                     <div class="date-news">
                         <span>23 Jun</span>
                     </div>
@@ -136,7 +136,7 @@
                         <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
-
+                @endforeach
             </div>
             <div class="section-content">
                 <div class="d-flex justify-content-start">
@@ -185,8 +185,8 @@
             <div class="section-content">
                 <div class="d-flex justify-content-start">
                     <img id="img-section"
-                         src="{{URL::asset('image/conection.png')}}"><span
-                        style="width: 35%;">{{trans('home.links_interest')}}</span>
+                         src="{{URL::asset('image/conection.png')}}">
+                    <span>{{trans('home.links_interest')}}</span>
                 </div>
             </div>
             <div class="content-links">

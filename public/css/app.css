@@ -6,7 +6,7 @@
  */
 
 
- :root {
+:root {
     --blue: #0f4c98;
     --indigo: #6574cd;
     --purple: #9561e2;
@@ -11403,8 +11403,9 @@ form.form-inline {
 .justify-content-start {
     justify-content: flex-start !important;
     background-color: #6699CC;
-    width: 20%;
-    border-top-right-radius: 20px;
+    width: 23%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .d-flex.justify-content-start > span {
@@ -11416,7 +11417,8 @@ form.form-inline {
     font-weight: 700;
     font-size: 0.95em;
     /*letter-spacing: 0.025em;*/
-    width: 25%;
+    width: 60%;
+    text-align: left;
 }
 
 #img-section {
@@ -11450,8 +11452,8 @@ form.form-inline {
 .content-date {
     display: flex;
     justify-content: space-around;
-    margin: 2em;
-    flex: 0 0 40%;
+    margin: 1em;
+    flex: 0 0 45%;
 }
 
 /*.content-event {

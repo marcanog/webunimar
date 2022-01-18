@@ -107,10 +107,6 @@ Route::get('ourhistory', function () {
     return view('ourhistory');
 });
 
-Route::get('rectorade', function(){
-    return view('rectorade');
-});
-
 Route::get('deans', function () {
     return view('deans');
 });
@@ -119,12 +115,19 @@ Route::get('offerstudy', function () {
     return view('studyoffers');
 });
 
-Route::get('vextension', function () {
-    return view('vextension');
+Route::get('regularstudents', function(){
+    return view('regularstudents');
 });
 
-Route::get('englishcourses', function(){
-    return view('englishcourses');
+Route::get('newstudents', function(){
+    return view('newstudents');
+});
+
+Route::get('alumni', function(){
+    return view('alumni');
+});
+Route::get('vextension', function () {
+    return view('vextension');
 });
 
 Route::get('agreements', function(){

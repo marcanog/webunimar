@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\DB;
 use App\News;
+use App\Event;
 
 class HomeController extends Controller
 {
@@ -20,24 +20,15 @@ class HomeController extends Controller
       //  $this->middleware('auth');
     }
     public function index(){
+        setlocale(LC_ALL, 'es_ES');
+        return view('/home')->with('news', News::get())->with('events', Event::get());
 
-        //$news = News::all();
-        // $news = DB::table('news')->get();
-        // return view ('/home')->with('news', $news);
-        return view('/home');
     }
-    // public function show(){
-    //     $news = News::all();
-    //     var_dump($news); die();
-    // }
 
     /**
      * Show the application dashboard.
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    // public function index()
-    // {
-    //     return view('layout/home');
-    // }
+
 }
