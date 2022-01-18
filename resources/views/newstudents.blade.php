@@ -193,13 +193,21 @@
                 </a>
             </div>
         </div>
+        <!-- cards bodies -->
         <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
             <div class="collapse col-lg-12 m-4" id="collapse">{{--vision--}}
                 <div class="card card-body sectionbody">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('postgrade.postg-vision-title')}}
                     </p>
-                    <p class="text-justify"> {{trans('postgrade.postg-vision')}}</p>
+                    <ul>
+                        <li><p> {{trans('postgrade.postg-functions-1')}}</p></li>
+                        <li><p> {{trans('postgrade.postg-functions-2')}}</p></li>
+                        <li><p> {{trans('postgrade.postg-functions-3')}}</p></li>
+                        <li><p> {{trans('postgrade.postg-functions-4')}}</p></li>
+                        <li><p> {{trans('postgrade.postg-functions-5')}}</p></li>
+                        <li><p> {{trans('postgrade.postg-functions-6')}}</p></li>
+                    </ul>
                 </div>
             </div>
             <div class="collapse col-lg-12 m-4" id="collapse2"> {{--mision--}}
@@ -209,7 +217,14 @@
                     </p>
                     <ul>
                         <div class="sectionbody">
-                            <p> {{trans('postgrade.postg-mission')}}</p>
+                            <ul>
+                                <li><p> {{trans('postgrade.postg-functions-1')}}</p></li>
+                                <li><p> {{trans('postgrade.postg-functions-2')}}</p></li>
+                                <li><p> {{trans('postgrade.postg-functions-3')}}</p></li>
+                                <li><p> {{trans('postgrade.postg-functions-4')}}</p></li>
+                                <li><p> {{trans('postgrade.postg-functions-5')}}</p></li>
+                                <li><p> {{trans('postgrade.postg-functions-6')}}</p></li>
+                            </ul>
                         </div>
                     </ul>
                 </div>
