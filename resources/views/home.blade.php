@@ -136,7 +136,6 @@
                         <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
-                @endforeach
             </div>
             <div class="section-content">
                 <div class="d-flex justify-content-start">
