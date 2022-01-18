@@ -34,6 +34,7 @@ return[
     'n-requirepg-5' => '2 passport size photos',
     'n-requirepg-6' => 'Fill out the Registration Form',
     'n-requirepg-7' => 'Cancellation of the corresponding enrollment form.',
-    'n-banks-ac' => 'Bco. Mercantil: Cta. No. 01050111318111040644 in the name of UNIMAR.',
+    'n-banks-ac' => 'Bco. Mercantil: Cta. Máxima.  0105-0111-31-811104064-4',
+    'n-titular' => 'a nombre de UNIMAR',
 
 ];

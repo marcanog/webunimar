@@ -34,6 +34,7 @@ return[
     'n-requirepg-5' => '2 Fotos tamaño carnet.',
     'n-requirepg-6' => 'Llenar la Planilla de Inscripción.',
     'n-requirepg-7' => 'Cancelación de la correspondiente matrícula de inscripción',
-    'n-banks-ac' => 'Bco. Mercantil: Cta. Máxima. Nº 01050111318111040644 a nombre de UNIMAR.',
+    'n-banks-ac' => 'Bco. Mercantil: Cta. Máxima.  0105-0111-31-811104064-4',
+    'n-titular' => 'a nombre de UNIMAR',
 
 ];

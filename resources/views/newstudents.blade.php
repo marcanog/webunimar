@@ -198,32 +198,39 @@
             <div class="collapse col-lg-12 m-4" id="collapse">{{--vision--}}
                 <div class="card card-body sectionbody">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('postgrade.postg-vision-title')}}
+                        {{trans('newstudents.n-require')}}
                     </p>
+                    <p>{{trans('newstudents.n-requirepg')}}</p>
                     <ul>
-                        <li><p> {{trans('postgrade.postg-functions-1')}}</p></li>
-                        <li><p> {{trans('postgrade.postg-functions-2')}}</p></li>
-                        <li><p> {{trans('postgrade.postg-functions-3')}}</p></li>
-                        <li><p> {{trans('postgrade.postg-functions-4')}}</p></li>
-                        <li><p> {{trans('postgrade.postg-functions-5')}}</p></li>
-                        <li><p> {{trans('postgrade.postg-functions-6')}}</p></li>
+                        <li><p> {{trans('newstudents.n-requirepg-1')}}</p></li>
+                        <li><p> {{trans('newstudents.n-requirepg-2')}}</p></li>
+                        <li><p> {{trans('newstudents.n-requirepg-3')}}</p></li>
+                        <li><p> {{trans('newstudents.n-requirepg-4')}}</p></li>
+                        <li><p> {{trans('newstudents.n-requirepg-5')}}</p></li>
+                        <li><p> {{trans('newstudents.n-requirepg-6')}}</p></li>
+                        <li><p> {{trans('newstudents.n-requirepg-7')}}</p></li>
                     </ul>
                 </div>
             </div>
             <div class="collapse col-lg-12 m-4" id="collapse2"> {{--mision--}}
                 <div class="card card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('postgrade.postg-mission-title')}}
+                        {{trans('newstudents.n-require')}}
                     </p>
                     <ul>
                         <div class="sectionbody">
                             <ul>
-                                <li><p> {{trans('postgrade.postg-functions-1')}}</p></li>
-                                <li><p> {{trans('postgrade.postg-functions-2')}}</p></li>
-                                <li><p> {{trans('postgrade.postg-functions-3')}}</p></li>
-                                <li><p> {{trans('postgrade.postg-functions-4')}}</p></li>
-                                <li><p> {{trans('postgrade.postg-functions-5')}}</p></li>
-                                <li><p> {{trans('postgrade.postg-functions-6')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq2')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq3')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq4')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq5')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq6')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq7')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq8')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq9')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq10')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq11')}}</p></li>
+                                <li><p> {{trans('newstudents.n-require-eq12')}}</p></li>
                             </ul>
                         </div>
                     </ul>
@@ -232,15 +239,21 @@
             <div class="collapse col-lg-12 m-4" id="collapse3"> {{--functions--}}
                 <div class="card card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('postgrade.postg-functions')}}
+                        {{trans('newstudents.n-require')}}
                     </p>
+                    <p>{{trans('newstudents.n-eq-desc')}}</p>
                     <ul>
-                        <li><p> {{trans('postgrade.postg-functions-1')}}</p></li>
-                        <li><p> {{trans('postgrade.postg-functions-2')}}</p></li>
-                        <li><p> {{trans('postgrade.postg-functions-3')}}</p></li>
-                        <li><p> {{trans('postgrade.postg-functions-4')}}</p></li>
-                        <li><p> {{trans('postgrade.postg-functions-5')}}</p></li>
-                        <li><p> {{trans('postgrade.postg-functions-6')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq2')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq3')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq4')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq5')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq6')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq7')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq8')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq9')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq10')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq11')}}</p></li>
+                        <li><p> {{trans('newstudents.n-require-eq12')}}</p></li>
                     </ul>
                 </div>
             </div>
