@@ -20,9 +20,9 @@ class HomeController extends Controller
       //  $this->middleware('auth');
     }
     public function index(){
-        setlocale(LC_ALL, 'es_ES');
-        return view('/home')->with('news', News::get())->with('events', Event::get());
-
+        //setlocale(LC_ALL, 'es_ES');
+       // return view('/home')->with('news', News::get())->with('events', Event::get());
+      return view('/home');
     }
 
     /**
