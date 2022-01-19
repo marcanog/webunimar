@@ -162,7 +162,7 @@
                         </ul>
                     </div>
                 </div>
-               {{-- <div class="card card-body mt-4">
+                {{--<div class="card card-body mt-4">
                     <div class="sectionbody">
                         <strong>{{trans('newstudents.n-accounts')}}</strong>
                         <ul class="mt-2">
@@ -170,8 +170,8 @@
                             <li><p>{{trans('newstudents.n-banks-ac1')}}</p></li>
                             <li><p>{{trans('newstudents.n-titular')}}</p></li>
                         </ul>
-                    </div>--}}
-                </div>
+                    </div>
+                </div>--}}
             </div>
             {{--Pregrade--}}
             <div class="collapse col-md-12" id="collapse">
@@ -327,6 +327,5 @@
                 </div>
             </div>
         </div>
-
     </div>
 @endsection
