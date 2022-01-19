@@ -31,65 +31,6 @@
             }
         }
 
-        #cardauthor {
-            padding: .5rem;
-            height: 215px !important;
-        }
-
-        #imgcrd {
-            padding: .5rem;
-        }
-
-        .card-title {
-            margin-bottom: .5rem;
-            float: right;
-            position: relative;
-            bottom: 10rem;
-        }
-
-        .card-columns {
-            -webkit-column-count: 2;
-            -moz-column-count: 2;
-            column-count: 2;
-            -webkit-column-gap: 1.25rem;
-            -moz-column-gap: 1.25rem;
-            column-gap: 1.25rem;
-            margin: 0 auto;
-        }
-
-        #imgcard {
-            color: #4f4f4f !important;
-            font-weight: 600;
-        }
-
-        #vext-author {
-            font-size: 1.5rem;
-        }
-
-        #vext-authort {
-            font-size: 1rem;
-        }
-
-        #vext-email {
-            font-size: .75rem;
-        }
-
-        .flex.content-vext {
-            justify-content: space-around;
-            margin: 1rem 1.3rem;
-            padding: 0 1.5rem 1rem 0;
-        }
-
-        .col-md-12 #collapse {
-            margin: 0 auto;
-        }
-
-        .col-sm-11 .card.card-body {
-            text-align: justify;
-            margin: 1rem auto;
-            padding: 2.5rem;
-        }
-
         .card.card-body ul > li {
             list-style: disc;
         }
@@ -99,9 +40,9 @@
             margin-top: 0;
         }
 
-        #collapse, #collapse2, #collapse3 {
+       /* #collapse, #collapse2, #collapse3 {
             margin: 0 auto;
-        }
+        }*/
 
         .info-dept.col-md-10.card.card-body {
             margin: 0 auto;
@@ -160,12 +101,15 @@
             </div>
         </div>
         <div class="d-flex text-justify m-4">
-            <p class="sectionbody">
-                {{trans('newstudents.n-descript')}}
-            </p>
+            <div class="card">
+                <p class="sectionbody">
+                    {{trans('newstudents.n-descript')}}
+                </p>
+            </div>
         </div>
+        {{--contents--}}
         <div class="d-inline-flex justify-content-around m-4 content-vext">
-            {{--Vision--}}
+            {{--Pregrade--}}
             <div class="links-interest" id="contentimg" style="background-color: #336699"
                  data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
                  aria-controls="collapse1">
@@ -174,7 +118,8 @@
                     <span>{{trans('newstudents.n-pregrade')}}</span>
                 </a>
             </div>
-            {{--Mission--}}
+
+            {{--Postgrade--}}
             <div class="links-interest" id="contentimg" style="background-color: #336699"
                  data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
                  aria-controls="collapse2">
@@ -183,7 +128,7 @@
                     <span>{{trans('newstudents.n-posgrade')}}</span>
                 </a>
             </div>
-            {{--functions--}}
+            {{--equivalentes--}}
             <div class="links-interest" id="contentimg" style="background-color: #336699"
                  data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
                  aria-controls="collapse2">
@@ -193,70 +138,162 @@
                 </a>
             </div>
         </div>
-        <!-- cards bodies -->
-        <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
-            <div class="collapse col-lg-12 m-4" id="collapse">{{--vision--}}
-                <div class="card card-body sectionbody">
+        {{--card bodies--}}
+        <div class="justify-content-around m-4" id="contevext">
+            {{--Pregrade--}}
+            <div class="collapse col-md-12" id="collapse">
+                <div class="container col-md-12">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('newstudents.n-require')}}
-                    </p>
-                    <p>{{trans('newstudents.n-requirepg')}}</p>
-                    <ul>
-                        <li><p> {{trans('newstudents.n-requirepg-1')}}</p></li>
-                        <li><p> {{trans('newstudents.n-requirepg-2')}}</p></li>
-                        <li><p> {{trans('newstudents.n-requirepg-3')}}</p></li>
-                        <li><p> {{trans('newstudents.n-requirepg-4')}}</p></li>
-                        <li><p> {{trans('newstudents.n-requirepg-5')}}</p></li>
-                        <li><p> {{trans('newstudents.n-requirepg-6')}}</p></li>
-                        <li><p> {{trans('newstudents.n-requirepg-7')}}</p></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="collapse col-lg-12 m-4" id="collapse2"> {{--mision--}}
-                <div class="card card-body">
-                    <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('newstudents.n-require')}}
-                    </p>
-                    <ul>
-                        <div class="sectionbody">
-                            <ul>
-                                <li><p> {{trans('newstudents.n-require-eq2')}}</p></li>
-                                <li><p> {{trans('newstudents.n-require-eq3')}}</p></li>
-                                <li><p> {{trans('newstudents.n-require-eq4')}}</p></li>
-                                <li><p> {{trans('newstudents.n-require-eq5')}}</p></li>
-                                <li><p> {{trans('newstudents.n-require-eq6')}}</p></li>
-                                <li><p> {{trans('newstudents.n-require-eq7')}}</p></li>
-                                <li><p> {{trans('newstudents.n-require-eq8')}}</p></li>
-                                <li><p> {{trans('newstudents.n-require-eq9')}}</p></li>
-                                <li><p> {{trans('newstudents.n-require-eq10')}}</p></li>
-                                <li><p> {{trans('newstudents.n-require-eq11')}}</p></li>
-                                <li><p> {{trans('newstudents.n-require-eq12')}}</p></li>
-                            </ul>
+                        {{trans('newstudents.n-pregrade')}}</p>
+                    <div class="content-areas">
+                        <div class="conten-subsytem" style="background-color: #6699cc;" data-toggle="collapse"
+                             href="#collapse4" role="button" aria-expanded="false"
+                             aria-controls="collapse4">
+                            <a id="link-subsystem">
+                                <img src="{{URL::asset('image/student.png')}}">
+                                <span>{{trans('newstudents.n-br')}}</span>
+                            </a>
                         </div>
-                    </ul>
+                        <div class="conten-subsytem" style="background-color: #6699cc;" data-toggle="collapse"
+                             href="#collapse5" role="button" aria-expanded="false"
+                             aria-controls="collapse5">
+                            <a id="link-subsystem">
+                                <img src="{{URL::asset('image/student.png')}}">
+                                <span>{{trans('newstudents.n-lcdo')}}</span></a>
+                        </div>
+                        <div class="conten-subsytem" style="background-color: #6699cc;" data-toggle="collapse"
+                             href="#collapse6" role="button" aria-expanded="false"
+                             aria-controls="collapse6">
+                            <a id="link-subsystem">
+                                <img src="{{URL::asset('image/student.png')}}">
+                                <span>{{trans('newstudents.n-tecsup')}}</span></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="collapse col-lg-12 m-4" id="collapse3"> {{--functions--}}
+            {{--info card bodies pregrade--}}
+            <div class="justify-content-around m-4 " id="contevac">
+                <div class="collapse col-md-12" id="collapse4">
+                    <p style="font-size: 1.25rem; font-weight: 600;">
+                        {{trans('newstudents.n-require')}}&nbsp{{trans('newstudents.n-br')}}
+                    </p>
+                    <div class="content-areas col-md-12">
+                        <div class="card card-body">
+                            <div class="sectionbody">
+                                <ul>
+                                    <li><p> {{trans('newstudents.n-requirepg-1')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-2')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-3')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-4')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-5')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-6')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-7')}}</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse col-md-12" id="collapse5">
+                    <p style="font-size: 1.25rem; font-weight: 600;">
+                        {{trans('newstudents.n-require')}}&nbsp{{trans('newstudents.n-lcdo')}}
+                    </p>
+                    <div class="content-areas col-md-12">
+                        <div class="card card-body">
+                            <div class="sectionbody">
+                                <ul>
+                                    <li><p> {{trans('newstudents.n-requirepg-2')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-3')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-4')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-5')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-6')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-7')}}</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse col-md-12" id="collapse6">
+                    <p style="font-size: 1.25rem; font-weight: 600;">
+                        {{trans('newstudents.n-require')}}&nbsp{{trans('newstudents.n-tecsup')}}
+                    </p>
+                    <div class="content-areas col-md-12">
+                        <div class="card card-body">
+                            <div class="sectionbody">
+                                <ul>
+                                    <li><p> {{trans('newstudents.n-requirepg-1')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-2')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-3')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-4')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-5')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-6')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-requirepg-7')}}</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{--Postgrade--}}
+            <div class="collapse col-md-12 m-4" id="collapse2">
+                <div class="card card-body">
+                    <p style="font-size: 1.25rem; font-weight: 600;">{{trans('newstudents.n-require')}}&nbsp{{trans('newstudents.n-posgrade')}}</p>
+                    <div class="sectionbody">
+                        <ul>
+                            <li><p> {{trans('newstudents.n-requirepg-1')}}</p></li>
+                            <li><p> {{trans('newstudents.n-requirepg-2')}}</p></li>
+                            <li><p> {{trans('newstudents.n-requirepg-3')}}</p></li>
+                            <li><p> {{trans('newstudents.n-requirepg-4')}}</p></li>
+                            <li><p> {{trans('newstudents.n-requirepg-5')}}</p></li>
+                            <li><p> {{trans('newstudents.n-requirepg-6')}}</p></li>
+                            <li><p> {{trans('newstudents.n-requirepg-7')}}</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card card-body mt-4">
+                    <div class="sectionbody">
+                        <strong>{{trans('newstudents.n-accounts')}}</strong>
+                        <ul class="mt-2">
+                            <li><p>{{trans('newstudents.n-banks-ac')}}</p></li>
+                            <li><p>{{trans('newstudents.n-titular')}}</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {{--equivalentes--}}
+            <div class="collapse col-md-12 m-4" id="collapse3"> {{--equivalentes--}}
                 <div class="card card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('newstudents.n-require')}}
+                        {{trans('newstudents.n-require')}}&nbsp{{trans('newstudents.n-equivalnts')}}
                     </p>
                     <p>{{trans('newstudents.n-eq-desc')}}</p>
-                    <ul>
-                        <li><p> {{trans('newstudents.n-require-eq2')}}</p></li>
-                        <li><p> {{trans('newstudents.n-require-eq3')}}</p></li>
-                        <li><p> {{trans('newstudents.n-require-eq4')}}</p></li>
-                        <li><p> {{trans('newstudents.n-require-eq5')}}</p></li>
-                        <li><p> {{trans('newstudents.n-require-eq6')}}</p></li>
-                        <li><p> {{trans('newstudents.n-require-eq7')}}</p></li>
-                        <li><p> {{trans('newstudents.n-require-eq8')}}</p></li>
-                        <li><p> {{trans('newstudents.n-require-eq9')}}</p></li>
-                        <li><p> {{trans('newstudents.n-require-eq10')}}</p></li>
-                        <li><p> {{trans('newstudents.n-require-eq11')}}</p></li>
-                        <li><p> {{trans('newstudents.n-require-eq12')}}</p></li>
-                    </ul>
+                    <div class="sectionbody">
+                        <ul>
+                            <li><p> {{trans('newstudents.n-require-eq2')}}</p></li>
+                            <li><p> {{trans('newstudents.n-require-eq3')}}</p></li>
+                            <li><p> {{trans('newstudents.n-require-eq4')}}</p></li>
+                            <li><p> {{trans('newstudents.n-require-eq5')}}</p></li>
+                            <li><p> {{trans('newstudents.n-require-eq6')}}</p></li>
+                            <li><p> {{trans('newstudents.n-require-eq7')}}</p></li>
+                            <li><p> {{trans('newstudents.n-require-eq8')}}</p></li>
+                            <li><p> {{trans('newstudents.n-require-eq9')}}</p></li>
+                            <li><p> {{trans('newstudents.n-require-eq10')}}</p></li>
+                            <li><p> {{trans('newstudents.n-require-eq11')}}</p></li>
+                            <li><p> {{trans('newstudents.n-require-eq12')}}</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card card-body mt-4">
+                    <div class="sectionbody">
+                        <strong>{{trans('newstudents.n-accounts')}}</strong>
+                        <ul class="mt-2">
+                            <li><p>{{trans('newstudents.n-banks-ac')}}</p></li>
+                            <li><p>{{trans('newstudents.n-banks-ac1')}}</p></li>
+                            <li><p>{{trans('newstudents.n-titular')}}</p></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 @endsection
