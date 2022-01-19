@@ -69,13 +69,13 @@
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title " href="{{url('/payments')}}">
-                            {{trans('footer.f_online_payments')}}
+                        <a class="footer-title " href="#">
+                            {{trans('footer.f-proc-acad')}}
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title " href="#">
-                            {{trans('footer.f_payment_bills')}}
+                        <a class="footer-title " href="{{url('/payments')}}">
+                            {{trans('footer.f_online_payments')}}
                         </a>
                     </li>
                     <li class="footer-item">
