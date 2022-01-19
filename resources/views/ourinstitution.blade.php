@@ -61,7 +61,8 @@
         </div>
         {{--card body--}}
         <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
-            <div class="collapse col-lg-12" id="collapse">
+            <!-- Mission -->
+            <div class="collapse" id="collapse">
                 <div class="card card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('ourinstitute.our-mission-title')}}
@@ -76,7 +77,8 @@
                 </div>
             </div>
         </div>
-        <div class="collapse col-lg-12 m-4" id="collapse2">
+        <!-- vision -->
+        <div class="collapse  m-4" id="collapse2">
             <div class="card card-body">
                 <p style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('ourinstitute.our-vision-title')}}
