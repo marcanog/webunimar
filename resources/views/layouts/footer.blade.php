@@ -79,8 +79,8 @@
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title " href="https://www.unimarcientifica.edu.ve/adminmoodle/">
-                            {{trans('footer.f_elearning')}}
+                        <a class="footer-title " href="#">
+                            {{trans('footer.f_payment_bills')}}
                         </a>
                     </li>
                     <li class="footer-item">
@@ -97,6 +97,11 @@
                 <ul>
                     <li class="footer-item">
                         <a class="footer-title font-weight-bold" href="#">{{trans('footer.f_quick_links')}}</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-title " href="https://www.unimarcientifica.edu.ve/adminmoodle/">
+                            {{trans('footer.f_elearning')}}
+                        </a>
                     </li>
                     <li class="footer-item">
                         {{--<a class="footer-title" href="#">{{trans('footer.f_calendar')}}</a>--}}
@@ -146,19 +151,19 @@
                     </ul>
                 </div>
                 {{-- <li class="footer-item justify-content-center">
-                             <span class="d-flex bd-highlight mt-2 ml-4">
-                                     @if (Route::has('login'))
-                                     --}}{{--<div class="top-right links">--}}{{--
-                                     @auth
-                                         <a class="footer-title"
-                                            href="{{ url('/admin') }}">{{trans('commons.user_login')}}{{ auth()->user()->name }}</a>
-                                     @else
-                                         <a class="footer-title" href="{{ route('login') }}"><img
-                                                 src="{{URL::asset('./image/login.png')}}" style="width: 25px;">{{trans('header.login')}}</a>
-                                     @endauth
-                                     --}}{{-- </div>--}}{{--
-                                 @endif
-                             </span>
+                    <span class="d-flex bd-highlight mt-2 ml-4">
+                    @if (Route::has('login'))
+                    --}}{{--<div class="top-right links">--}}{{--
+                    @auth
+                        <a class="footer-title"
+                        href="{{ url('/admin') }}">{{trans('commons.user_login')}}{{ auth()->user()->name }}</a>
+                    @else
+                        <a class="footer-title" href="{{ route('login') }}"><img
+                                src="{{URL::asset('./image/login.png')}}" style="width: 25px;">{{trans('header.login')}}</a>
+                    @endauth
+                    --}}{{-- </div>--}}{{--
+                        @endif
+                    </span>
                  </li>--}}
             </div>
         </div>

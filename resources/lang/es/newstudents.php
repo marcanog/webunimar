@@ -4,6 +4,8 @@ return[
     'n-title' => 'Nuevos Ingresos',
     'n-descript' => 'El sistema de ingreso es un proceso permanente que permite la incorporación de estudiantes al sistema de estudios de la Universidad de Margarita. Le ofrecemos las siguientes vías de ingreso a nuestra casa de estudios.',
     'n-require' => 'Requisitos',
+    'n-intro' => 'Curso Introductorio',
+    'n-requireint' => 'Fotocopia de la cédula de indentidad',
     'n-pregrade' => 'Pregrado',
     'n-br' => 'Bachiller',
     'n-pregrade-desc' => 'Si culminó 4to o 5to año, debe consignar constancia de estudios y notas certificadas 1ro a 4to o 5to año.',

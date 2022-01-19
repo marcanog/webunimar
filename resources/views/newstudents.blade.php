@@ -109,6 +109,16 @@
         </div>
         {{--contents--}}
         <div class="d-inline-flex justify-content-around m-4 content-vext">
+            {{--course introduc--}}
+            <div class="links-interest" id="contentimg" style="background-color: #336699"
+                 data-toggle="collapse" href="#collapse7" role="button" aria-expanded="false"
+                 aria-controls="collapse7">
+                <a id="campusbtn">
+                    <img src="{{URL::asset('/image/student.png')}}">
+                    <span>{{trans('newstudents.n-intro')}}</span>
+                </a>
+            </div>
+
             {{--Pregrade--}}
             <div class="links-interest" id="contentimg" style="background-color: #336699"
                  data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
@@ -140,6 +150,29 @@
         </div>
         {{--card bodies--}}
         <div class="justify-content-around m-4" id="contevext">
+            <div class="collapse col-md-12 m-4" id="collapse7"> {{--equivalentes--}}
+                <div class="card card-body">
+                    <p style="font-size: 1.25rem; font-weight: 600;">
+                        {{trans('newstudents.n-require')}}&nbsp{{trans('newstudents.n-equivalnts')}}
+                    </p>
+                    <p>{{trans('newstudents.n-pregrade-desc')}}</p>
+                    <div class="sectionbody">
+                        <ul>
+                            <li><p> {{trans('newstudents.n-requireint')}}</p></li>
+                        </ul>
+                    </div>
+                </div>
+               {{-- <div class="card card-body mt-4">
+                    <div class="sectionbody">
+                        <strong>{{trans('newstudents.n-accounts')}}</strong>
+                        <ul class="mt-2">
+                            <li><p>{{trans('newstudents.n-banks-ac')}}</p></li>
+                            <li><p>{{trans('newstudents.n-banks-ac1')}}</p></li>
+                            <li><p>{{trans('newstudents.n-titular')}}</p></li>
+                        </ul>
+                    </div>--}}
+                </div>
+            </div>
             {{--Pregrade--}}
             <div class="collapse col-md-12" id="collapse">
                 <div class="container col-md-12">

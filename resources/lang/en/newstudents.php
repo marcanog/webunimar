@@ -4,6 +4,8 @@ return[
     'n-title' => 'New Admissions',
     'n-descript' => 'The system of admission is a permanent process that allows the incorporation of students to the system of studies of the University of Margarita. We offer you the following ways of admission to our house of studies.',
     'n-require' => 'Requirements',
+    'n-intro' => 'Introductory Course',
+    'n-requireint' => 'Photocopy of identity card',
     'n-pregrade' => 'Undergraduate',
     'n-br' => 'Bachelor',
     'n-pregrade-desc' => 'If you have completed 4th or 5th year, you must provide proof of studies and certified grades from 1st to 4th or 5th year',
