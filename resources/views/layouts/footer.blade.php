@@ -69,11 +69,6 @@
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title " href="#">
-                            {{trans('footer.f-proc-acad')}}
-                        </a>
-                    </li>
-                    <li class="footer-item">
                         <a class="footer-title " href="{{url('/payments')}}">
                             {{trans('footer.f_online_payments')}}
                         </a>
@@ -87,6 +82,11 @@
                         <a class="footer-title" href="{{url('/calendaracademy')}}">
                             {{-- {{trans('footer.f_academic_schec')}}--}}
                             {{trans('footer.f_calendar')}}
+                        </a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="footer-title " href="#">
+                            {{trans('footer.f_academic_schec')}}
                         </a>
                     </li>
                 </ul>
