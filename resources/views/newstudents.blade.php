@@ -153,7 +153,7 @@
             <div class="collapse col-md-12 m-4" id="collapse7"> {{--equivalentes--}}
                 <div class="card card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('newstudents.n-require')}}&nbsp{{trans('newstudents.n-equivalnts')}}
+                        {{trans('newstudents.n-require')}}&nbsp{{trans('newstudents.n-intro')}}
                     </p>
                     <p>{{trans('newstudents.n-pregrade-desc')}}</p>
                     <div class="sectionbody">
