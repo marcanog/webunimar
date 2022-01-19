@@ -2,7 +2,7 @@
 return[
 
     'n-title' => 'New Admissions',
-    'n-descript' => 'The system of admission to Undergraduate Studies is a permanent process that allows the incorporation of students to the system of studies of the University of Margarita. We offer you the following ways of admission to our house of studies.',
+    'n-descript' => 'The system of admission is a permanent process that allows the incorporation of students to the system of studies of the University of Margarita. We offer you the following ways of admission to our house of studies.',
     'n-require' => 'Requirements',
     'n-pregrade' => 'Undergraduate',
     'n-br' => 'Bachelor',
