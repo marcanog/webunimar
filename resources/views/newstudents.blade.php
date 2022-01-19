@@ -181,13 +181,13 @@
                         <div class="card card-body">
                             <div class="sectionbody">
                                 <ul>
-                                    <li><p> {{trans('newstudents.n-requirepg-1')}}</p></li>
-                                    <li><p> {{trans('newstudents.n-requirepg-2')}}</p></li>
-                                    <li><p> {{trans('newstudents.n-requirepg-3')}}</p></li>
-                                    <li><p> {{trans('newstudents.n-requirepg-4')}}</p></li>
-                                    <li><p> {{trans('newstudents.n-requirepg-5')}}</p></li>
-                                    <li><p> {{trans('newstudents.n-requirepg-6')}}</p></li>
-                                    <li><p> {{trans('newstudents.n-requirepg-7')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-require-1')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-require-2')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-require-3')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-require-4')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-require-5')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-require-6')}}</p></li>
+                                    <li><p> {{trans('newstudents.n-require-7')}}</p></li>
                                 </ul>
                             </div>
                         </div>
