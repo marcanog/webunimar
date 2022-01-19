@@ -2,7 +2,7 @@
 return[
 
     'n-title' => 'Nuevos Ingresos',
-    'n-descript' => 'El sistema de ingreso a Estudios de Pregrado es un proceso permanente que permite la incorporación de estudiantes al sistema de estudios de la Universidad de Margarita. Le ofrecemos las siguientes vías de ingreso a nuestra casa de estudios.'
+    'n-descript' => 'El sistema de ingreso a Estudios de Pregrado es un proceso permanente que permite la incorporación de estudiantes al sistema de estudios de la Universidad de Margarita. Le ofrecemos las siguientes vías de ingreso a nuestra casa de estudios.',
     'n-require' => 'Requisitos',
     'n-pregrade' => 'Pregrado',
     'n-br' => 'Bachiller',
