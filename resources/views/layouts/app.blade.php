@@ -15,8 +15,8 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
 
         <!-- Fonts -->
-        <link rel="dns-prefetch" href="//fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <!-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
 
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -25,7 +25,7 @@
         <div id="app">
             <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
                 <div class="container">
-                    <a class="navbar-brand" href="{{ url('/home') }}"><img class="img-nav-app" src="{{URL::asset('./image/unimar.jpg')}}" style="width:150px">
+                    <a class="navbar-brand" href="{{ url('/home') }}"><img class="img-nav-app" src="{{URL::asset('image/unimar.jpg')}}" style="width:150px">
                         <!-- {{ config('app.name',  'header.site-name') }} -->
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
