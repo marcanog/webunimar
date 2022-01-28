@@ -5,7 +5,8 @@ return [
     'start' => 'Inicio',
     'login' => 'Login',
     //Header Menu Nav Bar
-    'unimar' => 'Our Institution',
+    'unimar' => 'UNIMAR',
+    'ourinstitut' => 'Our Institution',
     'organization' => 'Organization',
     'deanchip' => 'Deans Office',
     'academics' => 'Academic',
@@ -19,7 +20,9 @@ return [
     'international' => 'International',
     'services' => 'Services',
     'input_search' => 'Search',
-    'postgrade' => 'Post-grade',
+    'postgrade' => 'Postgraduate',
     'secretariat' => 'General Secretariat',
     'pregrade' => 'Pregrade',
+    'rectorade' => 'Rectorade',
+    'vicerectorade' => 'Vicerectorade',
 ];

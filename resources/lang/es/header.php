@@ -2,7 +2,8 @@
 
 return [
     //Header Menu Nav Bar
-    'unimar' => 'Nuestra Institución',
+    'unimar' => 'UNIMAR',
+    'ourinstitut' => 'Nuestra Institución',
     'organization' => 'Organización',
     'deanchip' => 'Decanatos',
     'academics' => 'Académico',
@@ -19,4 +20,6 @@ return [
     'postgrade' => 'Postgrado',
     'secretariat' => 'Secretaría General',
     'pregrade' => 'Pregrado',
+    'rectorade' => 'Rectorado',
+    'vicerectorade' => 'Vicerrectorado',
 ];
