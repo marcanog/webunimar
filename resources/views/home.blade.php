@@ -99,7 +99,6 @@
                 <div class="card mx-3 mt-4 h-100">
                     <div class="row no-gutters">
                         <div class="col-md-4 text-white content-date">
-                            <!-- <p>{{ \Carbon\Carbon::parse(strtotime($event->start))->formatLocalized("%d %b")}}</p> -->
                             <p>23 Ene</p>
                         </div>
                         <div class="col-md-8">
