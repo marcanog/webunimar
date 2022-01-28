@@ -117,12 +117,10 @@
                 <div class="card mx-3 mt-4 h-100">
                     <div class="row no-gutters">
                         <div class="col-md-4 text-white content-date">
-                            <!-- <p>{{ \Carbon\Carbon::parse(strtotime($event->start))->formatLocalized("%d %b")}}</p> -->
                             <p>23 Ene</p>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <!-- <h5 class="card-title font-weight-bold text-left">{{($event->title)}}</h5> -->
                                 <h5 class="card-title font-weight-bold text-left">Evento 1</h5>
                                 <p class="card-text text-justify">Descripción Evento 1</p>
                                 <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
@@ -133,12 +131,10 @@
                 <div class="card mx-3 mt-4 h-100">
                     <div class="row no-gutters">
                         <div class="col-md-4 text-white content-date">
-                            <!-- <p>{{ \Carbon\Carbon::parse(strtotime($event->start))->formatLocalized("%d %b")}}</p> -->
                             <p>23 Ene</p>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <!-- <h5 class="card-title font-weight-bold text-left">{{($event->title)}}</h5> -->
                                 <h5 class="card-title font-weight-bold text-left">Evento 1</h5>
                                 <p class="card-text text-justify">Descripción Evento 1</p>
                                 <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
@@ -149,12 +145,10 @@
                 <div class="card mx-3 mt-4 h-100">
                     <div class="row no-gutters">
                         <div class="col-md-4 text-white content-date">
-                            <!-- <p>{{ \Carbon\Carbon::parse(strtotime($event->start))->formatLocalized("%d %b")}}</p> -->
                             <p>23 Ene</p>
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <!-- <h5 class="card-title font-weight-bold text-left">{{($event->title)}}</h5> -->
                                 <h5 class="card-title font-weight-bold text-left">Evento 1</h5>
                                 <p class="card-text text-justify">Descripción Evento 1</p>
                                 <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
