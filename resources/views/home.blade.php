@@ -103,7 +103,6 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <!-- <h5 class="card-title font-weight-bold text-left">{{($event->title)}}</h5> -->
                                 <h5 class="card-title font-weight-bold text-left">Evento 1</h5>
                                 <p class="card-text text-justify">Descripción Evento 1</p>
                                 <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
