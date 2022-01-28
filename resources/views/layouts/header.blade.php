@@ -66,53 +66,53 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Nuestra Institución
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            {{trans('header.ourinstitut')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                            <a class="dropdown-item" href="#">UNIMAR</a>
-                            <a class="dropdown-item" href="#">Organización</a>
+                            <a class="dropdown-item" href="{{url('/ourinstitution')}}">{{trans('header.unimar')}}</a>
+                            <a class="dropdown-item" href="{{url('/organization')}}">{{trans('header.organization')}}</a>
 {{--                            <div class="dropdown-divider"></div>--}}
-                            <a class="dropdown-item" href="#">Rectorado</a>
-                            <a class="dropdown-item" href="#">Normativas</a>
+                            <a class="dropdown-item" href="#">{{trans('header.rectorade')}}</a>
+                            <a class="dropdown-item" href="#">{{trans('home.h-regulations')}}</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Académico
+                            {{trans('header.academics')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <a class="dropdown-item" href="#">Vicerrectorado</a>
-                            <a class="dropdown-item" href="#">Decanatos</a>
+                            <a class="dropdown-item" href="{{url('/vacademic')}}">{{trans('header.vicerectorade')}}</a>
+                            <a class="dropdown-item" href="{{url('/deans')}}">{{trans('header.deanchip')}}</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Extensión
+                            {{trans('header.extent')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <a class="dropdown-item" href="#">Vicerrectorado</a>
+                            <a class="dropdown-item" href="{{url('/vextension')}}">{{trans('header.vicerectorade')}}</a>
 {{--                            <a class="dropdown-item" href="#">Decanatos</a>--}}
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Estudiantes
+                            {{trans('header.student')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <a class="dropdown-item" href="#">Nuevo Ingreso</a>
-                            <a class="dropdown-item" href="#">Regulares</a>
-                            <a class="dropdown-item" href="#">Egresados</a>
+                            <a class="dropdown-item" href="{{url('/newstudents')}}">{{trans('header.new_additions')}}</a>
+                            <a class="dropdown-item" href="{{url('/regstudents')}}">{{trans('header.regstudents')}}</a>
+                            <a class="dropdown-item" href="{{url('/alumni')}}">{{trans('header.graduates')}}</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Postgrado</a>
+                        <a class="nav-link" href="{{url('/postgrade')}}">{{trans('header.postgrade')}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Investigación</a>
+                        <a class="nav-link" href="{{url('/dptoinvest')}}">{{trans('header.investigation')}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
+                        <a class="nav-link" href="{{url('/services')}}">{{trans('header.services')}}</a>
                     </li>
                 </ul>
             </div>

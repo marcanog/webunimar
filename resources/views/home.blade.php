@@ -98,47 +98,19 @@
                 </div>
             </div>
             <div class="content-event">
-            <div class="content-date">
-                    <div class="date-news">
-                        <span>23 Jun</span>
+                <div class="card mx-3 mt-4 h-100">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 text-white content-date">
+                            <p>{{ \Carbon\Carbon::parse(strtotime($event->start))->formatLocalized("%d %b")}}</p>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold text-left">{{($event->title)}}</h5>
+                                <p class="card-text text-justify">T {{($event->description)}}</p>
+                                <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="title-news" id="card-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
-                    </div>
-                </div>
-                <div class="content-date">
-                    <div class="date-news">
-                        <span>23 Jun</span>
-                    </div>
-                    <div class="title-news" id="card-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
-                    </div>
-                </div>
-                <div class="content-date">
-                    <div class="date-news">
-                        <span>23 Jun</span>
-                    </div>
-                    <div class="title-news" id="card-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
-                    </div>
-                </div>
-                <div class="content-date">
-                    <div class="date-news">
-                        <span>23 Jun</span>
-                    </div>
-                    <div class="title-news" id="card-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
-                    </div>
-                </div>
-            </div>
-            <div class="section-content">
-                <div class="d-flex justify-content-start">
-                    <img id="img-section"
-                         src="{{URL::asset('image/graduate.png')}}"><span>{{trans('home.academics_areas')}}</span>
                 </div>
             </div>
             <div class="content-areas">
