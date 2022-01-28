@@ -68,7 +68,6 @@
                     </div>
                 </div>
                 <div class="card m-2" style="width: 18rem;height: 25rem;">
-                    {{--<img src="{{asset('image/unimar3.jpg')}}" class="card-img-top" alt="image-news">--}}
                     <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
@@ -79,7 +78,6 @@
                     </div>
                 </div>
                 <div class="card m-2" style="width: 18rem;height: 25rem;">
-                    {{--<img src="{{asset('image/unimar3.jpg')}}" class="card-img-top" alt="image-news">--}}
                     <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
