@@ -68,6 +68,7 @@
                     </div>
                 </div>
                 <div class="card m-2" style="width: 18rem;height: 25rem;">
+                    {{--<img src="{{asset('image/unimar3.jpg')}}" class="card-img-top" alt="image-news">--}}
                     <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
@@ -78,6 +79,7 @@
                     </div>
                 </div>
                 <div class="card m-2" style="width: 18rem;height: 25rem;">
+                    {{--<img src="{{asset('image/unimar3.jpg')}}" class="card-img-top" alt="image-news">--}}
                     <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h5>
@@ -97,18 +99,39 @@
             </div>
             <div class="content-event">
             <div class="content-date">
-                <div class="card mb-3" style="max-width: 540px;">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <!-- <img src="..." alt="..."> -->
-                            <span>23 Ene</span>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                        </div>
+                    <div class="date-news">
+                        <span>23 Jun</span>
+                    </div>
+                    <div class="title-news" id="card-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="content-date">
+                    <div class="date-news">
+                        <span>23 Jun</span>
+                    </div>
+                    <div class="title-news" id="card-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="content-date">
+                    <div class="date-news">
+                        <span>23 Jun</span>
+                    </div>
+                    <div class="title-news" id="card-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="content-date">
+                    <div class="date-news">
+                        <span>23 Jun</span>
+                    </div>
+                    <div class="title-news" id="card-content">
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        <a href="{{url('/eventsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
             </div>
