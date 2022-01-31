@@ -12064,7 +12064,7 @@ a:not([href]):not([tabindex]) {
         display: none;
     }
     #accordionmobile {
-        background-color: #336699;
+        background-color: #369;
         color: #fff;
         font-size: 0.75rem;
     }
@@ -12073,15 +12073,18 @@ a:not([href]):not([tabindex]) {
         flex-direction: column;
     }
 }
-
-@media (min-width: 1366px){
+@media (max-width:1024px){
+    #footerdesktop {
+        display: none;
+    }
+}
+@media (max-width: 1366px){
     #accordionmobile {
         display: none;
     }
 }
-
-@media (min-width:1024){
-    #footerdesktop {
+@media (max-width: 1920px){
+    #accordionmobile {
         display: none;
     }
 }
