@@ -11404,7 +11404,7 @@ form.form-inline {
 .justify-content-start {
     justify-content: flex-start !important;
     background-color: #6699CC;
-    width: 45%;
+    width: 25%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -12044,5 +12044,9 @@ a:not([href]):not([tabindex]) {
     }
 
 }
-
-
+/*Responsive*/
+@media (max-width: 600px){
+    .justify-content-start{
+        width: 45%;
+    }
+}
