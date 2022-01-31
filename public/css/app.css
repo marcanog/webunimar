@@ -12073,3 +12073,9 @@ a:not([href]):not([tabindex]) {
         flex-direction: column;
     }
 }
+
+@media (min-width:1024){
+    #footerdesktop {
+        display: none;
+    }
+}
