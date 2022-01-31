@@ -12045,7 +12045,7 @@ a:not([href]):not([tabindex]) {
 
 }
 /*Responsive*/
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
     .justify-content-start{
         width: 45%;
     }
@@ -12073,7 +12073,7 @@ a:not([href]):not([tabindex]) {
         flex-direction: column;
     }
 }
-@media (max-width: 768px){
+@media screen and (max-width: 768px){
     #footerdesktop {
         display: none;
     }
@@ -12082,7 +12082,7 @@ a:not([href]):not([tabindex]) {
     }
 }
 
-@media (max-width: 992px){
+@media screen and (max-width: 992px){
     #footerdesktop {
         display: none;
     }
@@ -12091,7 +12091,7 @@ a:not([href]):not([tabindex]) {
     }
 }
 
-@media (max-width:1024px){
+@media screen and (max-width:1024px){
     #footerdesktop {
         display: none;
     }
@@ -12099,7 +12099,7 @@ a:not([href]):not([tabindex]) {
         display: block;
     }
 }
-@media (max-width: 1366px){
+@media screen and (max-width: 1366px){
     #accordionmobile {
         display: none;
     }
@@ -12107,7 +12107,7 @@ a:not([href]):not([tabindex]) {
         display: flex;
     }
 }
-@media (max-width: 1920px){
+@media screen and (max-width: 1920px){
     #accordionmobile {
         display: none;
     }
