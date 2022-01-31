@@ -42,7 +42,7 @@
             </div>
             <div class="col-1">
                 @if (Route::has('login'))
-                    <div class="float-right small-text-left">
+                    <div class="float-right text-sm-left">
                         @auth
                             <a href="{{ url('/admin') }}">{{ auth()->user()->name }}</a>
                         @else
