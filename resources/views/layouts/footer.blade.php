@@ -195,13 +195,13 @@
         <div class="content-fluid">
             <div class="card-header" id="headingOne">
                 <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    <button class="btn btn-link btn-block text-white text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         {{trans('footer.f_organization')}}
                     </button>
                 </h2>
             </div>
 
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionmobile">
+            <div id="collapseOne" class="collapse text-white" aria-labelledby="headingOne" data-parent="#accordionmobile">
                 <div class="content">
                    <ul>
                        <li class="footer-item">
@@ -225,12 +225,12 @@
         <div class="content-fluid">
             <div class="card-header" id="headingTwo">
                 <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="btn btn-link btn-block text-white text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         {{trans('footer.f_study_offers')}}
                     </button>
                 </h2>
             </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionmobile">
+            <div id="collapseTwo" class="collapse text-white" aria-labelledby="headingTwo" data-parent="#accordionmobile">
                 <div class="content">
                     <ul>
                         <li class="footer-item">
@@ -260,12 +260,12 @@
         <div class="content-fluid">
             <div class="card-header" id="headingThree">
                 <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn btn-link btn-block text-white text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                         {{trans('footer.f_web_services')}}
                     </button>
                 </h2>
             </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionmobile">
+            <div id="collapseThree" class="collapse text-white" aria-labelledby="headingThree" data-parent="#accordionmobile">
                 <div class="content">
                     <ul>
                         <li class="footer-item">
@@ -296,12 +296,12 @@
         <div class="content-fluid">
             <div class="card-header" id="headingFour">
                 <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    <button class="btn btn-link btn-block text-white text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                         {{trans('footer.f_quick_links')}}
                     </button>
                 </h2>
             </div>
-            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionmobile">
+            <div id="collapseFour" class="collapse text-white" aria-labelledby="headingFour" data-parent="#accordionmobile">
                 <div class="content">
                     <ul>
                         <li class="footer-item">
@@ -330,5 +330,5 @@
         </div>
     </div>
 {{--        owl carousel js --}}
-        <script src="jquery.min.js"></script>
+{{--        <script src="jquery.min.js"></script>--}}
 <script src="{{ asset('owlcarousel/dist/owl.carousel.min.js') }}" defer></script>
