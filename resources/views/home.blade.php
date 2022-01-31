@@ -156,7 +156,7 @@
             <div class="section-content">
                 <div class="d-flex justify-content-start">
                     <img id="img-section"
-                         src="{{URL::asset('image/calendar.png')}}"><span>{{trans('home.events')}}</span>
+                         src="{{URL::asset('image/graduate.png')}}"><span>{{trans('home.academics_areas')}}</span>
                 </div>
             </div>
             <div class="content-areas">
