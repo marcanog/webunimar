@@ -12064,7 +12064,7 @@ a:not([href]):not([tabindex]) {
         display: none;
     }
     #accordionmobile {
-        background-color: #369;
+        background-color: #336699;
         color: #fff;
         font-size: 0.75rem;
     }
