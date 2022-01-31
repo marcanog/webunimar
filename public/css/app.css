@@ -12073,18 +12073,45 @@ a:not([href]):not([tabindex]) {
         flex-direction: column;
     }
 }
+@media (max-width: 768px){
+    #footerdesktop {
+        display: none;
+    }
+    #accordionmobile {
+        display: block;
+    }
+}
+
+@media (max-width: 992px){
+    #footerdesktop {
+        display: none;
+    }
+    #accordionmobile {
+        display: block;
+    }
+}
+
 @media (max-width:1024px){
     #footerdesktop {
         display: none;
+    }
+    #accordionmobile {
+        display: block;
     }
 }
 @media (max-width: 1366px){
     #accordionmobile {
         display: none;
     }
+    #footerdesktop {
+        display: flex;
+    }
 }
 @media (max-width: 1920px){
     #accordionmobile {
         display: none;
+    }
+    #footerdesktop {
+        display: flex;
     }
 }
