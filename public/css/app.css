@@ -12068,4 +12068,8 @@ a:not([href]):not([tabindex]) {
         color: #fff;
         font-size: 0.75rem;
     }
+    .card-header.infou {
+        display: flex;
+        flex-direction: column;
+    }
 }
