@@ -12049,4 +12049,12 @@ a:not([href]):not([tabindex]) {
     .justify-content-start{
         width: 45%;
     }
+    .content-date {
+        background-color: #336699;
+        border-radius: 5px;
+    }
+    .col-md-4.text-white.content-date > p {
+        position: relative;
+        top: 8px;
+    }
 }
