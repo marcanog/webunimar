@@ -12074,6 +12074,12 @@ a:not([href]):not([tabindex]) {
     }
 }
 
+@media (min-width: 1366px){
+    #accordionmobile {
+        display: none;
+    }
+}
+
 @media (min-width:1024){
     #footerdesktop {
         display: none;
