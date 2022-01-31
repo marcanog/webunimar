@@ -12057,4 +12057,7 @@ a:not([href]):not([tabindex]) {
         position: relative;
         top: 8px;
     }
+    iframe {
+        width: 330px;
+    }
 }
