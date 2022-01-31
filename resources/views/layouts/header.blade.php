@@ -44,7 +44,7 @@
                 @if (Route::has('login'))
                     <div class="float-right text-sm-left">
                         @auth
-                            <a href="{{ url('/admin') }}">{{ auth()->user()->name }}</a>
+                            <a class="loginuser" href="{{ url('/admin') }}">{{ auth()->user()->name }}</a>
                         @else
                             <a href="{{ route('login') }}">
                                 <img src="{{URL::asset('./image/login.png')}}" style="width: 25px;">

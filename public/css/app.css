@@ -12045,9 +12045,19 @@ a:not([href]):not([tabindex]) {
 
 }
 /*Responsive*/
+/*Responsive*/
+@media only screen and (min-width: 600px){
+    .loginuser {
+        font-size: 0.45rem;
+    }
+}
+
 @media only screen and (max-width: 600px){
-    .justify-content-start{
-        width: 45%;
+    .logo{
+        width: 14rem;
+    }
+    .loginuser {
+        font-size: 0.45rem;
     }
     .content-date {
         background-color: #336699;
@@ -12072,7 +12082,60 @@ a:not([href]):not([tabindex]) {
         display: flex;
         flex-direction: column;
     }
+    .links-interest {
+        display: flex;
+        width: 30%;
+        border-radius: 20px;
+        border: 1px solid #c1c1c1;
+    }
+    .justify-content-start {
+        width: 60%;
+    }
+    .d-flex.justify-content-start > span {
+        position: relative;
+        top: 0.8rem;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 0.75em;
+        width: 60% !important;
+        text-align: left;
+        word-break: break-word;
+        left: 0;
+    }
+    .links-interest > a > span {
+        display: flex;
+        flex: 0 0 25%;
+        margin: 1em;
+        font-size: 0.65em;
+        justify-content: center;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .links-interest > a > img {
+        width: 60%;
+        padding: 0.5em;
+        margin: 0 auto;
+    }
+    .content-deanship {
+        width: 30%;
+    }
+    .content-deanship > a > span {
+        display: inline-flex;
+        flex: 0 0 25%;
+        margin: 0.5em;
+        font-size: 0.65em;
+        justify-content: center;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .location-content {
+        flex-direction: column;
+    }
+    .map-direction {
+        width: 100%;
+    }
 }
+
 @media only screen and (min-width: 768px){
     #footerdesktop {
         display: none;
