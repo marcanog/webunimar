@@ -153,6 +153,12 @@
                     </div>
                 </div>
             </div>
+            <div class="section-content">
+                <div class="d-flex justify-content-start">
+                    <img id="img-section"
+                         src="{{URL::asset('image/calendar.png')}}"><span>{{trans('home.events')}}</span>
+                </div>
+            </div>
             <div class="content-areas">
                 <div class="content-deanship" style="background-color: #BFBABB">
                     <a href="{{URL('/humarte')}}">
