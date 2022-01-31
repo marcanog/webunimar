@@ -319,7 +319,7 @@
         </div>
         <div class="content-fluid">
             <div class="card-header infou">
-                <img src={{URL::asset('./image/logo-blanco.png')}}>
+                <!-- <img src={{URL::asset('./image/logo-blanco.png')}}> -->
                 <span>{{trans('footer.f_location')}}</span>
             </div>
         </div>
