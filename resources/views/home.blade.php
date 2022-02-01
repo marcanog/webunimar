@@ -153,12 +153,14 @@
                     </div>
                 </div>
             </div>
+           
             <div class="section-content">
                 <div class="d-flex justify-content-start">
                     <img id="img-section"
-                         src="{{URL::asset('image/graduate.png')}}"><span>{{trans('home.academics_areas')}}</span>
+                        src="{{URL::asset('image/graduate.png')}}"><span>{{trans('home.academics_areas')}}</span>
                 </div>
             </div>
+            {{--Contents deans--}}
             <div class="content-areas">
                 <div class="content-deanship" style="background-color: #BFBABB">
                     <a href="{{URL('/humarte')}}">
@@ -179,6 +181,7 @@
                         <span>{{trans('home.ingsyst')}}</span></a>
                 </div>
             </div>
+
             <div class="content-areas">
                 <div class="content-deanship" style="background-color: #00A8E2">
                     <a href="{{URL('/genestud')}}"><img src="{{URL::asset('image/deans/estgenerals.png')}}">
@@ -193,17 +196,18 @@
                         <span>{{trans('home.posteinvg')}}</span></a>
                 </div>
                 <div class="content-deanship" style="background-color: #f6A016">
-                    <a href="{{url('/agreements')}}"><img src="{{URL::asset('image/deans/agreements.png')}}">
+                    <a href="#"><img src="{{URL::asset('image/deans/agreements.png')}}">
                         <span>{{trans('home.acadconvens')}}</span></a>
                 </div>
             </div>
+
             <div class="section-content">
                 <div class="d-flex justify-content-start">
                     <img id="img-section"
-                         src="{{URL::asset('image/conection.png')}}">
-                    <span>{{trans('home.links_interest')}}</span>
+                        src="{{URL::asset('image/conection.png')}}"><span>{{trans('home.links_interest')}}</span>
                 </div>
             </div>
+
             <div class="content-links">
                 <div class="links-interest" style="background-color: #336699">
                     <a href="{{url('/offerstudy')}}"><img src="{{URL::asset('image/studying.png')}}">
@@ -222,6 +226,7 @@
                         <span>{{trans('home.cientific_unimar')}}</span></a>
                 </div>
             </div>
+
             <div class="content-links">
                 <div class="links-interest" style="background-color: #336699">
                     <a href="{{URL('/regulations')}}"><img src="{{URL::asset('image/procedure.svg')}}">
@@ -240,12 +245,14 @@
                         <span>{{trans('home.sicologyc-healthy')}}</span></a>
                 </div>
             </div><!-- end content-links-->
+
             <div class="section-content">
                 <div class="d-flex justify-content-start">
                     <img id="img-section"
-                         src="{{URL::asset('image/map.png')}}"><span>{{trans('home.location')}}</span>
+                        src="{{URL::asset('image/map.png')}}"><span>{{trans('home.location')}}</span>
                 </div>
             </div>
+            {{--location unimar--}}
             <div class="location-content">
                 <div class="map-location">
                     <iframe
@@ -261,6 +268,5 @@
                     <p>{{trans('home.location-mail')}}</p>
                 </div>
             </div>
-        </div>
-    </div>
+</div>{{--end content--}}
 @endsection
