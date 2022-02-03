@@ -51,12 +51,9 @@ class LoginController extends Controller
 
     public function logout()
     {
-        //logout user
-        // auth()->logout();
-        // redirect to homepage
+
         $this->guard()->logout();
 
         return redirect('admin/home');
-    }
 
 }
