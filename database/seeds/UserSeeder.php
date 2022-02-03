@@ -49,7 +49,7 @@ class UserSeeder extends Seeder
         DB::table('users')->insert([
             'created_at' => Carbon::now()->toDateTimeString(),
             'updated_at' => Carbon::now()->toDateTimeString(),
-            'name' => 'Georgelys Marcano',
+            'name' => 'Silvestre Cardenas',
             'email' => 'scardenas@unimar.edu.ve',
             'birth'=> '1992-03-15',
             'phone' => '04127957268',
