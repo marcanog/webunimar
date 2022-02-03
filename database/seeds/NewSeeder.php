@@ -43,5 +43,15 @@ class NewSeeder extends Seeder
             'image' => 'new.png',
             'status_id' => '1',
         ]);
+        DB::table('news')->insert([
+            'created_at' => Carbon::now()->toDateTimeString(),
+            'updated_at' => Carbon::now()->toDateTimeString(),
+            'title' => 'Aviso a la comunidad estudiantil sobre Valor de la Moneda a partir del miércoles 24 de noviembre de 2021',
+            'content' => '<p>Se informa a la comunidad estudiantil que el Valor de la Moneda a partir del día miércoles 24 de noviembre de 2021 es igual a: <strong>4,60bs</strong></p>',
+            'resume' => '<p>Valor de la Moneda a partir de <i>24/11/2021</i></p>',
+            'tags_id' => '1,2,3,4',
+            'image' => 'new.png',
+            'status_id' => '1',
+        ]);
     }
 }
