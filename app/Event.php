@@ -3,11 +3,14 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use DateTime;
+use DatePeriod;
+use DateInterval;
 
 class Event extends Model
 {
     protected $fillable = [
-        'title' , 'description' , 'color' , 'start' , 'end' , 'status_id'
+        'title' , 'description' , 'color' , 'start' , 'end' , 'tags_id' , 'status_id'
     ];
     //Format the datetime sent, so it is compatible with fullcalendar's template
     public static function formatDateTime($date){

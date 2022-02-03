@@ -22,7 +22,7 @@ class CreateEventsTable extends Migration
             $table->char('color', 20);
             $table->char('start', 255)->nullable();
             $table->char('end', 255)->nullable();
-//            $table->foreignId('tag_id')->references('id')->on('tags');
+            $table->char('tags_id',255);
             $table->foreignId('status_id')->references('id')->on('status');
         });
     }

@@ -41,10 +41,17 @@ class UsersController extends Controller
     public function create(Request $request){}
 
     public function show (Request $request){
-        $user = Auth::user();
-//        print_r($user);
-//        die();
-        return view ('/admin/profile')->with('user', $user);
+        return view ('/admin/profile')->with('user', Auth::user());
+    }
+
+    public function updateProfile(Request $request){
+        $request->validate([
+            'phone' => 'required|min:11|max:15',
+        ]);
+        User::find(Auth::user()->id)->update([
+            'phone' => $request->phone,
+        ]);
+        return back()->with('Listo', 'Se ha actualizado el registro correctamente');
     }
 
     public function update (Request $request){

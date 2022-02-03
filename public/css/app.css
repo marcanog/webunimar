@@ -11459,7 +11459,7 @@ form.form-inline {
 .content-event {
     display: flex;
     justify-content: center;
-    /* width:  calc(60% - 8em); */
+    width:  calc(60% - 8em);
     margin: 0 auto;
     height: auto;
 }
