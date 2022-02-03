@@ -1,7 +1,7 @@
 <div class="top-bar">
     <div class="container-fluid mt-2">
         <div class="row">
-            <div class="col-11">
+            <div class="col-10">
                 <div class="float-right dropdown show">
                     <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                        aria-haspopup="true" aria-expanded="false">
@@ -40,15 +40,14 @@
                     </a>
                 </div>
             </div>
-            <div class="col-1">
+            <div class="col-2">
                 @if (Route::has('login'))
-                    <div class="float-right text-sm-left">
+                    <div class="float-right text-sm-left text-truncate">
                         @auth
                             <a class="loginuser" href="{{ url('/admin') }}">{{ auth()->user()->name }}</a>
                         @else
                             <a href="{{ route('login') }}">
                                 <img src="{{URL::asset('./image/login.png')}}" style="width: 25px;">
-                            {{--                                <span>{{trans('header.login')}}</span></a>--}}
                         @endauth
                     </div>
                 @endif
@@ -57,7 +56,7 @@
     </div>
     <nav class="navbar navbar-expand-md navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="{{url('/home')}}">
                 <img class="logo horizontal-logo" src="{{asset('image/logo-web-02.png')}}" alt="UNIMAR logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,7 +71,6 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                             <a class="dropdown-item" href="{{url('/ourinstitution')}}">{{trans('header.unimar')}}</a>
                             <a class="dropdown-item" href="{{url('/organization')}}">{{trans('header.organization')}}</a>
-{{--                            <div class="dropdown-divider"></div>--}}
                             <a class="dropdown-item" href="#">{{trans('header.rectorade')}}</a>
                             <a class="dropdown-item" href="#">{{trans('home.h-regulations')}}</a>
                         </div>

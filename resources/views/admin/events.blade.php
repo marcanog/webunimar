@@ -37,6 +37,7 @@
           <input type="hidden" class="form-control" id="idDelete" name='idDelete' value="{{ old('idDelete') }}" required autocomplete="idDelete">
           <div id="eventTitle"></div>
           <div id="eventDescription"></div>
+          <div id="eventTags"></div>
           <div id="eventStart"></div>
           <div id="eventEnd"></div>
           <div class="modal-footer">
@@ -84,6 +85,7 @@
             <div class="row">
               <input id="new-event" type="text" class="form-control" placeholder="Título del Evento"><br>
               <input id="new-event-desc" type="text" class="form-control" placeholder="Descripción del evento">
+              <input type="text" id="new-event-tags" name="tags" value="" data-role="tagsinput"/>
             </div>
           </div>
           <button id="add-new-event" type="button" class="btn btn-primary">Agregar</button>

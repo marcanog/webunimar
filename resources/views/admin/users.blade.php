@@ -4,9 +4,8 @@
     <!-- Page heading -->
     <div class="d-sm-flex align-items-center justify-content-between shadow-4 mb-2">
         <h1 class="h3 mb-0 text-gray-dark">Usuarios</h1>
-        <a href="#" class="d-none d-xl-inline-block btn btn-sm btn-navbar shadow-sm navbar-blue-u open-modal"
-           data-toggle="modal" data-target="#UserAddModal" data-open="UserAddModal">
-            <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Usuario</a>
+        <a href="#" class="d-none d-xl-inline-block btn btn-sm btn-navbar shadow-sm navbar-blue-u open-modal" data-toggle="modal" data-target="#UserAddModal" data-open="UserAddModal">
+        <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Usuario</a>
     </div>
 
     <!-- Success message for registry -->
@@ -16,26 +15,26 @@
     <div class="table-responsive-xl">
         <table class="table table-hover col-lg-12 text-center">
             <thead class="thead-blue">
-            <tr>
-                @if(Auth::guest())
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Fecha de nacimiento</th>
-                    <th scope="col">Teléfono</th>
-                    <th scope="col">Role</th>
-                    <th scope="col">Status</th>
-                @else
-                    <th scope="col">Id</th>
-                    <th scope="col">Nombre</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Fecha de nacimiento</th>
-                    <th scope="col">Teléfono</th>
-                    <th scope="col">Role</th>
-                    <th scope="col">Status</th>
-                    <th scope="col">Operaciones</th>
-                @endif
+                <tr>
+                    @if(Auth::guest())
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Fecha de nacimiento</th>
+                        <th scope="col">Teléfono</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Status</th>
+                    @else
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Fecha de nacimiento</th>
+                        <th scope="col">Teléfono</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Operaciones</th>
+                    @endif
 
-            </tr>
+                </tr>
             </thead>
             <tbody>
             @foreach($users as $user)
@@ -73,46 +72,20 @@
                         {{$curr_status->name}}
                         @break
                         @endif
-                        @endforeach"
-                        >
-                            @foreach($status as $curr_status)
-                                @if($user->status_id == $curr_status->id)
-                                    {{$curr_status->name}}
-                                    @break
-                                @endif
-                            @endforeach
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-warning open-modal btnedit" data-open="UserUpdModal"
-                                    data-toggle="modal" data-placement="top" title="Editar"
-                                    data-id="{{ $user->id }}"
-                                    data-name="{{ $user->name }}"
-                                    data-email="{{ $user->email }}"
-                                    data-password="{{ $user->password }}"
-                                    data-birth="{{ $user->birth }}"
-                                    data-phone="{{ $user->phone }}"
-                                    data-role="{{ $user->role_id}}"
-                                    data-status="{{ $user->status_id }}"
-                                    data-target="#UserUpdModal">
-                                <i class="fas fa-edit"></i>
-                            </button>
-                        </td>
-                    @endif
-                </tr>
-            @endforeach
+                    </tr>
+                @endforeach
             </tbody>
         </table>
     </div>
 
     <!-- Modal add user -->
-    <div class="modal fade" id="UserAddModal" tabindex="-1" role="dialog" aria-labelledby="UserAddModal"
-         aria-hidden="true">
+    <div class="modal fade" id="UserAddModal" tabindex="-1" role="dialog" aria-labelledby="UserAddModal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="ModalAddUser">Agregar Usuarios</h5>
                     <button type="button" class="close" data-dismiss="modal" data-toggle="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <form action="/admin/users" method="POST">
@@ -121,48 +94,37 @@
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">Nombre: </label>
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}"
-                                       required minlength="10" autocomplete="name" autofocus>
+                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}" required minlength="10" autocomplete="name" autofocus>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">Correo
-                                Electrónico: </label>
+                            <label for="email" class="col-md-4 col-form-label text-md-right">Correo Electrónico: </label>
                             <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email"
-                                       value="{{ old('email') }}" required autocomplete="email">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autocomplete="email">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="birth" class="col-md-4 col-form-label text-md-right">Fecha de
-                                nacimiento: </label>
+                            <label for="birth" class="col-md-4 col-form-label text-md-right">Fecha de nacimiento: </label>
                             <div class="col-md-6">
-                                <input id="birth" type="date" class="form-control" name="birth"
-                                       value="{{ old('birth') }}" autocomplete="birth" autofocus required>
+                                <input id="birth" type="date" class="form-control" name="birth" value="{{ old('birth') }}" autocomplete="birth" autofocus required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="phone" class="col-md-4 col-form-label text-md-right">Teléfono: </label>
                             <div class="col-md-6">
-                                <input id="phone" type="text" class="form-control" name="phone"
-                                       value="{{ old('phone') }}" minlength="11" maxlength="15" autocomplete="phone"
-                                       autofocus required>
+                                <input id="phone" type="text" class="form-control" name="phone" value="{{ old('phone') }}" minlength="11" maxlength="15" autocomplete="phone" autofocus required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">Contraseña: </label>
                             <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required
-                                       minlength="8" autocomplete="password">
+                                <input id="password" type="password" class="form-control" name="password" required minlength="8" autocomplete="password">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="password_confirmation" class="col-md-4 col-form-label text-md-right">Confirmar
-                                Password: </label>
+                            <label for="password_confirmation" class="col-md-4 col-form-label text-md-right">Confirmar Password: </label>
                             <div class="col-md-6">
-                                <input id="password_confirmation" type="password" class="form-control"
-                                       name="password_confirmation" required minlength="8"
-                                       autocomplete="password_confirmation">
+                                <input id="password_confirmation" type="password" class="form-control" name="password_confirmation" required minlength="8" autocomplete="password_confirmation">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -196,38 +158,33 @@
     </div>
 
     <!-- Modal update user -->
-    <div class="modal fade" id="UserUpdModal" tabindex="-1" role="dialog" aria-labelledby="UserUpdModal"
-         aria-hidden="true">
+    <div class="modal fade" id="UserUpdModal" tabindex="-1" role="dialog" aria-labelledby="UserUpdModal" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="ModalUpdUser">Actualizar Usuarios</h5>
                     <button type="button" class="close" data-dismiss="modal" data-toggle="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form action="{{URL('/admin/users/update')}}" method="POST">
+                <form action="/admin/users/update" method="POST">
                     @csrf
                     <div class="modal-body">
                         <input type="hidden" class="form-control" id="idedit" placeholder="" name='idedit' required>
                         <div class="form-group row">
                             <label for="nameedit" class="col-md-4 col-form-label text-md-right">Nombre: </label>
                             <div class="col-md-6">
-                                <input type="text" class="form-control" id="nameedit" placeholder="" name='name'
-                                       required minlength="10">
+                                <input type="text" class="form-control" id="nameedit" placeholder="" name='name' required minlength="10">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="emailedit" class="col-md-4 col-form-label text-md-right">Correo
-                                Electrónico: </label>
+                            <label for="emailedit" class="col-md-4 col-form-label text-md-right">Correo Electrónico: </label>
                             <div class="col-md-6">
-                                <input type="email" class="form-control" id="emailedit" placeholder="" name='email'
-                                       required>
+                                <input type="email" class="form-control" id="emailedit" placeholder="" name='email' required>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="birth" class="col-md-4 col-form-label text-md-right">Fecha de
-                                nacimiento: </label>
+                            <label for="birth" class="col-md-4 col-form-label text-md-right">Fecha de nacimiento: </label>
                             <div class="col-md-6">
                                 <input id="birthedit" type="date" class="form-control" name="birth" required>
                             </div>
@@ -235,8 +192,7 @@
                         <div class="form-group row">
                             <label for="phone" class="col-md-4 col-form-label text-md-right">Teléfono: </label>
                             <div class="col-md-6">
-                                <input id="phoneedit" type="text" class="form-control" name="phone" minlength="11"
-                                       maxlength="15" required>
+                                <input id="phoneedit" type="text" class="form-control" name="phone" minlength="11" maxlength="15" required>
                             </div>
                         </div>
                         <div class="form-group row">
@@ -272,8 +228,8 @@
     <!-- Local scripts -->
     <script>
         //Fill forms
-        document.addEventListener('DOMContentLoaded', function () {
-            $('.btnedit').click(function () {
+        document.addEventListener('DOMContentLoaded',function(){
+            $('.btnedit').click(function(){
                 $('#idedit').val($(this).attr('data-id'));
                 $('#nameedit').val($(this).attr('data-name'));
                 $('#emailedit').val($(this).attr('data-email'));

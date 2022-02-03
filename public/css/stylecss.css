@@ -1,5 +1,8 @@
+.navbar-dark .navbar-toggler-icon, .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(13, 77, 152, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
 
-.flex-content.position-ref.full-height {
+#headerunimar {
     display: flex;
     justify-content: space-around;
     height: auto;
@@ -11,13 +14,12 @@
 }
 #header-menu {
     font-size: 0.95rem;
+    margin: 0 1.5em;
 }
 #btnsearch {
     border-color: transparent;
 }
-nav.navbar.navbar-light {
-    flex: 0 0 30%;
-}
+
 form.form-inline {
     position: relative;
     top: 0.75rem;
@@ -27,27 +29,385 @@ form.form-inline {
     font-size: 0.85em;
 }
 /*Deanship content*/
-.content-deanship {
-    width: 18%;
-}
+/*.content-deanship {*/
+/*    width: 18%;*/
+/*}*/
 /*Link of interest*/
-.links-interest {
-    width: 18%;
-}
+/*.links-interest {*/
+/*    width: 18%;*/
+/*}*/
 /*location content*/
 .map-direction > p {
     font-size: 0.85rem;
 }
+
+/*-------------------------------------------------------------------------------------*/
 /* Responsive */
-@media screen and (min-width:1200px){
-    nav.navbar.navbar-light {
-        display: block ruby;
+/*@media (min-width: 1360px){
+    #headermobile{
+        display: none;
     }
-    #header-menu {
-        font-size: 0.83rem;
+    #headerunimar{
+        display: flex;
     }
-    .img-logo {
-        width: 300px;
+    #areasdesktop {
+        display: flex !important;
+    }
+    #areasmobile{
+        display: none !important;
     }
 }
+!* Extra large devices (large desktops, 1200px and up)*!
+@media (min-width: 1200px){
+    #headermobile{
+        display: none;
+    }
+    #headerunimar{
+        display: flex;
+    }
+    #areasdesktop {
+        display: flex !important;
+    }
+    #areasmobile{
+        display: none !important;
+    }
+}
+!*Large devices (desktops, 992px and up)*!
+@media (max-width: 992px){
+    #headermobile{
+        display: none;
+    }
+    .navbar-brand {
+        flex: 0 0 75%;
+    }
+    .navbar-brand {
+        height: 50px;
+    }
+    nav.navbar.navbar-light {
+        background-color: #FFFFFF;
+        margin: auto;
+        display: none;
+    }
+    .navbar.language-icon {
+        flex: 0 0 15%;
+    }
+    .img-logo {
+        width: 100%;
+        margin: 0;
+        top: -10px;
+        position: relative;
+    }
+    .logo {
+        justify-content: space-between;
+        margin: 0;
+        flex: 0 0 20%;
+    }
+    #header-menu {
+        font-size: 0.65rem;
+        margin: 0 1.5em;
+    }
+    #headerunimar{
+        display: inline-flex;
+    }
+    .card-columns {
+        column-count: 4;
+    }
+    .card-subtitle, .card-text:last-child {
+        margin-bottom: 1em !important;
+    }
+    nav.navbar.navbar-light{
+        background-color: #FFFFFF;
+        margin: auto;
+    }
+    .d-flex.mt-4.mx-2#areasmobile {
+        display: none !important;
+    }
+    .justify-content-start {
+        width: 40%;
+    }
+    iframe {
+        border: 0;
+        width: 350px;
+    }
+    .footer-item {
+        font-size: 0.65rem;
+    }
+    .info-university > span {
+        font-size: 0.65rem;
+    }
+    li a.footer-title{
+        font-size: 0.65rem;
+    }
+}
+!*Medium devices (tablets, 768px and up)*!
+@media (max-width: 768px){
+    #headerunimar{
+        display: inline-flex;
+    }
+    #headermobile {
+        display: none;
+    }
+    .img-logo {
+        width: 100%;
+        margin: 0;
+        top: -45px;
+        position: relative;
+    }
+    nav.navbar.navbar-light{
+        background-color: #FFFFFF;
+        margin: auto;
+    }
+    .card-columns {
+        column-count: 3;
+    }
+    .navbar-brand img {
+        width: 70%;
+    }
+    .navbar-brand {
+        flex: 0 0 75%;
+    }
+    .nav-item > #header-menu {
+        font-size: 0.8em;
+    }
+    .nav-item > #header-menu:hover {
+        background-color: #fff;
+        color: #0d4d98;
+    }
+    .d-flex.justify-content-start > span{
+        font-size: 0.85em;
+        top: 1.5rem;
+    }
+    .content-links{
+        margin: 0;
+    }
+    .links-interest {
+        width: 45%;
+        margin: 4px;
+    }
+    .links-interest > a > img {
+        width: 70%;
+    }
+    .links-interest > a > span {
+        font-size: 0.75em;
+        margin-bottom: 5px;
+    }
+    .content-deanship{
+        width: 23%;
+    }
+    .card-columns {
+        column-count: 2;
+    }
+    .location-content{
+        flex-direction: column;
+    }
+    #footerdesktop{
+        display: none;
+    }
+    #areasmobile{
+        display: flex;
+    }
+    .location-content {
+        flex-direction: row;
+    }
+    .map-location {
+        display: flex;
+        margin: 0;
+        width: 50%;
+    }
+    .map-direction {
+        display: flex;
+        width: 50%;
+    }
+    #accordionmobile{
+        display: block;
+    }
+    #accordionmobile .btn.btn-link.btn-block.text-left.collapsed {
+        text-decoration-line: none;
+        color: #fff;
+    }
+    #accordionmobile .content-fluid {
+        background-color: #336699;
+        color: #fff;
+        font-size: 0.65rem;
+    }
+    .btn.btn-link.btn-block.text-left {
+        color: #fff;
+    }
+    .flex.align-items-center.space-x-3 {
+        width: 90%;
+        position: relative;
+        top: 1em;
+    }
+    .infou{
+        display: flex;
+        margin: 0 auto;
+    }
+    .infou img{
+        width: 50%;
+    }
+    .infou span{
+        margin: 10px 5px;
+        text-align: center;
+    }
+    .content ul {
+        margin-bottom: 0;
+    }
+    .card-header.infou {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .navbar.language-icon {
+        flex: 0 0 30%;
+    }
+}
+!*Small devices (landscape phones, 576px and up)*!
+@media (max-width: 600px){
+    #headermobile{
+        display: flex;
+    }
+    #headerunimar{
+        display: none;
+    }
+    .navbar-brand img {
+        width: 40%;
+    }
+    .navbar-brand {
+        flex: 0 0 75%;
+    }
+    .nav-item > #header-menu {
+        font-size: 0.8em;
+    }
+    .nav-item > #header-menu:hover:focus {
+        background-color: #004a98;
+        color: #fff;
+    }
+    .nav-item > #header-menu:hover {
+        background-color: #004a98;
+        color: #fff;
+    }
+    .justify-content-start {
+        width: 75%;
+    }
+    .d-flex.justify-content-start > span{
+        font-size: 0.85em;
+        top: 1.5rem;
+    }
+    !*.card-content.m-2 {*!
+    !*    display: flex;*!
+    !*}*!
+    !*.content-event {*!
+    !*    width: calc(60% - -5em);*!
+    !*}*!
+    .date-news{
+        width: 80px;
+    }
+    .section-content {
+        margin: 15px auto;
+    }
+    .content-date {
+        !* background-color: #336699; *!
+        !* border-top-left-radius: 15px; *!
+        !* border-bottom-left-radius: 15px; *!
+        border-radius: 0;
+        background-color: transparent;
+    }
+    .content-date p {
+        display: block;
+        top: 2px;
+        color: #000;
+        text-align: center;
+        font-weight: bolder;
+    }
+    !*.content-areas, .content-links{*!
+    !*    display: none;*!
+    !*}*!
+    #areasdesktop {
+        display: none !important;
+    }
+    .d-flex.mt-4.mx-2#areasmobile {
+        display: flex !important;
+    }
+    .content-links{
+        margin: 0;
+    }
+    .links-interest {
+        width: 45%;
+        margin: 2px;
+    }
+    .links-interest > a > img{
+        width: 100%;
+    }
+    .links-interest > a > span{
+        font-size: 0.65em;
+        margin: 0 auto;
+    }
+    .card-columns {
+        column-count: 2;
+    }
+    !*.content-deanship {*!
+    !*    width: 25%;*!
+    !*    margin: 2px;*!
+    !*    font-size: 0.65em;*!
+    !*}*!
+    !*.content-deanship > a > img{*!
+    !*    display: none;*!
+    !*}*!
+    !*.content-deanship > a > span{*!
+    !*    padding: 10px;*!
+    !*    text-align: center;*!
+    !*}*!
+    .location-content{
+        flex-direction: column;
+    }
+    iframe {
+        width: 400px;
+        height: 200px;
+        display: flex;
+    }
+    .map-direction{
+        width: auto;
+    }
+    .map-location{
+        margin: 0;
+    }
+    #footerdesktop{
+        display: none;
+    }
+    #accordionmobile{
+        display: block;
+    }
+    #accordionmobile .btn.btn-link.btn-block.text-left.collapsed {
+        text-decoration-line: none;
+        color: #fff;
+    }
+    #accordionmobile .content-fluid {
+        background-color: #336699;
+        color: #fff;
+        font-size: 0.65rem;
+    }
+    .btn.btn-link.btn-block.text-left {
+        color: #fff;
+    }
+    .flex.align-items-center.space-x-3 {
+        width: 90%;
+        position: relative;
+        top: 1em;
+    }
+    .infou{
+        display: flex;
+        margin: 0 auto;
+    }
+    .infou img{
+        width: 50%;
+    }
+    .infou span{
+        margin: 10px 5px;
+        text-align: center;
+    }
+    .content ul {
+        margin-bottom: 0;
+    }
+}*/
+
 

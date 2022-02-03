@@ -3,12 +3,9 @@
 @section ('admincontent')
     <div class="h3 mb-0 text-gray-dark"><h3>Perfil del usuario</h3></div>
     <div class="flex-content justify-content-lg-around flex-fill">
-{{--        <div class="card shadow mb-4">--}}
-{{--            <img src="/image/user.png" class="card-img-top" id="card-profeusr" alt="user image" style="15rem">--}}
-{{--            <div class="card-body">--}}
-{{--                <p class="card-text">{{'Nombre:'}}</p>--}}
-{{--                --}}
-{{--            </div>--}}
+        <!-- Success message for registry -->
+        @include('layouts.registryStatus')
+
         <div class="row">
             <div class="col-xl-4">
                 <!-- Profile picture card-->
@@ -29,7 +26,8 @@
                 <div class="card mb-4">
                     <div class="card-header">Detalles de cuenta</div>
                     <div class="card-body">
-                        <form>
+                        <form action="/admin/updateProfile" method="GET">
+                            @csrf
                             <!-- Form Row-->
                             <div class="row gx-3 mb-3">
                                 <!-- Form Group (first name)-->
@@ -61,7 +59,7 @@
                                 <!-- Form Group (phone number)-->
                                 <div class="col-md-6">
                                     <label class="small mb-1" for="inputPhone">Número de teléfono</label>
-                                    <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" value="{{($user->phone)}}">
+                                    <input class="form-control" id="inputPhone" type="tel" placeholder="Enter your phone number" name="phone" value="{{($user->phone)}}">
                                 </div>
                                 <!-- Form Group (birthday)-->
                                 <div class="col-md-6">
@@ -70,23 +68,11 @@
                                 </div>
                             </div>
                             <!-- Save changes button-->
-                            <button class="btn btn-primary" type="button">Guardar</button>
+                            <button class="btn btn-primary" type="Submit">Guardar</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-{{--        </div>--}}
-{{--        <div class="card shadow mb-4">--}}
-{{--            <div class="card-header py-3">--}}
-{{--                <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>--}}
-{{--            </div>--}}
-{{--            <div class="card-body">--}}
-{{--                The styling for this basic card example is created by using default Bootstrap--}}
-{{--                utility classes. By using utility classes, the style of the card component can be--}}
-{{--                easily modified with no need for any custom CSS!--}}
-{{--            </div>--}}
-
-{{--        </div>--}}
     </div>
 @endsection

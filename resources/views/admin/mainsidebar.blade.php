@@ -40,13 +40,13 @@
                 @auth
                     @if( auth()->user()->role_id == '2')
                         <ul class="nav list-unstyled ps-0">
-                            <li class="nav-item">
-                                <a href="{{url('/admin/users')}}" class="nav-link " id="btn-nav">
+                            <a href="{{url('/admin/users')}}" class="nav-link " id="btn-nav">
+                                <li class="nav-item">
                                     <i class="fas fa-users nav-icon grape" id="navicon"></i>
                                     <p> Usuarios </p>
-                                </a>
                                 <!-- agregar condicion en js para cambiar de color el icono cuando se haga hover en el item -->
-                            </li>
+                                </li>
+                            </a>
                             @endif
                             @if((auth()->user()->role_id=='4') or (auth()->user()->role_id=='2'))
                                 <li class="nav-item has-treeview" data-bs-toggle="collapse"
@@ -61,30 +61,30 @@
                                 </li>
                                 <div class="collapse" id="collapseExample">
                                     <ul class="nav-item list-unstyled ps-0" id="sidebar">
-                                        <li class="nav-item">
-                                            <a href="{{url('/admin/student/record')}}" class="nav-link" id="btn-nav">
+                                        <a href="{{url('/admin/student/record')}}" class="nav-link" id="btn-nav">
+                                            <li class="nav-item">
                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                 <p>Notas</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                            </li>
+                                        </a>
+                                        <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                            <li class="nav-item">
                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                 <p>Horarios</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                            </li>
+                                        </a>
+                                        <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                            <li class="nav-item">
                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                 <p>Materias Cursadas</p>
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                            </li>
+                                        </a>
+                                        <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                            <li class="nav-item">
                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                 <p>Citas de Inscripción</p>
-                                            </a>
-                                        </li>
+                                            </li>
+                                        </a>
                                     </ul>
                                 </div>
                                 </li>
@@ -100,19 +100,19 @@
                                     </a>
                                     <div class="collapse" id="collapseExample1">
                                         <ul class="nav-item list-unstyled ps-0" id="sidebar">
-                                            <li class="nav-item">
-                                                <a href="{{url('/admin/news')}}" class="nav-link active" id="btn-nav">
+                                            <a href="{{url('/admin/news')}}" class="nav-link active" id="btn-nav">
+                                                <li class="nav-item">
                                                     <i class="fas fa-circle-notch nav-icon grape"></i>
                                                     <p>Noticias</p>
-                                                </a>
-                                            </li>
+                                                </li>
+                                            </a>
                                             <!-- links events -->
-                                            <li class="nav-item">
-                                                <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                <li class="nav-item">
                                                     <i class="fas fa-circle-notch nav-icon grape"></i>
                                                     <p>Eventos</p>
-                                                </a>
-                                            </li>
+                                                </li>
+                                            </a>
                                         </ul>
                                     </div>
                                 </li>
@@ -127,20 +127,19 @@
                                     </a>
                                     <div class="collapse" id="collapseExample2">
                                         <ul class="nav-item list-unstyled ps-0" id="sidebar">
-                                            <li class="nav-item mb-1">
-                                                <a href="{{url('/admin/employee/notifcations')}}" class="nav-link active "
-                                                   id="btn-nav">
+                                            <a href="{{url('/admin/employee/notifcations')}}" class="nav-link active " id="btn-nav">
+                                                <li class="nav-item mb-1">
                                                     <i class="fas fa-circle-notch nav-icon grape"></i>
                                                     <p>Notificaciones</p>
-                                                </a>
-                                            </li>
+                                                </li>
+                                            </a>
                                             <!-- links events -->
-                                            <li class="nav-item">
-                                                <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                <li class="nav-item">
                                                     <i class="fas fa-circle-notch nav-icon grape"></i>
                                                     <p>Recibos de Pago</p>
-                                                </a>
-                                            </li>
+                                                </li>
+                                            </a>
                                         </ul>
                                     </div>
                                 </li>
@@ -155,20 +154,19 @@
                                     </a>
                                     <div class="collapse" id="collapseExample3">
                                         <ul class="nav-item list-unstyled ps-0" id="sidebar">
-                                            <li class="nav-item mb-1">
-                                                <a href="{{url('/admin/employee/notifcations')}}" class="nav-link active "
-                                                   id="btn-nav">
+                                            <a href="{{url('/admin/employee/notifcations')}}" class="nav-link active " id="btn-nav">
+                                                <li class="nav-item mb-1">
                                                     <i class="fas fa-circle-notch nav-icon grape"></i>
                                                     <p>Notificaciones</p>
-                                                </a>
-                                            </li>
+                                                </li>
+                                            </a>
                                             <!-- links events -->
-                                            <li class="nav-item">
-                                                <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                <li class="nav-item">
                                                     <i class="fas fa-circle-notch nav-icon grape"></i>
                                                     <p>Registro de Notas</p>
-                                                </a>
-                                            </li>
+                                                </li>
+                                            </a>
                                             <li class="nav-item has-treeview" data-bs-toggle="collapse"
                                                 href="#collapseExample4"
                                                 role="button" aria-expanded="false" aria-controls="collapseExample4">
@@ -178,43 +176,42 @@
                                                 </a>
                                                 <div class="collapse" id="collapseExample4">
                                                     <ul class="nav-item list-unstyled ps-0" id="sidebar">
-                                                        <li class="nav-item">
-                                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
-                                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                        <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            <li class="nav-item">
                                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                                 <p>Carga Académica</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            </li>
+                                                        </a>
+                                                        <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            <li class="nav-item">
                                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                                 <p>Control de Asistencia</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            </li>
+                                                        </a>
+                                                        <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            <li class="nav-item">
                                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                                 <p>Evaluación Continua</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            </li>
+                                                        </a>
+                                                        <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            <li class="nav-item">
                                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                                 <p>Porcentaje de Evaluación</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            </li>
+                                                        </a>
+                                                        <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            <li class="nav-item">
                                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                                 <p>Plan de Evaluación</p>
-                                                            </a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            </li>
+                                                        </a>
+                                                        <a href="{{url('/admin/events')}}" class="nav-link" id="btn-nav">
+                                                            <li class="nav-item">
                                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                                 <p>Materia Vista</p>
-                                                            </a>
-                                                        </li>
+                                                            </li>
+                                                        </a>
                                                     </ul>
                                                 </div>
                                             </li>
@@ -231,20 +228,19 @@
                                 </a>
                                 <div class="collapse" id="collapseExample5">
                                     <ul class="nav-item list-unstyled ps-0" id="sidebar">
-                                        <li class="nav-item mb-1">
-                                            <a href="{{url('/admin/profile')}}" class="nav-link active "
-                                               id="btn-nav">
+                                        <a href="{{url('/admin/profile')}}" class="nav-link active " id="btn-nav">
+                                            <li class="nav-item mb-1">
                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                 <p>Perfil</p>
-                                            </a>
-                                        </li>
+                                            </li>
+                                        </a>
                                         <!-- links events -->
-                                        <li class="nav-item">
-                                            <a href="{{ url('/logout') }}" class="nav-link" id="btn-nav">
+                                        <a href="{{ url('/logout') }}" class="nav-link" id="btn-nav">
+                                            <li class="nav-item">
                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                 <p>Cerrar Sesión</p>
-                                            </a>
-                                        </li>
+                                            </li>
+                                        </a>
                                     </ul>
                                 </div>
                             </li>
@@ -260,20 +256,20 @@
                                 </a>
                                 <div class="collapse" id="collapseExample5">
                                     <ul class="nav-item list-unstyled ps-0" id="sidebar">
-                                        {{--<li class="nav-item mb-1">
-                                            <a href="/admin/profile" class="nav-link active "
+                                        {{--<a href="/admin/profile" class="nav-link active "
                                                id="btn-nav">
+                                            <li class="nav-item mb-1">
                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                 <p>Perfil</p>
-                                            </a>
-                                        </li>--}}
+                                            </li>
+                                        </a>--}}
                                         <!-- links events -->
-                                        <li class="nav-item">
-                                            <a href="{{ url('/login?redirect_to='.url()->current()) }}" class="nav-link" id="btn-nav">
+                                        <a href="{{ url('/login?redirect_to='.url()->current()) }}" class="nav-link" id="btn-nav">
+                                            <li class="nav-item">
                                                 <i class="fas fa-circle-notch nav-icon grape"></i>
                                                 <p>Iniciar Sesión</p>
-                                            </a>
-                                        </li>
+                                            </li>
+                                        </a>
                                     </ul>
                                 </div>
                             </li>

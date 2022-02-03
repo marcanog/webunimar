@@ -73,6 +73,10 @@ Route::group(['middleware' => 'auth'], function () {
     });
 });
 
+Route::get('navbar', function(){
+    return view('navbar');
+});
+
 //Students
 Route::get('admin/student/record', function () {
     return view('admin/student/record');

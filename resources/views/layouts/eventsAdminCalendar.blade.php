@@ -8,7 +8,8 @@
                 return {
                     updateStatus: "new",
                     title: eventEl.innerText,
-                    description: eventEl.getElementsByTagName('div')[0].getAttribute("value"),
+                    description: eventEl.getElementsByTagName('div')[0].getAttribute("data-description"),
+                    tags: eventEl.getElementsByTagName('div')[0].getAttribute("data-tags"),
                     backgroundColor: window.getComputedStyle( eventEl ,null).getPropertyValue('background-color'),
                     borderColor: window.getComputedStyle( eventEl ,null).getPropertyValue('background-color'),
                     textColor: window.getComputedStyle( eventEl ,null).getPropertyValue('color'),
@@ -34,7 +35,8 @@
             //Get value and make sure it is not null
             var val = $('#new-event').val()
             var val2 = $('#new-event-desc').val()
-            if (val.length == 0 || val2.length == 0) {
+            var val3 = $('#new-event-tags').val()
+            if (val.length == 0 || val2.length == 0 || val3.length == 0) {
                 return
             }
             //Create events
@@ -44,13 +46,13 @@
                 'border-color'    : currColor,
                 'color'           : '#fff'
             }).addClass('external-event')
-            event.html("<div value="+val2+">"+val+"</div>")
+            event.html("<div data-description='"+val2+"' data-tags='"+val3+"'>"+val+"</div>")
             $('#external-events').prepend(event)
             //Remove event from text input
             $('#new-event').val('')
             $('#new-event-desc').val('')
+            $('#new-event-tags').tagsinput('removeAll')
             //Add draggable funtionality
-            ini_events(event)
         })
         
         /* BUILDING CALENDAR */
@@ -78,11 +80,13 @@
             select: function(arg) {
             var title = prompt('Título del evento:');
             var description = prompt('Descripción del evento:');
-            if (title && description) {
+            var tags = prompt('Tags del evento:');
+            if (title && description && tags) {
                 calendar.addEvent({
                     updateStatus: "new",
                     title: title,
                     description: description,
+                    tags: tags,
                     start: arg.start,
                     end: arg.end,
                     allDay: arg.allDay,
@@ -99,7 +103,24 @@
                 $('#eventStart').html("Inicio del evento: "+arg.event.start.toLocaleString()+"</br>");
                 if(arg.event.end == null) $('#eventEnd').html("Final del evento: "+arg.event.start.toLocaleString());
                 else $('#eventEnd').html("Final del evento: "+arg.event.end.toLocaleString());
-                $('#deleteEvent').modal('toggle');
+                if(arg.event.extendedProps.updateStatus == "new"){
+                    $('#eventTags').html("Tags: "+arg.event.extendedProps.tags.slice(0, -1)+"</br>");
+                    $('#deleteEvent').modal('toggle');
+                }
+                else{
+                    $.ajax(
+                        {
+                        type: "POST",
+                        url: "{{ url('/admin/showtags') }}",
+                        data: { tags_id : arg.event.extendedProps.tags_id, '_token':$("meta[name = 'csrf-token']").attr("content") },
+                        success: function(msg){
+                            $('#eventTags').html("Tags: "+msg.slice(0, -1)+"</br>");
+                            $('#deleteEvent').modal('toggle');
+                        },
+                        error: function(){ alert("Hay un error"); }
+                        }
+                    );
+                }
             },
             eventDrop: function(arg) {
                 if(arg.event.extendedProps.updateStatus != "new") arg.event.setExtendedProp('updateStatus', 'update'); 
@@ -128,6 +149,7 @@
                         description: '{{($currentEvent->description)}}',
                         backgroundColor: '{{($currentEvent->color)}}',
                         color    : '{{($currentEvent->color)}}',
+                        tags_id    : '{{($currentEvent->tags_id)}}',
                         @if($currentEvent->start == $currentEvent->end)
                             start: '{{($currentEvent->start)}}'
                         @else 
@@ -150,6 +172,7 @@
                     id: newEvent.id,
                     title: newEvent.title,
                     description: newEvent.extendedProps.description,
+                    tags: newEvent.extendedProps.tags,
                     color: newEvent.backgroundColor,
                     start: newEvent.start.toISOString().split('T'),
                     end: newEvent.end,
@@ -158,6 +181,7 @@
                 //Avoid events.end to be null
                 if(events.end == null) events.end = events.start;
                 else events.end = events.end.toISOString().split('T');
+                console.log(events);
                 $.ajax(
                     {
                     type: "POST",

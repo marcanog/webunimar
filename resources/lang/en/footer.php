@@ -23,7 +23,6 @@ return [
     'f_ecampus' => 'Virtual Campus',
     'f_academic_schec' => 'Academic Schedules',
     'f_repository' => 'Institutional Repository',
-    'f-proc-acad' => 'Academic Services',
     //five column
     'f_quick_links' => 'Quick Links',
     'f_calendar' => 'Academic Calendar',

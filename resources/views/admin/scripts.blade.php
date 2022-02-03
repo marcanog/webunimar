@@ -11,10 +11,8 @@
 <!-- Checkditor -->
 {{--<script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script>--}}
 <script src="https://ckeditor.com/apps/ckfinder/3.5.0/ckfinder.js"></script>
-<script src="https://cdn.ckeditor.com/4.14.0/standard-all/ckeditor.js"></script>
 <script src="https://cdn.ckeditor.com/ckeditor5/19.0.0/classic/ckeditor.js"></script>
-
-<!-- oostrap-tag -->
+<!-- Boostrap-tag -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-tagsinput/0.6.0/bootstrap-tagsinput.min.js"
         defer></script>

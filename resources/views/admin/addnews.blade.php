@@ -48,41 +48,21 @@
     <!-- Local scripts -->
     <script>
         //CKEDITOR Textareas replacement
-        ClassicEditor.create(document.querySelector('#content'))
-            .catch(error => {
-                console.error(error);
-            });
-        ClassicEditor.create(document.querySelector('#resume'))
-            .catch(error => {
-                console.error(error);
-            });
-
-        /*Ckeditor uploadimage*/
-
-        /*ClassicEditor.create(document.querySelector('#content'), {
+        ClassicEditor.create(document.querySelector('#content'), {
             ckfinder: {
-                // Use named route for CKFinder connector entry point
-                uploadUrl: '@{{ route(' / admin / addnews / upload') }}?command=QuickUpload&type=Files',
+                uploadUrl: '{{ route('ckfinder_connector') }}?command=QuickUpload&type=Files&responseType=json'
             }
-            options: {
-                resourceType: 'Images'
-            }
+        })
+        .catch(error => {
+            console.error(error);
         });
         ClassicEditor.create(document.querySelector('#resume'), {
             ckfinder: {
-                // Use named route for CKFinder connector entry point
-                uploadUrl: '@{{ route(' / admin / addnews / upload') }}?command=QuickUpload&type=Files',
+                uploadUrl: '{{ route('ckfinder_connector') }}?command=QuickUpload&type=Files&responseType=json'
             }
-            options: {
-                resourceType: 'Images'
-            }
-        });*/
-
-        {{--CKEDITOR.replace('resume', {
-        filebrowserUploadUrl: "{{ asset('/admin/addnews/upload', ['_token' => csrf_token() ])}}",
-        filebrowserBrowserdUrl: "{{ asset('/admin/addnews/file_browser', ['_token' => csrf_token() ])}}",
-        filebrowserUploadMethod: 'form'
-    });--}}
-
+        })
+        .catch(error => {
+            console.error(error);
+        });
     </script>
 @endsection
