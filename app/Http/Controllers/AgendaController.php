@@ -15,8 +15,8 @@ class AgendaController extends Controller
     {
         date_default_timezone_set('America/Caracas');
         $yearEvents = [];
-        $CurrEvents = Event::get();
-        foreach( $CurrEvents as $currEvent){
+        $currEvents = Event::get();
+        foreach( $currEvents as $currEvent){
             //Filter events that are happening in the current year
             if($currEvent->status_id == 1 && date("Y",strtotime($currEvent->start)) == date("Y")){
                 $startMonth = idate("m",strtotime($currEvent->start))-1;
