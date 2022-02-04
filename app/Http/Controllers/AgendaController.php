@@ -38,6 +38,6 @@ class AgendaController extends Controller
             }
         }
         sort($yearEvents);
-        return view('newsunimar')->with('currentEvents', Event::get())->with('yearEvents', $yearEvents);
+        return view('eventsunimar')->with('currentEvents', Event::get())->with('yearEvents', $yearEvents);
     }
 }
