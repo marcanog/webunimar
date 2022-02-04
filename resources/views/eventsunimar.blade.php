@@ -83,5 +83,5 @@
             }catch(error){}
         }
     </script>
-    </div>
+</div>
 @endsection
