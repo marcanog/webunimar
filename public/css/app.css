@@ -6,7 +6,7 @@
  */
 
 
-:root {
+ :root {
     --blue: #0f4c98;
     --indigo: #6574cd;
     --purple: #9561e2;
@@ -12051,17 +12051,30 @@ a:not([href]):not([tabindex]) {
 
 /*Responsive*/
 @media only screen and (min-width: 600px){
+    #footerdesktop{
+        display: none;
+    }
     .loginuser {
         font-size: 0.45rem;
     }
     .d-flex.justify-content-start {
         width: 45%;
     }
+    .card-header.infou {
+        display: flex;
+        flex-direction: column;
+    }
+    .location-content {
+        flex-direction: column;
+    }
+    .map-direction {
+        width: 70%;
+    }
 }
 
 @media only screen and (max-width: 600px){
     .logo{
-        width: 14rem;
+        width: 12rem;
     }
     .loginuser {
         font-size: 0.45rem;
@@ -12159,6 +12172,15 @@ a:not([href]):not([tabindex]) {
     .d-flex.justify-content-start > span{
         top: 0.75rem;
     }
+    .navbar-expand-md .navbar-collapse{
+        font-size: 0.75rem;
+    }
+    .navbar.navbar-expand-md.navbar-light.bg-white {
+        flex-direction: column;
+    }
+    .logo{
+        width:14rem;
+    }
 }
 
 @media only screen and (min-width: 992px){
@@ -12190,6 +12212,26 @@ a:not([href]):not([tabindex]) {
     }
     .d-flex.justify-content-start{
         width: 25%;
+    }
+    .navbar.navbar-expand-md.navbar-light.bg-white {
+        flex-direction: inherit;
+    }
+    .logo{
+        width:14rem;
+    }
+    .navbar-expand-md .navbar-collapse {
+        font-size: 0.85rem;
+    }
+}
+@media screen and (min-width: 1360px){
+    .logo{
+        width:18rem;
+    }
+    .navbar-expand-md .navbar-collapse {
+        font-size: 0.95rem;
+    }
+    .navbar.navbar-expand-md.navbar-light.bg-white {
+        justify-content: space-around;
     }
 }
 
