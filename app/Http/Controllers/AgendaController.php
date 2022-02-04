@@ -15,7 +15,8 @@ class AgendaController extends Controller
     {
         date_default_timezone_set('America/Caracas');
         $yearEvents = [];
-        foreach(Event::get() as $currEvent){
+        $CurrEvents = Event::get();
+        foreach( $CurrEvents as $currEvent){
             //Filter events that are happening in the current year
             if($currEvent->status_id == 1 && date("Y",strtotime($currEvent->start)) == date("Y")){
                 $startMonth = idate("m",strtotime($currEvent->start))-1;
@@ -37,6 +38,6 @@ class AgendaController extends Controller
             }
         }
         sort($yearEvents);
-        return view('agenda')->with('currentEvents', Event::get())->with('yearEvents', $yearEvents);
+        return view('newsunimar')->with('currentEvents', Event::get())->with('yearEvents', $yearEvents);
     }
 }
