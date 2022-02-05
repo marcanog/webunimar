@@ -12229,7 +12229,7 @@ a:not([href]):not([tabindex]) {
         width: 600px;
     }
 }
-@media screen and (min-width: 1360px){
+@media only screen and (min-width: 1300px){
     .logo{
         width:18rem;
     }
