@@ -12220,7 +12220,7 @@ a:not([href]):not([tabindex]) {
         width:14rem;
     }
     .navbar-expand-md .navbar-collapse {
-        font-size: 0.85rem;
+        font-size: 0.9rem;
     }
      .location-content {
         flex-direction: inherit;
@@ -12233,7 +12233,7 @@ a:not([href]):not([tabindex]) {
     .logo{
         width:18rem;
     }
-    .navbar-expand-md .navbar-collapse {
+    .navbar.navbar-expand-md .navbar-collapse {
         font-size: 0.95rem;
     }
     .navbar.navbar-expand-md.navbar-light.bg-white {
