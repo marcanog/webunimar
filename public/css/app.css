@@ -12222,6 +12222,12 @@ a:not([href]):not([tabindex]) {
     .navbar-expand-md .navbar-collapse {
         font-size: 0.85rem;
     }
+     .location-content {
+        flex-direction: inherit;
+    }
+    iframe {
+        width: 600px;
+    }
 }
 @media screen and (min-width: 1360px){
     .logo{
