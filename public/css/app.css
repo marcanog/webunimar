@@ -11589,10 +11589,13 @@ form.form-inline {
     width: 20%;
     padding: .5rem;
 }
+#link-subsystem{
+    margin: 0 auto;
+}
 #link-subsystem > span {
     display: flex;
     flex: 0 0 25%;
-    margin: 1em;
+    margin: 0 auto;
     font-size: 0.95em;
     justify-content: center;
     color: #FFFFFF;
@@ -12060,6 +12063,18 @@ a:not([href]):not([tabindex]) {
     .d-flex.justify-content-start {
         width: 45%;
     }
+    .conten-subsytem > span{
+        font-size: 0.75em;
+    }
+    #link-subsystem > span{
+        font-size: 0.75em;
+    }
+    .conten-subsytem {
+        width: 25%;
+    }
+    .conten-subsytem > a > img{
+        width: 50%;
+    }
     .card-header.infou {
         display: flex;
         flex-direction: column;
@@ -12087,6 +12102,19 @@ a:not([href]):not([tabindex]) {
         position: relative;
         top: 8px;
     }
+    .conten-subsystem > span{
+        font-size: 0.65em;
+    }
+    .conten-subsytem > a > img {
+        width: 70px;
+    }
+    #contentimg {
+        justify-content: space-between;
+        margin: 0.2em;
+    }
+    .conten-subsytem {
+        width: 30%;
+    }
     iframe {
         width: 330px;
     }
@@ -12107,6 +12135,9 @@ a:not([href]):not([tabindex]) {
         width: 30%;
         border-radius: 20px;
         border: 1px solid #c1c1c1;
+    }
+    #link-subsystem > span{
+        font-size: 0.65em;
     }
     .d-flex.justify-content-start {
         width: 60%;
@@ -12136,6 +12167,7 @@ a:not([href]):not([tabindex]) {
         padding: 0.5em;
         margin: 0 auto;
     }
+
     .content-deanship {
         width: 30%;
     }
@@ -12181,6 +12213,15 @@ a:not([href]):not([tabindex]) {
     .logo{
         width:14rem;
     }
+    .content-deanship {
+        width: 30%;
+    }
+    /*#link-subsystem > span {*/
+    /*    font-size: 0.75em;*/
+    /*}*/
+    .links-interest > a > span{
+        font-size: 0.75em;
+    }
 }
 
 @media only screen and (min-width: 992px){
@@ -12222,7 +12263,7 @@ a:not([href]):not([tabindex]) {
     .navbar-expand-md .navbar-collapse {
         font-size: 0.9rem;
     }
-     .location-content {
+    .location-content {
         flex-direction: inherit;
     }
     iframe {
@@ -12233,7 +12274,7 @@ a:not([href]):not([tabindex]) {
     .logo{
         width:18rem;
     }
-    .navbar.navbar-expand-md .navbar-collapse {
+    .navbar-expand-md .navbar-collapse {
         font-size: 0.95rem;
     }
     .navbar.navbar-expand-md.navbar-light.bg-white {
