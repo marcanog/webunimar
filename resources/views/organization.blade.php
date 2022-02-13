@@ -133,7 +133,7 @@
                              alt="Ing. Pedro Cabello">
                         <div class="card-title">
                             <p>{{trans('org.a-peterc')}}</p>
-                            <p>{{trans('org.a-peter-title')}}</p>
+                            <p style="font-size: 0.65em">{{trans('org.a-peter-title')}}</p>
                         </div>
                     </div>
                 </a>
@@ -144,7 +144,7 @@
                              alt="Ing. Pedro Beauperthuy">
                         <div class="card-title">
                             <p>{{trans('org.a-peterb')}}</p>
-                            <p>{{trans('org.a-peterb-title')}}</p>
+                            <p style="font-size: 0.65em">{{trans('org.a-peterb-title')}}</p>
                         </div>
                     </div>
                 </a>
@@ -155,7 +155,7 @@
                              alt="Esp. Ma Eugenia Morales">
                         <div class="card-title">
                             <p>{{trans('org.a-mamorales')}}</p>
-                            <p>{{trans('org.a-mamorales-title')}}</p>
+                            <p style="font-size: 0.65em">{{trans('org.a-mamorales-title')}}</p>
                         </div>
                     </div>
                 </a>
@@ -166,7 +166,7 @@
                              alt="Dra. Raquel Pérez">
                         <div class="card-title">
                             <p>{{trans('org.a-raquelp')}}</p>
-                            <p>{{trans('org.a-raquelp-title')}}</p>
+                            <p style="font-size: 0.65em">{{trans('org.a-raquelp-title')}}</p>
                         </div>
                     </div>
                 </a>
@@ -177,7 +177,7 @@
                              alt="Ing. Anibal Gómez">
                         <div class="card-title">
                             <p>{{trans('org.a-anibalg')}}</p>
-                            <p>{{trans('org.a-anibalg-title')}}</p>
+                            <p style="font-size: 0.65em">{{trans('org.a-anibalg-title')}}</p>
                         </div>
                     </div>
                 </a>
