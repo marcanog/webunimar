@@ -305,7 +305,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="collapse multi-collapse" id="multiCollapse3">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse3">
                         <div class="card card-body" id="card-b-author">
                             <p class="font-weight-bold">{{trans('org.cs-vicerector-ext')}}</p>
                             <p>{{trans('org.cs-vicerector-ext-info')}}</p>
@@ -314,7 +314,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="collapse multi-collapse" id="multiCollapse4">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse4">
                         <div class="card card-body" id="card-b-author">
                             <p class="font-weight-bold">{{trans('org.cs-general-secretary')}}</p>
                             <p>{{trans('org.cs-general-secretary-info')}}</p>
