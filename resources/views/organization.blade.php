@@ -184,42 +184,50 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="card collapse multi-collapse" id="multiCollapse1">
+                    {{--infor card P.Cabello--}}
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse1">
                         <div class="card card-body" id="card-b-author">
-                            <p>{{trans('org.a-peterc')}}</p>
+                            <p class="font-weight-bold">{{trans('org.a-peterc')}}</p>
                             <p>{{trans('org.a-peter-info')}}</p>
                             <p>{{trans('org.a-peter-info-2')}}</p>
                         </div>
                     </div>
                 </div>
-
+                {{--info card P. Beauperthuy--}}
                 <div class="col-md-12">
-                    <div class="collapse multi-collapse" id="multiCollapse2">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse2">
                         <div class="card card-body" id="card-b-author">
+                            <p class="font-weight-bold">{{trans('org.a-peterb')}}</p>
                             <p>{{trans('org.a-peterb-info')}}</p>
                             <p>{{trans('org.a-peterb-info-2')}}</p>
                         </div>
                     </div>
                 </div>
+                {{-- info card Ma. Morales --}}
                 <div class="col-md-12">
-                    <div class="collapse multi-collapse" id="multiCollapse3">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse3">
                         <div class="card card-body" id="card-b-author">
+                            <p class="font-weight-bold">{{trans('org.a-mamorales')}}</p>
                             <p>{{trans('org.a-mamorales-info')}}</p>
                             <p>{{trans('org.a-mamorales-info-2')}}</p>
                         </div>
                     </div>
                 </div>
+                {{-- Info card R. Perez--}}
                 <div class="col-md-12">
-                    <div class="collapse multi-collapse" id="multiCollapse4">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse4">
                         <div class="card card-body" id="card-b-author">
+                            <p class="font-weight-bold">{{trans('org.a-raquelp')}}</p>
                             <p>{{trans('org.a-raquelp-info')}}</p>
                             <p>{{trans('org.a-raquelp-info-2')}}</p>
                         </div>
                     </div>
                 </div>
+                {{-- info card A. Gomez--}}
                 <div class="col-md-12">
-                    <div class="collapse multi-collapse" id="multiCollapse5">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse5">
                         <div class="card card-body" id="card-b-author">
+                            <p class="font-weight-bold">{{trans('org.a-anibalg')}}</p>
                             <p>{{trans('org.a-anibalg-info')}}</p>
                             <p>{{trans('org.a-anibalg-info-2')}}</p>
                         </div>
