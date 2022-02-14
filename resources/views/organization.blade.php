@@ -245,7 +245,7 @@
                              alt="Dra. Antonieta Rosales de Oxford">
                         <div class="card-title">
                             <p>{{trans('org.cs-rector')}}</p>
-                            <p>{{trans('org.cs-rector-title')}}</p>
+                            <p style="font-size: 0.65em">{{trans('org.cs-rector-title')}}</p>
                         </div>
                     </div>
                 </a>
@@ -256,7 +256,7 @@
                              alt="Ing. Antonio Martínez">
                         <div class="card-title">
                             <p>{{trans('org.cs-vice-chancellor')}}</p>
-                            <p>{{trans('org.cs-vice-chancellor-title')}}</p>
+                            <p style="font-size: 0.65em">{{trans('org.cs-vice-chancellor-title')}}</p>
                         </div>
                     </div>
                 </a>
@@ -267,7 +267,7 @@
                              alt="Dra. Thamara Echegaray">
                         <div class="card-title">
                             <p>{{trans('org.cs-vicerector-ext')}}</p>
-                            <p>{{trans('org.cs-vicerector-ext-title')}}</p>
+                            <p style="font-size: 0.65em">{{trans('org.cs-vicerector-ext-title')}}</p>
                         </div>
                     </div>
                 </a>
@@ -278,24 +278,27 @@
                              alt="Msc. Fanny Marcano">
                         <div class="card-title">
                             <p>{{trans('org.cs-general-secretary')}}</p>
-                            <p>{{trans('org.cs-general-secretary-title')}}</p>
+                            <p style="font-size: 0.65em">{{trans('org.cs-general-secretary-title')}}</p>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="row">
+                {{-- Info card rector--}}
                 <div class="col-md-12">
-                    <div class="collapse multi-collapse" id="multiCollapse1">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse1">
                         <div class="card card-body" id="card-b-author">
+                            <p class="font-weight-bold">{{trans('org.cs-rector')}}</p>
                             <p>{{trans('org.cs-rector-info')}}</p>
                             <p>{{trans('org.cs-rector-info-2')}}</p>
                         </div>
                     </div>
                 </div>
-
+                {{-- info card vice rector--}}
                 <div class="col-md-12">
-                    <div class="collapse multi-collapse" id="multiCollapse2">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse2">
                         <div class="card card-body" id="card-b-author">
+                            <p class="font-weight-bold">{{trans('org.cs-vice-chancellor')}}</p>
                             <p>{{trans('org.cs-vice-chancellor-info')}}</p>
                             <p>{{trans('org.cs-vice-chancellor-info-2')}}</p>
                         </div>
@@ -304,6 +307,7 @@
                 <div class="col-md-12">
                     <div class="collapse multi-collapse" id="multiCollapse3">
                         <div class="card card-body" id="card-b-author">
+                            <p class="font-weight-bold">{{trans('org.cs-vicerector-ext')}}</p>
                             <p>{{trans('org.cs-vicerector-ext-info')}}</p>
                             <p>{{trans('org.cs-vicerector-ext-info-2')}}</p>
                         </div>
@@ -312,6 +316,7 @@
                 <div class="col-md-12">
                     <div class="collapse multi-collapse" id="multiCollapse4">
                         <div class="card card-body" id="card-b-author">
+                            <p class="font-weight-bold">{{trans('org.cs-general-secretary')}}</p>
                             <p>{{trans('org.cs-general-secretary-info')}}</p>
                             <p>{{trans('org.cs-general-secretary-info-2')}}</p>
                         </div>
