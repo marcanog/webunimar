@@ -184,8 +184,9 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="collapse multi-collapse" id="multiCollapse1">
+                    <div class="card collapse multi-collapse" id="multiCollapse1">
                         <div class="card card-body" id="card-b-author">
+                            <p>{{trans('org.a-peterc')}}</p>
                             <p>{{trans('org.a-peter-info')}}</p>
                             <p>{{trans('org.a-peter-info-2')}}</p>
                         </div>
