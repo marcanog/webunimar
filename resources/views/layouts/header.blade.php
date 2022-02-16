@@ -140,7 +140,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                             <a class="dropdown-item" href="{{url('/ourinstitution')}}">{{trans('header.unimar')}}</a>
                             <a class="dropdown-item" href="{{url('/organization')}}">{{trans('header.organization')}}</a>
-                            <a class="dropdown-item" href="#">{{trans('header.rectorade')}}</a>
+                            <a class="dropdown-item" href="{{url('/rectorade')}}">{{trans('header.rectorade')}}</a>
                             <a class="dropdown-item" href="#">{{trans('home.h-regulations')}}</a>
                         </div>
                     </li>

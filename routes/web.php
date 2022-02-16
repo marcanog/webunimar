@@ -186,6 +186,10 @@ Route::get('humarte', function () {
     return view('deanhumarte');
 });
 
+Route::get('rectorade', function(){
+    return view('rectorade');
+});
+
 Route::get('generalsecretariat', function () {
     return view('generalsecretariat');
 });
