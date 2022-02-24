@@ -3,7 +3,7 @@
 @section ('content')
     <div class=".xl-container">
         <div class="banner-main">
-            <img src="{{URL::asset('/image/viceacademic.png')}}">
+            <img src="{{URL::asset('/image/banners/regstudents.jpg')}}">
         </div>
         {{--Section info--}}
         <div class="section-content">
