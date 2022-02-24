@@ -141,7 +141,7 @@
                             <a class="dropdown-item" href="{{url('/ourinstitution')}}">{{trans('header.unimar')}}</a>
                             <a class="dropdown-item" href="{{url('/organization')}}">{{trans('header.organization')}}</a>
                             <a class="dropdown-item" href="{{url('/rectorade')}}">{{trans('header.rectorade')}}</a>
-                            <a class="dropdown-item" href="#">{{trans('home.h-regulations')}}</a>
+                            <a class="dropdown-item" href="{{url('/regulations')}}">{{trans('home.h-regulations')}}</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -168,7 +168,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
                             <a class="dropdown-item" href="{{url('/newstudents')}}">{{trans('header.new_additions')}}</a>
-                            <a class="dropdown-item" href="{{url('/regstudents')}}">{{trans('header.regstudents')}}</a>
+                            <a class="dropdown-item" href="{{url('/regularstudents')}}">{{trans('header.regstudents')}}</a>
                             <a class="dropdown-item" href="{{url('/alumni')}}">{{trans('header.graduates')}}</a>
                         </div>
                     </li>
