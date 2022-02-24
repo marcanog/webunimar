@@ -12130,6 +12130,9 @@ a:not([href]):not([tabindex]) {
         display: flex;
         flex-direction: column;
     }
+    .card-header.infou > span {
+        text-align: center;
+    }
     .links-interest {
         display: flex;
         width: 30%;
@@ -12215,11 +12218,13 @@ a:not([href]):not([tabindex]) {
     }
     .content-deanship {
         width: 30%;
-        margin: 1em;
     }
     /*#link-subsystem > span {*/
     /*    font-size: 0.75em;*/
     /*}*/
+    .card-header.infou span {
+        text-align: center;
+    }
     .links-interest > a > span{
         font-size: 0.75em;
     }
