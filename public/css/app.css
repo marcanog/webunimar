@@ -12252,6 +12252,13 @@ a:not([href]):not([tabindex]) {
     .links-interest > a > span {
         font-size: 0.95em;
     }
+    #link-subsystem > span {
+        font-size: 0.95em;
+    }
+    .conten-subsytem {
+        width: 25%;
+        margin: 1em;
+    }
 }
 
 @media only screen and (min-width: 1200px){
