@@ -9,7 +9,7 @@
         <div class="section-content">
             <div class="d-flex justify-content-start">
                 <img id="img-section"
-                     src="{{URL::asset('/image/logo-unimar.png')}}"><span>{{trans('newsu.n-title')}}</span>
+                     src="{{URL::asset('/image/logo-unimar.png')}}"><span>{{trans('regstudents.regstudent-title')}}</span>
             </div>
         </div>
     </div>
