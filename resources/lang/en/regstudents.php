@@ -2,7 +2,7 @@
 return[
     'regstudent-title' => 'Regular Students',
     'regstudents-gradesmodels' => 'Gradesmodels',
-    'regstudents-alumni' => 'Egreso',
+    'regstudents-alumni' => 'Graduation',
     'r-profpractices' => 'Internships',
     'r-investigation' => 'Research',
 ];
