@@ -12218,6 +12218,7 @@ a:not([href]):not([tabindex]) {
     }
     .content-deanship {
         width: 30%;
+        margin: 1em;
     }
     /*#link-subsystem > span {*/
     /*    font-size: 0.75em;*/
