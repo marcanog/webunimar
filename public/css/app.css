@@ -12249,6 +12249,9 @@ a:not([href]):not([tabindex]) {
     .card-header.infou img {
         width: 20%;
     }
+    .links-interest > a > span {
+        font-size: 0.95em;
+    }
 }
 
 @media only screen and (min-width: 1200px){
