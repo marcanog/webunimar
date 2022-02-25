@@ -224,7 +224,7 @@
         <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
             {{--descripction--}}
             <div class="collapse col-lg-12 m-4" id="collapse">
-                <div class="card card-body sectionbody">
+                <div class="card card-body text-justify sectionbody">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('secretarygeneral.secretaryofic-title')}}
                     </p>
@@ -236,7 +236,7 @@
             </div>
             {{--functions--}}
             <div class="collapse col-lg-12 m-4" id="collapse3">
-                <div class="card card-body">
+                <div class="card text-justify card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('secretarygeneral.secretaryofic-functions')}}
                     </p>
