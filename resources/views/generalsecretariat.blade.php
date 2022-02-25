@@ -255,7 +255,7 @@
             {{--Departaments--}}
             <div class="collapse col-md-12 m-3 " id="collapse4">
                 <div class="container col-md-12">
-                    <p style="font-size: 1.25rem; font-weight: 600;">
+                    <p class="text-justify" style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('vextension.vext-subsystems')}}</p>
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
@@ -310,7 +310,7 @@
                 </div>
             </div>
         </div>
-        <div class="info-dept d-flex m-4 card card-body">
+        <div class="info-dept d-flex m-4 card card-body text-justify">
             <h5>{{trans('postgrade.postg-info-title')}}</h5>
             <p>
                 <b>{{trans('secretarygeneral.secretaryofic-info-title')}}</b>&nbsp {{trans('secretarygeneral.secretaryofic-info-email')}}
