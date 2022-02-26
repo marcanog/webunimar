@@ -282,7 +282,7 @@
                         </div>
                     </div>
                 </a>
-                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse4" role="button"
+                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse5" role="button"
                    aria-expanded="false" aria-controls="multiCollapse5">
                     <div class="card mb-3" id="cardauthor">
                         <img id="imgcrd" src="{{URL::asset('./image/csuperior/fannymarcano.jpg')}}"
