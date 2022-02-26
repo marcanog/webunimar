@@ -238,8 +238,8 @@
         <div class="container collapse" id="collapse2" aria-labelledby="headingTwo">
             <p class="titlefound text-justify">{{trans('org.university-council')}}</p>
             <div class="card-columns">
-                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse1" role="button"
-                   aria-expanded="false" aria-controls="multiCollapse1">
+                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse6" role="button"
+                   aria-expanded="false" aria-controls="multiCollapse6">
                     <div class="card mb-3" id="cardauthor">
                         <img id="imgcrd" src="{{URL::asset('./image/csuperior/antonietarosales.jpg')}}"
                              alt="Dra. Antonieta Rosales de Oxford">
@@ -249,8 +249,8 @@
                         </div>
                     </div>
                 </a>
-                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse2" role="button"
-                   aria-expanded="false" aria-controls="multiCollapse2">
+                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse7" role="button"
+                   aria-expanded="false" aria-controls="multiCollapse7">
                     <div class="card mb-3" id="cardauthor">
                         <img id="imgcrd" src="{{URL::asset('./image/csuperior/antoniomartinez.jpg')}}"
                              alt="Ing. Antonio Martínez">
@@ -260,8 +260,8 @@
                         </div>
                     </div>
                 </a>
-                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse3" role="button"
-                   aria-expanded="false" aria-controls="multiCollapse3">
+                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse8" role="button"
+                   aria-expanded="false" aria-controls="multiCollapse8">
                     <div class="card mb-3" id="cardauthor">
                         <img id="imgcrd" src="{{URL::asset('./image/csuperior/thamaraechegaray.jpg')}}"
                              alt="Dra. Thamara Echegaray">
@@ -271,8 +271,8 @@
                         </div>
                     </div>
                 </a>
-                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse4" role="button"
-                   aria-expanded="false" aria-controls="multiCollapse4">
+                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse9" role="button"
+                   aria-expanded="false" aria-controls="multiCollapse9">
                     <div class="card mb-3" id="cardauthor">
                         <img id="imgcrd" src="{{URL::asset('./image/csuperior/fannymarcano.jpg')}}"
                              alt="Msc. Fanny Marcano">
@@ -282,8 +282,8 @@
                         </div>
                     </div>
                 </a>
-                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse5" role="button"
-                   aria-expanded="false" aria-controls="multiCollapse5">
+                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse10" role="button"
+                   aria-expanded="false" aria-controls="multiCollapse10">
                     <div class="card mb-3" id="cardauthor">
                         <img id="imgcrd" src="{{URL::asset('./image/csuperior/fannymarcano.jpg')}}"
                              alt="Beatriz Cebello">
@@ -297,7 +297,7 @@
             <div class="row">
                 {{-- Info card rector--}}
                 <div class="col-md-12">
-                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse1">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse6">
                         <div class="card card-body" id="card-b-author">
                             <p class="font-weight-bold">{{trans('org.cs-rector')}}</p>
                             <p>{{trans('org.cs-rector-info')}}</p>
@@ -307,7 +307,7 @@
                 </div>
                 {{-- info card vice rector--}}
                 <div class="col-md-12">
-                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse2">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse7">
                         <div class="card card-body" id="card-b-author">
                             <p class="font-weight-bold">{{trans('org.cs-vice-chancellor')}}</p>
                             <p>{{trans('org.cs-vice-chancellor-info')}}</p>
@@ -316,7 +316,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse3">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse8">
                         <div class="card card-body" id="card-b-author">
                             <p class="font-weight-bold">{{trans('org.cs-vicerector-ext')}}</p>
                             <p>{{trans('org.cs-vicerector-ext-info')}}</p>
@@ -325,7 +325,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse4">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse9">
                         <div class="card card-body" id="card-b-author">
                             <p class="font-weight-bold">{{trans('org.cs-general-secretary')}}</p>
                             <p>{{trans('org.cs-general-secretary-info')}}</p>
@@ -334,7 +334,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse5">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse10">
                         <div class="card card-body" id="card-b-author">
                             <p class="font-weight-bold">{{trans('org.cs-direction-admin')}}</p>
                             <p>{{trans('org.cs-direction-admin-info')}}</p>
