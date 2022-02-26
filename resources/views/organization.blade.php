@@ -124,7 +124,7 @@
             </div>
         </div>
         <div class="container collapse" id="collapse" aria-labelledby="headingOne">
-            <p class="titlefound">{{trans('org.superior-council')}}</p>
+            <p class="titlefound text-justify">{{trans('org.superior-council')}}</p>
             <div class="card-columns">
                 <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse1" role="button"
                    aria-expanded="false" aria-controls="multiCollapse1">
@@ -236,7 +236,7 @@
             </div>
         </div>
         <div class="container collapse" id="collapse2" aria-labelledby="headingTwo">
-            <p class="titlefound">{{trans('org.university-council')}}</p>
+            <p class="titlefound text-justify">{{trans('org.university-council')}}</p>
             <div class="card-columns">
                 <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse1" role="button"
                    aria-expanded="false" aria-controls="multiCollapse1">
