@@ -334,7 +334,7 @@
                     </div>
                 </div>
                 <div class="col-md-12">
-                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse4">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse5">
                         <div class="card card-body" id="card-b-author">
                             <p class="font-weight-bold">{{trans('org.cs-direction-admin')}}</p>
                             <p>{{trans('org.cs-direction-admin-info')}}</p>
