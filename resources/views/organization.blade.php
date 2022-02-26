@@ -85,9 +85,9 @@
             column-gap: 1.25rem;
         }
     </style>
-    <div class=".xl-container">
+    <div class="content">
         <div class="banner-main">
-            <img src="{{URL::asset('./image/nuestrosfundadores.png')}}">
+            <img src="{{URL::asset('./image/banners/es/ourdunders.jpg')}}">
         </div>
         <div class="section-content">
             <div class="d-flex justify-content-start">
@@ -282,6 +282,17 @@
                         </div>
                     </div>
                 </a>
+                <a class="btn-link card-img" id="imgcard" data-toggle="collapse" href="#multiCollapse4" role="button"
+                   aria-expanded="false" aria-controls="multiCollapse5">
+                    <div class="card mb-3" id="cardauthor">
+                        <img id="imgcrd" src="{{URL::asset('./image/csuperior/fannymarcano.jpg')}}"
+                             alt="Beatriz Cebello">
+                        <div class="card-title">
+                            <p>{{trans('org.cs-direction-admin')}}</p>
+                            <p style="font-size: 0.65em">{{trans('org.cs-direction-admin-title')}}</p>
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="row">
                 {{-- Info card rector--}}
@@ -319,6 +330,15 @@
                             <p class="font-weight-bold">{{trans('org.cs-general-secretary')}}</p>
                             <p>{{trans('org.cs-general-secretary-info')}}</p>
                             <p>{{trans('org.cs-general-secretary-info-2')}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="card mb-4 collapse multi-collapse" id="multiCollapse4">
+                        <div class="card card-body" id="card-b-author">
+                            <p class="font-weight-bold">{{trans('org.cs-direction-admin')}}</p>
+                            <p>{{trans('org.cs-direction-admin-info')}}</p>
+                            <p>{{trans('org.cs-direction-admin-info-2')}}</p>
                         </div>
                     </div>
                 </div>

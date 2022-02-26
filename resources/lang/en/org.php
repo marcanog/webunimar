@@ -52,5 +52,9 @@ return [
     'cs-general-secretary-title' => 'Secretary General',
     'cs-general-secretary-info' => 'She is a graduate of UPEL-IMPM, as a Professor in Social Sciences, with a Master Degree in Planning and Evaluation, in addition to having several Diplomas in the educational area. She is currently pursuing a Doctorate in Education Sciences at ULAC.',
     'cs-general-secretary-info-2' => 'She has a long professional career in the teaching field that has earned her numerous awards. In 2005 he joined Unimar as a teacher. From 2009 to 2017 she was Coordinator of Scholarships and Student Financial Aid at Unimar; Dean(E) of Humanities (2017).',
-    
+    //
+    'cs-direction-admin' => 'Beatriz Cabello',
+    'cs-direction-admin-title' => 'General Director of Administration',
+    'cs-direction-admin-info' => 'Pending information',
+    'cs-direction-admin-info-2' => 'Pending information',
 ];
