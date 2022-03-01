@@ -236,6 +236,10 @@ Route::get('lang/{locale}', function ($locale) {
     return redirect()->back();
 });
 
+if (App::environment('production')) {
+    URL::forceScheme('https');
+}
+
 Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Auth::routes();
