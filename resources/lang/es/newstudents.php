@@ -44,5 +44,4 @@ return[
     'n-banks-ac' => 'Bco. Mercantil Nº 0105-0111-31-811104064-4',
     'n-banks-ac1' => 'Banesco Nº 0134-0221-33-221102929-6',
     'n-titular' => 'A nombre de UNIMAR',
-
 ];

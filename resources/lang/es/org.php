@@ -6,7 +6,7 @@ return [
     'university-council' => 'Nuestro Consejo Universitario',
     'campus' => 'Campus Universitario',
     'struct-org' => 'Estructura Organizativa',
-    //authorities
+    //authorities -  superior counsil
     'a-peterc' => 'Pedro Cabello Poleo',
     'a-peter-title' => 'Presidente',
     'a-peter-info' => 'Es Ingeniero en Producción Animal (Zootecnia), egresado de la Universidad Estado de Oklahoma, en los Estados Unidos, con una Maestría en Fisiología Digestiva, cursada en la Universidad del estado de Florida. Fue Gobernador del estado Monagas durante los años 1982-1984, y Ministro de Educación 1986-1988).',
@@ -17,7 +17,7 @@ return [
     'a-peterb-info' => 'Ingeniero Agrónomo egresado de la Universidad de Oriente, con Maestría en Fisiología Animal, de la Universidad de Louisiana (USA). Ha desempeñado diversos cargos en la Administración Pública. En el periodo 1987 - 1990 fue gobernador del estado Monagas; y Ministro de Educación desde Abril del año 1992 hasta Mayo de 1993.',
     'a-peterb-info-2' => 'Mantuvo una estrecha relación con la Universidad de Oriente durante más de 30 años, donde ingresa como estudiante de ingeniería a principio de los años sesenta, haciéndose acreedor de una beca de honor, que esta institución concedía a sus alumnos más destacados; obtiene el título de ingeniero agrónomo en el año 1966 y es escogido por los graduandos de todos los núcleos de la UDO como Orador de Orden en el acto de grado de su promoción.',
     //
-    'a-mamorales'=>'Ma Eugenia Morales G', 
+    'a-mamorales'=>'Ma Eugenia Morales G',
     'a-mamorales-title' => 'Secretaria General',
     'a-mamorales-info'=> 'Es Licenciada en Educación, Mención Ciencias Pedagógicas, egresada de la Universidad Católica Andrés Bello. Tiene una especialización en Psicopedagogía, de la Universidad Complutense de Madrid, España. (1975) y otra en Relaciones Humanas y Sicología de la Comunicación, del Gabinete de Sicología de Madrid (1976).',
     'a-mamorales-info-2' => 'Forma parte del equipo promotor y fundador de la Universidad de Margarita. Estuvo al frente de la Secretaría General de la institución desde sus inicios hasta el día 13 de marzo de 2009. Actualmente es la Secretaria General del Consejo Superior.',
@@ -31,7 +31,7 @@ return [
     'a-anibalg-title' => 'Miembro del Consejo Superior',
     'a-anibalg-info' => 'Es Ingeniero Industrial, egresado del Georgia Institute of Thecnology, (Georgiatech) Georgia, USA. (1965). Cursó estudios de Gerencia para Ingenieros en el IESA, Instituto de Estudios Superiores de Administración.',
     'a-anibalg-info-2' => 'En el año 1984 inició su actividad como promotor de proyectos educativos con la fundación de la Escuela Politécnico de Computación, en Maracay, estado Aragua. Luego inauguró, en la ciudad de Valencia, estado Carabobo la Escuela Técnica Consorcio Tecnológico para la Informática, (C.T.I), en 1986.',
-    //Superio Council
+    //rectoral group
     'cs-rector' => 'Antonieta Rosales de Oxford',
     'cs-rector-title' => 'Rectora',
     'cs-rector-info' => 'Es Licenciada en Administración Comercial, egresada de la Universidad Católica Andrés Bello(1976).Tiene una especialización en Finanzas, de la Universidad de Margarita (2004), Actualmente realiza un doctorado en Ciencias de la Educación en la Universidad Latinoamericana y del Caribe.',
@@ -48,7 +48,7 @@ return [
     'cs-vicerector-ext-info-2' => 'Fue Maestra especialista, Coordinadora, y Subdirectora, de la Unidad Psicoeducativa Nueva Esparta. Luego se desempeñó como Directora del Núcleo Escolar Rural Nº 63 y de la Escuela Básica Bolivariana "Juan Bautista Arismendi"; Coordinadora de la Comisión Estadal de Lectura, FUNDAALECTURA. En 2002 se incorpora a la plantilla de profesores de la Universidad de Margarita como Jefa, del recién creado para esa fecha, Departamento de Bienestar Estudiantil.',
     //
     'cs-general-secretary' => 'Fanny Marcano Sanabria',
-    'cs-general-secretary-title' => 'Secretaria General', 
+    'cs-general-secretary-title' => 'Secretaria General',
     'cs-general-secretary-info' => 'Es egresada de la UPEL-IMPM, como Profesor en Ciencias Sociales, con Maestría en Planificación y Evaluación, además de contar con diversos Diplomados en el área educativa. Actualmente realiza un Doctorado en Ciencias de la Educación en la ULAC.',
     'cs-general-secretary-info-2' => 'Cuenta con una larga trayectoria profesional en el campo docente que le ha merecido numerosos reconocimientos. En el año 2005 ingresó como docente en Unimar. Desde el 2009 hasta el 2017 fue Coordinadora de Becas y Ayudas Económicas Estudiantiles de Unimar; Decana(E) de Humanidades (2017)',
     //

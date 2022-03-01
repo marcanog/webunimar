@@ -40,9 +40,9 @@
             margin-top: 0;
         }
 
-       /* #collapse, #collapse2, #collapse3 {
-            margin: 0 auto;
-        }*/
+        /* #collapse, #collapse2, #collapse3 {
+             margin: 0 auto;
+         }*/
 
         .info-dept.col-md-10.card.card-body {
             margin: 0 auto;
