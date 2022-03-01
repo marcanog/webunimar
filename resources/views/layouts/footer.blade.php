@@ -13,7 +13,7 @@
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title" href="{{url('/rectorade') }}">{{trans('footer.f_rectors_office')}}</a>
+                        <a class="footer-title" href="{{ URL('/rectorade') }}">{{trans('footer.f_rectors_office')}}</a>
                     </li>
                     <li class="footer-item">
                         <a class="footer-title"
@@ -85,7 +85,6 @@
                     </li>
                     <li class="footer-item">
                         <a class="footer-title" href="{{url('/calendaracademy')}}">
-                            {{-- {{trans('footer.f_academic_schec')}}--}}
                             {{trans('footer.f_calendar')}}
                         </a>
                     </li>
@@ -99,7 +98,6 @@
                         <a class="footer-title font-weight-bold" href="#">{{trans('footer.f_quick_links')}}</a>
                     </li>
                     <li class="footer-item">
-                        {{--<a class="footer-title" href="#">{{trans('footer.f_calendar')}}</a>--}}
                         <a class="footer-title" href="{{url('/contactus')}}">{{trans('footer.f_dir_telf')}}</a>
                     </li>
                     {{--<li class="footer-item">
