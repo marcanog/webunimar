@@ -13,11 +13,7 @@
                         </a>
                     </li>
                     <li class="footer-item">
-<<<<<<< HEAD
                         <a class="footer-title" href="{{ URL('/rectorade') }}">{{trans('footer.f_rectors_office')}}</a>
-=======
-                        <a class="footer-title" href="{{url('/rectorade') }}">{{trans('footer.f_rectors_office')}}</a>
->>>>>>> parent of 4c18b10... update adrian branch
                     </li>
                     <li class="footer-item">
                         <a class="footer-title"
