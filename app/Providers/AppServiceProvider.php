@@ -30,6 +30,9 @@ class AppServiceProvider extends ServiceProvider
         if(config('app.env') === 'production') {
             URL::forceScheme('https');
         }
+        if (App::environment('production')) {
+            URL::forceScheme('https');
+        }
         // if (env('REDIRECT_HTTPS')) {
         //     $url->formatScheme('https://');
         // }
