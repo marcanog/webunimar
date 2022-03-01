@@ -2,15 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\News;
 use App\Status;
 use App\Tag;
+use Illuminate\Http\Request;
 
 class NewsController extends Controller
 {
-    public function index(){
-        return view ('/admin/news')->with('news', News::get())->with('status', Status::get());
+    public function index()
+    {
+        return view('/admin/news')->with('news', News::get())->with('tags', tag::get())->with('status', status::get());
     }
 
     public function addnews()

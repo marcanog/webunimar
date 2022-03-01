@@ -9,4 +9,6 @@ return [
     'calendar-academy' => 'Calendario Académico',
     'contactus' => 'Directorio de Contacto',
     'general-secretary' => 'Secretaría General',
+    'rectorade' => 'Rectorado',
+    'events' => 'Eventos UNIMAR',
 ];

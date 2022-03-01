@@ -1,0 +1,132 @@
+/**************************************
+
+    File Name: responsive.css
+    Template Name: Tech Blog
+    Created By: HTML.Design
+    http://themeforest.net/user/wpdestek
+
+**************************************/
+
+
+/* RESPONSIVE 
+**************************************/
+
+@media (max-width: 1156px) {
+    .small-box .shadow-desc h4 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1047px) {
+    .topbar-section .list-inline-item {
+        padding: 0 0.2rem !important;
+    }
+}
+
+@media (max-width: 989px) {
+    .search-form .btn:hover,
+    .search-form .btn:focus,
+    .search-form .btn {
+        position: relative;
+    }
+    .custombox .blog-list-widget,
+    .custombox .blog-box {
+        margin: 1rem 0;
+    }
+    .sidebar
+    {
+        margin: 1.5rem 0;
+    }
+    .center-side,
+    .left-side,
+    .right-side {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-sharing .btn {
+        padding: 0.6rem !important;
+    }
+    .blog-custom-build .down-mobile,
+    .blog-title-area .down-mobile {
+        display: none !important;
+    }
+    .newsletter-widget .form-inline .form-control {
+        width: 100%;
+    }
+    .newsletter-widget .btn {
+        display: block;
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+    .blog-list .blog-meta.big-meta h4 {
+        background-color: #ffffff;
+        margin-left: 0;
+        margin-top: 1rem;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 728px) {
+    .center-side,
+    .left-side,
+    .right-side {
+        float: left;
+        width: 100%;
+    }
+    .shadow-desc {
+        bottom: 0;
+        padding: 1rem 0.8rem;
+        position: absolute;
+    }
+    .blog-meta h4 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 590px) {
+    .comment-list .media {
+        float: none !important;
+        width: 100%;
+        display: block;
+    }
+    .blog-title-area {
+        text-align: center;
+    }
+    .pp .float-right,
+    .pp .float-left {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .blog-title-area h3 {
+        font-size: 34px;
+    }
+    .section-title {
+        margin-top: 1rem;
+    }
+    .small-box {
+        float: none;
+        width: 100%;
+    }
+    .topbar-section .text-right {
+        text-align: center !important;
+    }
+    .blog-meta.big-meta h4 {
+        font-size: 21px;
+    }
+    .top-search .newsletter-widget .form-inline .form-control {
+        font-size: 16px;
+    }
+    .card-block {
+        padding: 1rem 0.5rem;
+    }
+    .newsletter-widget .btn:hover,
+    .newsletter-widget .btn:focus,
+    .newsletter-widget .btn {
+        border: 0 none !important;
+        font-size: 17px !important;
+        padding: 1.3rem 1rem !important;
+    }
+}

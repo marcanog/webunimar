@@ -6,7 +6,7 @@
  */
 
 
- :root {
+:root {
     --blue: #0f4c98;
     --indigo: #6574cd;
     --purple: #9561e2;
@@ -12220,9 +12220,6 @@ a:not([href]):not([tabindex]) {
         width: 30%;
         margin: 1em;
     }
-    /*#link-subsystem > span {*/
-    /*    font-size: 0.75em;*/
-    /*}*/
     .card-header.infou span {
         text-align: center;
     }

@@ -39,7 +39,7 @@ return [
     //
     'cs-vice-chancellor' => 'Antonio Martínez Camacho',
     'cs-vice-chancellor-title' => 'Academic Vice Chancellor',
-    'cs-vice-chancellor-info' => 'He is an Electrical Engineer, Mention: Power, from the University of Carabobo (27-07-1973), with a specialization in Management, Mention: Finance, from the Universidad Bicentenaria de Aragua.', 
+    'cs-vice-chancellor-info' => 'He is an Electrical Engineer, Mention: Power, from the University of Carabobo (27-07-1973), with a specialization in Management, Mention: Finance, from the Universidad Bicentenaria de Aragua.',
     'cs-vice-chancellor-info' => 'Antonio Martínez Camacho',
     'cs-vice-chancellor-info-2' => 'COURSES AND INTERNSHIPS CARRIED OUT: Company Organization and Project Management, Abengoa, Seville- Spain (July 1976). Basic Safety for Supervisors, Sidor, Puerto Ordaz (November 1986). Problem Analysis and Decision Making, Genco, Puerto Ordaz (November 1986). Engineering Project Contracting and Control, Simón Bolívar University, Puerto Ordaz (June 1987).',
     //

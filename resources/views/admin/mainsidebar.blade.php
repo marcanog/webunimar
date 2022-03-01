@@ -2,7 +2,7 @@
 <aside class="main-sidebar sidebar-light-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ url('/admin') }}" class="brand-link">
-        <img src="{{URL::asset('image/logo-formal-horizontal.jpg')}}" alt="Logo UNIMAR" class="brand-image"
+        <img src="{{URL::asset('image/logo-web-02.png')}}" alt="Logo UNIMAR" class="brand-image"
              style="opacity: .8">
         <span class="brand-text font-weight-normal text-nowrap" style="width: 8rem;"></span>
     </a>
