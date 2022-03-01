@@ -41,6 +41,7 @@ class UsersController extends Controller
     public function create(Request $request){}
 
     public function show (Request $request){
+        dd(Auth::user());
         return view ('/admin/profile')->with('user', Auth::user());
     }
 

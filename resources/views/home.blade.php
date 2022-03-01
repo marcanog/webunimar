@@ -38,7 +38,7 @@
                     <div class="card-body">
                         <h5 class="card-title font-weight-bold">{{($new->title)}}</h5>
                         <div class="text-justify m-0" id="card-content" style="font-size: small;">
-                            {!! ($new->resume) !!}
+                            {!!($new->resume)!!}
                         </div>
                         <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
@@ -60,7 +60,7 @@
             <div class="card mx-3 mt-4 h-100">
                 <div class="row no-gutters">
                     <div class="col-md-4 text-white content-date">
-                        <p>{{ \Carbon\Carbon::parse(strtotime($event->start))->formatLocalized("%d %b")}}</p>
+                        <p>{{\Carbon\Carbon::parse(strtotime($event->start))->formatLocalized("%d %b")}}</p>
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">

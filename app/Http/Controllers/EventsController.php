@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Event;
-use App\Tag;
 
 class EventsController extends Controller
 {
@@ -17,27 +16,12 @@ class EventsController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'title' => 'required',
-            'description' => 'required',
-            'tags' => 'required',
-            'color' => 'required',
-            'start' => 'required',
-        ]);
-        //Insert unrepeated tags and get IDs of sent tags
-        $tagsId = [];
-        foreach(explode(",", $request->tags) as $tagName){
-            $tagsId[] = Tag::firstOrCreate([
-                'name' => $tagName,
-            ])->id;
-        }
         Event::create([
             'title' => $request->title,
             'description' => $request->description,
             'color' => $request->color,
-            'start' => Event::formatDateTime($request->start),
-            'end' => Event::formatDateTime($request->end),
-            'tags_id' => implode(",",$tagsId),
+            'start' => event::formatDateTime($request->start),
+            'end' => event::formatDateTime($request->end),
             'status_id' => '1',
         ]);
     }
@@ -49,18 +33,16 @@ class EventsController extends Controller
     public function update(Request $request)
     {
         Event::find($request->id)->update([
-            'start' => Event::formatDateTime($request->start),
-            'end' => Event::formatDateTime($request->end),
+            'start' => event::formatDateTime($request->start),
+            'end' => event::formatDateTime($request->end),
         ]);
     }
 
     public function destroy(Request $request)
     {
-        if($event = Event::find($request->idDelete)){
-            $event->update([
-                'status_id' => '2',
-            ]);
-        }
+        Event::find($request->idDelete)->update([
+            'status_id' => '2',
+        ]);
         return back();
     }
 }
