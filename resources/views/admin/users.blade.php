@@ -4,8 +4,9 @@
     <!-- Page heading -->
     <div class="d-sm-flex align-items-center justify-content-between shadow-4 mb-2">
         <h1 class="h3 mb-0 text-gray-dark">Usuarios</h1>
-        <a href="#" class="d-none d-xl-inline-block btn btn-sm btn-navbar shadow-sm navbar-blue-u open-modal" data-toggle="modal" data-target="#UserAddModal" data-open="UserAddModal">
-        <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Usuario</a>
+        <a href="#" class="d-none d-xl-inline-block btn btn-sm btn-navbar shadow-sm navbar-blue-u open-modal"
+           data-toggle="modal" data-target="#UserAddModal" data-open="UserAddModal">
+            <i class="fas fa-user-plus fa-sm mr-1 text-white"></i>Agregar Usuario</a>
     </div>
 
     <!-- Success message for registry -->
@@ -37,68 +38,40 @@
             </tr>
             </thead>
             <tbody>
-                @foreach($users as $user)
-                    <tr>
-                        @if (Auth::guest())
-                            <td title="{{($user->name)}}">{{($user->name)}}</td>
-                            <td title="{{($user->email)}}">{{($user->email)}}</td>
-                            <td title="{{($user->birth)}}">{{($user->birth)}}</td>
-                            <td title="{{($user->phone)}}">{{($user->phone)}}</td>
-                            <td title="{{($user->role_id)}}">{{($user->role_id)}}</td>
-                            <td title="{{($user->status_id)}}">{{($user->status_id)}}</td>
-                        @else
-                            <th title="{{($user->id)}}">{{($user->id)}}</th>
-                            <td title="{{($user->name)}}">{{($user->name)}}</td>
-                            <td title="{{($user->email)}}">{{($user->email)}}</td>
-                            <td title="{{($user->birth)}}">{{($user->birth)}}</td>
-                            <td title="{{($user->phone)}}">{{($user->phone)}}</td>
-                            <td title="
+            @foreach($users as $user)
+                <tr>
+                    @if (Auth::guest())
+                        <td title="{{($user->name)}}">{{($user->name)}}</td>
+                        <td title="{{($user->email)}}">{{($user->email)}}</td>
+                        <td title="{{($user->birth)}}">{{($user->birth)}}</td>
+                        <td title="{{($user->phone)}}">{{($user->phone)}}</td>
+                        <td title="{{($user->role_id)}}">{{($user->role_id)}}</td>
+                        <td title="{{($user->status_id)}}">{{($user->status_id)}}</td>
+                    @else
+                        <th title="{{($user->id)}}">{{($user->id)}}</th>
+                        <td title="{{($user->name)}}">{{($user->name)}}</td>
+                        <td title="{{($user->email)}}">{{($user->email)}}</td>
+                        <td title="{{($user->birth)}}">{{($user->birth)}}</td>
+                        <td title="{{($user->phone)}}">{{($user->phone)}}</td>
+                        <td title="
                                 @foreach($roles as $role)
-                                    @if($user->role_id == $role->id)
-                                        {{$role->name}}
-                                        @break
-                                    @endif
-                                @endforeach"
-                            >
-                                @foreach($roles as $role)
-                                    @if($user->role_id == $role->id)
-                                        {{$role->name}}
-                                        @break
-                                    @endif
-                                @endforeach
-                            </td>
-                            <td title="
+                        @if($user->role_id == $role->id)
+                        {{$role->name}}
+                        @break
+                        @endif
+                        @endforeach">
+                            @foreach($roles as $role)
+                                @if($user->role_id == $role->id)
+                                    {{$role->name}}
+                                    @break
+                                @endif
+                            @endforeach
+                        </td>
+                        <td title="
                                 @foreach($status as $curr_status)
-                                    @if($user->status_id == $curr_status->id)
-                                        {{$curr_status->name}}
-                                        @break
-                                    @endif
-                                @endforeach"
-                            >
-                                @foreach($status as $curr_status)
-                                    @if($user->status_id == $curr_status->id)
-                                        {{$curr_status->name}}
-                                        @break
-                                    @endif
-                                @endforeach
-                            </td>
-                            <td>
-                                <button type="button" class="btn btn-warning open-modal btnedit"
-                                        data-open="UserUpdModal"
-                                        data-toggle="modal"
-                                        data-placement="top" title="Editar"
-                                data-id="{{ $user->id }}"
-                                data-name="{{ $user->name }}"
-                                data-email="{{ $user->email }}"
-                                data-password="{{ $user->password }}"
-                                data-birth="{{ $user->birth }}"
-                                data-phone="{{ $user->phone }}"
-                                data-role="{{ $user->role_id}}"
-                                data-status="{{ $user->status_id }}"
-                                data-target="#UserUpdModal">
-                                    <i class="fas fa-edit"></i>
-                                </button>
-                            </td>
+                        @if($user->status_id == $curr_status->id)
+                        {{$curr_status->name}}
+                        @break
                         @endif
                         @endforeach"
                         >

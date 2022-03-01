@@ -1,6 +1,7 @@
 <?php
 return[
     'o-title' => 'Ofertas Académicas',
+    'o-description' => 'La Universidad de Margarita ofrece una formación integral, ciudadana, ética y profesional de recursos humanos que respondan satisfactoriamente a los retos que demanda el desarrollo insular y nacional, mediante las funciones de docencia, investigación, extensión y producción.',
     'o-pregrade' => 'Ofertas de Pregado',
     'o-enginerrs' => 'Ingeniería y Afines',
     'o-systemeng' => 'Ingeniería de Sistemas',
