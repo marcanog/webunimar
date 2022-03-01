@@ -107,42 +107,28 @@
             margin: 0 auto;
         }
 
-        .conten-subsytem > a > img {
-            display: flex;
-            border-top-right-radius: 20px;
-            border-top-left-radius: 20px;
-            justify-content: space-around;
-            width: 60%;
-            margin: 0 auto;
-            padding: 1rem;
-        }
+        /*.conten-subsytem > a > img {*/
+        /*    display: flex;*/
+        /*    border-top-right-radius: 20px;*/
+        /*    border-top-left-radius: 20px;*/
+        /*    justify-content: space-around;*/
+        /*    width: 60%;*/
+        /*    margin: 0 auto;*/
+        /*    padding: 1rem;*/
+        /*}*/
 
-        .conten-subsytem {
-            display: flex;
-            border-radius: 20px;
-            border: 1px solid #c1c1c1;
-            width: 20%;
-            padding: .5rem;
-        }
+        /*.conten-subsytem {*/
+        /*    display: flex;*/
+        /*    border-radius: 20px;*/
+        /*    border: 1px solid #c1c1c1;*/
+        /*    width: 20%;*/
+        /*    padding: .5rem;*/
+        /*}*/
 
-        #link-subsystem > span {
-            display: flex;
-            flex: 0 0 25%;
-            margin: 1em;
-            font-size: 0.95em;
-            justify-content: center;
-            color: #FFFFFF;
-            text-align: center;
-        }
-
-        #link-subsystem > span:hover {
-            text-decoration: none;
-        }
-
-        .content-areas.col-12 {
-            justify-content: space-evenly;
-            margin: 0 auto;
-        }
+        /*.content-areas.col-12 {*/
+        /*    justify-content: space-evenly;*/
+        /*    margin: 0 auto;*/
+        /*}*/
     </style>
     <div class=".xl-container">
         <div class="banner-main">
@@ -153,6 +139,13 @@
                 <img id="img-section"
                      src="{{URL::asset('image/logo-unimar.png')}}"><span
                     style="font-size: 0.85em; width: 55%;">{{trans('offers.o-title')}}</span>
+            </div>
+        </div>
+        <div class="d-flex text-justify m-4">
+            <div class="card">
+                <p class="sectionbody">
+                    {{trans('offers.o-description')}}
+                </p>
             </div>
         </div>
         {{--contents offers--}}

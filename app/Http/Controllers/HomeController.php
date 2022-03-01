@@ -21,7 +21,7 @@ class HomeController extends Controller
     }
     public function index(){
         setlocale(LC_ALL, 'es_ES');
-        return view('/home')->with('news', News::get())->with('events', Event::get());
+        return view('/home')->with('news', News::where('status_id',1)->limit(4)->orderBy('id', 'DESC')->get())->with('events', Event::where('status_id',1)->limit(4)->orderBy('id', 'DESC')->get());
 
     }
 

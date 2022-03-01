@@ -1,6 +1,7 @@
 <?php
 return[
     'o-title' => 'Academic Offerings',
+    'o-description' => 'The University of Margarita offers an integral, civic, ethical and professional formation of human resources that respond satisfactorily to the challenges demanded by the island and national development, through the functions of teaching, research, extension and production.',
     'o-pregrade' => 'Pre-College Offerings', 'o-pregrade' => 'Pre-College Offerings',
     'o-enginerrs' => 'Engineering and Related',
     'o-systemeng' => 'Systems Engineering',

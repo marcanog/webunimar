@@ -149,7 +149,7 @@
 {{--            margin: 0 auto;--}}
 {{--        }--}}
 {{--    </style>--}}
-    <div class="content">
+    <div class="container">
         <div class="banner-main">
             <img src="{{URL::asset('/image/viceacademic.png')}}">
         </div>
@@ -163,11 +163,11 @@
             <div class="card-group">
                 <div class="card m-4">
                     <div class="row no-gutters">
-                        <div class="col-md-4">
+                        <div class="col-auto">
                             <img class="rounded-left" src="{{URL::asset('/image/secretarygeneral/secgeneral.jpg')}}" alt="Secretaria General" style="max-width: 10em;">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body">
+                            <div class="card-block px-2 card-body">
                                 <h3 class="card-title">{{trans('secretarygeneral.secretaryofic-author')}}</h3>
                                 <p class="card-text font-weight-bold">{{trans('secretarygeneral.secretaryofic-author-title')}}</p>
                                 <p class="card-text"><small class="text-muted">{{trans('secretarygeneral.secretaryofic-author-email')}}</small></p>
@@ -224,7 +224,7 @@
         <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
             {{--descripction--}}
             <div class="collapse col-lg-12 m-4" id="collapse">
-                <div class="card card-body text-justify sectionbody">
+                <div class="card card-body sectionbody">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('secretarygeneral.secretaryofic-title')}}
                     </p>
@@ -236,7 +236,7 @@
             </div>
             {{--functions--}}
             <div class="collapse col-lg-12 m-4" id="collapse3">
-                <div class="card text-justify card-body">
+                <div class="card card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('secretarygeneral.secretaryofic-functions')}}
                     </p>
@@ -255,7 +255,7 @@
             {{--Departaments--}}
             <div class="collapse col-md-12 m-3 " id="collapse4">
                 <div class="container col-md-12">
-                    <p class="text-justify" style="font-size: 1.25rem; font-weight: 600;">
+                    <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('vextension.vext-subsystems')}}</p>
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
@@ -310,7 +310,7 @@
                 </div>
             </div>
         </div>
-        <div class="info-dept d-flex m-4 card card-body text-justify">
+        <div class="info-dept d-flex m-4 card card-body">
             <h5>{{trans('postgrade.postg-info-title')}}</h5>
             <p>
                 <b>{{trans('secretarygeneral.secretaryofic-info-title')}}</b>&nbsp {{trans('secretarygeneral.secretaryofic-info-email')}}
