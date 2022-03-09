@@ -28,5 +28,5 @@ return [
     'f_calendar' => 'Calendario Académico',
     'f_dir_telf' => 'Directorio Telefónico',
     'f_contact_us' => 'Contáctanos a través de',
-    'f-copyrigth' => '© Copyright 2001-2021 Universidad de Margarita, Rif: J-30660040-0. Teléfono: 800-UNIMAR (800-864627). Isla de Margarita - Venezuela.',
+    'f-copyrigth' => '© Copyright 2001-2021 Universidad de Margarita, Rif: J-30660040-0. Isla de Margarita - Venezuela.',
 ];
