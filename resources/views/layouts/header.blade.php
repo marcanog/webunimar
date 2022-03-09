@@ -112,7 +112,7 @@
                     <li class="nav-item px-2">
                         <a class="nav-link" href="{{url('/postgrade')}}">{{trans('header.postgrade')}}</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                         <a class="nav-link" href="{{url('/dptoinvest')}}">{{trans('header.investigation')}}</a>
                     </li>
                     <li class="nav-item px-2">
