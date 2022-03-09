@@ -67,10 +67,10 @@
 
             <div class="collapse navbar-collapse" id="demo-navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item px-2 active">
                         <a class="nav-link text-dark" href="{{url('/home')}}">Inicio <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item px-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.ourinstitut')}}
                         </a>
@@ -81,7 +81,7 @@
                             <a class="dropdown-item" href="{{url('/regulations')}}">{{trans('home.h-regulations')}}</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item px-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.academics')}}
                         </a>
@@ -90,7 +90,7 @@
                             <a class="dropdown-item" href="{{url('/deans')}}">{{trans('header.deanchip')}}</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item px-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.extent')}}
                         </a>
