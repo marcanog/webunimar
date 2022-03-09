@@ -28,6 +28,6 @@ return [
     'f_calendar' => 'Academic Calendar',
     'f_dir_telf' => 'Telephone Directory',
     'f_contact_us' => 'Contact us through',
-    'f-copyrigth' => '© Copyright 2001-2021 Universidad de Margarita, Rif: J-30660040-0. Phone: 800-UNIMAR (800-864627). Margarita Island - Venezuela.',
+    'f-copyrigth' => '© Copyright 2001-2021 Universidad de Margarita, Rif: J-30660040-0. Margarita Island - Venezuela.',
 
 ];
