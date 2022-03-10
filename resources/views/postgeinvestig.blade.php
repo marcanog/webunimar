@@ -125,7 +125,7 @@
             <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
                 <div class="collapse col-lg-12 m-4" id="collapse">
                     <div class="card card-body">
-                        <p style="font-size: 1.25rem; font-weight: 600;">
+                        <p class="text-left"  style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-vision-title')}}
                         </p>
                         <div class="sectionbody">
@@ -135,10 +135,10 @@
                 </div>
                 <div class="collapse col-lg-12 m-4" id="collapse2">
                     <div class="card card-body">
-                        <p style="font-size: 1.25rem; font-weight: 600;">
+                        <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-functions')}}
                         </p>
-                        <ul>
+                        <ul class="text-justify">
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-1')}}</p></li>
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-2')}}</p></li>
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-3')}}</p></li>
@@ -150,10 +150,10 @@
                 </div>
                 <div class="collapse col-lg-12 m-4" id="collapse4">
                     <div class="card card-body">
-                        <p style="font-size: 1.25rem; font-weight: 600;">
+                        <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-functions')}}
                         </p>
-                        <ul>
+                        <ul class="text-justify">
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-1')}}</p></li>
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-2')}}</p></li>
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-3')}}</p></li>
@@ -165,7 +165,7 @@
                 </div>
                 <div class="collapse col-lg-12" id="collapse3">
                     <div class="container col-md-12">
-                        <p style="font-size: 1.25rem; font-weight: 600;">
+                        <p class="text-left"  style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-units')}}
                         </p>
                         <div class="content-areas">
@@ -234,10 +234,10 @@
                 </div>
                 <div class="collapse col-lg-12" id="collapse5">
                     <div class="card card-body">
-                        <p style="font-size: 1.25rem; font-weight: 600;">
+                        <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-functions')}}
                         </p>
-                        <ul>
+                        <ul class="text-justify">
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-1')}}</p></li>
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-2')}}</p></li>
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-3')}}</p></li>
@@ -249,10 +249,10 @@
                 </div>
                 <div class="collapse col-lg-12" id="collapse6">
                     <div class="card card-body">
-                        <p style="font-size: 1.25rem; font-weight: 600;">
+                        <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-functions')}}
                         </p>
-                        <ul>
+                        <ul class="text-justify">
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-1')}}</p></li>
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-2')}}</p></li>
                             <li><p> {{trans('dptoinvestigation.dinvest-functions-3')}}</p></li>
@@ -263,7 +263,7 @@
                     </div>
                 </div>
             </div>
-            <div class="info-dept col-lg-12 card card-body">
+            <div class="info-dept col-lg-12 card card-body text-left">
                 <h5>{{trans('dptoinvestigation.dinvest-info-title')}}</h5>
                 <p>
                     <b>{{trans('dptoinvestigation.dinvest-info-etitle')}}</b>&nbsp {{trans('dptoinvestigation.dinvest-info-email')}}
