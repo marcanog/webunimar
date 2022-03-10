@@ -8,8 +8,8 @@
         <div class="section-content">
             <div class="d-flex justify-content-start">
                 <img id="img-section"
-                     src="{{URL::asset('/image/logo-unimar.png')}}"><span
-                    style="font-size: 0.85em; width: 55%;">{{trans('communityserv.title')}}</span>
+                     src="{{URL::asset('/image/logo-unimar.png')}}">
+                     <span>{{trans('communityserv.title')}}</span>
             </div>
         </div>
     </div>
