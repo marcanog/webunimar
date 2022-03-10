@@ -13,7 +13,7 @@ return[
     'rector-functions-3' => 'El Rector es el representante legal de la Universidad y el órgano de comunicación de ésta con todas las autoridades de la República y con las Instituciones Nacionales o Extranjeras.',
     'rector-welcome' => 'Carta de Bienvenida',
     'rector-letter' => 'Apreciados estudiantes, queridos alumnos que se han acercado por primera vez a la Universidad de Margarita, Alma Mater del Caribe: nuestra más cordial bienvenida a ésta casa, que en adelante vamos a compartir. Ustedes están entrando a formar parte de un hermoso proyecto educativo, pensado, diseñado y puesto en marcha para que formen parte de él. Ustedes son la razón de existir de una Institución como UNIMAR. Constituyen la alegría, la presencia juvenil en nuestra Universidad en pleno desarrollo. Vienen con ganas de conocer, de aprender y de recibir una formación universitaria. Vienen a relacionarse con un mundo nuevo y bastante desconocido para ustedes. Vienen a convivir con una comunidad constituida por profesores, trabajadores, autoridades universitarias y otros estudiantes que ya han avanzado en sus estudios. Con todos van a interactuar y deberán hacerlo en la mayor armonía, en un ambiente humano, que induce a la tranquilidad y al desarrollo espiritual que requiere el estudio. Prodiguen cariño y cuidado a su Universidad, resguárdenla, manténganla plena y hermosa para las nuevas generaciones de Estudiantes Unimaristas. UNIMAR los recibe en su regazo con mucha alegría. Bienvenidos.',
-    'rector-deptos' => 'Departamentos',
+    'rector-deptos' => 'Direcciones y departamentos',
     'rector-deptos-1' => 'Relaciones Institucionales',
     'rector-deptos-2' => 'Relaciones Públicas',
     'rector-deptos-3' => 'Prensa',
