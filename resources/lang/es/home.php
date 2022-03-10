@@ -12,8 +12,8 @@ return [
     'location' => 'Ubicación',
     //academics areas
     'humarte' => 'Humanidades, Artes y Educación',
-    'cjyp' => 'Ciencias Políticas y Jurídicas',
-    'ceys' => 'Ciencias Sociales y Económicas',
+    'cjyp' => 'Ciencias Jurídicas y Políticas',
+    'ceys' => 'Ciencias Económicas y Sociales',
     'ingsyst' => 'Ingeniería de Sistemas y Afines',
     'estgen' => 'Estudios Generales',
     'extent' => 'Extensión',
