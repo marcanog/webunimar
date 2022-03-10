@@ -130,8 +130,13 @@ Route::get('newstudents', function(){
 Route::get('alumni', function(){
     return view('alumni');
 });
+
 Route::get('vextension', function () {
     return view('vextension');
+});
+
+Route::get('communityserv', function(){
+    return view('communityserv');
 });
 
 Route::get('agreements', function(){
