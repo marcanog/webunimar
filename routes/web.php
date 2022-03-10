@@ -175,6 +175,10 @@ Route::get('postgrade', function () {
     return view('dptopostgrade');
 });
 
+Route::get('postgeinvestig', function(){
+    return view('postgeinvestig');
+});
+
 Route::get('pregrade', function () {
     return view('pregrade');
 });

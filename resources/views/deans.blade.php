@@ -40,7 +40,7 @@
                 <span>{{trans('home.extent')}}</span></a>
             </div> -->
             <div class="content-deanship" style="background-color: #00953E">
-                <a href="/postgrade"><img src="{{URL::asset('./image/deans/postgrade.png')}}">
+                <a href="{{url('/postgeinvestig'}}"><img src="{{URL::asset('./image/deans/postgrade.png')}}">
                 <span>{{trans('home.posteinvg')}}</span></a>
             </div>
             <!-- <div class="content-deanship" style="background-color: #f6A016">
