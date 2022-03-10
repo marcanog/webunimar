@@ -2,8 +2,8 @@
 return[
     'title' => 'Rectorado',
     'rector-name' => 'Antonieta Rosales de Oxford',
-    'rector-charge' => 'Rector',
-    'rector-email' => 'rector@unimar.edu.ve',
+    'rector-charge' => 'Rectora',
+    'rector-email' => 'rectorado@unimar.edu.ve',
     'rector-asist'=>'Manuel Antonio Silva Suniaga',
     'rector-asist-charge' =>'Adjunto Rectorado',
     'rector-asist-email' => 'msilva.3944@unimar.edu.ve',
