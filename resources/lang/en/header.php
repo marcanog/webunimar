@@ -25,4 +25,5 @@ return [
     'pregrade' => 'Pregrade',
     'rectorade' => 'Rectorade',
     'vicerectorade' => 'Vicerectorade',
+    'communityserv' => 'Community Service',
 ];

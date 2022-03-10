@@ -96,7 +96,7 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
                             <a class="dropdown-item" href="{{url('/vextension')}}">{{trans('header.vicerectorade')}}</a>
-{{--                            <a class="dropdown-item" href="#">Decanatos</a>--}}
+                            <a class="dropdown-item" href="{{url('/servcommunity')}}">Decanatos</a>
                         </div>
                     </li>
                     <li class="nav-item px-2 dropdown">
