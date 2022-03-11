@@ -75,7 +75,7 @@
                 </div>
             </div>
             {{--contens--}}
-            <div class="flex content-vext">
+            <div class="d-flex justify-content-around content-vext">
                 <div class="links-interest" id="contentimg" style="background-color: #336699"
                      data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false"
                      aria-controls="collapse2">
