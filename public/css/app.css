@@ -11121,18 +11121,6 @@ span .container-sm {
     height: 5em;
 }
 
-/*.content-date {*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*    margin: 1em;*/
-/*    flex: 0 0 45%;*/
-/*}*/
-/*.content-event {*/
-/*    flex-direction: row;*/
-/*    flex: 0 0 100%;*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*}*/
 
 .date-news > span {
     position: relative;

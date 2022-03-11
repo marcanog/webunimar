@@ -26,4 +26,6 @@ return [
     'rectorade' => 'Rectorade',
     'vicerectorade' => 'Vicerectorade',
     'communityserv' => 'Community Service',
+    'healhystudent' => 'Student Welfare',
+    'studycontrol' => 'Study Control',
 ];
