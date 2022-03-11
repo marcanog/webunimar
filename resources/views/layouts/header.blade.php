@@ -67,9 +67,9 @@
 
             <div class="collapse navbar-collapse" id="demo-navbar">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item px-2 active">
+                    <!-- <li class="nav-item active">
                         <a class="nav-link text-dark" href="{{url('/home')}}">Inicio <span class="sr-only">(current)</span></a>
-                    </li>
+                    </li> -->
                     <li class="nav-item px-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.ourinstitut')}}
@@ -79,6 +79,15 @@
                             <a class="dropdown-item" href="{{url('/organization')}}">{{trans('header.organization')}}</a>
                             <a class="dropdown-item" href="{{url('/rectorade')}}">{{trans('header.rectorade')}}</a>
                             <a class="dropdown-item" href="{{url('/regulations')}}">{{trans('home.h-regulations')}}</a>
+                        </div>
+                    </li>
+                    <li class="nav-item px-2 dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{trans('header.secretariat')}}
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                            <a class="dropdown-item" href="{{url('/controlstudies')}}">{{trans('header.studycontrol')}}</a>
+                            <a class="dropdown-item" href="{{url('/healthystudent')}}">{{trans('header.healhystudent')}}</a>
                         </div>
                     </li>
                     <li class="nav-item px-2 dropdown">
