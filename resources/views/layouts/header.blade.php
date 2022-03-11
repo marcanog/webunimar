@@ -83,11 +83,11 @@
                     </li>
                     <li class="nav-item px-1 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Secretaría General
+                        {{trans('header.secretariat')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <a class="dropdown-item" href="{{url('/vacademic')}}">Control de Estudios</a>
-                            <a class="dropdown-item" href="{{url('/deans')}}">Bienestar Estudiantil</a>
+                            <a class="dropdown-item" href="{{url('/controlstudies')}}">{{trans('header.studycontrol')}}</a>
+                            <a class="dropdown-item" href="{{url('/healthystudent')}}">{{trans('header.healhystudent')}}</a>
                         </div>
                     </li>
                     <li class="nav-item px-1 dropdown">
