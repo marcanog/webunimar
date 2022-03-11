@@ -12269,7 +12269,7 @@ a:not([href]):not([tabindex]) {
     .navbar-expand-md .navbar-collapse {
         font-size: 0.8rem;
     }
-    .dropdown-menu.dropdown-item{
+    .dropdown-item {
         font-size: 0.8rem;
     }
     .location-content {
