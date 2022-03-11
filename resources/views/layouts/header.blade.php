@@ -70,7 +70,7 @@
                     <!-- <li class="nav-item active">
                         <a class="nav-link text-dark" href="{{url('/home')}}">Inicio <span class="sr-only">(current)</span></a>
                     </li> -->
-                    <li class="nav-item dropdown">
+                    <li class="nav-item px-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.ourinstitut')}}
                         </a>
@@ -81,7 +81,7 @@
                             <a class="dropdown-item" href="{{url('/regulations')}}">{{trans('home.h-regulations')}}</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item px-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{trans('header.secretariat')}}
                         </a>
@@ -90,7 +90,7 @@
                             <a class="dropdown-item" href="{{url('/healthystudent')}}">{{trans('header.healhystudent')}}</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item px-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.academics')}}
                         </a>
@@ -99,7 +99,7 @@
                             <a class="dropdown-item" href="{{url('/deans')}}">{{trans('header.deanchip')}}</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item px-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.extent')}}
                         </a>
@@ -108,7 +108,7 @@
                             <a class="dropdown-item" href="{{url('/communityserv')}}">{{trans('header.communityserv')}}</a>
                         </div>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item px-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.student')}}
                         </a>
@@ -118,13 +118,13 @@
                             <a class="dropdown-item" href="{{url('/alumni')}}">{{trans('header.graduates')}}</a>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                         <a class="nav-link" href="{{url('/postgrade')}}">{{trans('header.postgrade')}}</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                         <a class="nav-link" href="{{url('/dptoinvest')}}">{{trans('header.investigation')}}</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item px-2">
                         <a class="nav-link" href="{{url('/services')}}">{{trans('header.services')}}</a>
                     </li>
                 </ul>
