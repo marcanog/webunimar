@@ -155,7 +155,7 @@
             </div>
         </div>
         <div class=".xl-container">
-            {{--info represents--}}
+            <!-- {{--info represents--}}
             <div class="card-columns col-sm-11">
                 <a class="btn-link card-img" id="imgcard">
                     <div class="card row" id="cardauthor">
@@ -183,6 +183,39 @@
                         </div>
                     </div>
                 </a>
+            </div> -->
+            {{--  cards presentation --}}
+            <div class="d-flex justify-content-around m-4">
+                <div class="card-group">
+                    <div class="card m-4">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img class="rounded-left" src="{{URL::asset('/image/avatar.svg')}}" alt="Vicerrector Académico" style="max-width: 8em; height: 10.75em; background-color: #336699;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">{{trans('vacademy.vacad-author')}}</h3>
+                                    <p class="card-text font-weight-bold">{{trans('vacademy.vacad-author-title')}}</p>
+                                    <p class="card-text"><small class="text-muted">{{trans('vacademy.vacad-author-email')}}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card m-4">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <img class="rounded-left" src="{{URL::asset('/image/avatar.svg')}}" alt="Secretaria Vicerrectorado Académico" style="max-width: 8em; height: 10.75em; background-color: #336699;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title">{{trans('vacademy.vacad-asist')}}</h3>
+                                    <p class="card-text font-weight-bold">{{trans('vacademy.vacad-atitle')}}</p>
+                                    <p class="card-text"><small class="text-muted">{{trans('vacademy.vacad-asitmail')}}</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             {{--contens--}}
             <div class="flex content-vext">
