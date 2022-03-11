@@ -11007,15 +11007,6 @@ a.text-dark:focus {
     width: 330px;
 }
 
-/* .flex-bar {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    align-items: center;
-    position: relative;
-    margin: auto !important;
-    top: 10px;
-} */
 .flex-bar {
     display: flex;
     flex-direction: column;
@@ -11039,12 +11030,13 @@ a.navbar-brand {
     padding: 0 15px;
 }
 
-/*.navbar-brand {*/
-/*    float: left;*/
-/*    height: 50px;*/
-/*    font-size: 0.95rem;*/
-/*    line-height: 20px;*/
-/*}*/
+#navbarDropdown3::after {
+	margin-left: 0;
+}
+
+#navbarDropdown2::after {
+	margin-left: 0;
+}
 
 /****************************languages**************************************************/
 #languages {
