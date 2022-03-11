@@ -12281,7 +12281,7 @@ a:not([href]):not([tabindex]) {
         width:18rem;
     }
     .navbar-expand-md .navbar-collapse {
-        font-size: 0.95rem;
+        font-size: 0.8rem;
     }
     .navbar.navbar-expand-md.navbar-light.bg-white {
         justify-content: space-around;
