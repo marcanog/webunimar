@@ -172,13 +172,13 @@
 {{--                            <a class="dropdown-item" href="{{url('/alumni')}}">{{trans('header.graduates')}}</a>--}}
 {{--                        </div>--}}
                     </li>
-{{--                    <li class="nav-item px-2">--}}
-{{--                        <a class="nav-link" href="{{url('/postgrade')}}">{{trans('header.postgrade')}}</a>--}}
-{{--                    </li>--}}
+                    <li class="nav-item px-2">
+                        <a class="nav-link" href="{{url('/postgrade')}}">{{trans('header.postgrade')}}</a>
+                    </li>
                     <li class="nav-item px-2">
                         <a class="nav-link" href="{{url('/dptoinvest')}}">{{trans('header.investigation')}}</a>
                     </li>
-                    <li class="nav-item px-2">
+                    <!-- <li class="nav-item px-2">
                         <a class="nav-link" href="{{url('/services')}}">{{trans('header.services')}}</a>
 {{--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
 {{--                            {{trans('header.services')}}--}}
@@ -187,7 +187,7 @@
 {{--                            <a class="dropdown-item" href="{{url('/')}}">{{trans('header.administrative')}}</a>--}}
 {{--                            <a class="dropdown-item" href="{{url('/')}}">{{trans('header.academics')}}</a>--}}
 {{--                        </div>--}}
-                    </li>
+                    </li> -->
 {{--                <form class="form-inline my-2 my-lg-0">--}}
 {{--                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">--}}
 {{--                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>--}}
