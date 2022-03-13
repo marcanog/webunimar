@@ -84,8 +84,8 @@
                         </a>
                     </li>
                     <li class="footer-item">
-                        <a class="footer-title" href="{{url('/calendaracademy')}}">
-                            {{trans('footer.f_calendar')}}
+                        <a class="footer-title" href="{{url('/')}}">
+                            {{trans('footer.f_helps')}}
                         </a>
                     </li>
                 </ul>
@@ -94,22 +94,26 @@
         <div class="quickly-access">
             <div>
                 <ul>
-                    <li class="footer-item">
+                <li class="footer-item">
                         <a class="footer-title font-weight-bold" href="#">{{trans('footer.f_quick_links')}}</a>
                     </li>
                     <li class="footer-item">
                         <a class="footer-title" href="{{url('/contactus')}}">{{trans('footer.f_dir_telf')}}</a>
                     </li>
+                    <li class="footer-item">
+                        <a class="footer-title" href="{{url('/calendaracademy')}}">
+                            {{trans('footer.f_calendar')}}
+                        </a>
+                    </li>
                     {{--<li class="footer-item">
                         --}}{{--<a class="footer-title" href="#">{{trans('footer.f_dir_telf')}}</a>--}}{{--
                     </li>--}}
                     <li class="footer-item">
-                        {{--<span class="footer-text">{{trans('footer.f_contact_us')}}</span>--}}
                         <a class="footer-title" href="#">{{trans('footer.f_contact_us')}}</a>
                     </li>
                 </ul>
                 <div class="rrss">
-                    <ul class="flex align-items-center space-x-3">
+                    <ul class="flex align-items-center list-unstyled space-x-3">
                         <li class="nav-item">
                             <a href="mailto:info@unimar.edu.ve">
                                 <!-- <a onclick="location.href='mailto:info@unimar.edu.ve'"> -->
