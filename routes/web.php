@@ -167,6 +167,18 @@ Route::get('genestud', function () {
     return view('deangenestudies');
 });
 
+Route::get('humarte', function () {
+    return view('deanhumarte');
+});
+
+Route::get('engineerie', function () {
+    return view('deaneng');
+});
+
+Route::get('soc_com', function () {
+    return view('soccom');
+});
+
 Route::get('dptoinvest', function () {
     return view('dptoinvestigation');
 });
@@ -183,16 +195,8 @@ Route::get('pregrade', function () {
     return view('pregrade');
 });
 
-Route::get('engineerie', function () {
-    return view('deaneng');
-});
-
 Route::get('vicerectorades', function () {
     return view('vicerectorades');
-});
-
-Route::get('humarte', function () {
-    return view('deanhumarte');
 });
 
 Route::get('rectorade', function(){
