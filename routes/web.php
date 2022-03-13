@@ -211,6 +211,14 @@ Route::get('controlstudies', function () {
     return view('controlstudies');
 });
 
+Route::get('administration', function () {
+    return view('admindept');
+});
+
+Route::get('rrhh', function () {
+    return view('humansrecurs');
+});
+
 Route::get('regulations', function () {
     return view('regulations');
 });

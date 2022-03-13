@@ -99,7 +99,7 @@
                             <div class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">{{trans('header.administration')}}</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">{{trans('header.ourdepto')}}</a></li>
-                                    <li><a class="dropdown-item" href="#">{{trans('header.finance')}}</a></li>
+                                    <!-- <li><a class="dropdown-item" href="#">{{trans('header.finance')}}</a></li> -->
                                     <li><a class="dropdown-item" href="#">{{trans('header.RRHH')}}</a></li>
                                 </ul>
                             </div>
@@ -113,9 +113,9 @@
                             {{trans('header.secretariat')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                            <a class="dropdown-item" href="{{url('/')}}">{{trans('header.ourdepto')}}</a>
-                            <a class="dropdown-item" href="{{url('/')}}">{{trans('header.ctrlestu')}}</a>
-                            <a class="dropdown-item" href="{{url('/')}}">{{trans('header.healthyestu')}}</a>
+                            <a class="dropdown-item" href="{{url('/generalsecretariat')}}">{{trans('header.ourdepto')}}</a>
+                            <a class="dropdown-item" href="{{url('/controlstudies')}}">{{trans('header.ctrlestu')}}</a>
+                            <a class="dropdown-item" href="{{url('/healthystudent')}}">{{trans('header.healthyestu')}}</a>
                         </div>
                     </li>
                     <li class="nav-item px-2 dropdown">
