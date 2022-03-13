@@ -90,7 +90,7 @@
 {{--                        <a class="nav-link text-dark" href="{{url('/home')}}">Inicio <span class="sr-only">(current)</span></a>--}}
 {{--                    </li>--}}
                     <li class="nav-item px-1 dropdown">
-                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.ourinstitut')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
@@ -103,18 +103,12 @@
                                 </ul>
                             </div>
                             <a class="dropdown-item" href="{{url('/rectorade')}}">{{trans('header.rectorade')}}</a>
-{{--                            <div class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">{{trans('header.secretariat')}}</a>--}}
-{{--                                <ul class="dropdown-menu">--}}
-{{--                                    <li><a class="dropdown-item" href="#">{{trans('header.ctrlestu')}}</a></li>--}}
-{{--                                    <li><a class="dropdown-item" href="#">{{trans('header.healthyestu')}}</a></li>--}}
-{{--                                </ul>--}}
-{{--                            </div>--}}
                             <a class="dropdown-item" href="{{url('/regulations')}}">{{trans('header.h-regulations')}}</a>
                             <a class="dropdown-item" href="{{url('/regulations')}}">{{trans('header.gazzett')}}</a>
                         </div>
                     </li>
                     <li class="nav-item px-1 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.secretariat')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
@@ -124,15 +118,12 @@
                         </div>
                     </li>
                     <li class="nav-item px-1 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.academics')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
                             <a class="dropdown-item" href="{{url('/vacademic')}}" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >{{trans('header.vicerectorade')}}</a>
-{{--                            <a class="dropdown-item" href="{{url('/deans')}}">{{trans('header.deanchip')}}</a>--}}
-{{--                                <a class="dropdown-item" href="{{url('/deans')}}">{{trans('header.deanchip')}}</a>--}}
-{{--                                <a class="dropdown-item" href="#">Another action</a>--}}
-                                <div class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">{{trans('header.deanchip')}}</a>
+                                <div class="dropdown-submenu"><a class="dropdown-item dropdown-toggle">{{trans('header.deanchip')}}</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">{{trans('header.estgen')}}</a></li>
                                         <li><a class="dropdown-item" href="#">{{trans('header.humarte')}}</a></li>
@@ -140,28 +131,12 @@
                                         <li><a class="dropdown-item" href="#">{{trans('header.cjyp')}}</a></li>
                                         <li><a class="dropdown-item" href="#">{{trans('header.ding')}}</a></li>
                                         <li><a class="dropdown-item" href="#">{{trans('header.comsoc')}}</a></li>
-{{--                                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>--}}
-{{--                                            <ul class="dropdown-menu">--}}
-{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.estgen')}}</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.humarte')}}</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.ceys')}}</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.cjyp')}}</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.ding')}}</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.comsoc')}}</a></li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
-{{--                                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>--}}
-{{--                                            <ul class="dropdown-menu">--}}
-{{--                                                <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>--}}
-{{--                                            </ul>--}}
-{{--                                        </li>--}}
                                     </ul>
                                 </div>
                             </div>
                     </li>
                     <li class="nav-item px-1 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.extent')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
@@ -170,11 +145,10 @@
                         </div>
                     </li>
                     <li class="nav-item px-1 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{trans('header.student')}}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-{{--                            <a class="dropdown-item" href="{{url('/organization')}}">{{trans('header.organization')}}</a>--}}
                             <div class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">{{trans('header.pregrade')}}</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">{{trans('header.new_additions')}}</a></li>
