@@ -125,7 +125,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
                             <a class="dropdown-item" href="{{url('/vacademic')}}" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >{{trans('header.vicerectorade')}}</a>
                                 <div class="dropdown-submenu">
-                                    <a class="dropdown-item dropdown-toggle">{{trans('header.deanchip')}}</a>
+                                    <a class="dropdown-item href="#" dropdown-toggle">{{trans('header.deanchip')}}</a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">{{trans('header.estgen')}}</a></li>
                                         <li><a class="dropdown-item" href="#">{{trans('header.humarte')}}</a></li>
