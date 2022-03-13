@@ -130,7 +130,7 @@
                                     <li><a class="dropdown-item" href="{{url('/genestudies')}}">{{trans('header.estgen')}}</a></li>
                                         <li><a class="dropdown-item" href="{{url('/humarte')}}">{{trans('header.humarte')}}</a></li>
                                         <li><a class="dropdown-item" href="{{url('/cssocecon')}}">{{trans('header.ceys')}}</a></li>
-                                        <li><a class="dropdown-item" href="{{url('/csurpol)'}}">{{trans('header.cjyp')}}</a></li>
+                                        <li><a class="dropdown-item" href="{{url('/csurpol')}}">{{trans('header.cjyp')}}</a></li>
                                         <li><a class="dropdown-item" href="{{url('/engineerie')}}">{{trans('header.ding')}}</a></li>
                                         <li><a class="dropdown-item" href="{{url('/soccom')}}">{{trans('header.comsoc')}}</a></li>
                                     </ul>
