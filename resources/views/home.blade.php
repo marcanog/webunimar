@@ -128,14 +128,10 @@
         </div>
     </div>
 {{--links contents--}}
-    <div class="content-links">
+<div class="content-links">
         <div class="links-interest" style="background-color: #336699">
             <a href="{{url('/offerstudy')}}"><img src="{{URL::asset('image/studying.png')}}">
                 <span>{{trans('home.study_offers')}}</span></a>
-        </div>
-        <div class="links-interest" style="background-color: #336699">
-            <a href="{{url('/generalsecretariat')}}"><img src="{{URL::asset('image/secretary.png')}}">
-                <span>{{trans('home.general-secretary')}}</span></a>
         </div>
         <div class="links-interest" style="background-color: #336699">
             <a href="https://wwww.unimarcientifica.edu.ve/moodle" target="_blank"><img src="{{URL::asset('image/elearning.png')}}">
@@ -145,16 +141,16 @@
             <a href="https://wwww.unimarcientifica.edu.ve/revista"><img src="{{URL::asset('image/analisys.png')}}">
                 <span>{{trans('home.cientific_unimar')}}</span></a>
         </div>
-    </div>
-
-    <div class="content-links">
         <div class="links-interest" style="background-color: #336699">
             <a href="{{URL('/regulations')}}"><img src="{{URL::asset('image/procedure.svg')}}">
                 <span>{{trans('home.h-regulations')}}</span></a>
         </div>
+    </div>
+
+    <div class="content-links">
         <div class="links-interest" style="background-color: #336699">
-            <a href="https://twitter.com/uniradio_unimar?s=20" target="_blank"><img src="{{URL::asset('image/listening.png')}}">
-                <span>{{trans('home.uniradio')}}</span></a>
+            <a href="{{url('/generalsecretariat')}}"><img src="{{URL::asset('image/secretary.png')}}">
+                <span>{{trans('home.general-secretary')}}</span></a>
         </div>
         <div class="links-interest" style="background-color: #336699">
             <a href="{{URL('/healthystudent')}}"><img src="{{URL::asset('image/healthy.png')}}">
@@ -164,8 +160,12 @@
             <a href="{{url('/healthymental')}}"><img src="{{URL::asset('image/mental-healthy.png')}}">
                 <span>{{trans('home.sicologyc-healthy')}}</span></a>
         </div>
+        <div class="links-interest" style="background-color: #336699">
+            <a href="https://twitter.com/uniradio_unimar?s=20" target="_blank"><img src="{{URL::asset('image/listening.png')}}">
+                <span>{{trans('home.uniradio')}}</span></a>
+        </div>
     </div><!-- end content-links-->
-
+    
     <div class="section-content">
         <div class="d-flex justify-content-start">
             <img id="img-section"
