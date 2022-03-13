@@ -9,6 +9,8 @@ return [
     'ourinstitut' => 'Our Institution',
     'organization' => 'Organization',
     'administration' => 'Administration',
+    'finance' => 'Finance',
+    'RRHH' => 'Human Resources',
     'deanchip' => 'Deaneries',
     'academics' => 'Academics',
     'extent' => 'Extension',

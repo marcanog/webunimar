@@ -99,8 +99,8 @@
                             <div class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">{{trans('header.administration')}}</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">{{trans('header.ourdepto')}}</a></li>
-                                    <li><a class="dropdown-item" href="#">{{trans('header.estgen')}}</a></li>
-                                    <li><a class="dropdown-item" href="#">{{trans('header.humarte')}}</a></li>
+                                    <li><a class="dropdown-item" href="#">{{trans('header.finance')}}</a></li>
+                                    <li><a class="dropdown-item" href="#">{{trans('header.RRHH')}}</a></li>
                                 </ul>
                             </div>
                             <a class="dropdown-item" href="{{url('/rectorade')}}">{{trans('header.rectorade')}}</a>

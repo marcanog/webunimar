@@ -6,6 +6,8 @@ return [
     'ourinstitut' => 'Nuestra Institución',
     'organization' => 'Organización',
     'administration' => 'Administración',
+    'finance' => 'Finanzas',
+    'RRHH' => 'Recursos Humanos',
     'deanchip' => 'Decanatos',
     'academics' => 'Académico',
     'extent' => 'Extensión',
