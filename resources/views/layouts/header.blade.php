@@ -153,9 +153,9 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
                             <div class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">{{trans('header.pregrade')}}</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">{{trans('header.new_additions')}}</a></li>
-                                    <li><a class="dropdown-item" href="#">{{trans('header.regstudents')}}</a></li>
-                                    <li><a class="dropdown-item" href="#">{{trans('header.graduates')}}</a></li>
+                                    <li><a class="dropdown-item" href="{{url('/newstudents')}}">{{trans('header.new_additions')}}</a></li>
+                                    <li><a class="dropdown-item" href="{{url('/regularstudents')}}">{{trans('header.regstudents')}}</a></li>
+                                    <li><a class="dropdown-item" href="{{url('/alumni')}}">{{trans('header.graduates')}}</a></li>
                                 </ul>
                             </div>
                             <div class="dropdown-submenu">
