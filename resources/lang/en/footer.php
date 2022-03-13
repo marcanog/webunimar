@@ -25,6 +25,7 @@ return [
     'f_helps' => 'Scholarships and Grants',
     'f_servacad' => 'Academic',
     'f_servadmin' => 'Administrative',
+    'f_uniradio' => 'Uniradio',
     //five column
     'f_quick_links' => 'Quick Links',
     'f_academic_schec' => 'Academic Schedules',

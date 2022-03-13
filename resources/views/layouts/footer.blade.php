@@ -83,9 +83,14 @@
                             {{trans('footer.f_elearning')}}
                         </a>
                     </li>
-                    <li class="footer-item">
+                    <!-- <li class="footer-item">
                         <a class="footer-title" href="{{url('/')}}">
                             {{trans('footer.f_helps')}}
+                        </a>
+                    </li> -->
+                    <li class="footer-item">
+                        <a class="footer-title" href="https://twitter.com/uniradio_unimar?s=20" target="_blank">
+                            {{trans('footer.f_uniradio')}}
                         </a>
                     </li>
                 </ul>

@@ -25,6 +25,7 @@ return [
     'f_helps' => 'Becas y Ayudas',
     'f_servacad' => 'Académicos',
     'f_servadmin' => 'Administrativos',
+    'f_uniradio' => 'Uniradio',
     //five column
     'f_quick_links' => 'Accesos Rápidos',
     'f_academic_schec' => 'Horarios Académicos',
