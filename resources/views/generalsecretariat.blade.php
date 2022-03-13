@@ -2,7 +2,7 @@
 
 @section ('content')
 <!-- banner -->
-    <div class="container">
+    <div class="content">
         <div class="banner-main">
             <img src="{{URL::asset('/image/viceacademic.png')}}">
         </div>
