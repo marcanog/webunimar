@@ -39,10 +39,10 @@
                 <a href="/vextension"><img src="{{URL::asset('./image/deans/extension.png')}}">
                 <span>{{trans('home.extent')}}</span></a>
             </div> -->
-            <div class="content-deanship" style="background-color: #00953E">
+            <!-- <div class="content-deanship" style="background-color: #00953E">
                 <a href="{{url('/postgeinvestig')}}"><img src="{{URL::asset('./image/deans/postgrade.png')}}">
                 <span>{{trans('home.posteinvg')}}</span></a>
-            </div>
+            </div> -->
             <!-- <div class="content-deanship" style="background-color: #f6A016">
                 <a href="#"><img src="{{URL::asset('./image/deans/agreements.png')}}">
                 <span>{{trans('home.acadconvens')}}</span></a>
