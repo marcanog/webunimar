@@ -12255,10 +12255,10 @@ a:not([href]):not([tabindex]) {
         width:14rem;
     }
     .navbar-expand-md .navbar-collapse {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
     .dropdown-item {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
     .location-content {
         flex-direction: inherit;
