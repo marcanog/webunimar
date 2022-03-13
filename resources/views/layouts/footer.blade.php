@@ -70,12 +70,12 @@
                     </li>
                     <li class="footer-item">
                         <a class="footer-title " href="{{url('/payments')}}">
-                            {{trans('footer.f_online_payments')}}
+                            {{trans('footer.f_servacad')}}
                         </a>
                     </li>
                     <li class="footer-item">
                         <a class="footer-title " href="#">
-                            {{trans('footer.f_payment_bills')}}
+                            {{trans('footer.f_servadmin')}}
                         </a>
                     </li>
                     <li class="footer-item">
@@ -94,7 +94,7 @@
         <div class="quickly-access">
             <div>
                 <ul>
-                <li class="footer-item">
+                    <li class="footer-item">
                         <a class="footer-title font-weight-bold" href="#">{{trans('footer.f_quick_links')}}</a>
                     </li>
                     <li class="footer-item">
@@ -105,41 +105,38 @@
                             {{trans('footer.f_calendar')}}
                         </a>
                     </li>
-                    {{--<li class="footer-item">
-                        --}}{{--<a class="footer-title" href="#">{{trans('footer.f_dir_telf')}}</a>--}}{{--
-                    </li>--}}
                     <li class="footer-item">
                         <a class="footer-title" href="#">{{trans('footer.f_contact_us')}}</a>
                     </li>
                 </ul>
                 <div class="rrss">
-                    <ul class="flex align-items-center list-unstyled space-x-3">
-                        <li class="nav-item">
+                    <ul class="d-flex justify-content-center list-unstyled">
+                        <li class="nav-item px-1">
                             <a href="mailto:info@unimar.edu.ve">
                                 <!-- <a onclick="location.href='mailto:info@unimar.edu.ve'"> -->
                                 <!-- <a onclick="sendmail()"> -->
                                 <img class="w-6 h-6" src={{URL::asset('/image/rrss/email.png')}}>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-1">
                             <!-- <a onclick="rrss()"> -->
                             <a href="https://www.facebook.com/univ.demargarita">
                                 <img class="w-6 h-6" src={{URL::asset('/image/rrss/facebook.png')}}>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-1">
                             <!-- <a onclick="rrss()"> -->
                             <a href="https://www.twitter.com/somosunimar">
                                 <img class="w-6 h-6" src={{URL::asset('/image/rrss/gorjeo.png')}}>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-1">
                             <!-- <a onclick="rrss()"> -->
                             <a href="https://www.instagram.com/universidademargarita">
                                 <img class="w-6 h-6" src={{URL::asset('/image/rrss/instagram.png')}}>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item px-1">
                             <!-- <a onclick="rrss()"> -->
                             <a href="https://www.linkedin.com/company/univdemargarita">
                                 <img class="w-6 h-6" src={{URL::asset('/image/rrss/linkedin.png')}}>

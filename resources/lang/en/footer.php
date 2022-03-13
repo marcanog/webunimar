@@ -22,9 +22,9 @@ return [
     'f_elearning' => 'Virtual Education',
     'f_ecampus' => 'Virtual Campus',
     'f_repository' => 'Institutional Repository',
-    'f-helps' => 'Scholarships and Grants',
-    'f-servacad' => 'Academic Services',
-    'f-servadmin' => 'Administrative Services',
+    'f_helps' => 'Scholarships and Grants',
+    'f_servacad' => 'Academic',
+    'f_servadmin' => 'Administrative',
     //five column
     'f_quick_links' => 'Quick Links',
     'f_academic_schec' => 'Academic Schedules',

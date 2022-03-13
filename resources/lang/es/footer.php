@@ -22,9 +22,9 @@ return [
     'f_elearning' => 'Educación Virtual',
     'f_ecampus' => 'Campus Virtual',
     'f_repository' => 'Repositorio Institucional',
-    'f-helps' => 'Becas y Ayudas',
-    'f-servacad' => 'Servicios Académicos',
-    'f-servadmin' => 'Servicios Administrativos',
+    'f_helps' => 'Becas y Ayudas',
+    'f_servacad' => 'Académicos',
+    'f_servadmin' => 'Administrativos',
     //five column
     'f_quick_links' => 'Accesos Rápidos',
     'f_academic_schec' => 'Horarios Académicos',
