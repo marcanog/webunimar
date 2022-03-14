@@ -18,7 +18,7 @@
 {{--        cards presentations --}}
         <div class="d-flex justify-content-around m-4">
             <div class="card-group">
-                <div class="card m-2">
+                <div class="card m-4">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img class="rounded-left" src="{{URL::asset('/image/ingeeniering/decaingenieria.jpg')}}" alt="Decano Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card m-2">
+                <div class="card m-4">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img class="rounded-left" src="{{URL::asset('/image/ingeeniering/asistingenieria.jpg')}}" alt="Secretaria Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">
@@ -46,40 +46,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="card m-2">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <img class="rounded-left" src="{{URL::asset('/image/avatar.svg')}}" alt="Coord Psantías e Investigación Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <h3 class="card-title">{{trans('engineering.deaneng-coord')}}</h3>
-                                <p class="card-text font-weight-bold">{{trans('engineering.deaneng-coord-title')}}</p>
-                                <p class="card-text"><small class="text-muted">{{trans('engineering.deaneng-coord-mail')}}</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-{{--        <div class="d-flex justify-content-around m-4">--}}
-{{--            <div class="card-group">--}}
-{{--                <div class="card m-2">--}}
-{{--                    <div class="row no-gutters">--}}
-{{--                        <div class="col-md-4">--}}
-{{--                            <img class="rounded-left" src="{{URL::asset('/image/avatar.svg')}}" alt="Coord Psantías e Investigación Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">--}}
-{{--                        </div>--}}
-{{--                        <div class="col-md-8">--}}
-{{--                            <div class="card-body">--}}
-{{--                                <h3 class="card-title">{{trans('engineering.deaneng-coord')}}</h3>--}}
-{{--                                <p class="card-text font-weight-bold">{{trans('engineering.deaneng-coord-title')}}</p>--}}
-{{--                                <p class="card-text"><small class="text-muted">{{trans('engineering.deaneng-coord-mail')}}</small></p>--}}
-{{--                            </div>--}}
-{{--                        </div>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
 {{--        content information --}}
         <div class="d-flex justify-content-around content-vext">
             <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
@@ -94,8 +62,8 @@
             </div>
             <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
                 <a id="campusbtn">
-                <img src="{{URL::asset('./image/analisys.png')}}">
-                <span>{{trans('engineering.deaneng-invpas')}}</span></a>
+                <img src="{{URL::asset('./image/flow-chart.svg')}}">
+                <span>{{trans('engineering.deaneng-subsystems')}}</span></a>
             </div>
         </div>
         <div class="d-inline-flex flex-column justify-content-around" id="contevext">
@@ -127,7 +95,25 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div class="collapse col-sm-11" id="collapse3">
+        {{--        <div class="d-flex justify-content-around m-4">--}}
+        {{--            <div class="card-group">--}}
+        {{--                <div class="card m-2">--}}
+        {{--                    <div class="row no-gutters">--}}
+        {{--                        <div class="col-md-4">--}}
+        {{--                            <img class="rounded-left" src="{{URL::asset('/image/avatar.svg')}}" alt="Coord Psantías e Investigación Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">--}}
+        {{--                        </div>--}}
+        {{--                        <div class="col-md-8">--}}
+        {{--                            <div class="card-body">--}}
+        {{--                                <h3 class="card-title">{{trans('engineering.deaneng-coord')}}</h3>--}}
+        {{--                                <p class="card-text font-weight-bold">{{trans('engineering.deaneng-coord-title')}}</p>--}}
+        {{--                                <p class="card-text"><small class="text-muted">{{trans('engineering.deaneng-coord-mail')}}</small></p>--}}
+        {{--                            </div>--}}
+        {{--                        </div>--}}
+        {{--                    </div>--}}
+        {{--                </div>--}}
+        {{--            </div>--}}
+        {{--        </div>--}}
+           <div class="collapse col-sm-11" id="collapse3">
                 <div class="container col-md-12">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('vextension.vext-subsystems')}}</p>
@@ -151,28 +137,8 @@
                             <span>{{trans('vextension.vext-prom')}}</span></a>
                         </div>
                     </div>
-                    <div class="content-areas">
-                         <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="#">
-                                <img src="{{URL::asset('./image/project.svg')}}">
-                                <span>{{trans('vextension.vext-sproj')}}</span>
-                            </a>
-                        </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/first-aid-kit.svg')}}">
-                            <span>{{trans('vextension.vext-ceu')}}</span></a>
-                        </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/listening.png')}}">
-                            <span>{{trans('vextension.vext-uniradio')}}</span></a>
-                        </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/social-care.png')}}">
-                            <span>{{trans('vextension.vext-servcomuny')}}</span></a>
-                        </div>
-                    </div>
                 </div>
-            </div> -->
+            </div>
 
         </div>
     </div>
