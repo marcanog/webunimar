@@ -18,7 +18,7 @@
 {{--        cards presentations --}}
         <div class="d-flex justify-content-around m-4">
             <div class="card-group">
-                <div class="card m-4">
+                <div class="card m-2">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img class="rounded-left" src="{{URL::asset('/image/ingeeniering/decaingenieria.jpg')}}" alt="Decano Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">
@@ -32,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card m-4">
+                <div class="card m-2">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img class="rounded-left" src="{{URL::asset('/image/ingeeniering/asistingenieria.jpg')}}" alt="Secretaria Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">
@@ -46,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card m-4">
+                <div class="card m-2">
                     <div class="row no-gutters">
                         <div class="col-md-4">
                             <img class="rounded-left" src="{{URL::asset('/image/avatar.svg')}}" alt="Coord Psantías e Investigación Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">
@@ -62,6 +62,24 @@
                 </div>
             </div>
         </div>
+{{--        <div class="d-flex justify-content-around m-4">--}}
+{{--            <div class="card-group">--}}
+{{--                <div class="card m-2">--}}
+{{--                    <div class="row no-gutters">--}}
+{{--                        <div class="col-md-4">--}}
+{{--                            <img class="rounded-left" src="{{URL::asset('/image/avatar.svg')}}" alt="Coord Psantías e Investigación Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">--}}
+{{--                        </div>--}}
+{{--                        <div class="col-md-8">--}}
+{{--                            <div class="card-body">--}}
+{{--                                <h3 class="card-title">{{trans('engineering.deaneng-coord')}}</h3>--}}
+{{--                                <p class="card-text font-weight-bold">{{trans('engineering.deaneng-coord-title')}}</p>--}}
+{{--                                <p class="card-text"><small class="text-muted">{{trans('engineering.deaneng-coord-mail')}}</small></p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
 {{--        content information --}}
         <div class="d-flex justify-content-around content-vext">
             <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
