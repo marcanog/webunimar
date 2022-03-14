@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-10">
                 <div class="float-right">
-                    <a href="http://pagonline.unimar.edu.ve/" target="_blank" data-toggle="tooltip" data-placement="pagos-online" title="pagos-online"><img src="{{URL::asset('./image/bank-onlineb.png')}}" style="width:25px;"></a>
+                    <a href="http://pagonline.unimar.edu.ve/" target="_blank" title="pagos-online"><img src="{{URL::asset('./image/bank-onlineb.png')}}" style="width:25px;"></a>
                 </div>
                 <div class="float-right dropdown show">
                     <a class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
