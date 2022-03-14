@@ -18,7 +18,7 @@
                 </a>
             </div>
             <div class="content-deanship" style="background-color: #E4032C">
-                <a href="{{url('/csurpol)'}}"><img src="{{URL::asset('./image/deans/csjuridics.png')}}">
+                <a href="{{url('/csurpol')}}"><img src="{{URL::asset('./image/deans/csjuridics.png')}}">
                 <span>{{trans('home.cjyp')}}</span></a><br>
             </div>
             <div class="content-deanship" style="background-color: #B22029">
