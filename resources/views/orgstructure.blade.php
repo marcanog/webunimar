@@ -2,7 +2,7 @@
 
 @section('content')
     <script src="https://balkan.app/js/OrgChart.js"></script>
-    <div id="tree"/>
+    <div id="tree"></div>
     <style>
         /*html, body {
             margin: 0px;
@@ -38,11 +38,11 @@
 
     </style>
     <script>
-        OrgChart.templates.ula = Object.assign({}, OrgChart.templates.ula);
-        OrgChart.templates.ula.field_1 =
-            '<text data-width="150" data-text-overflow="multiline" style="font-size: 12px;" fill="#757575" x="160" y="75" text-anchor="middle">{val}</text>';
+        OrgChart.templates.isla = Object.assign({}, OrgChart.templates.isla);
+        OrgChart.templates.isla.field_1 =
+            '<text data-width="180" data-text-overflow="multiline" style="font-size: 9.25px;" fill="#757575" x="90" y="55" text-anchor="middle">{val}</text>';
         var chart = new OrgChart(document.getElementById("tree"), {
-            template: "ula",
+            template: "isla",
             enableSearch: false,
             mouseScrool: OrgChart.action.none,
             menu: {
