@@ -18,7 +18,7 @@
                     <div class="card m-4">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img class="rounded-left" src="{{URL::asset('/image/avatar.svg')}}" alt="Vicerrector Académico" style="max-width: 8em; height: 10.75em; background-color: #336699;">
+                                <img class="rounded-left" src="{{URL::asset('/image/csuperior/antoniomartinez.jpg')}}" alt="Vicerrector Académico" style="max-width: 8em; height: 10.75em; background-color: #336699;">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
@@ -32,7 +32,7 @@
                     <div class="card m-4">
                         <div class="row no-gutters">
                             <div class="col-md-4">
-                                <img class="rounded-left" src="{{URL::asset('/image/avatar.svg')}}" alt="Secretaria Vicerrectorado Académico" style="max-width: 8em; height: 10.75em; background-color: #336699;">
+                                <img class="rounded-left" src="{{URL::asset('/image/asistents/asistenteviceacadem.jpg')}}" alt="Secretaria Vicerrectorado Académico" style="max-width: 8em; height: 10.75em; background-color: #336699;">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
