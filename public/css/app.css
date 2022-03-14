@@ -11266,7 +11266,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 p.card-text {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
+    font-size: 0.85rem;
 }
 
 .controls-top {
