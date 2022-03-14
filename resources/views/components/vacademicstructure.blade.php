@@ -97,6 +97,20 @@
                     title: "Decana de Estudios Generales",
                     img: "https://cdn.balkan.app/shared/4.jpg"
                 },
+                {
+                    id: 15,
+                    pid: 2,
+                    name: '',
+                    title: "Biblioteca UNIMAR",
+                    img:"https://cdn.balkan.app/shared/3.jpg"
+                },
+                {
+                    id: 16,
+                    pid: 2,
+                    name: '',
+                    title: "Área de Pasantías",
+                    img: "https://cdn.balkan.app/shared/1.jpg"
+                }
             ]
         });
     </script>
