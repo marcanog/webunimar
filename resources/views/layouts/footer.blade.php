@@ -297,7 +297,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-fluid">
+        <div class="content-fluid" style="background-color: #FFFFFF;">
             <div class="card-header" id="headingFour">
                 <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-white text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -309,13 +309,12 @@
                 <div class="content">
                     <ul>
                         <li class="footer-item">
-                            <a class="footer-title " href="https://www.unimarcientifica.edu.ve/adminmoodle/">
-                                {{trans('footer.f_elearning')}}
-                            </a>
+                            <a class="footer-title" href="{{url('/contactus')}}">{{trans('footer.f_dir_telf')}}</a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-title" href="#">{{trans('footer.f_calendar')}}</a>
-                            <a class="footer-title" href="{{url('/contactus')}}">{{trans('footer.f_dir_telf')}}</a>
+                            <a class="footer-title" href="{{url('/calendaracademy')}}">
+                                {{trans('footer.f_calendar')}}
+                            </a>
                         </li>
                     </ul>
                 </div>
