@@ -103,22 +103,22 @@
                             {{trans('vextension.vext-subsystems')}}</p>
                         <div class="content-areas">
                             <div class="conten-subsytem" style="background-color: #6699cc">
+                                <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/social-care.png')}}">
+                                    <span>{{trans('vextension.vext-servcomuny')}}</span></a>
+                            </div>
+                            <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#">
                                     <img src="{{URL::asset('./image/presentation.svg')}}">
                                     <span>{{trans('vextension.vext-educperm')}}</span>
                                 </a>
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
+                                <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/first-aid-kit.svg')}}">
+                                    <span>{{trans('vextension.vext-ceu')}}</span></a>
+                            </div>
+                            <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/sports.svg')}}">
                                     <span>{{trans('vextension.vext-sports')}}</span></a>
-                            </div>
-                            <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/history.svg')}}">
-                                    <span>{{trans('vextension.vext-culture')}}</span></a>
-                            </div>
-                            <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/smartphone.png')}}">
-                                    <span>{{trans('vextension.vext-prom')}}</span></a>
                             </div>
                         </div>
                         <div class="content-areas">
@@ -129,16 +129,16 @@
                                 </a>
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/first-aid-kit.svg')}}">
-                                    <span>{{trans('vextension.vext-ceu')}}</span></a>
+                                <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/history.svg')}}">
+                                    <span>{{trans('vextension.vext-culture')}}</span></a>
+                            </div>
+                            <div class="conten-subsytem" style="background-color: #6699cc">
+                                <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/smartphone.png')}}">
+                                    <span>{{trans('vextension.vext-prom')}}</span></a>
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
                                 <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/listening.png')}}">
                                     <span>{{trans('vextension.vext-uniradio')}}</span></a>
-                            </div>
-                            <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/social-care.png')}}">
-                                    <span>{{trans('vextension.vext-servcomuny')}}</span></a>
                             </div>
                         </div>
                     </div>
