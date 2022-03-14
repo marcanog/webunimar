@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-    <div class="container-fluid">
+    <div class="content">
         <div class="banner-main">
             <img src="{{URL::asset('./image/nuestrosdecanatos.png')}}">
         </div>
