@@ -45,7 +45,7 @@
                 </div>
             @endforeach -->
                 <div class="card m-2 h-100 responsive">
-                    <img src="{{asset('image/newsimg/conv-colegio-contadores.jpg')}}" class="card-img-top" alt="image-news">
+                    <img src="{{asset('image/newsimg/imagen.php.jpeg')}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
                         <h6 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h6>
                         <div class="text-justify m-0" id="card-content" style="font-size: x-small;">
