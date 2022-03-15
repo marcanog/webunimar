@@ -157,7 +157,7 @@
     </div>
 </div>
 <div class="accordion" id="accordionmobile">
-        <div class="content-fluid">
+        <div class="content-fluid" style="background-color: #FFFFFF;">
             <div class="card-header">
                 <div class="rrss">
                     <ul class="flex align-items-center space-x-3">
@@ -301,7 +301,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-fluid" style="background-color: #FFFFFF;">
+        <div class="content-fluid">
             <div class="card-header" id="headingFour">
                 <h2 class="mb-0">
                     <button class="btn btn-link btn-block text-white text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
