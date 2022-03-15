@@ -274,23 +274,27 @@
                     <ul>
                         <li class="footer-item">
                             <a class="footer-title " href="{{url('/payments')}}">
-                                {{trans('footer.f_online_payments')}}
+                                {{trans('footer.f_servacad')}}
                             </a>
                         </li>
                         <li class="footer-item">
                             <a class="footer-title " href="#">
-                                {{trans('footer.f_payment_bills')}}
+                                {{trans('footer.f_servadmin')}}
                             </a>
                         </li>
                         <li class="footer-item">
-                            <a class="footer-title" href="{{url('/calendaracademy')}}">
-                                 {{trans('footer.f_academic_schec')}}
-{{--                                {{trans('footer.f_calendar')}}--}}
+                            <a class="footer-title " href="https://www.unimarcientifica.edu.ve/adminmoodle/">
+                                {{trans('footer.f_elearning')}}
                             </a>
                         </li>
+                    <!-- <li class="footer-item">
+                        <a class="footer-title" href="{{url('/')}}">
+                            {{trans('footer.f_helps')}}
+                        </a>
+                    </li> -->
                         <li class="footer-item">
-                            <a class="footer-title " href="#">
-                                {{trans('footer.f_academic_schec')}}
+                            <a class="footer-title" href="https://twitter.com/uniradio_unimar?s=20" target="_blank">
+                                {{trans('footer.f_uniradio')}}
                             </a>
                         </li>
                     </ul>
