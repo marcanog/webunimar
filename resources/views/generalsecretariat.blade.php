@@ -147,7 +147,7 @@
                     <div class="content-areas col-12">
                         <div class="conten-subsytem" style="background-color: #004c9c">
                             <a id="link-subsystem" href="#"><img
-                                    src="{{URL::asset('/image/procedure.png')}}">
+                                    src="{{URL::asset('/image/procedure.svg')}}">
                                 <span>{{trans('secretarygeneral.secretaryofic-rules')}}</span></a>
                         </div>
                         <div class="conten-subsytem" style="background-color: #004c9c">
