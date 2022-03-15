@@ -32,7 +32,7 @@
     {{--news unimar--}}
     <div class="d-flex justify-content-around m-4">
         <div class="card-group owl-carousel" id="newsdesktop">
-            @foreach($news as $new)
+            <!-- @foreach($news as $new)
                 <div class="card m-2 h-100 responsive">
                     <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
@@ -43,7 +43,47 @@
                         <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
-            @endforeach
+            @endforeach -->
+                <div class="card m-2 h-100 responsive">
+                    <img src="{{asset('image/newsimg/conv-colegio-contadores.jpg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h6 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h6>
+                        <div class="text-justify m-0" id="card-content" style="font-size: x-small;">
+                            <p>El pasado 20 de octubre la Universidad de Margarita, UNIMAR , y el Colegio de Contadores Públicos de Nueva Esparta, CCPENE, firmaron un Convenio de cooperación interinstitucional, con el objetivo de desarrollar actividades conjuntas encaminadas a la formación, capacitación y divulgación de conocimientos de contaduría pública.</p>
+                        </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2 h-100 responsive">
+                    <img src="{{asset('image/newsimg/nota-revista-cient.jpg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h6 class="card-title font-weight-bold">Universidad de Margarita celebra la publicación del primer número de la revista digital</h6>
+                        <div class="text-justify m-0" id="card-content" style="font-size: x-small;">
+                            <p>UNIMAR CIENTÍFICA. Revista científica de la Universidad de Margarita</p>
+                        </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2 h-100 responsive">
+                    <img src="{{asset('image/newsimg/entrega-DHC-maestro-Lucena-6.jpg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h6 class="card-title font-weight-bold">Universidad de Margarita entregó Título Doctor Honoris Causa al Maestro Ecberht Lucena</h6>
+                        <div class="text-justify m-0" id="card-content" style="font-size: x-small;">
+                            <p>El pasado 8 de noviembre en el salón Nueva Cádiz del hotel Venetur, el Maestro Ecberht Lucena recibió el título Doctor Honoris Causa, el primero entregado por la Universidad de Margarita. </p>
+                        </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2 h-100 responsive">
+                    <img src="{{asset('image/newsimg/fachada-unimar-450pix.jpg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h6 class="card-title font-weight-bold">Universidad de Margarita anuncia dos nuevos cursos introductorios</h6>
+                        <div class="text-justify m-0" id="card-content" style="font-size: x-small;">
+                            <p>El Decanato de Estudios Generales de la Universidad de Margarita anuncia la próxima realización de dos nuevos cursos introductorios para todos los interesados en seguir alguna de las carreras que se dictan en nuestra Casa de Estudios.</p>
+                        </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
         </div>
     </div>
 
