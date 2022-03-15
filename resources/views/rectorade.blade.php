@@ -112,7 +112,7 @@
                         </a>
                     </div>
                     <div class="conten-subsytem" style="background-color: #6699cc">
-                        <a id="link-subsystem" href="{{url('')}}">
+                        <a id="link-subsystem" href="{{url('/rrhh')}}">
                             <img src="{{URL::asset('./image/healthy.png')}}">
                             <span>{{trans('rectorade.rector-deptos-2')}}</span></a>
                     </div>
