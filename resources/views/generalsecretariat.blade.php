@@ -79,7 +79,7 @@
         {{--cards bodies--}}
         <div class="d-flex justify-content-around flex-column m-4" id="contevext">
             {{--descripction--}}
-            <div class="collapse" id="collapse">
+            <div class="collapse m-4" id="collapse">
                 <div class="card card-body sectionbody">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('secretarygeneral.secretaryofic-title')}}
@@ -91,7 +91,7 @@
                 </div>
             </div>
             {{--functions--}}
-            <div class="collapse" id="collapse3">
+            <div class="collapse m-4" id="collapse3">
                 <div class="card card-body text-justify">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('secretarygeneral.secretaryofic-functions')}}
@@ -109,7 +109,7 @@
                 </div>
             </div>
             {{--Departaments--}}
-            <div class="collapse " id="collapse4">
+            <div class="collapse m-4" id="collapse4">
                 <div class="container col-md-12">
                     <p class="text-justify" style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('vextension.vext-subsystems')}}</p>
