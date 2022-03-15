@@ -1,9 +1,9 @@
 <?php
 return [
     'organizat' => 'Nuestra Organización',
-    'authorities' => 'Nuestras Autoridades',
-    'superior-council' => 'Nuestro Consejo Superior',
-    'university-council' => 'Nuestro Consejo Universitario',
+    'authorities' => 'Nuestras Fundadores',
+    'superior-council' => 'Nuestras Fundadores',
+    'university-council' => 'Nuestras Autoridades Rectorales',
     'campus' => 'Campus Universitario',
     'struct-org' => 'Estructura Organizativa',
     //authorities -  superior counsil
