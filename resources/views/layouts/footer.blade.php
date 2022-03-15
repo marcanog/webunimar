@@ -160,7 +160,7 @@
         <div class="content-fluid" style="background-color: #FFFFFF;">
             <div class="card-header">
                 <div class="rrss">
-                    <ul class="flex align-items-center space-x-3">
+                    <ul class="d-flex justify-content-around list-unstyled">
                         <li class="nav-item">
                             <a href="mailto:info@unimar.edu.ve">
                                 <!-- <a onclick="location.href='mailto:info@unimar.edu.ve'"> -->
