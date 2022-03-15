@@ -77,7 +77,7 @@
         </div>
 
         {{--cards bodies--}}
-        <div class="d-flex justify-content-around flex-column m-4" id="contevext">
+        <div class="d-flex justify-content-around flex-column" id="contevext">
             {{--descripction--}}
             <div class="collapse m-4" id="collapse">
                 <div class="card card-body sectionbody">
