@@ -208,7 +208,7 @@
                 </h2>
             </div>
             <div id="collapseOne" class="collapse text-white" aria-labelledby="headingOne" data-parent="#accordionmobile">
-                <div class="content card-body">
+                <div class="content">
                    <ul>
                        <li class="footer-item">
                            <a class="footer-title" href="{{url('/rectorade')}}">{{trans('footer.f_rectors_office')}}</a>
