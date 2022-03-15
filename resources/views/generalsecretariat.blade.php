@@ -24,7 +24,7 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h3 class="card-title">{{trans('secretarygeneral.secretaryofic-author')}}</h3>
-                                <p class="card-text font-weight-bold">{{trans('secretarygeneral.secretaryofic-atitle')}}</p>
+                                <p class="card-text font-weight-bold">{{trans('secretaryofic-author-title)}}</p>
                                 <p class="card-text"><small class="text-muted">{{trans('secretarygeneral.secretaryofic-author-email')}}</small></p>
                             </div>
                         </div>
