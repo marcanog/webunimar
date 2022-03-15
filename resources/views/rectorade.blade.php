@@ -4,7 +4,7 @@
 <div class="content">
 {{--        banners --}}
     <div class="banner-main">
-        <img src="{{URL::asset('/image/viceacademic.png')}}">
+        <img src="{{URL::asset('/image/banners/es/rector_office.png')}}">
     </div>
 {{--        section --}}
     <div class="section-content">
