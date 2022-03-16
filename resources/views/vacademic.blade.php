@@ -58,7 +58,7 @@
                      data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
                      aria-controls="collapse3">
                     <a id="campusbtn">
-                        <img src="{{URL::asset('/image/unity.svg')}}">
+                        <img src="{{URL::asset('/image/organization.png')}}">
                         <span>{{trans('vacademy.vacad-units')}}</span>
                     </a>
                 </div>
@@ -67,7 +67,7 @@
                      aria-expanded="false"
                      aria-controls="collapse3">
                     <a id="campusbtn">
-                        <img src="{{URL::asset('/image/flow-chart.svg')}}">
+                        <img src="{{URL::asset('/image/organigram.png')}}">
                         <span>{{trans('vacademy.vacad-struct')}}</span>
                     </a>
                 </div>

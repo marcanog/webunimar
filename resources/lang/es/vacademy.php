@@ -3,7 +3,7 @@
 return [
     'vacad-title' => 'Vicerrectorado Académico',
     'vacad-vision-title'=> 'Visión',
-    'vacad-units' => 'Unidades de Adscripción',
+    'vacad-units' => 'Subsistemas',
     'vacad-author' => 'Antonio Martínez Camacho',
     'vacad-author-title' => 'Vicerrector Académico',
     'vacad-author-email' => 'antonio.martinez@unimar.edu.ve',
