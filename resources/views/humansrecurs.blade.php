@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section ('content')
-    <div class=".xl-container">
+    <div class="content">
         <div class="banner-main">
             <img src="{{URL::asset('/image/banners/es/rec_humans.png')}}">
         </div>
@@ -13,5 +13,8 @@
             </div>
         </div>
         {{--contents--}}
+        <div class="content">
+            
+        </div>
     </div>
 @endsection
