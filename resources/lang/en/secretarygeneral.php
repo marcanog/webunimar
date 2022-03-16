@@ -23,7 +23,7 @@ return [
     'secretaryofic-functions-8' => 'To coordinate, supervise and evaluate the functions of the units of Control of Studies, Student Welfare and General Archives.',
     'secretaryofic-functions-9' => 'Coordinate, organize and execute the Graduation Ceremonies as well as other corresponding activities.',
     'secretaryofic-depts' => 'Departments',
-    'ctrlestudy-title' => 'Department of Studies Control',
+    'ctrlestudy-title' => 'Studies Control',
     'ctrlestudy-function-title' => 'Functions of the Department of Control of Studies',
     'ctrlestudy-function-1' => 'Request the pertinent documentation in the university admission process and store them in each university students file',
     'ctrlestudy-function-2' => 'To organize and execute the enrollment process, in the established periods',

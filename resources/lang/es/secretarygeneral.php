@@ -22,7 +22,7 @@ return [
     'secretaryofic-functions-8' => 'Coordinar, supervisar y evaluar las funciones de las unidades de Control de Estudios, Bienestar Estudiantil y Archivo General.',
     'secretaryofic-functions-9' => 'Coordinar, organizar y ejecutar los Actos de Grados así como las demás actividades correspondientes.',
     'secretaryofic-depts' => 'Departamentos',
-    'ctrlestudy-title' => 'Departamento de Control de Estudios',
+    'ctrlestudy-title' => 'Control de Estudios',
     'ctrlestudy-function-title' => 'Funciones del Departamento de Control de Estudios',
     'ctrlestudy-function-1' => 'Solicitar la documentación pertinente en el proceso de ingreso a la universidad y resguardarlas en cada expediente del estudiantado universitario',
     'ctrlestudy-function-2' => 'Organizar y ejecutar el proceso Inscripciones, en los periodos que se establezcan.',
