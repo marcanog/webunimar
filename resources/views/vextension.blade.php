@@ -4,7 +4,7 @@
     <div class="content">
 {{--        Main Banner --}}
         <div class="banner-main">
-            <img src="{{asset('./image/vicextension.png')}}">
+            <img src="{{asset('./image/banners/es/vicextension.jpg')}}">
         </div>
 {{--        Section ID --}}
         <div class="section-content">
@@ -17,7 +17,7 @@
         <p>
         <div class="content">
 {{--            Cards presentation --}}
-            <div class="d-flex justify-content-around m-4">
+            <div class="d-flex justify-content-around flex-column">
                 <div class="card-group">
                     <div class="card m-4">
                         <div class="row no-gutters">
@@ -69,7 +69,7 @@
                      data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false"
                      aria-controls="collapse3">
                     <a id="campusbtn">
-                        <img src="{{URL::asset('./image/flow-chart.svg')}}">
+                        <img src="{{URL::asset('./image/organization.png')}}">
                         <span>{{trans('vextension.vext-subsystems')}}</span></a>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="collapse m-4" id="collapse3">
-                    <div class="container col-md-12">
+                    <div class="card-body m-4">
                         <p class="text-justify" style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('vextension.vext-subsystems')}}</p>
                         <div class="content-areas">
