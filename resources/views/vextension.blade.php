@@ -103,7 +103,7 @@
                             {{trans('vextension.vext-subsystems')}}</p>
                         <div class="content-areas">
                             <div class="conten-subsytem" style="background-color: #6699cc">
-                                <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/social-care.png')}}">
+                                <a id="link-subsystem" href="{{url('/communityserv')}}"><img src="{{URL::asset('./image/social-care.png')}}">
                                     <span>{{trans('vextension.vext-servcomuny')}}</span></a>
                             </div>
                             <div class="conten-subsytem" style="background-color: #6699cc">
