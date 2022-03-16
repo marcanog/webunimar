@@ -70,7 +70,7 @@
                  data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false"
                  aria-controls="collapse4">
                 <a id="campusbtn">
-                    <img src="{{URL::asset('/image/lecture.png')}}">
+                    <img src="{{URL::asset('/image/organization.png')}}">
                     <span>{{trans('secretarygeneral.secretaryofic-depts')}}</span>
                 </a>
             </div>
@@ -112,7 +112,7 @@
             <div class="collapse m-4" id="collapse4">
                 <div class="container col-md-12">
                     <p class="text-justify" style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('vextension.vext-subsystems')}}</p>
+                        {{trans('secretarygeneral.secretaryofic-depts')}}</p>
                     <div class="content-areas">
                         <div class="conten-subsytem" style="background-color: #6699cc">
                             <a id="link-subsystem" href="{{url('/controlstudies')}}">

@@ -60,7 +60,7 @@
             </div>
             <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
                 <a id="campusbtn">
-                <img src="{{URL::asset('./image/flow-chart.svg')}}">
+                <img src="{{URL::asset('./image/organization.png')}}">
                 <span>{{trans('engineering.deaneng-subsystems')}}</span></a>
             </div>
         </div>
