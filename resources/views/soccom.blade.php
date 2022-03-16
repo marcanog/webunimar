@@ -8,7 +8,7 @@
         <div class="section-content">
             <div class="d-flex justify-content-start">
                 <img id="img-section"
-                     src="{{URL::asset('/image/logo-unimar.png')}}"><span style="top: 0;">{{trans('humarte.title')}}</span>
+                     src="{{URL::asset('/image/logo-unimar.png')}}"><span style="top: 0;">{{trans('soccom.title')}}</span>
             </div>
         </div>
         <div class="card m-4 py-4">
