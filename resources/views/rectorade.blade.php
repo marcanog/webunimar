@@ -81,7 +81,7 @@
         {{--welcome--}}
         <div class="collapse mb-4" id="collapse">
             <div class="card card-body sectionbody">
-                <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
+                <p class="text-left" style="font-size: 1.25rem; font-weight: 600;text-indent: 0;">
                     {{trans('rectorade.rector-welcome')}}
                 </p>
                 <p class="text-justify"> {{trans('rectorade.rector-letter')}}</p>
@@ -102,9 +102,8 @@
         </div>
         {{--Departaments--}}
         <div class="collapse" id="collapse4">
-            <div class="container">
-                <p class="card-body text-left" style="font-size: 1.25rem; font-weight: 600;">
-                    {{trans('rectorade.rector-deptos')}}</p>
+            <div class="card-body">
+                <p class="text-left font-weight-bold" style="font-size: 1.25rem; font-weight: 600;">{{trans('rectorade.rector-deptos')}}</p>
                 <div class="content-areas">
                     <div class="conten-subsytem" style="background-color: #6699cc">
                         <a id="link-subsystem" href="{{url('')}}">
