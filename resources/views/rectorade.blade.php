@@ -10,7 +10,7 @@
     <div class="section-content">
         <div class="d-flex justify-content-start">
             <img id="img-section"
-                 src="{{URL::asset('/image/secretary.png')}}"><span>{{trans('commons.rectorade')}}</span>
+                 src="{{URL::asset('/image/logo-unimar.png')}}"><span>{{trans('commons.rectorade')}}</span>
         </div>
     </div>
 {{--        cards presentation --}}
