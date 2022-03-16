@@ -136,7 +136,7 @@
                             <a class="dropdown-item" href="{{url('/vacademic')}}">{{trans('header.vicerectorade')}}</a>
                                 <div class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">{{trans('header.deanchip')}}</a>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="{{url('/genestudies')}}">{{trans('header.estgen')}}</a></li>
+                                        <li><a class="dropdown-item" href="{{url('/genestud')}}">{{trans('header.estgen')}}</a></li>
                                         <li><a class="dropdown-item" href="{{url('/humarte')}}">{{trans('header.humarte')}}</a></li>
                                         <li><a class="dropdown-item" href="{{url('/ceys')}}">{{trans('header.ceys')}}</a></li>
                                         <li><a class="dropdown-item" href="{{url('/cjyp')}}">{{trans('header.cjyp')}}</a></li>

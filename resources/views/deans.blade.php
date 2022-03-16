@@ -28,7 +28,7 @@
         </div>
         <div class="content-areas">
             <div class="content-deanship" style="background-color: #00A8E2">
-                <a href="{{url('/genestudies')}}"><img src="{{URL::asset('./image/deans/estgenerals.png')}}">
+                <a href="{{url('/genestud')}}"><img src="{{URL::asset('./image/deans/estgenerals.png')}}">
                 <span>{{trans('home.estgen')}}</span></a>
             </div>
             <div class="content-deanship" style="background-color: #003B71">
