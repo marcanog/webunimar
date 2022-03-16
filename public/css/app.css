@@ -12229,10 +12229,10 @@ a:not([href]):not([tabindex]) {
         width: 20%;
     }
     .links-interest > a > span {
-        font-size: 0.95em;
+        font-size: 0.85em;
     }
     #link-subsystem > span {
-        font-size: 0.95em;
+        font-size: 0.85em;
     }
     .conten-subsytem {
         width: 25%;
