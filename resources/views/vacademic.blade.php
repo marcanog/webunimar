@@ -169,7 +169,7 @@
                 </div>
                 <div class="collapse m-4" id="collapse">
                     <div class="content">
-                        @include('vacademicstructure')
+                        @include('components.vacademicstructure')
                     </div>
                 </div>
             </div>
