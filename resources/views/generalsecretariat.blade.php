@@ -14,7 +14,7 @@
             </div>
         </div>
 {{--        presentations cards --}}
-        <div class="d-flex justify-content-around m-4">
+        <div class="d-flex justify-content-around flex-column">
             <div class="card-group">
                 <div class="card m-4">
                     <div class="row no-gutters">
