@@ -18,36 +18,36 @@
                 <p class="text-justify" style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('commons.preg-title')}}</p>
                 <div class="content-areas">
-                    <div class="conten-subsytem" style="background-color: #6699cc;">
+                    <div class="conten-subsytem" style="background-color: #336699;">
                         <a id="link-subsystem" href="#">
                             <img src="{{URL::asset('image/engineering.png')}}">
                             <span>{{trans('offers.o-systemeng')}}</span>
                         </a>
                     </div>
-                    <div class="conten-subsytem" style="background-color: #6699cc;">
+                    <div class="conten-subsytem" style="background-color: #336699;">
                         <a id="link-subsystem" href="#">
                             <img src="{{URL::asset('image/desing.png')}}">
                             <span>{{trans('offers.o-arte')}}</span></a>
                     </div>
-                    <div class="conten-subsytem" style="background-color: #6699cc;">
+                    <div class="conten-subsytem" style="background-color: #336699;">
                         <a id="link-subsystem" href="#">
                             <img src="{{URL::asset('image/languages.png')}}">
                             <span>{{trans('offers.o-langs')}}</span></a>
                     </div>
                 </div>
                 <div class="content-areas">
-                    <div class="conten-subsytem" style="background-color: #6699cc;">
+                    <div class="conten-subsytem" style="background-color: #336699;">
                         <a id="link-subsystem" href="#">
                             <img src="{{URL::asset('image/recursos-humanos.png')}}">
                             <span>{{trans('offers.o-admins')}}</span>
                         </a>
                     </div>
-                    <div class="conten-subsytem" style="background-color: #6699cc">
+                    <div class="conten-subsytem" style="background-color: #336699;">
                         <a id="link-subsystem" href="#">
                             <img src="{{URL::asset('image/contabilidad.png')}}">
                             <span>{{trans('offers.o-contpub')}}</span></a>
                     </div>
-                    <div class="conten-subsytem" style="background-color: #6699cc">
+                    <div class="conten-subsytem" style="background-color: #336699;">
                         <a id="link-subsystem" href="#">
                             <img src="{{URL::asset('image/law.png')}}">
                             <span>{{trans('offers.o-law')}}</span></a>
