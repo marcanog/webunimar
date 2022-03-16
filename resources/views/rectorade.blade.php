@@ -78,7 +78,7 @@
     {{--cards bodies--}}
     <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
         {{--descripction--}}
-        <div class="collapse m-4" id="collapse">
+        <div class="collapse" id="collapse">
             <div class="card card-body sectionbody">
                 <p style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('rectorade.rector-welcome')}}
@@ -87,7 +87,7 @@
             </div>
         </div>
         {{--functions--}}
-        <div class="collapse m-4" id="collapse3">
+        <div class="collapse" id="collapse3">
             <div class="card card-body text-justify">
                 <p style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('rectorade.rector-functions-title')}}
