@@ -14,7 +14,7 @@
         </div>
     </div>
 {{--        cards presentation --}}
-    <div class="d-flex justify-content-around m-4">
+    <div class="d-flex justify-content-around flex-column">
         <div class="card-group">
             <div class="card m-4">
                 <div class="row no-gutters">
@@ -46,6 +46,7 @@
             </div>
         </div>
     </div>
+{{--    content information --}}
     <div class="d-inline-flex justify-content-around m-4 content-vext">
         {{--Vision--}}
         <div class="links-interest" id="contentimg" style="background-color: #336699"
@@ -77,22 +78,22 @@
 
     {{--cards bodies--}}
     <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
-        {{--descripction--}}
-        <div class="collapse" id="collapse">
+        {{--welcome--}}
+        <div class="collapse mb-4" id="collapse">
             <div class="card card-body sectionbody">
-                <p style="font-size: 1.25rem; font-weight: 600;">
+                <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('rectorade.rector-welcome')}}
                 </p>
                 <p class="text-justify"> {{trans('rectorade.rector-letter')}}</p>
             </div>
         </div>
         {{--functions--}}
-        <div class="collapse" id="collapse3">
-            <div class="card card-body">
+        <div class="collapse mb-4" id="collapse3">
+            <div class="card card-body text-justify">
                 <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('rectorade.rector-functions-title')}}
                 </p>
-                <ul class="text-justify">
+                <ul class="list-style">
                     <li><p> {{trans('rectorade.rector-functions-1')}}</p></li>
                     <li><p> {{trans('rectorade.rector-functions-2')}}</p></li>
                     <li><p> {{trans('rectorade.rector-functions-3')}}</p></li>
@@ -102,7 +103,7 @@
         {{--Departaments--}}
         <div class="collapse" id="collapse4">
             <div class="container">
-                <p class="card-body text-justify" style="font-size: 1.25rem; font-weight: 600;">
+                <p class="card-body text-left" style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('rectorade.rector-deptos')}}</p>
                 <div class="content-areas">
                     <div class="conten-subsytem" style="background-color: #6699cc">
