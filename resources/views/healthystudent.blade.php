@@ -128,7 +128,7 @@
             </div>
             {{--Departaments--}}
             <div class="collapse" id="collapse4">
-                <div class="card card-body">
+                <div class="card-body">
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('healthy.health-depts')}}</p>
                     <div class="content-areas">
