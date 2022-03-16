@@ -4,7 +4,7 @@
 <div class="content">
 {{-- main banner --}}
     <div class="banner-main">
-        <img src="{{URL::asset('./image/engineerie.png')}}">
+        <img src="{{URL::asset('./image/banners/es/engineerie.png')}}">
     </div>
 {{--    section ID --}}
    <div class="section-content">
@@ -14,7 +14,7 @@
     </div>
     <!-- Information depto -->
 {{--        cards presentations --}}
-        <div class="d-flex justify-content-around m-4">
+        <div class="d-flex justify-content-around flex-column">
             <div class="card-group">
                 <div class="card m-4">
                     <div class="row no-gutters">
@@ -94,7 +94,7 @@
                 </div>
             </div>
            <div class="collapse" id="collapse3">
-                <div class="container col-md-12">
+                <div class="card-body m-4">
                     <p class="text-justify" style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('engineering.deaneng-subsystems')}}</p>
                     <div class="content-areas">
