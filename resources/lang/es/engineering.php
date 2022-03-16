@@ -26,7 +26,7 @@ return [
     'deaneng-functions-9' => 'Promover el desarrollo del espíritu de búsqueda permanente del conocimiento que enriquezca su actuación profesional de manera constante.',
     'deaneng-functions-10' => 'Proveer al estudiante actividades que le permitan desarrollar conciencia ambientalista.',
     'deaneng-functions-11' => 'Desarrollar conocimientos, estrategias y actividades orientadas a la consolidación de un profesional que practique la investigación de manera cotidiana, como una competencia propia de su formación profesional.',
-    'deaneng-subsystems' => 'Subsistemas',
+    'deaneng-subsystems' => 'Departamentos',
     'deaneng-invpas' => 'Investigación y Pasantía',
     'deaneng-pev' => 'Programa de Educación Virtual y RRSS',
     'deaneng-cst' => 'Comisión de Sistemas y Tecnología',
