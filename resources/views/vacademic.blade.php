@@ -1,9 +1,9 @@
 @extends('layouts.layout')
 
 @section('content')
-    <div class=".xl-container">
+    <div class="content">
         <div class="banner-main">
-            <img src="{{asset('/image/banners/es/vacademics.png')}}">
+            <img src="{{asset('./image/banners/es/vacademics.png')}}">
         </div>
         <div class="section-content">
             <div class="d-flex justify-content-start">
@@ -13,7 +13,7 @@
         </div>
         <div class="content">
             {{--  cards presentation --}}
-            <div class="d-flex justify-content-around m-4">
+            <div class="d-flex justify-content-around flex-column">
                 <div class="card-group">
                     <div class="card m-4">
                         <div class="row no-gutters">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <div class="collapse m-4" id="collapse3">
-                    <div class="content col-md-12">
+                    <div class="card-body">
                         <p class="text-justify" style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('vacademy.vacad-units')}}
                         </p>
@@ -169,7 +169,7 @@
                 </div>
                 <div class="collapse m-4" id="collapse">
                     <div class="content">
-                        @include('components.vacademicstructure')
+                        @include('vacademicstructure')
                     </div>
                 </div>
             </div>
