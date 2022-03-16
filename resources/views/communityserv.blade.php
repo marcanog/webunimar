@@ -1,9 +1,9 @@
 @extends('layouts.layout')
 
 @section ('content')
-    <div class=".xl-container">
+    <div class="content">
         <div class="banner-main">
-            <img src="{{URL::asset('/image/viceacademic.png')}}">
+            <img src="{{URL::asset('/image/banners/es/serv_com.jpg')}}">
         </div>
         <div class="section-content">
             <div class="d-flex justify-content-start">
@@ -11,6 +11,12 @@
                      src="{{URL::asset('/image/logo-unimar.png')}}">
                      <span>{{trans('communityserv.title')}}</span>
             </div>
+        </div>
+        <div class="card m-4 py-4">
+            <p class="card-title font-weight-bold">
+                En espera de información
+            </p>
+            <img class="m-auto" src="{{url::asset('image/pause-info.png')}}" alt="pause information" width="5%">
         </div>
     </div>
 @endsection
