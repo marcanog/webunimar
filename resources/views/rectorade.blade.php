@@ -100,7 +100,7 @@
             </div>
         </div>
         {{--Departaments--}}
-        <div class="collapse m-3 " id="collapse4">
+        <div class="collapse" id="collapse4">
             <div class="container">
                 <p class="card-body text-justify" style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('rectorade.rector-deptos')}}</p>
