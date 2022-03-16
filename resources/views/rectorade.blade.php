@@ -88,11 +88,11 @@
         </div>
         {{--functions--}}
         <div class="collapse" id="collapse3">
-            <div class="card card-body text-justify">
-                <p style="font-size: 1.25rem; font-weight: 600;">
+            <div class="card card-body">
+                <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                     {{trans('rectorade.rector-functions-title')}}
                 </p>
-                <ul>
+                <ul class="text-justify">
                     <li><p> {{trans('rectorade.rector-functions-1')}}</p></li>
                     <li><p> {{trans('rectorade.rector-functions-2')}}</p></li>
                     <li><p> {{trans('rectorade.rector-functions-3')}}</p></li>
