@@ -5,14 +5,14 @@
         <div class="banner-main">
             <img src="{{asset('./image/nuestrosdecanatos.png')}}">
         </div>
-{{--  section title --}}
+        {{--  section title --}}
         <div class="section-content">
             <div class="d-flex justify-content-start">
                 <img id="img-section"
                      src="{{URL::asset('./image/graduate.png')}}"><span>{{trans('postgeinv.title')}}</span>
             </div>
         </div>
-{{--  cards presentation --}}
+        {{--  cards presentation --}}
         <div class="d-flex justify-content-around flex-column">
             <div class="card-group">
                 <div class="card m-4">
@@ -45,9 +45,9 @@
                 </div>
             </div>
         </div>
-{{--        --}}
-        <div class="d-inline-flex flex-column justify-content-around m-4">
-            <div class="d-inline-flex justify-content-around m-4 content-vext">
+        {{--        --}}
+        <div class="d-inline-flex flex-column justify-content-around">
+            <div class="d-flex justify-content-around content-vext mb-4">
                 {{--Vision--}}
                 <div class="links-interest" id="contentimg headingTwo" style="background-color: #336699"
                      data-toggle="collapse" href="#collapse" role="button" aria-expanded="false"
@@ -85,7 +85,7 @@
                      </a>
                  </div>--}}
             </div>
-            <div class="d-inline-flex justify-content-around m-4 content-vext">
+            <div class="d-flex justify-content-around content-vext mb-4">
                 {{--Encuentro de Saberes--}}
                 <div class="links-interest" id="contentimg headingFive" style="background-color: #336699"
                      data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false"
@@ -121,8 +121,8 @@
                     </a>
                 </button>
             </div>
-            <div class="d-inline-flex justify-content-around flex-column m-4" id="contevext">
-                <div class="collapse col-lg-12 m-4" id="collapse">
+            <div class="d-flex justify-content-around flex-column" id="contevext">
+                <div class="collapse m-4" id="collapse">
                     <div class="card card-body">
                         <p class="text-left"  style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-vision-title')}}
@@ -132,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse col-lg-12 m-4" id="collapse2">
+                <div class="collapse m-4" id="collapse2">
                     <div class="card card-body">
                         <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-functions')}}
@@ -147,7 +147,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="collapse col-lg-12 m-4" id="collapse4">
+                <div class="collapse m-4" id="collapse4">
                     <div class="card card-body">
                         <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-functions')}}
@@ -162,8 +162,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="collapse col-lg-12" id="collapse3">
-                    <div class="container col-md-12">
+                <div class="collapse m-4" id="collapse3">
+                    <div class="card card-body">
                         <p class="text-left"  style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-units')}}
                         </p>
@@ -206,9 +206,9 @@
                                     <span>{{trans('dptoinvestigation.dinvest-links')}}</span></a>
                             </div>
                         </div>
-                        <div class="content-areas col-md-12" id="contevac">
-                            <div class="collapse col-sm-11" id="collapseExample">
-                                <div class="content-areas col-12">
+                        <div class="content-areas" id="contevac">
+                            <div class="collapse" id="collapseExample">
+                                <div class="content-areas">
                                     <div class="conten-subsytem" style="background-color: #004c9c">
                                         <a id="link-subsystem" href="#"><img
                                                 src="{{URL::asset('./image/graduation.svg')}}">
@@ -231,7 +231,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="collapse col-lg-12" id="collapse5">
+                <div class="collapse m-4" id="collapse5">
                     <div class="card card-body">
                         <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-functions')}}
@@ -246,7 +246,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="collapse col-lg-12" id="collapse6">
+                <div class="collapse m-4" id="collapse6">
                     <div class="card card-body">
                         <p class="text-left" style="font-size: 1.25rem; font-weight: 600;">
                             {{trans('dptoinvestigation.dinvest-functions')}}
@@ -262,7 +262,7 @@
                     </div>
                 </div>
             </div>
-            <div class="info-dept col-lg-12 card card-body text-left">
+            <div class="info-dept m-4 card card-body text-left">
                 <h5>{{trans('dptoinvestigation.dinvest-info-title')}}</h5>
                 <p>
                     <b>{{trans('dptoinvestigation.dinvest-info-etitle')}}</b>&nbsp {{trans('dptoinvestigation.dinvest-info-email')}}
