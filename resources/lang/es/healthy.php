@@ -6,7 +6,7 @@ return [
     'health-vision-title' => 'Visión',
     'health-mission-title' => 'Misión',
     'health-mission' => 'Prestar atención personalizada al estudiante unimarista mediante el desarrollo de acciones en los aspectos académicos, psicológicos y financieros.',
-    'health-vision' => 'Brindar servicios psicológicos y pedagógicos, tanto asistenciales como preventivos, que contribuyan al bienestar y salud mental de la población estudiantil unimarista.',
+    'health-vision' => 'Brindar servicio psicopedagógico tanto asistencial como preventivo que contribuyan al bienestar y salud mental del estudiante Unimarista, además de, guiar al estudiante en el proceso del desarrollo personal en la evolución de su adaptación e identificación con la Universidad Y en el logro de un óptimo rendimiento académico, de igual manera ofrece soporte económico a los estudiantes que lo ameriten. ',
     'health-depts' => 'Departamentos',
     'health-author' => 'Angelina Yanez',
     'health-author-title' => 'Jefa Bienestar Estudiantil',
