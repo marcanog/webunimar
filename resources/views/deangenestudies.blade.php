@@ -3,7 +3,7 @@
 @section ('content')
     <div class="content">
         <div class="banner-main">
-            <img src="{{URL::asset('./image/banners/es/deans.png')}}">
+            <img src="{{URL::asset('./image/banners/es/studiesgnrals.jpg')}}">
         </div>
         <div class="section-content">
             <div class="d-flex justify-content-start">
@@ -11,7 +11,7 @@
             </div>
         </div>
         <div class="content">
-            
+
         </div>
     </div>
 @endsection
