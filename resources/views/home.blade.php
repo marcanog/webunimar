@@ -129,11 +129,11 @@
             </a>
         </div>
         <div class="content-deanship" style="background-color: #E4032C">
-            <a href="{{URL('/csjurpol')}}"><img src="{{URL::asset('image/deans/csjuridics.png')}}">
+            <a href="{{URL('/cjyp')}}"><img src="{{URL::asset('image/deans/csjuridics.png')}}">
                 <span>{{trans('home.cjyp')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #B22029">
-            <a href="{{URL('/cssocecon')}}"><img src="{{URL::asset('image/deans/cseconomicsocials.png')}}">
+            <a href="{{URL('/ceys')}}"><img src="{{URL::asset('image/deans/cseconomicsocials.png')}}">
                 <span>{{trans('home.ceys')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #003B71">

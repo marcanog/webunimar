@@ -155,11 +155,11 @@ Route::get('estprepareds', function () {
     return view('estprepareds');
 });
 
-Route::get('cssocecon', function () {
+Route::get('ceys', function () {
     return view('deancssoc');
 });
 
-Route::get('csjurpol', function () {
+Route::get('cjyp', function () {
     return view('deancsjurpol');
 });
 
