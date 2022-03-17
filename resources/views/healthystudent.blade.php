@@ -132,26 +132,30 @@
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('healthy.health-depts')}}</p>
                     <div class="content-areas">
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="{{url('')}}">
+                        <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
+                             href="#collapse5" role="button" aria-expanded="false"
+                             aria-controls="collapse5">
+                            <a id="link-subsystem">
                                 <img src="{{URL::asset('./image/scholarship.png')}}">
                                 <span>{{trans('healthy.health-becas')}}</span>
                             </a>
                         </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="{{url('/healthymental')}}">
-                                <img src="{{URL::asset('./image/mental-healthy.png')}}">
-                                <span>{{trans('healthy.health-psico')}}</span></a>
-                        </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="#">
+{{--                        <div class="conten-subsytem" style="background-color: #6699cc">--}}
+{{--                            <a id="link-subsystem" href="{{url('/healthymental')}}">--}}
+{{--                                <img src="{{URL::asset('./image/mental-healthy.png')}}">--}}
+{{--                                <span>{{trans('healthy.health-psico')}}</span></a>--}}
+{{--                        </div>--}}
+                        <div class="conten-subsytem" style="background-color: #6699cc;"  data-toggle="collapse"
+                             href="#collapse6" role="button" aria-expanded="false"
+                             aria-controls="collapse6">
+                            <a id="link-subsystem">
                                 <img src="{{URL::asset('./image/social-teaching.png')}}">
                                 <span>{{trans('healthy.health-pedag')}}</span></a>
                         </div>
                         {{--links interest--}}
                         <div class="conten-subsytem" style="background-color: #6699cc" data-toggle="collapse"
-                             href="#collapseExample" role="button" aria-expanded="false"
-                             aria-controls="collapseExample">
+                             href="#collapse7" role="button" aria-expanded="false"
+                             aria-controls="collapse7">
                             <a id="link-subsystem">
                                 <img src="{{URL::asset('/image/conection.png')}}">
                                 <span>{{trans('healthy.health-links')}}</span></a>
@@ -161,7 +165,7 @@
             </div>
             {{--links interest--}}
             <div class="content-areas d-inline-flex" id="contevac">
-                <div class="collapse" id="collapseExample">
+                <div class="collapse" id="collapse7">
                     <div class="content-areas">
                         {{--Gazzete--}}
                         <div class="conten-subsytem" style="background-color: #004c9c">
@@ -176,6 +180,54 @@
                                 <span>{{trans('healthy.health-report')}}</span>
                             </a>
                         </div>
+                    </div>
+                </div>
+            </div>
+            {{--  Helps --}}
+            <div class="content-areas d-inline-flex" id="contevac">
+                <div class="collapse" id="collapse5">
+                    <div class="content-areas">
+                        <div class="card card-body">
+                                <p class="text-left font-weight-bold">{{trans('healthy.health-functions')}}&nbsp{{trans('healthy.health-author-title')}}</p>
+                                <ul>
+                                    <li>
+                                        <p>{{trans('healthy.health-functions-1')}}</p>
+                                    </li>
+                                    <li>
+                                        <p>{{trans('healthy.health-functions-2')}}</p>
+                                    </li>
+                                    <li>
+                                        <p>{{trans('healthy.health-functions-3')}}</p>
+                                    </li>
+                                    <li>
+                                        <p>{{trans('healthy.health-functions-4')}}</p>
+                                    </li>
+                                    <li>
+                                        <p>{{trans('healthy.health-functions-5')}}</p>
+                                    </li>
+                                    <li>
+                                        <p>{{trans('healthy.health-functions-6')}}</p>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-areas d-flex" id="contevac">
+                <div class="collapse" id="collapse6">
+                    <div class="card card-body">
+                            <p class="text-left font-weight-bold">{{trans('healthy.health-functions')}}&nbsp{{trans('healthy.health-atitle')}}</p>
+                            <ul>
+                                <li>
+                                    <p>{{trans('healthy.health-functions-7')}}</p>
+                                </li>
+                                <li>
+                                    <p>{{trans('healthy.health-functions-8')}}</p>
+                                </li>
+                                <li>
+                                    <p>{{trans('healthy.health-functions-9')}}</p>
+                                </li>
+                            </ul>
                     </div>
                 </div>
             </div>
