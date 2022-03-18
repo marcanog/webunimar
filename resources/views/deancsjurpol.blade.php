@@ -38,93 +38,99 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <h3 class="card-title">{{trans('engineering.deaneng-asist')}}</h3>
-                                <p class="card-text font-weight-bold">{{trans('engineering.deaneng-asist-title')}}</p>
-                                <p class="card-text"><small class="text-muted">{{trans('engineering.deaneng-asist-mail')}}</small></p>
+                                <h3 class="card-title">{{trans('cjyp.asist-name')}}</h3>
+                                <p class="card-text font-weight-bold">{{trans('cjyp.asist-role')}}</p>
+                                <p class="card-text"><small class="text-muted">{{trans('cjyp.asist-mail')}}</small></p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        {{--        content information --}}
+        {{--  content information --}}
+        {{--    mision    --}}
         <div class="d-flex justify-content-around content-vext">
-            <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse" href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
+            <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse"
+                 href="#collapse" role="button" aria-expanded="false" aria-controls="collapse">
                 <a id="foundbtn">
                     <img src="{{URL::asset('./image/target.svg')}}">
-                    <span>{{trans('engineering.deaneng-mission-title')}}</span></a>
+                    <span>{{trans('cjyp.cjyp-mission-title')}}</span></a>
             </div>
-            <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+        {{--  Objetivos --}}
+            <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse"
+                 href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
                 <a id="campusbtn">
-                    <img src="{{URL::asset('./image/settings.svg')}}">
-                    <span>{{trans('engineering.deaneng-functions')}}</span></a>
+                    <img src="{{URL::asset('./image/eye.svg')}}">
+                    <span>{{trans('cjyp.cjyp-vision-title')}}</span></a>
             </div>
-            <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+        {{-- Departamentos --}}
+            <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse"
+                 href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
                 <a id="campusbtn">
-                    <img src="{{URL::asset('./image/organization.png')}}">
-                    <span>{{trans('engineering.deaneng-subsystems')}}</span></a>
+                    <img src="{{URL::asset('./image/objetive.png')}}">
+                    <span>{{trans('cjyp.cjyp-obj-title')}}</span></a>
+            </div>
+            <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse"
+                 href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse3">
+                <a id="campusbtn">
+                    <img src="{{URL::asset('./image/eticsprinc.png')}}">
+                    <span>{{trans('cjyp.cjyp-etics-title')}}</span></a>
+            </div>
+            <div class="links-interest" id="contentimg" style="background-color: #336699" data-toggle="collapse"
+                 href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse3">
+                <a id="campusbtn">
+                    <img src="{{URL::asset('./image/analisys.png')}}">
+                    <span>{{trans('cjyp.cjyp-subsystems')}}</span></a>
             </div>
         </div>
         <div class="d-inline-flex flex-column justify-content-around" id="contevext">
             <div class="collapse m-4" id="collapse">
                 <div class="card card-body text-justify">
                     <p style="font-size: 1.25rem; font-weight: 600;">{{trans('engineering.deaneng-mission-title')}}</p>
-                    <p> {{trans('engineering.daeneng-mission-1')}}</p>
-                    <p> {{trans('engineering.daeneng-mission-2')}}</p>
-                    <p> {{trans('engineering.daeneng-mission-3')}}</p>
+                    <p> {{trans('cjyp.cjyp-mission')}}</p>
                 </div>
             </div>
             <div class="collapse m-4" id="collapse2">
                 <div class="card card-body text-justify">
                     <p style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('engineering.deaneng-functions')}}
+                        {{trans('cjyp.cjyp-vision-title')}}
                     </p>
                     <ul>
-                        <li><p> {{trans('engineering.deaneng-functions-1')}}</p></li>
-                        <li><p> {{trans('engineering.deaneng-functions-3')}}</p></li>
-                        <li><p> {{trans('engineering.deaneng-functions-4')}}</p></li>
-                        <li><p> {{trans('engineering.deaneng-functions-2')}}</p></li>
-                        <li><p> {{trans('engineering.deaneng-functions-5')}}</p></li>
-                        <li><p> {{trans('engineering.deaneng-functions-6')}}</p></li>
-                        <li><p> {{trans('engineering.deaneng-functions-7')}}</p></li>
-                        <li><p> {{trans('engineering.deaneng-functions-8')}}</p></li>
-                        <li><p> {{trans('engineering.deaneng-functions-9')}}</p></li>
-                        <li><p> {{trans('engineering.deaneng-functions-10')}}</p></li>
-                        <li><p> {{trans('engineering.deaneng-functions-11')}}</p></li>
+                        <li><p> {{trans('cjyp.cjyp-vision')}}</p></li>
                     </ul>
                 </div>
             </div>
-            <div class="collapse" id="collapse3">
-                <div class="card-body m-4">
-                    <p class="text-justify" style="font-size: 1.25rem; font-weight: 600;">
-                        {{trans('engineering.deaneng-subsystems')}}</p>
-                    <div class="content-areas">
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
-                                <img src="{{URL::asset('./image/analisys.png')}}">
-                                <span>{{trans('engineering.deaneng-invpas')}}</span>
-                            </a>
-                        </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/curse-online.png')}}">
-                                <span>{{trans('engineering.deaneng-pev')}}</span></a>
-                        </div>
-                        <div class="conten-subsytem" style="background-color: #6699cc">
-                            <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/cst.png')}}">
-                                <span>{{trans('engineering.deaneng-cst')}}</span></a>
-                        </div>
-                        {{--                        <div class="conten-subsytem" style="background-color: #6699cc">--}}
-                        {{--                            <a id="link-subsystem" href="#"><img src="{{URL::asset('./image/smartphone.png')}}">--}}
-                        {{--                            <span>{{trans('vextension.vext-prom')}}</span></a>--}}
-                        {{--                        </div>--}}
-                    </div>
+            <div class="collapse m-4" id="collapse3">
+                <div class="card card-body text-justify">
+                    <p style="font-size: 1.25rem; font-weight: 600;">
+                        {{trans('cjyp.cjyp-obj-title')}}
+                    </p>
+                    <ul>
+                        <li><p> {{trans('cjyp.cjyp-obj-1')}}</p></li>
+                        <li><p> {{trans('cjyp.cjyp-obj-2')}}</p></li>
+                        <li><p> {{trans('cjyp.cjyp-obj-3')}}</p></li>
+                        <li><p> {{trans('cjyp.cjyp-obj-4')}}</p></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse m-4" id="collapse4">
+                <div class="card card-body text-justify">
+                    <p style="font-size: 1.25rem; font-weight: 600;">
+                        {{trans('cjyp.cjyp-etics-title')}}
+                    </p>
+                    <ul>
+                        <li><p> {{trans('cjyp.cjyp-etics-1')}}</p></li>
+                        <li><p> {{trans('cjyp.cjyp-etics-2')}}</p></li>
+                        <li><p> {{trans('cjyp.cjyp-etics-3')}}</p></li>
+                        <li><p> {{trans('cjyp.cjyp-etics-4')}}</p></li>
+                        <li><p> {{trans('cjyp.cjyp-etics-5')}}</p></li>
+                    </ul>
                 </div>
             </div>
 
-
         </div>
         <div class="d-flex justify-content-around content-vext">
-            <div class="collapse m-4" id="collapse4">
+            <div class="collapse m-4" id="collapse5">
                 {{--                <div class="card card-body">--}}
                 {{--                </div>--}}
                 <div class="d-flex justify-content-around">
@@ -136,9 +142,9 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h3 class="card-title">{{trans('engineering.deaneng-coord')}}</h3>
-                                        <p class="card-text font-weight-bold">{{trans('engineering.deaneng-coord-title')}}</p>
-                                        <p class="card-text"><small class="text-muted">{{trans('engineering.deaneng-coord-mail')}}</small></p>
+                                        <h3 class="card-title">{{trans('cjyp.coord-name')}}</h3>
+                                        <p class="card-text font-weight-bold">{{trans('cjyp.coordgrade')}}</p>
+                                        <p class="card-text"><small class="text-muted">{{trans('cjyp.coord-mail')}}</small></p>
                                     </div>
                                 </div>
                             </div>
@@ -163,9 +169,9 @@
         </div>
     </div>
     <div class="d-flex justify-content-around m-4 text-left card card-body">
-        <h5>{{trans('engineering.deaneng-info-title')}}</h5>
-        <p><b>{{trans('engineering.deaneng-info-etitle')}}</b>&nbsp {{trans('engineering.deaneng-info-email')}}</p>
-        <p><b>{{trans('engineering.deaneng-info-teltit')}}</b>&nbsp{{trans('engineering.deaneng-info-telf')}}</p>
-        <p><b>{{trans('engineering.deaneng-info-schedtit')}}</b>&nbsp{{trans('engineering.deaneng-info-sched')}}</p>
+        <h5>{{trans('cjyp.cjyp-info')}}</h5>
+        <p><b>{{trans('cjyp.cjyp-mail-title')}}</b>&nbsp {{trans('cjyp.cjyp-mail')}}</p>
+        <p><b>{{trans('cjyp.cjyp-telf-title')}}</b>&nbsp{{trans('cjyp.cjyp-telf')}}</p>
+        <p><b>{{trans('cjyp.cjyp-sched-title')}}</b>&nbsp{{trans('cjyp.cjyp-sched')}}</p>
     </div>
 @endsection
