@@ -92,7 +92,7 @@
     </div>
     <div class="d-flex justify-content-around m-4 text-left card card-body">
         <h5>{{trans('engineering.deaneng-info-title')}}</h5>
-        <p><b>{{trans('engineering.deaneng-info-etitle')}}</b>&nbsp {{trans('engineering.deaneng-info-email')}}</p>
+        <p><b>{{trans('engineering.deaneng-info-etitle')}}</b>&nbsp {{trans('estgen.info-mail')}}</p>
         <p><b>{{trans('engineering.deaneng-info-teltit')}}</b>&nbsp{{trans('engineering.deaneng-info-telf')}}</p>
         <p><b>{{trans('engineering.deaneng-info-schedtit')}}</b>&nbsp{{trans('engineering.deaneng-info-sched')}}</p>
     </div>

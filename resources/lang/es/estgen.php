@@ -21,4 +21,5 @@ return[
     'student-perfil-9' => 'Aplicar conocimientos básicos de matemática.',
     'student-perfil-10' => 'Conocer contenidos de la carrera elegida.',
     'student-perfil-11' => 'Ser productivo, asertivo, crítico, creativo, anticipatorio, comunicativo, participativo, responsable, identificado con su región y justo.',
+    'info-mail' => 'decanato.estudiosgenerales@unimar.edu.ve',
 ];
