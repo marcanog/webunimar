@@ -73,8 +73,8 @@
                     <p style="font-size: 1.25rem; font-weight: 600;">
                         {{trans('estgen.perfil-title')}}
                     </p>
+                    <p> {{trans('estgen.student-perfil-1')}}</p>
                     <ul>
-                        <li><p> {{trans('estgen.student-perfil-1')}}</p></li>
                         <li><p> {{trans('estgen.student-perfil-2')}}</p></li>
                         <li><p> {{trans('estgen.student-perfil-3')}}</p></li>
                         <li><p> {{trans('estgen.student-perfil-4')}}</p></li>
