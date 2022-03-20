@@ -61,7 +61,7 @@
             </div>
 
         </div>
-        <div class="d-inline-flex flex-column justify-content-around" id="contevext">
+        <div class="d-flex flex-column justify-content-around" id="contevext">
             <div class="collapse m-4" id="collapse">
                 <div class="card card-body text-justify">
                     <p style="font-size: 1.25rem; font-weight: 600;">{{trans('estgen.resume-title')}}</p>
