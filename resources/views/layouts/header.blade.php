@@ -144,12 +144,12 @@
                                         <li><a class="dropdown-item" href="{{url('/soc_com')}}">{{trans('header.comsoc')}}</a></li>
 {{--                                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>--}}
 {{--                                            <ul class="dropdown-menu">--}}
-{{--                                                <li><a class="dropdown-item" href="{{url('/genestudies')}}">{{trans('header.estgen')}}</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="{{url('/humarte')}}">{{trans('header.humarte')}}</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="{{url('/ceys')}}">{{trans('header.ceys')}}</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="{{url('/cjyp')}}">{{trans('header.cjyp')}}</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="{{url('/engineerie')}}">{{trans('header.ding')}}</a></li>--}}
-{{--                                                <li><a class="dropdown-item" href="{{url('/soccom')}}">{{trans('header.comsoc')}}</a></li>--}}
+{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.estgen')}}</a></li>--}}
+{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.humarte')}}</a></li>--}}
+{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.ceys')}}</a></li>--}}
+{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.cjyp')}}</a></li>--}}
+{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.ding')}}</a></li>--}}
+{{--                                                <li><a class="dropdown-item" href="#">{{trans('header.comsoc')}}</a></li>--}}
 {{--                                            </ul>--}}
 {{--                                        </li>--}}
 {{--                                        <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>--}}
@@ -203,8 +203,8 @@
                     <li class="nav-item px-1">
                         <a class="nav-link" href="{{url('/dptoinvest')}}">{{trans('header.investigation')}}</a>
                     </li>
-{{--                    <li class="nav-item px-1">--}}
-{{--                        <a class="nav-link" href="{{url('/services')}}">{{trans('header.services')}}</a>--}}
+                    <li class="nav-item px-1">
+                        <a class="nav-link" href="{{url('/services')}}">{{trans('header.services')}}</a>
 {{--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
 {{--                            {{trans('header.services')}}--}}
 {{--                        </a>--}}
@@ -212,7 +212,7 @@
 {{--                            <a class="dropdown-item" href="{{url('/')}}">{{trans('header.administrative')}}</a>--}}
 {{--                            <a class="dropdown-item" href="{{url('/')}}">{{trans('header.academics')}}</a>--}}
 {{--                        </div>--}}
-{{--                    </li>--}}
+                    </li>
 {{--                <form class="form-inline my-2 my-lg-0">--}}
 {{--                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">--}}
 {{--                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>--}}
