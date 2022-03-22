@@ -19,7 +19,7 @@
                 <div class="card m-4">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img class="rounded-left" src="{{URL::asset('/image/ingeeniering/decaingenieria.jpg')}}" alt="Decano Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">
+                            <img class="rounded-left" src="{{URL::asset('/image/ingeeniering/decaingenieria.jpg')}}" alt="{{trans('engineering.deaneng-author-title')}}" style="max-width: 8em; height: 10.25em; background-color: #336699;">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
@@ -33,7 +33,7 @@
                 <div class="card m-4">
                     <div class="row no-gutters">
                         <div class="col-md-4">
-                            <img class="rounded-left" src="{{URL::asset('/image/ingeeniering/asistingenieria.jpg')}}" alt="Secretaria Ingeniería y Afines" style="max-width: 8em; height: 12.25em; background-color: #336699;">
+                            <img class="rounded-left" src="{{URL::asset('/image/ingeeniering/asistingenieria.jpg')}}" alt="{{trans('engineering.deaneng-asist-title')}}" style="max-width: 8em; height: 10.25em; background-color: #336699;">
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
