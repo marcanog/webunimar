@@ -13,5 +13,6 @@ yarn-error.log
 .idea
 env
 Dockerfile
-docker-compose
+docker-compose.yml
 Procfile
+Docker/
