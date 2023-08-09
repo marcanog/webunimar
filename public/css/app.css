@@ -121,7 +121,7 @@ ul,
 dl {
     margin-top: 0;
     margin-bottom: 1rem;
-    list-style: none;
+    /* list-style: none; */
 }
 
 ol ol,
@@ -455,7 +455,8 @@ hr {
 
 small,
 .small {
-    font-size: 80%;
+    /* font-size: 80%; */
+    font-size: .8em;
     font-weight: 400;
 }
 
@@ -3422,7 +3423,7 @@ input[type=button].btn-block {
     min-width: 10rem;
     padding: 0.5rem 0;
     margin: 0.125rem 0 0;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #212529;
     text-align: left;
     list-style: none;
@@ -11007,15 +11008,6 @@ a.text-dark:focus {
     width: 330px;
 }
 
-/* .flex-bar {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    align-items: center;
-    position: relative;
-    margin: auto !important;
-    top: 10px;
-} */
 .flex-bar {
     display: flex;
     flex-direction: column;
@@ -11039,12 +11031,13 @@ a.navbar-brand {
     padding: 0 15px;
 }
 
-/*.navbar-brand {*/
-/*    float: left;*/
-/*    height: 50px;*/
-/*    font-size: 0.95rem;*/
-/*    line-height: 20px;*/
-/*}*/
+#navbarDropdown3::after {
+	margin-left: 0;
+}
+
+#navbarDropdown2::after {
+	margin-left: 0;
+}
 
 /****************************languages**************************************************/
 #languages {
@@ -11129,18 +11122,6 @@ span .container-sm {
     height: 5em;
 }
 
-/*.content-date {*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*    margin: 1em;*/
-/*    flex: 0 0 45%;*/
-/*}*/
-/*.content-event {*/
-/*    flex-direction: row;*/
-/*    flex: 0 0 100%;*/
-/*    display: flex;*/
-/*    justify-content: space-around;*/
-/*}*/
 
 .date-news > span {
     position: relative;
@@ -11285,7 +11266,8 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 p.card-text {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
+    font-size: 0.85rem;
 }
 
 .controls-top {
@@ -12247,10 +12229,10 @@ a:not([href]):not([tabindex]) {
         width: 20%;
     }
     .links-interest > a > span {
-        font-size: 0.95em;
+        font-size: 0.85em;
     }
     #link-subsystem > span {
-        font-size: 0.95em;
+        font-size: 0.85em;
     }
     .conten-subsytem {
         width: 25%;
@@ -12275,7 +12257,10 @@ a:not([href]):not([tabindex]) {
         width:14rem;
     }
     .navbar-expand-md .navbar-collapse {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
+    }
+    .dropdown-item {
+        font-size: 0.85rem;
     }
     .location-content {
         flex-direction: inherit;
@@ -12289,7 +12274,7 @@ a:not([href]):not([tabindex]) {
         width:18rem;
     }
     .navbar-expand-md .navbar-collapse {
-        font-size: 0.95rem;
+        font-size: 0.85rem;
     }
     .navbar.navbar-expand-md.navbar-light.bg-white {
         justify-content: space-around;

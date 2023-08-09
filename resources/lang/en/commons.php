@@ -9,4 +9,5 @@ return [
     'calendar-academy' => 'Academic Calendar',
     'contactus' => 'Contact Directory',
     'general-secretary' => 'General Secretariat',
+    'preg-title' => 'Our undergraduate offerings',
 ];

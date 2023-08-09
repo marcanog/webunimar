@@ -155,16 +155,28 @@ Route::get('estprepareds', function () {
     return view('estprepareds');
 });
 
-Route::get('cssocecon', function () {
+Route::get('ceys', function () {
     return view('deancssoc');
 });
 
-Route::get('csjurpol', function () {
+Route::get('cjyp', function () {
     return view('deancsjurpol');
 });
 
 Route::get('genestud', function () {
     return view('deangenestudies');
+});
+
+Route::get('humarte', function () {
+    return view('deanhumarte');
+});
+
+Route::get('engineerie', function () {
+    return view('deaneng');
+});
+
+Route::get('soc_com', function () {
+    return view('soccom');
 });
 
 Route::get('dptoinvest', function () {
@@ -175,20 +187,16 @@ Route::get('postgrade', function () {
     return view('dptopostgrade');
 });
 
+Route::get('postgeinvestig', function(){
+    return view('postgeinvestig');
+});
+
 Route::get('pregrade', function () {
     return view('pregrade');
 });
 
-Route::get('engineerie', function () {
-    return view('deaneng');
-});
-
 Route::get('vicerectorades', function () {
     return view('vicerectorades');
-});
-
-Route::get('humarte', function () {
-    return view('deanhumarte');
 });
 
 Route::get('rectorade', function(){
@@ -201,6 +209,14 @@ Route::get('generalsecretariat', function () {
 
 Route::get('controlstudies', function () {
     return view('controlstudies');
+});
+
+Route::get('administration', function () {
+    return view('admindept');
+});
+
+Route::get('rrhh', function () {
+    return view('humansrecurs');
 });
 
 Route::get('regulations', function () {

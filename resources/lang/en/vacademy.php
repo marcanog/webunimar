@@ -4,7 +4,7 @@ return [
     
     'vacad-title' => 'Academic Vice Rectorate',
     'vacad-vision-title'=> 'Vision',
-    'vacad-units' => 'Assignment Units',
+    'vacad-units' => 'Subsystems',
     'vacad-author' => 'Antonio Martínez Camacho',
     'vacad-author-title' => 'Academic Vice Rector',
     'vacad-author-email' => 'antonio.martinez@unimar.edu.ve',

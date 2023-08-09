@@ -11,4 +11,5 @@ return [
     'general-secretary' => 'Secretaría General',
     'rectorade' => 'Rectorado',
     'events' => 'Eventos UNIMAR',
+    'preg-title' => 'Nuestras ofertas de pregrado',
 ];

@@ -32,18 +32,58 @@
     {{--news unimar--}}
     <div class="d-flex justify-content-around m-4">
         <div class="card-group owl-carousel" id="newsdesktop">
-            @foreach($news as $new)
+            <!-- @foreach($news as $new)
                 <div class="card m-2 h-100 responsive">
                     <img src="{{asset('image/newsimg/unimar3.jpg')}}" class="card-img-top" alt="image-news">
                     <div class="card-body">
-                        <h5 class="card-title font-weight-bold">{{($new->title)}}</h5>
-                        <div class="text-justify m-0" id="card-content" style="font-size: small;">
+                        <h6 class="card-title font-weight-bold">{{($new->title)}}</h6>
+                        <div class="text-justify m-0" id="card-content" style="font-size: x-small;">
                             {!!($new->resume)!!}
                         </div>
                         <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
                     </div>
                 </div>
-            @endforeach
+            @endforeach -->
+                <div class="card m-2 h-100 responsive">
+                    <img src="{{asset('image/newsimg/imagen.php.jpeg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h6 class="card-title font-weight-bold">Universidad de Margarita firma Convenio Interinstitucional con el Colegio de Contadores Públicos del estado Nueva Esparta</h6>
+                        <div class="text-justify m-0" id="card-content" style="font-size: x-small;">
+                            <p>El pasado 20 de octubre la Universidad de Margarita, UNIMAR , y el Colegio de Contadores Públicos de Nueva Esparta, CCPENE, firmaron un Convenio de cooperación interinstitucional, con el objetivo de desarrollar actividades conjuntas encaminadas a la formación, capacitación y divulgación de conocimientos de contaduría pública.</p>
+                        </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2 h-100 responsive">
+                    <img src="{{asset('image/newsimg/nota-revista-cient.jpg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h6 class="card-title font-weight-bold">Universidad de Margarita celebra la publicación del primer número de la revista digital</h6>
+                        <div class="text-justify m-0" id="card-content" style="font-size: x-small;">
+                            <p>UNIMAR CIENTÍFICA. Revista científica de la Universidad de Margarita</p>
+                        </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2 h-100 responsive">
+                    <img src="{{asset('image/newsimg/entrega-DHC-maestro-Lucena-6.jpg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h6 class="card-title font-weight-bold">Universidad de Margarita entregó Título Doctor Honoris Causa al Maestro Ecberht Lucena</h6>
+                        <div class="text-justify m-0" id="card-content" style="font-size: x-small;">
+                            <p>El pasado 8 de noviembre en el salón Nueva Cádiz del hotel Venetur, el Maestro Ecberht Lucena recibió el título Doctor Honoris Causa, el primero entregado por la Universidad de Margarita. </p>
+                        </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
+                <div class="card m-2 h-100 responsive">
+                    <img src="{{asset('image/newsimg/fachada-unimar-450pix.jpg')}}" class="card-img-top" alt="image-news">
+                    <div class="card-body">
+                        <h6 class="card-title font-weight-bold">Universidad de Margarita anuncia dos nuevos cursos introductorios</h6>
+                        <div class="text-justify m-0" id="card-content" style="font-size: x-small;">
+                            <p>El Decanato de Estudios Generales de la Universidad de Margarita anuncia la próxima realización de dos nuevos cursos introductorios para todos los interesados en seguir alguna de las carreras que se dictan en nuestra Casa de Estudios.</p>
+                        </div>
+                        <a href="{{url('/newsunimar')}}" class="card-link" style="font-size: small;">{{trans('home.more')}}</a>
+                    </div>
+                </div>
         </div>
     </div>
 
@@ -89,11 +129,11 @@
             </a>
         </div>
         <div class="content-deanship" style="background-color: #E4032C">
-            <a href="{{URL('/csjurpol')}}"><img src="{{URL::asset('image/deans/csjuridics.png')}}">
+            <a href="{{URL('/cjyp')}}"><img src="{{URL::asset('image/deans/csjuridics.png')}}">
                 <span>{{trans('home.cjyp')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #B22029">
-            <a href="{{URL('/cssocecon')}}"><img src="{{URL::asset('image/deans/cseconomicsocials.png')}}">
+            <a href="{{URL('/ceys')}}"><img src="{{URL::asset('image/deans/cseconomicsocials.png')}}">
                 <span>{{trans('home.ceys')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #003B71">
@@ -112,7 +152,7 @@
                 <span>{{trans('home.extent')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #00953E">
-            <a href="{{URL('/postgrade')}}"><img src="{{URL::asset('image/deans/postgrade.png')}}">
+            <a href="{{URL('/postgeinvestig')}}"><img src="{{URL::asset('image/deans/postgrade.png')}}">
                 <span>{{trans('home.posteinvg')}}</span></a>
         </div>
         <div class="content-deanship" style="background-color: #f6A016">
@@ -128,33 +168,29 @@
         </div>
     </div>
 {{--links contents--}}
-    <div class="content-links">
+<div class="content-links">
         <div class="links-interest" style="background-color: #336699">
             <a href="{{url('/offerstudy')}}"><img src="{{URL::asset('image/studying.png')}}">
                 <span>{{trans('home.study_offers')}}</span></a>
         </div>
         <div class="links-interest" style="background-color: #336699">
-            <a href="{{url('/generalsecretariat')}}"><img src="{{URL::asset('image/secretary.png')}}">
-                <span>{{trans('home.general-secretary')}}</span></a>
-        </div>
-        <div class="links-interest" style="background-color: #336699">
-            <a href="https://wwww.unimarcientifica.edu.ve/moodle" target="_blank"><img src="{{URL::asset('image/elearning.png')}}">
+            <a href="https://www.unimarcientifica.edu.ve/adminmoodle/" target="_blank"><img src="{{URL::asset('image/elearning.png')}}">
                 <span>{{trans('home.elearning')}}</span></a>
         </div>
         <div class="links-interest" style="background-color: #336699">
-            <a href="https://wwww.unimarcientifica.edu.ve/revista"><img src="{{URL::asset('image/analisys.png')}}">
+            <a href="https://www.unimarcientifica.edu.ve/revista/"><img src="{{URL::asset('image/analisys.png')}}">
                 <span>{{trans('home.cientific_unimar')}}</span></a>
+        </div>
+        <div class="links-interest" style="background-color: #336699">
+            <a href="{{URL('/regulations')}}"><img src="{{URL::asset('image/procedure.svg')}}">
+                <span>{{trans('home.h-regulations')}}</span></a>
         </div>
     </div>
 
     <div class="content-links">
         <div class="links-interest" style="background-color: #336699">
-            <a href="{{URL('/regulations')}}"><img src="{{URL::asset('image/procedure.svg')}}">
-                <span>{{trans('home.h-regulations')}}</span></a>
-        </div>
-        <div class="links-interest" style="background-color: #336699">
-            <a href="https://twitter.com/uniradio_unimar?s=20" target="_blank"><img src="{{URL::asset('image/listening.png')}}">
-                <span>{{trans('home.uniradio')}}</span></a>
+            <a href="{{url('/generalsecretariat')}}"><img src="{{URL::asset('image/secretary.png')}}">
+                <span>{{trans('home.general-secretary')}}</span></a>
         </div>
         <div class="links-interest" style="background-color: #336699">
             <a href="{{URL('/healthystudent')}}"><img src="{{URL::asset('image/healthy.png')}}">
@@ -164,8 +200,12 @@
             <a href="{{url('/healthymental')}}"><img src="{{URL::asset('image/mental-healthy.png')}}">
                 <span>{{trans('home.sicologyc-healthy')}}</span></a>
         </div>
+        <div class="links-interest" style="background-color: #336699">
+            <a href="https://twitter.com/uniradio_unimar?s=20" target="_blank"><img src="{{URL::asset('image/listening.png')}}">
+                <span>{{trans('home.uniradio')}}</span></a>
+        </div>
     </div><!-- end content-links-->
-
+    
     <div class="section-content">
         <div class="d-flex justify-content-start">
             <img id="img-section"
